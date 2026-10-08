@@ -25,3 +25,12 @@
 [submodule "design-templates/assets/bioicons"]
 	path = design-templates/assets/bioicons
 	url = https://github.com/duerrsimon/bioicons
+[submodule "design-templates/scientific-diagrams/opentikz"]
+	path = design-templates/scientific-diagrams/opentikz
+	url = https://github.com/opentikz/opentikz
+[submodule "design-templates/scientific-diagrams/academic-figures"]
+	path = design-templates/scientific-diagrams/academic-figures
+	url = https://github.com/sai-tv/academic-figures
+[submodule "design-templates/scientific-diagrams/scientific-figure-skills"]
+	path = design-templates/scientific-diagrams/scientific-figure-skills
+	url = https://github.com/enesgul23/scientific-figure-skills
