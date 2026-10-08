@@ -1,3 +1,24 @@
 [submodule "design-templates/tahta"]
 	path = design-templates/tahta
 	url = https://github.com/zcag/tahta
+[submodule "design-templates/scientific-diagrams/janosh-diagrams"]
+	path = design-templates/scientific-diagrams/janosh-diagrams
+	url = https://github.com/janosh/diagrams
+[submodule "design-templates/scientific-diagrams/typst-fletcher"]
+	path = design-templates/scientific-diagrams/typst-fletcher
+	url = https://github.com/Jollywatt/typst-fletcher
+[submodule "design-templates/scientific-diagrams/cetz"]
+	path = design-templates/scientific-diagrams/cetz
+	url = https://github.com/cetz-package/cetz
+[submodule "design-templates/scientific-diagrams/beautiful-mermaid"]
+	path = design-templates/scientific-diagrams/beautiful-mermaid
+	url = https://github.com/lukilabs/beautiful-mermaid
+[submodule "design-templates/conference-posters/quarto-typst-templates"]
+	path = design-templates/conference-posters/quarto-typst-templates
+	url = https://github.com/quarto-ext/typst-templates
+[submodule "design-templates/conference-posters/sleek-scientific-poster"]
+	path = design-templates/conference-posters/sleek-scientific-poster
+	url = https://github.com/weygoldt/typst_poster
+[submodule "design-templates/conference-posters/simple-research-poster"]
+	path = design-templates/conference-posters/simple-research-poster
+	url = https://github.com/aneziac/simple-research-poster
