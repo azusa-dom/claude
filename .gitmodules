@@ -1,0 +1,3 @@
+[submodule "design-templates/tahta"]
+	path = design-templates/tahta
+	url = https://github.com/zcag/tahta
