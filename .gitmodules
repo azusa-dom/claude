@@ -22,3 +22,6 @@
 [submodule "design-templates/conference-posters/simple-research-poster"]
 	path = design-templates/conference-posters/simple-research-poster
 	url = https://github.com/aneziac/simple-research-poster
+[submodule "design-templates/assets/bioicons"]
+	path = design-templates/assets/bioicons
+	url = https://github.com/duerrsimon/bioicons

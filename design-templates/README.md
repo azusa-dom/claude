@@ -56,3 +56,11 @@ Rule of thumb: reach for **Fletcher** for exact nodes/arrows/connections and **C
 Notes:
 - `quarto-typst-templates` is a monorepo of several Quarto/Typst templates — use only the `poster/` subdirectory.
 - For a palette swap, each poster template keeps its colors in one place (`typst.toml`/theme dict for the sleek poster, `colors.typ` for simple-research-poster) — check there first rather than hand-editing layout files.
+
+## Scientific illustration assets
+
+| Template | Source | Type | Use for |
+|---|---|---|---|
+| [`assets/bioicons`](assets/bioicons) | [duerrsimon/bioicons](https://github.com/duerrsimon/bioicons) | SVG icon library (CC-0/MIT/CC-BY-SA/BSD, per-icon) | Dropping ready-made biology/chemistry icons (cells, organisms, lab instruments, anatomy, ...) into a mechanism diagram or poster instead of drawing them from scratch |
+
+Bioicons is an asset library, not a full figure template — check each icon's individual license before reuse (it varies per icon, shown on [bioicons.com](https://bioicons.com)).
