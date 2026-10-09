@@ -7,6 +7,7 @@ Catalog of design templates vendored as git submodules for Claude to pull in whe
 | Template | Source | Type | Use for |
 |---|---|---|---|
 | [`tahta`](tahta) | [zcag/tahta](https://github.com/zcag/tahta) | Slidev presentation theme (`slidev-theme-tahta` on npm) | Building Markdown-authored slide decks with Slidev |
+| [`neko-style`](neko-style/neko-style) | [iridite/slidev-templates — neko-style](https://github.com/iridite/slidev-templates/tree/main/neko-style) | Slidev presentation theme (local install only, not on npm) | Technical talks and conference decks with animated glow backgrounds, 45+ components, semantic color system |
 
 ### tahta
 
@@ -33,6 +34,44 @@ themeConfig:
 ```
 
 Then author slides per the layout/variant contract in `AGENTS.md`, and validate with `npx tahta-lint slides.md` before exporting.
+
+### neko-style
+
+A polished Slidev theme extracted from real KubeCon / neko-talks decks: seed-stable animated glow polygon backgrounds, 45+ Vue components, and a semantic color system.
+
+- 3 glow presets (`blue` / `rust` / `cyan`) — choose once per deck; vary per-slide appearance with `glowSeed`
+- 13 layouts (`cover`, `intro`, `section`, `statement`, `compare`, `cards`, `timeline`, `contents-toc`, `page`, `page-wide`, `center`, `default`, `end`)
+- 45+ components — narrative, data display, architecture diagrams, feature grids, speaker intros, closing slides
+- Semantic color system: red=problems, green=solutions, blue=info, purple=advanced, yellow=performance
+- **Not published to npm** — install from local path; submodule lives at [`neko-style/`](neko-style/neko-style) (the theme is at `neko-style/neko-style/theme/`)
+- AI skill: copy [`neko-style/neko-style/SKILL.md`](neko-style/neko-style/SKILL.md) to `.claude/skills/neko-slidev.md` and use `/neko-slidev` in Claude Code
+- Read [`neko-style/neko-style/SKILL.md`](neko-style/neko-style/SKILL.md) (routing table, component rules, snippets) before authoring any deck with this theme
+
+Quick start for a new project:
+
+```bash
+npx degit iridite/slidev-templates/neko-style my-presentation
+cd my-presentation/starter
+npm install
+npm run dev
+```
+
+Quick start from this submodule (existing Slidev project):
+
+```bash
+cd design-templates/neko-style/neko-style/theme && npm install && cd -
+npm install $(pwd)/design-templates/neko-style/neko-style/theme
+```
+
+```md
+---
+theme: neko-style
+glowSeed: 42
+glowPreset: blue
+---
+```
+
+Note: `neko-style/` submodule is the full `iridite/slidev-templates` monorepo — use only the `neko-style/` subdirectory within it.
 
 ## Scientific diagrams
 
