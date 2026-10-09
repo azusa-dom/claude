@@ -132,8 +132,6 @@ def main():
         grid_panel(p, fn)
         ax.text(px, 11.0, cap, fontsize=FS_SMALL, va="top", color=INK, linespacing=1.15)
 
-    ax.text(0.5, 1.0, "Prescribed schematics with no measured scale; a single mean-squared error can hide "
-            "every one of these failures.", fontsize=FS_SMALL, color=MUTED, va="bottom")
     plot_axes = spatial_axes + temporal_axes + mapping_axes
     plot_ids = ["a1", "a2", "a3", "a4", "b1", "b2", "c1", "c2"]
     save(fig, "Figure_S2_error_attributes_mapping_validity", {

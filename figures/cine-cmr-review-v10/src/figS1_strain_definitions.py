@@ -135,8 +135,6 @@ def main():
     tidy(pd, "strain")
     note(ax, 1, 1, "Averaging before or after selecting the temporal peak\ngives different values for the same field.")
 
-    ax.text(0.5, 1.0, "Conceptual and analytic schematics with no measured scale.", fontsize=FS_SMALL,
-            color=MUTED, va="bottom")
     save(fig, "Figure_S1_strain_definition_traps", {
         "axes": [pa, pc, pd],
         "panel_ids": ["a", "c", "d"],

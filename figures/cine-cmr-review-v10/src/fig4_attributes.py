@@ -150,8 +150,6 @@ def main():
     ax.text(kx + 35.2, ky, "not reported", fontsize=FS_SMALL, va="center")
     open_circle(ax, kx + 54.0, ky, dashed=True)
     ax.text(kx + 55.7, ky, "not inspected", fontsize=FS_SMALL, va="center")
-    ax.text(W - 0.8, ky, "Values as reported by the MRXCAT2.0 authors; no new analysis.",
-            fontsize=FS_SMALL, color=MUTED, va="center", ha="right")
 
     # Panels a and b have deliberately different inferential roles and plot-area
     # geometries; panel c is a card grid. Treat the alignment gate as N/A rather

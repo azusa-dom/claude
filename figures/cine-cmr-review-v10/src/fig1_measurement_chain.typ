@@ -84,5 +84,4 @@
   ring(45.0, ky, 1.9, muted, thick: 0.7pt)
   label(45.0, ky, anchor: "center", text(size: 7pt, weight: "bold", fill: muted)[n])
   label(47.9, ky, anchor: "west", mut[failure point at step n])
-  label(W - 0.8, ky, anchor: "east", mut[Conceptual schematic; no study data.])
 })

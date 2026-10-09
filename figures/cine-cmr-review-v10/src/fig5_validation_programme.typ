@@ -102,6 +102,4 @@
   label(px + pw / 2 + 3.0, s2y(-0.25) + 4.6, anchor: "north", mut[segment])
   label(px, by + 44.5, width: pw, par(leading: 0.5em, mut[Uniform (dashed) and focal (solid) fields share a global mean of −0.18. Recovering the mean is not a pass.]))
 
-  label(0, H - 0.6, anchor: "south-west",
-    mut[Counts denote resource units, not independent test participants. Conceptual synthesis; no study data.])
 })

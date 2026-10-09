@@ -179,9 +179,7 @@ def main():
         ly -= 3.4
 
     foot = ("* tagging-side comparator   † preprint (MSc thesis)   ‡ workshop paper or no abstract retrieved   "
-            "§ rat model.\nMarker = strongest validation evidence each cited source reports (abstract- or metadata-level "
-            "reading, Supplementary Table S3).\nBoundary feature tracking (a method family without a single year) "
-            "is listed in Supplementary Table S3 but not plotted.")
+            "§ rat model")
     ax.text(1.0, ly + 0.6, foot, ha="left", va="top", fontsize=FS_SMALL, color=MUTED, linespacing=1.25)
 
     save(fig, "Figure_3_method_timeline", {

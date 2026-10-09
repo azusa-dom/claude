@@ -8,19 +8,21 @@
 
 | 图 | 文件名 | 尺寸 |
 |---|---|---|
-| Fig 1 测量链与三道失败点 | `Figure_1_measurement_chain` | 160 × 98 mm |
-| Fig 2 同一轮廓、不同对应(解析反例) | `Figure_2_same_contours_analytic` | 160 × 58 mm |
-| Fig 3 方法年表 1999–2026 | `Figure_3_method_timeline` | 160 × 131.6 mm |
-| Fig 4 属性特异恢复(MRXCAT2.0) | `Figure_4_attribute_specific_recovery` | 160 × 92 mm |
-| Fig 5 验证目标与三阶段方案 | `Figure_5_validation_targets_programme` | 160 × 146 mm |
+| Fig 1 测量链与三道失败点 | `Figure_1_measurement_chain` | 190 × 117 mm |
+| Fig 2 同一轮廓、不同对应(解析反例) | `Figure_2_same_contours_analytic` | 190 × 64 mm |
+| Fig 3 方法年表 1999–2026 | `Figure_3_method_timeline` | 190 × 147 mm |
+| Fig 4 属性特异恢复(MRXCAT2.0) | `Figure_4_attribute_specific_recovery` | 190 × 107 mm |
+| Fig 5 验证目标与三阶段方案 | `Figure_5_validation_targets_programme` | 190 × 141 mm |
 | Graphical abstract | `Graphical_abstract` | 2600 × 1000 px |
-| S1 应变定义陷阱 | `Figure_S1_strain_definition_traps` | 166 × 112 mm |
-| S2 误差属性与映射有效性 | `Figure_S2_error_attributes_mapping_validity` | 166 × 100 mm |
-| S3 训练期与推理期控制 | `Figure_S3_training_vs_inference_controls` | 166 × 69 mm |
+| S1 应变定义陷阱 | `Figure_S1_strain_definition_traps` | 190 × 124 mm |
+| S2 误差属性与映射有效性 | `Figure_S2_error_attributes_mapping_validity` | 190 × 109 mm |
+| S3 训练期与推理期控制 | `Figure_S3_training_vs_inference_controls` | 190 × 67 mm |
 
 ## 规格依据与实际核查
 
-Elsevier 官方 artwork sizing 页面规定单栏 90 mm、1.5 栏 140 mm、双栏 190 mm,普通文字以 7 pt 为准,只有上下标可低到 6 pt;academic-figures 预设里的 "6–8 pt" 把下限说宽了。稿件 `main.tex` 版心为 160 mm,`supplement.tex` 为 166 mm,图在稿件中按 `width=\textwidth` 插入。如果按方案的 175–180 mm 或 Elsevier 的 190 mm 绘制,在投稿 PDF 中会被缩小到约 84%,7.5 pt 将变成 6.3 pt。因此主文图按 160 mm、补充图按 166 mm 绘制,图内文字 7.2–10 pt(标签 7.2–7.5 pt、面板小标题 9 pt、面板字母 10 pt),数学上下标不低于 6 pt;排版时放大到 190 mm 双栏后字号只会变大。
+Elsevier 官方 artwork sizing 页面规定单栏 90 mm、1.5 栏 140 mm、双栏 190 mm;普通文字以 7 pt 为准,只有上下标可以低到 6 pt。所有图(GA 除外)都按双栏宽度 190 mm 导出,宽度统一。图是先按稿件版心(主文 160 mm、补充 166 mm)排版的,保证标签不小于 7.2 pt,然后整图等比放大到 190 mm。所以期刊双栏排版时正文字号约 8.2–8.6 pt;稿件用 `width=\textwidth` 插入、缩回版心时,字号回到不小于 7.2 pt(上下标不小于 6 pt)。每张图上下的空白都自动裁掉,只保留 1.2 mm 边距。PNG 写入了 600 dpi 信息(GA 为 254 dpi,对应 2600 × 1000 px),所以插进 Word 或 PPT 时就是实际尺寸。之前 Typst 导出的 PNG 没写 DPI,插进 Word 会被当成 96 dpi,宽度变成约 1 米。
+
+图内底部的说明句(数据来源、"概念示意,无研究数据"等)已全部删除,这些内容都在图注里。Fig 3 只保留了方法名旁 * † ‡ § 标记的符号说明。
 
 已实际核查的内容如下。每个 PDF 的页面尺寸都与上表一致。字体全部嵌入:标签为 Liberation Sans,数学为 Liberation Serif;这两款开源字体与 Arial、Times New Roman 字宽完全一致,环境里没有微软字体。matplotlib 导出的 SVG 保留可编辑文字,字体声明为 `'Arial', 'Liberation Sans'`,在装有 Arial 的电脑上会直接显示 Arial。Typst 导出的 SVG 把文字转成了轮廓,所以 Fig 1、5、S3 和 GA 要改字时请用 PDF 或 `.typ` 源码。每张图都在实际尺寸下渲染后逐张目检,重叠、裁切、溢出已全部修正。
 
@@ -73,7 +75,8 @@ Codex 报告中留下的问题已修:Fig 2 和 S1 的数学上下标只有 5.04 
 ## QA(每次 `./build.sh` 自动执行,结果在 `qa/`)
 
 - 面板对齐(Codex 引入的审计,严格模式):Fig 2、3、4、S1、S2 全部通过。
-- 字号(`style/audit_font_sizes.py`,从 PDF 逐字读取,旋转文字按包围盒校正):9 张全部通过;正文最小 7.2 pt,上下标最小 6.02 pt。
+- 字号(`style/audit_font_sizes.py`,从 PDF 逐字读取,旋转文字按包围盒校正):9 张全部通过。按 190 mm 实际尺寸计,正文最小 8.2 pt,上下标最小 6.9 pt;缩回稿件版心后,正文不小于 7.2 pt,上下标不小于 6.0 pt。
+- 尺寸:9 张图的 PDF、SVG、PNG 三种格式尺寸一致(误差 0.1 mm 以内),除 GA 外宽度均为 190 mm。
 - 渲染质量(scientific-figure-skills 的 `audit_render_quality.py`,三种格式齐全、分辨率、非空白、matplotlib 图的 SVG 必须保留可编辑文字):9 张全部通过。Fig 1、5、S3 和 GA 各有一条警告,是 Typst 导出的 SVG 文字为轮廓,这几张图的可编辑文字在 PDF 里。
 - 配色(dataviz skill 的 `validate_palette.js`):结果见上节。
 - 目检:按实际尺寸逐张检查,总览图为 `qa/contact-sheet.png`。

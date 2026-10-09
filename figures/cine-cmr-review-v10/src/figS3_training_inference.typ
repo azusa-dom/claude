@@ -58,5 +58,4 @@
   label(29.0, ky, anchor: "west", mut[estimator state])
   seg((50.0, ky), (55.0, ky), paint: ref, thick: 0.9pt)
   label(56.4, ky, anchor: "west", mut[evaluation against a reference])
-  label(W - 0.8, ky, anchor: "east", mut[Conceptual schematic; no study data.])
 })

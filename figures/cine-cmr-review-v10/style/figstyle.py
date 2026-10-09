@@ -5,17 +5,20 @@ Palette derived from the author's reference swatches (沈香墨 #8D6449, 素绢�
 the dataviz palette validator (CVD and normal-vision separation). One muted grey-green
 is kept for "supported" so it separates from the error red.
 """
+import re
 from pathlib import Path
 
 import matplotlib as mpl
 
 mpl.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
+from pypdf import PdfReader, PdfWriter  # noqa: E402
 from audit_panel_alignment import require_matplotlib_panel_alignment  # noqa: E402
 
 MM = 1 / 25.4
 MAIN_W = 160.0   # manuscript \textwidth (A4, 25 mm margins)
 SUPP_W = 166.0   # supplement \textwidth (A4, 22 mm margins)
+TARGET_W = 190.0  # Elsevier double-column width; every figure is exported at this width
 
 OBS = "#8E857D"      # image-observable information / neutral context
 INF = "#C0584A"      # estimated / inferred quantity (deepened 棠梨绯)
@@ -96,7 +99,23 @@ def panel_label(ax, x, y, letter):
     ax.text(x, y, letter, fontsize=FS_PANEL, fontweight="bold", va="top", ha="left", color=INK)
 
 
+def _scale_svg(path, s):
+    text = path.read_text()
+    head_end = text.index(">", text.index("<svg"))
+    head = text[:head_end]
+    for attr in ("width", "height"):
+        m = re.search(attr + r'="([0-9.]+)pt"', head)
+        head = head[:m.start(1)] + f"{float(m.group(1)) * s:.4f}" + head[m.end(1):]
+    path.write_text(head + text[head_end:])
+
+
 def save(fig, stem, alignment):
+    """Export at TARGET_W by uniform scaling, so layout and relative type sizes are unchanged.
+
+    Figures are composed at the manuscript text width (160/166 mm, labels >= 7.2 pt); scaling
+    to 190 mm gives ~8.2-8.6 pt at journal size and returns to >= 7.2 pt when the manuscript
+    inserts them at width=\\textwidth.
+    """
     OUT.mkdir(exist_ok=True)
     QA.mkdir(exist_ok=True)
     require_matplotlib_panel_alignment(
@@ -108,7 +127,17 @@ def save(fig, stem, alignment):
         strict=True,
         **alignment,
     )
+    s = TARGET_W / (fig.get_size_inches()[0] * 25.4)
+    tmp = OUT / f"{stem}.unscaled.pdf"
+    fig.savefig(tmp)
+    page = PdfReader(tmp).pages[0]
+    page.scale_by(s)
+    writer = PdfWriter()
+    writer.add_page(page)
+    with open(OUT / f"{stem}.pdf", "wb") as fh:
+        writer.write(fh)
+    tmp.unlink()
     fig.savefig(OUT / f"{stem}.svg")
-    fig.savefig(OUT / f"{stem}.pdf")
-    fig.savefig(OUT / f"{stem}.png", dpi=600)
+    _scale_svg(OUT / f"{stem}.svg", s)
+    fig.savefig(OUT / f"{stem}.png", dpi=600 * s)
     plt.close(fig)

@@ -30,9 +30,14 @@
 
 #let panel(letter) = text(size: fs-panel, weight: "bold", fill: ink, letter)
 
+// Figures are composed at the manuscript text width and exported at the Elsevier
+// double-column width by uniform scaling, so layout and relative type sizes are unchanged.
+#let target-w = 190mm
+
 #let setup(width, height: auto, body) = {
-  set page(width: width, height: height, margin: 0pt, fill: white)
+  let s = target-w / width
+  set page(width: target-w, height: height, margin: 0pt, fill: white)
   set text(font: sans, size: fs-body, fill: ink, lang: "en", hyphenate: false)
   set par(leading: 0.45em, justify: false)
-  body
+  scale(x: s * 100%, y: s * 100%, origin: top + left, reflow: true, body)
 }
