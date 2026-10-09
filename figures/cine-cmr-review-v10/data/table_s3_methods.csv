@@ -1,0 +1,40 @@
+label,year,lane,evidence,marker,flag,s3_line,rationale
+FFD,1999,conventional,mask,method,,251,Breast MRI; comparison with rigid/affine registration (registration metrics); non-cardiac origin
+HARP,2000,conventional,material,method,*,253,Real and simulated tagged images; displacement and 2D strain against simulated (known) motion; tagging comparator
+nD+t B-spline,2011,conventional,material,method,,255,Synthetic data with sub-voxel accuracy (known motion) plus CT volume curves; no pathology reported
+Vigneault/Puyol-Antón,2017,conventional,label,method,,257,Pixel accuracy vs manual segmentation plus HCM-vs-control group separation (downstream label); 2017 FIMH and 2018 ISBI plotted at 2017
+Anatomy-Aware,2020,conventional,mask,method,,259,Tracking versus other methods; qualitative shape realism
+Groupwise LLR,2024,conventional,material,method,,261,Simulation (n=20) with point/voxel/strain error plus in-house tagging patients; no prescribed focal abnormality
+VoxelMorph,2019,unsupervised,mask,method,,264,General registration datasets; accuracy and run time
+TransMorph,2022,unsupervised,mask,method,,266,Brain MRI and phantom-to-CT registration metrics; topology and calibration
+Fourier-Net,2023,unsupervised,mask,method,,268,Registration benchmarks; accuracy and efficiency
+Fourier-Net+,2026,unsupervised,mask,method,,270,Three registration datasets including cardiac; geometric and functional measures
+Joint motion+seg,2018,cardiac,mask,method,,273,220 subjects; accuracy and speed versus competing methods
+Apparent flow,2019,cardiac,label,method,,275,ACDC classification accuracy from flow features (downstream label)
+MPN,2020,cardiac,mask,method,,277,Two public clinical datasets; multiple registration metrics
+FOAL,2020,cardiac,mask,method,,279,Two public datasets; accuracy under train-test mismatch
+MulViMotion,2022,cardiac,mask,method,,281,UK Biobank; quantitative and qualitative 3D motion comparison (shape-based metrics)
+DeepMesh,2024,cardiac,mask,method,,283,UK Biobank; vertex-wise displacement with maintained mesh correspondence (no material reference)
+Low-rank GW,2024,cardiac,nr,method,†,285,Data NR; only low-rankness comparison reported; preprint/MSc thesis
+MCM,2025,cardiac,mask,method,‡,287,Two public datasets; comparison with trackers; workshop paper
+CMR FMs,2025,cardiac,nr,method,,297,Foundation models 2025-2026; dense motion estimation not among reported tasks
+Semi-sup. flow,2025,cardiac,mask,method,,295,In-house EPE and global strain correlation; no material reference (abstract level)
+CardioMorphNet,2026,cardiac,mask,method,,289,UK Biobank and M&Ms; warped versus reference mask agreement
+Latent ODE,2026,cardiac,mask,method,,291,ACDC and M&Ms; temporal consistency and plausibility
+STCMT,2026,cardiac,label,method,,293,Strain analysis separating cardiac conditions (downstream group label); no motion reference
+Biomech prior,2023,physics,mask,method,,300,Public cine datasets; tracking accuracy and volume preservation; no prescribed focal experiment
+WarpPINN,2023,physics,material,method,,302,Synthetic examples (known motion) plus 15-volunteer landmark benchmark; healthy
+INR,2026,physics,nr,method,‡,306,No abstract in retrieved record; workshop (STACOM)
+WarpPINN-fibers,2026,physics,material,method,,304,Synthetic phantom (known motion) plus same 15-participant benchmark; healthy
+Space-time FE,2026,physics,material,method,,308,One synthetic ground-truth dataset; in vivo landmarks and masks; abnormality size/severity not varied
+Cine-only MI,2018,supervised,label,method,,311,Supervised on and evaluated against LGE delineation (tissue label)
+Survival-sup.,2019,supervised,label,method,,313,Survival outcome (prognostic label)
+DeepTag,2021,supervised,mask,method,*,315,Landmark tracking on clinical tagging; tagging comparator
+DeepStrain,2021,supervised,mask,method,,319,Own papers: CMAC landmark EPE; scan-rescan; agreement with manual FT
+MRXCAT2.0 test of DeepStrain,2023,supervised,focal,evaluation,,319,Independent MRXCAT2.0 evaluation with prescribed elliptical free-wall scar (main text section 4.1)
+StrainNet,2023,supervised,material,method,,321,Supervised on and tested against DENSE displacement in a mixed population
+DL synthetic strain,2023,supervised,label,method,,323,AUC against four-reader wall-motion consensus (expert reading)
+3D tagging nets,2025,supervised,material,method,*,317,Synthetic 3D tagged images from a biophysical LV model (known motion; abstract level); tagging comparator
+DENSE-rotation,2025,supervised,material,method,,325,Strain accuracy against DENSE as stated target; data NR in retrieved record
+DL aligned strain,2025,supervised,label,method,,327,LGE-defined fibrosis reference (tissue label)
+MyoNet,2026,supervised,mask,method,§,329,ICC against sine-wave-modelling analysis reference (inter-method agreement); rat model

@@ -1,0 +1,13 @@
+quantity,component,group,mean,sd,source_quote
+gt_peak_systolic_strain,radial,remote,0.95,,"0.95 (0.30)/− 0.18 (− 0.17)/− 0.18 (0.01) remote(scar) regions of the infarcted case"
+gt_peak_systolic_strain,radial,scar,0.30,,same sentence
+gt_peak_systolic_strain,longitudinal,remote,-0.18,,same sentence
+gt_peak_systolic_strain,longitudinal,scar,-0.17,,same sentence
+gt_peak_systolic_strain,circumferential,remote,-0.18,,same sentence
+gt_peak_systolic_strain,circumferential,scar,0.01,,same sentence
+ejection_fraction_pct,,infarct,49,,"LV ejection fraction values of 51%, 34%, 41% and 49%, respectively (NOR, DCM, HCM, infarcted)"
+deepstrain_error,circumferential,all_cases,0.02,0.04,"circumferential strain (e average error of 0.02 ± 0.04 across all cases)"
+deepstrain_error,radial,all_cases,-0.24,0.21,"a general underestimation of radial strains (− 0.24 ± 0.21) was observed"
+deepstrain_error,radial,infarct_case,-0.20,0.21,"with the lowest performance obtained for the infarcted case (− 0.20 ± 0.21)"
+deepstrain_dice,,all_phases,0.82,,"On average, a Dice score of 0.82 across all cardiac phases is obtained"
+deepstrain_displacement_error_mm,,all_cases,1.0,0.9,"The average displacement error computed from the synthetic data was 1.0 ± 0.9 mm"

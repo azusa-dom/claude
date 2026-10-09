@@ -1,0 +1,5 @@
+matplotlib==3.11.2
+numpy==2.5.3
+typst==0.15.0
+# Fonts: Liberation Sans / Liberation Serif (metric-compatible with Arial / Times New Roman),
+# e.g. Debian/Ubuntu package fonts-liberation. Typst packages @preview/cetz:0.4.2 are fetched on first build.
