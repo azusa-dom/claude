@@ -20,12 +20,12 @@
   title(0, 0.8, "a", [From cine images to a regional strain report])
 
   let nodes = (
-    ([Image formation & sampling], [bSSFP cine · spatial and temporal resolution · reconstruction], grey-t, grey),
-    ([Correspondence estimation], [contours or dense field · estimator + prior], teal-t, teal),
-    ([Representation & regularisation], [voxel · spline · Fourier · finite element · learned], teal-t, teal),
+    ([Image formation & sampling], [bSSFP cine · spatial and temporal resolution · reconstruction], obs-t, obs),
+    ([Correspondence estimation], [contours or dense field · estimator + prior], inf-t, inf),
+    ([Representation & regularisation], [voxel · spline · Fourier · finite element · learned], inf-t, inf),
     ([Strain definition & aggregation],
-      [#m[E]#mr[ \= ½(]#m[F]#super(m[T])#m[F]#mr[ − ]#m[I]#mr[)] · axes · layer · reference · peak rule], teal-t, teal),
-    ([Validation target], [known motion · DENSE/tagging · scan–rescan · LGE · outcome], orange-t, orange),
+      [#m[E]#mr[ \= ½(]#m[F]#mr[ᵀ]#m[F]#mr[ − ]#m[I]#mr[)] · axes · layer · reference · peak rule], inf-t, inf),
+    ([Validation target], [known motion · DENSE/tagging · scan–rescan · LGE · outcome], ref-t, ref),
   )
   for (i, (t, s, f, p)) in nodes.enumerate() {
     node(nx(i), ny, nw, nh, fill: f, paint: p, [#head(t)#v(1.2mm)#sub(s)])
@@ -48,7 +48,7 @@
   node(nx(3), ty, 2 * nw + gap, th, fill: white, paint: rule, halign: left, inset: 2.4,
     [#head[Three failure points, tested separately]#v(1.2mm)#sub[Attribution experiment: when a known focal deficit is under-recovered, hold two factors fixed and vary the third. Recovery after reducing #m[α] points to estimation; failure after projecting the known field points to representation; recovery only after re-imaging points to input information.]])
 
-  node(0.8, 77.0, W - 1.6, 8.0, fill: green-t, paint: green, thick: 0.6pt, halign: left, inset: 2.4,
+  node(0.8, 77.0, W - 1.6, 8.0, fill: sup-t, paint: sup, thick: 0.6pt, halign: left, inset: 2.4,
     [#text(weight: "bold")[c]#h(2.2mm)Validation must follow the finest claimed spatial and temporal scale, not inherit credibility from an upstream task.])
 
   let ky = 90.0
@@ -56,8 +56,8 @@
   label(9.2, ky, text(size: fs-small)[output feeds the next step], anchor: "west")
   arrow((45.0, ky), (52.0, ky), dash: "dashed", thick: 0.7pt)
   label(53.2, ky, text(size: fs-small)[test targets this link], anchor: "west")
-  swatch(82.0, ky, grey-t, grey, [observed in cine])
-  swatch(108.0, ky, teal-t, teal, [inferred])
-  swatch(125.0, ky, orange-t, orange, [reference / validation])
+  swatch(82.0, ky, obs-t, obs, [observed in cine])
+  swatch(108.0, ky, inf-t, inf, [inferred])
+  swatch(125.0, ky, ref-t, ref, [reference / validation])
   label(W - 0.8, ky + 4.2, text(size: fs-small, fill: muted)[Conceptual schematic; no study data.], anchor: "north-east")
 })

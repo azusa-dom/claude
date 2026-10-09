@@ -1,0 +1,3 @@
+[RENDER-QUALITY] PASS_WITH_WARNINGS
+[WARN] SVG text/title elements not detected: /home/user/claude/figures/cine-cmr-review-v10/out/Graphical_abstract.svg
+[PASS] validation passed

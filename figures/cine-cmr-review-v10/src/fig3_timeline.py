@@ -9,8 +9,8 @@ from matplotlib.lines import Line2D
 from matplotlib.textpath import TextPath
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from figstyle import (FS_BODY, FS_SMALL, GREY, GREY_T, INK, MAIN_W, MUTED, ORANGE,  # noqa: E402
-                      RED, RULE, TEAL, canvas, save)
+from figstyle import (CORAL, MASK, FS_BODY, FS_SMALL, OBS, OBS_T, INK, MAIN_W, MUTED, REF,  # noqa: E402
+                      ERR, RULE, canvas, save)
 
 DATA = Path(__file__).resolve().parents[1] / "data" / "table_s3_methods.csv"
 
@@ -58,14 +58,14 @@ def text_mm(s):
 def marker_style(evidence):
     base = dict(markersize=DOT_R * 2 / 25.4 * 72, markeredgewidth=0.6, linestyle="none")
     if evidence == "mask":
-        return dict(base, marker="o", markerfacecolor=GREY, markeredgecolor=GREY)
+        return dict(base, marker="o", markerfacecolor=MASK, markeredgecolor=MASK)
     if evidence == "label":
-        return dict(base, marker="o", markerfacecolor=TEAL, markeredgecolor=TEAL)
+        return dict(base, marker="o", markerfacecolor=CORAL, markeredgecolor=CORAL)
     if evidence == "material":
-        return dict(base, marker="o", markerfacecolor=ORANGE, markeredgecolor=ORANGE)
+        return dict(base, marker="o", markerfacecolor=REF, markeredgecolor=REF)
     if evidence == "focal":
-        return dict(base, marker="D", markersize=base["markersize"] * 0.95, markerfacecolor=ORANGE,
-                    markeredgecolor=RED, markeredgewidth=1.1)
+        return dict(base, marker="D", markersize=base["markersize"] * 0.95, markerfacecolor=REF,
+                    markeredgecolor=INK, markeredgewidth=1.1)
     return dict(base, marker="o", markerfacecolor="white", markeredgecolor=INK)
 
 
@@ -115,17 +115,20 @@ def main():
     bottom = top - timeline_h
 
     ticks = [1999, 2000, 2011] + list(range(2017, 2027))
-    for y in ticks:
-        ax.plot([year_x(y)] * 2, [bottom, top], color="#EEF0EC", lw=0.5, zorder=0)
     gx0 = year_x(EARLY[1])
+    # Full-height year grid lines ran through dense method labels. Position is
+    # already encoded by the shared x-axis and dots, so whitespace is clearer.
     ax.text(gx0 + GAP / 2, bottom + timeline_h / 2, "2012–2016: no entries", rotation=90,
-            ha="center", va="center", fontsize=FS_SMALL, color=MUTED)
+            rotation_mode="anchor", ha="center", va="center", fontsize=FS_SMALL, color=MUTED)
 
     y_cursor = top
     for key, title in LANES:
         h = lane_h[key]
         y_top = y_cursor
-        ax.plot([1.0, X1 + 1.5], [y_top, y_top], color=RULE, lw=0.5, zorder=1)
+        # Leave the broken-axis gap open so the vertical gap label is not
+        # crossed by lane rules.
+        ax.plot([1.0, gx0 + 0.5], [y_top, y_top], color=RULE, lw=0.5, zorder=1)
+        ax.plot([gx0 + GAP - 0.5, X1 + 1.5], [y_top, y_top], color=RULE, lw=0.5, zorder=1)
         ax.text(X0 - 3.0, y_top - h / 2, title, ha="right", va="center", fontsize=FS_BODY,
                 color=INK, linespacing=1.15)
         items = [r for r in rows if r["lane"] == key]
@@ -136,7 +139,8 @@ def main():
             tx, ha = (it["x"] - LABEL_DX, "right") if it["flip"] else (it["x"] + LABEL_DX, "left")
             ax.text(tx, it["y"], it["text"], ha=ha, va="center", fontsize=FS_SMALL, color=INK, zorder=4)
         y_cursor -= h
-    ax.plot([1.0, X1 + 1.5], [bottom, bottom], color=RULE, lw=0.5)
+    ax.plot([1.0, gx0 + 0.5], [bottom, bottom], color=RULE, lw=0.5)
+    ax.plot([gx0 + GAP - 0.5, X1 + 1.5], [bottom, bottom], color=RULE, lw=0.5)
 
     ax_y = bottom - 1.2
     ax.plot([X0 - 1.0, gx0 + 1.2], [ax_y, ax_y], color=INK, lw=0.6)
@@ -146,12 +150,14 @@ def main():
         ax.plot([bx - 0.5, bx + 0.5], [ax_y - 0.9, ax_y + 0.9], color=INK, lw=0.6)
     for y in ticks:
         x = year_x(y)
-        ax.plot([x, x], [ax_y, ax_y - 0.9], color=INK, lw=0.6)
+        ax.plot([x, x], [ax_y, ax_y - 0.4], color=INK, lw=0.6)
         label = str(y) if y in (1999, 2011) or y >= 2017 else ""
         if y == 2000:
             label = "2000"
-        ax.text(x, ax_y - 1.6, label, ha="center", va="top", fontsize=FS_SMALL, color=INK,
-                rotation=90 if y in (1999, 2000) else 0)
+        label_x = x - 0.65 if y == 1999 else x + 0.65 if y == 2000 else x
+        label_y = ax_y - 3.5 if y in (1999, 2000) else ax_y - 1.6
+        ax.text(label_x, label_y, label, ha="center", va="top", fontsize=FS_SMALL, color=INK,
+                rotation=90 if y in (1999, 2000) else 0, rotation_mode="anchor")
     ax.text(X0 - 3.0, ax_y - 1.6, "Year of\npublication", ha="right", va="top", fontsize=FS_SMALL,
             color=MUTED, linespacing=1.1)
 
@@ -178,7 +184,10 @@ def main():
             "is listed in Supplementary Table S3 but not plotted.")
     ax.text(1.0, ly + 0.6, foot, ha="left", va="top", fontsize=FS_SMALL, color=MUTED, linespacing=1.25)
 
-    save(fig, "Figure_3_method_timeline")
+    save(fig, "Figure_3_method_timeline", {
+        "axes": [ax],
+        "panel_ids": ["timeline-canvas"],
+    })
     print(f"Figure 3: {MAIN_W:.0f} x {H:.1f} mm; counts {dict(counts)}; total {len(rows)}")
 
 

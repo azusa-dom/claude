@@ -1,23 +1,26 @@
-// Shared Typst theme for the v10 figure set (colours from the figure plan).
-#let grey = rgb("#596052")
-#let teal = rgb("#2A7F9E")
-#let orange = rgb("#C8702A")
-#let red = rgb("#B3261E")
-#let green = rgb("#3C7A3E")
-#let ink = rgb("#222222")
-#let muted = rgb("#6B6F68")
-#let rule = rgb("#D9DCD6")
+// Shared Typst theme for the v10 figure set; colours mirror style/figstyle.py
+// (derived from 沈香墨 #8D6449, 素绢白 #F8F3E7, 檀木棕 #C0997F, 棠梨绯 #E7A49A).
+#let obs = rgb("#8E857D")
+#let inf = rgb("#C0584A")
+#let ref = rgb("#7A4720")
+#let coral = rgb("#CC5F4F")
+#let err = rgb("#A33A2E")
+#let sup = rgb("#4E7470")
+#let ink = rgb("#33261F")
+#let muted = rgb("#776A62")
+#let rule = rgb("#E3D9CF")
 
-#let grey-t = rgb("#ECEEEA")
-#let teal-t = rgb("#E2EFF4")
-#let orange-t = rgb("#FAEBDD")
-#let green-t = rgb("#E6F0E5")
+#let obs-t = rgb("#F8F3E7")
+#let inf-t = rgb("#F8E0DA")
+#let ref-t = rgb("#EFE2D3")
+#let coral-t = rgb("#F6DCD6")
+#let sup-t = rgb("#E3ECEA")
 
 #let sans = ("Arial", "Liberation Sans")
 #let serif = ("Times New Roman", "Liberation Serif")
 
 #let fs-body = 7.5pt
-#let fs-small = 7pt
+#let fs-small = 7.2pt
 #let fs-title = 9pt
 #let fs-panel = 10pt
 

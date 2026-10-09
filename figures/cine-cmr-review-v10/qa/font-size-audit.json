@@ -1,0 +1,93 @@
+{
+  "Figure_1_measurement_chain": {
+    "min_pt": 7.2,
+    "sizes_pt": {
+      "7.2": 807,
+      "7.5": 304,
+      "9.0": 37,
+      "10.0": 2
+    },
+    "below_floor": []
+  },
+  "Figure_2_same_contours_analytic": {
+    "min_pt": 6.02,
+    "sizes_pt": {
+      "6.02": 2,
+      "7.2": 444,
+      "7.5": 54,
+      "8.6": 10,
+      "9.0": 72,
+      "10.0": 3
+    },
+    "below_floor": []
+  },
+  "Figure_3_method_timeline": {
+    "min_pt": 7.2,
+    "sizes_pt": {
+      "7.2": 1070,
+      "7.5": 115
+    },
+    "below_floor": []
+  },
+  "Figure_4_attribute_specific_recovery": {
+    "min_pt": 7.2,
+    "sizes_pt": {
+      "7.2": 745,
+      "7.5": 75,
+      "9.0": 93,
+      "10.0": 3
+    },
+    "below_floor": []
+  },
+  "Figure_5_validation_targets_programme": {
+    "min_pt": 7.2,
+    "sizes_pt": {
+      "7.2": 995,
+      "7.5": 169,
+      "9.0": 90,
+      "10.0": 3
+    },
+    "below_floor": []
+  },
+  "Figure_S1_strain_definition_traps": {
+    "min_pt": 6.02,
+    "sizes_pt": {
+      "6.02": 1,
+      "7.2": 719,
+      "7.5": 88,
+      "8.6": 21,
+      "9.0": 142,
+      "10.0": 4
+    },
+    "below_floor": []
+  },
+  "Figure_S2_error_attributes_mapping_validity": {
+    "min_pt": 7.2,
+    "sizes_pt": {
+      "7.2": 340,
+      "7.5": 61,
+      "9.0": 60,
+      "10.0": 3
+    },
+    "below_floor": []
+  },
+  "Figure_S3_training_vs_inference_controls": {
+    "min_pt": 7.2,
+    "sizes_pt": {
+      "7.2": 485,
+      "7.5": 103,
+      "9.0": 41
+    },
+    "below_floor": []
+  },
+  "Graphical_abstract": {
+    "min_pt": 11.0,
+    "sizes_pt": {
+      "11.0": 195,
+      "11.5": 51,
+      "12.0": 73,
+      "14.0": 14
+    },
+    "below_floor": []
+  }
+}

@@ -6,8 +6,8 @@ import numpy as np
 from matplotlib.patches import Polygon
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from figstyle import (FS_BODY, FS_SMALL, FS_TITLE, GREY, INK, MUTED, ORANGE, ORANGE_T, RED,  # noqa: E402
-                      SUPP_W, TEAL, canvas, panel_label, save, sub_axes)
+from figstyle import (FS_BODY, FS_SMALL, FS_TITLE, OBS, INK, MUTED, REF, REF_T, ERR,  # noqa: E402
+                      SUPP_W, INF, canvas, panel_label, save, sub_axes)
 
 W, H = SUPP_W, 100.0
 
@@ -26,9 +26,9 @@ def mini(fig, x, y, w, h, title_text, ax):
 
 def profile_panel(p, ref, est, x, shade=None):
     if shade is not None:
-        p.fill_between(x, 0, 1.15, where=shade, color=ORANGE_T, lw=0, zorder=0)
-    p.plot(x, ref, color=ORANGE, lw=1.2)
-    p.plot(x, est, color=TEAL, lw=1.2, ls=(0, (3, 1.6)))
+        p.fill_between(x, 0, 1.15, where=shade, color=REF_T, lw=0, zorder=0)
+    p.plot(x, ref, color=REF, lw=1.2)
+    p.plot(x, est, color=INF, lw=1.2, ls=(0, (3, 1.6)))
     p.set_xlim(0, 1)
     p.set_ylim(-0.05, 1.15)
 
@@ -38,9 +38,9 @@ def grid_panel(p, mapping, n=12, m=200):
     s = np.linspace(0, 1, m)
     for c in u:
         X, Y = mapping(np.full_like(s, c), s)
-        p.plot(X, Y, color=GREY, lw=0.6)
+        p.plot(X, Y, color=OBS, lw=0.6)
         X, Y = mapping(s, np.full_like(s, c))
-        p.plot(X, Y, color=GREY, lw=0.6)
+        p.plot(X, Y, color=OBS, lw=0.6)
     eps = 1e-4
     for i in range(n - 1):
         for j in range(n - 1):
@@ -54,7 +54,7 @@ def grid_panel(p, mapping, n=12, m=200):
                 corners = [(u[i], u[j]), (u[i + 1], u[j]), (u[i + 1], u[j + 1]), (u[i], u[j + 1])]
                 pts = [mapping(np.array([a]), np.array([b])) for a, b in corners]
                 p.add_patch(Polygon([(px[0], py[0]) for px, py in pts], closed=True, facecolor="none",
-                                    edgecolor=RED, lw=0.9, zorder=4))
+                                    edgecolor=ERR, lw=0.9, zorder=4))
     p.set_aspect("equal")
     p.set_xlim(-0.08, 1.08)
     p.set_ylim(-0.08, 1.08)
@@ -64,6 +64,9 @@ def grid_panel(p, mapping, n=12, m=200):
 def main():
     fig, ax = canvas(W, H)
     x = np.linspace(0, 1, 400)
+    spatial_axes = []
+    temporal_axes = []
+    mapping_axes = []
 
     panel_label(ax, 0.5, H - 0.5, "a")
     ax.text(5.0, H - 1.4, "Spatial error attributes", fontsize=FS_TITLE, fontweight="bold", va="top")
@@ -78,13 +81,14 @@ def main():
     for k, (name, est, cap, shade) in enumerate(cases):
         px = 4.0 + k * (pw + gap)
         p = mini(fig, px, y0, pw, ph, name, ax)
+        spatial_axes.append(p)
         profile_panel(p, ref, est, x, shade)
         ax.text(px, y0 - 1.5, cap, fontsize=FS_SMALL, va="top", color=INK, linespacing=1.15)
     ax.text(W - 1.0, H - 1.4, "position around the wall →", fontsize=FS_SMALL, color=MUTED, ha="right", va="top")
     lx, ly = W - 60.0, H - 6.3
-    ax.plot([lx, lx + 5], [ly, ly], color=ORANGE, lw=1.2)
+    ax.plot([lx, lx + 5], [ly, ly], color=REF, lw=1.2)
     ax.text(lx + 6.2, ly, "reference", fontsize=FS_SMALL, va="center")
-    ax.plot([lx + 22, lx + 27], [ly, ly], color=TEAL, lw=1.2, ls=(0, (3, 1.6)))
+    ax.plot([lx + 22, lx + 27], [ly, ly], color=INF, lw=1.2, ls=(0, (3, 1.6)))
     ax.text(lx + 28.2, ly, "estimate", fontsize=FS_SMALL, va="center")
 
     panel_label(ax, 0.5, 52.5, "b")
@@ -97,8 +101,9 @@ def main():
     ]):
         px = 4.0 + k * (pw + gap)
         p = mini(fig, px, 19.0, pw, ph, name, ax)
-        p.plot(t, rc, color=ORANGE, lw=1.2)
-        p.plot(t, est, color=TEAL, lw=1.2, ls=(0, (3, 1.6)))
+        temporal_axes.append(p)
+        p.plot(t, rc, color=REF, lw=1.2)
+        p.plot(t, est, color=INF, lw=1.2, ls=(0, (3, 1.6)))
         p.set_xlim(0, 1)
         p.set_ylim(-1.15, 0.08)
         p.axhline(0, color=MUTED, lw=0.4)
@@ -123,12 +128,20 @@ def main():
     ]):
         px = cx0 + k * (gw + 7.0)
         p = mini(fig, px, 12.5, gw, gw, name, ax)
+        mapping_axes.append(p)
         grid_panel(p, fn)
         ax.text(px, 11.0, cap, fontsize=FS_SMALL, va="top", color=INK, linespacing=1.15)
 
     ax.text(0.5, 1.0, "Prescribed schematics with no measured scale; a single mean-squared error can hide "
             "every one of these failures.", fontsize=FS_SMALL, color=MUTED, va="bottom")
-    save(fig, "Figure_S2_error_attributes_mapping_validity")
+    plot_axes = spatial_axes + temporal_axes + mapping_axes
+    plot_ids = ["a1", "a2", "a3", "a4", "b1", "b2", "c1", "c2"]
+    save(fig, "Figure_S2_error_attributes_mapping_validity", {
+        "axes": plot_axes,
+        "panel_ids": plot_ids,
+        "row_groups": [["a1", "a2", "a3", "a4"], ["b1", "b2"], ["c1", "c2"]],
+        "column_groups": [["a1", "b1"], ["a2", "b2"]],
+    })
     print(f"Figure S2: {W:.0f} x {H:.0f} mm")
 
 

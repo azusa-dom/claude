@@ -29,8 +29,8 @@
     label(x0, 0.8, text(size: fs-title, weight: "bold", heading))
     for (i, (t, d)) in boxes.enumerate() {
       let x = x0 + i * (bw + 3.0)
-      let f = if i == 0 { white } else { teal-t }
-      let p = if i == 0 { ink } else { teal }
+      let f = if i == 0 { white } else { inf-t }
+      let p = if i == 0 { ink } else { inf }
       node(x, by, bw, bh, fill: f, paint: p, [#head(t)#v(0.8mm)#sm(d)])
       if i < 2 {
         arrow((x + bw + 0.3, by + bh / 2), (x + bw + 2.7, by + bh / 2), thick: 0.8pt, head: 1.4)
@@ -42,13 +42,13 @@
   label(0.8, by + bh + 2.0, width: 2 * bw + 3.0,
     text(size: fs-small, fill: muted)[Varying #m[λ] only at test time has no effect unless the trained model exposes it.])
 
-  node(0.8, 39.0, W - 1.6, 16.0, fill: orange-t, paint: orange, halign: center,
+  node(0.8, 39.0, W - 1.6, 16.0, fill: ref-t, paint: ref, halign: center,
     [#head[Shared held-out evaluation]#v(1.0mm)#sm[held-out cases · same estimand · same reference · attribute-specific losses (magnitude, location, extent, timing, field validity)]#v(0.6mm)#text(size: fs-small, fill: muted)[final test cases kept out of model, hyperparameter and rule selection]])
 
   let ky = 60.5
   arrow((1.0, ky), (8.0, ky), thick: 0.8pt, head: 1.4)
   label(9.2, ky, sm[produces the input to the next step], anchor: "west")
-  swatch(70.0, ky, teal-t, teal, [estimator state])
-  swatch(100.0, ky, orange-t, orange, [evaluation against a reference])
+  swatch(70.0, ky, inf-t, inf, [estimator state])
+  swatch(100.0, ky, ref-t, ref, [evaluation against a reference])
   label(W - 0.8, H - 0.6, anchor: "south-east", text(size: fs-small, fill: muted)[Conceptual schematic; no study data.])
 })

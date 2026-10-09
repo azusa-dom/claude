@@ -6,8 +6,8 @@ from pathlib import Path
 from matplotlib.patches import Circle, FancyBboxPatch, Rectangle
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from figstyle import (FS_BODY, FS_SMALL, FS_TITLE, GREEN, GREY, INK, MAIN_W, MUTED, RED,  # noqa: E402
-                      RULE, canvas, panel_label, save, sub_axes)
+from figstyle import (CORAL, CORAL_T, FS_BODY, FS_SMALL, FS_TITLE, SUP, OBS, INK, MAIN_W,  # noqa: E402
+                      MUTED, ERR, REF, RULE, canvas, panel_label, save, sub_axes)
 
 DATA = Path(__file__).resolve().parents[1] / "data" / "mrxcat2_values.csv"
 W, H = MAIN_W, 92.0
@@ -22,12 +22,12 @@ def values():
     return out
 
 
-def check(ax, x, y, s=1.3, color=GREEN):
+def check(ax, x, y, s=1.3, color=SUP):
     ax.plot([x - s, x - s * 0.35, x + s], [y, y - s * 0.7, y + s * 0.9], color=color, lw=1.2,
             solid_capstyle="round", solid_joinstyle="round")
 
 
-def cross(ax, x, y, s=1.0, color=RED):
+def cross(ax, x, y, s=1.0, color=ERR):
     ax.plot([x - s, x + s], [y - s, y + s], color=color, lw=1.2, solid_capstyle="round")
     ax.plot([x - s, x + s], [y + s, y - s], color=color, lw=1.2, solid_capstyle="round")
 
@@ -52,13 +52,13 @@ def main():
     for i, c in enumerate(comps):
         rem = v[("gt_peak_systolic_strain", c, "remote")][0]
         scar = v[("gt_peak_systolic_strain", c, "scar")][0]
-        pa.bar(i - bw / 2 - 0.01, rem, bw, color=GREY, edgecolor=GREY, lw=0.6)
-        pa.bar(i + bw / 2 + 0.01, scar, bw, facecolor="white", edgecolor=RED, hatch="//////", lw=0.8)
+        pa.bar(i - bw / 2 - 0.01, rem, bw, color=REF, edgecolor=REF, lw=0.6)
+        pa.bar(i + bw / 2 + 0.01, scar, bw, facecolor=CORAL_T, edgecolor=CORAL, hatch="//////", lw=0.8)
         for j, (x, val) in enumerate(((i - bw / 2, rem), (i + bw / 2, scar))):
             neg = val < 0
             off = (-0.035 - (0.10 if (neg and j == 1) else 0)) if neg else 0.035
             pa.text(x, val + off, f"{val:.2f}".replace("-", "−"), ha="center",
-                    va="top" if neg else "bottom", fontsize=FS_SMALL, color=RED if j else INK)
+                    va="top" if neg else "bottom", fontsize=FS_SMALL, color=INK)
     pa.axhline(0, color=INK, lw=0.6)
     pa.set_xticks(range(3), names)
     pa.tick_params(axis="x", length=0, pad=1)
@@ -74,9 +74,9 @@ def main():
     pa.text(0.75, 0.62, "Radial and circumferential\nstrain largely abolished in\nscar; longitudinal almost\nunchanged",
             ha="left", va="top", fontsize=FS_SMALL, color=MUTED, linespacing=1.15)
     lx, ly = 15.0, 37.5
-    ax.add_patch(Rectangle((lx, ly - 1.1), 3.2, 2.2, facecolor=GREY, edgecolor=GREY, lw=0.6))
+    ax.add_patch(Rectangle((lx, ly - 1.1), 3.2, 2.2, facecolor=REF, edgecolor=REF, lw=0.6))
     ax.text(lx + 4.2, ly, "Remote myocardium", va="center", fontsize=FS_SMALL)
-    ax.add_patch(Rectangle((lx + 30, ly - 1.1), 3.2, 2.2, facecolor="white", edgecolor=RED,
+    ax.add_patch(Rectangle((lx + 30, ly - 1.1), 3.2, 2.2, facecolor=CORAL_T, edgecolor=CORAL,
                            hatch="//////", lw=0.8))
     ax.text(lx + 34.2, ly, "Scar", va="center", fontsize=FS_SMALL)
 
@@ -85,9 +85,9 @@ def main():
     ax.text(84.5, top - 0.9, "Estimator error (DeepStrain)", fontsize=FS_TITLE, fontweight="bold", va="top")
     pb = sub_axes(fig, W, H, 108.0, 50.0, 49.0, 32.0)
     rows = [
-        ("Circumferential,\nall four cases", v[("deepstrain_error", "circumferential", "all_cases")], GREEN, True),
-        ("Radial,\nall four cases", v[("deepstrain_error", "radial", "all_cases")], RED, True),
-        ("Radial,\ninfarct case", v[("deepstrain_error", "radial", "infarct_case")], RED, False),
+        ("Circumferential,\nall four cases", v[("deepstrain_error", "circumferential", "all_cases")], SUP, True),
+        ("Radial,\nall four cases", v[("deepstrain_error", "radial", "all_cases")], ERR, True),
+        ("Radial,\ninfarct case", v[("deepstrain_error", "radial", "infarct_case")], ERR, False),
     ]
     for k, (lab, (m, sd), col, filled) in enumerate(rows):
         y = 2 - k
@@ -95,9 +95,9 @@ def main():
                     mew=1.0, elinewidth=1.0, capsize=2.2, capthick=0.9)
         txt = f"{m:.2f} ± {sd:.2f}".replace("-", "−")
         if k == 0:
-            pb.text(m - sd - 0.015, y, txt, ha="right", va="center", fontsize=FS_SMALL, color=col)
+            pb.text(m - sd - 0.015, y, txt, ha="right", va="center", fontsize=FS_SMALL, color=INK)
         else:
-            pb.text(m, y + 0.25, txt, ha="center", va="bottom", fontsize=FS_SMALL, color=col)
+            pb.text(m, y + 0.25, txt, ha="center", va="bottom", fontsize=FS_SMALL, color=INK)
     pb.axvline(0, color=MUTED, lw=0.6, ls=(0, (2, 1.5)))
     pb.set_yticks([2, 1, 0], [r[0] for r in rows])
     pb.tick_params(axis="y", length=0)
@@ -153,7 +153,13 @@ def main():
     ax.text(W - 0.8, ky, "Values as reported by the MRXCAT2.0 authors; no new analysis.",
             fontsize=FS_SMALL, color=MUTED, va="center", ha="right")
 
-    save(fig, "Figure_4_attribute_specific_recovery")
+    # Panels a and b have deliberately different inferential roles and plot-area
+    # geometries; panel c is a card grid. Treat the alignment gate as N/A rather
+    # than forcing a false comparison between unlike axes.
+    save(fig, "Figure_4_attribute_specific_recovery", {
+        "axes": [pa],
+        "panel_ids": ["a"],
+    })
     print(f"Figure 4: {W:.0f} x {H:.0f} mm")
 
 

@@ -16,9 +16,9 @@
   let cw = (47.0, 60.0, 49.4)
   let hy = 7.5
   let hh = 6.0
-  node(cx.at(0), hy, cw.at(0), hh, fill: orange-t, paint: orange, radius: 0.6, halign: left, head[Validation target])
-  node(cx.at(1), hy, cw.at(1), hh, fill: green-t, paint: green, radius: 0.6, halign: left, head[Strongest claim it supports])
-  node(cx.at(2), hy, cw.at(2), hh, fill: grey-t, paint: grey, radius: 0.6, halign: left, head[Does not establish on its own])
+  node(cx.at(0), hy, cw.at(0), hh, fill: ref-t, paint: ref, radius: 0.6, halign: left, head[Validation target])
+  node(cx.at(1), hy, cw.at(1), hh, fill: sup-t, paint: sup, radius: 0.6, halign: left, head[Strongest claim it supports])
+  node(cx.at(2), hy, cw.at(2), hh, fill: obs-t, paint: obs, radius: 0.6, halign: left, head[Does not establish on its own])
   let rows = (
     ([Known motion (phantom, STRAUS, MRXCAT2.0)], [representation capacity and technical error in the simulated regime], [in-vivo accuracy]),
     ([Paired DENSE or tagging], [material-sensitive agreement under matched definitions], [focal location or extent, unless measured]),
@@ -30,8 +30,8 @@
   let rh = 7.4
   for (i, (tg, est, no)) in rows.enumerate() {
     let y = ry + i * (rh + 0.6)
-    node(cx.at(0), y, cw.at(0), rh, paint: orange, thick: 0.5pt, radius: 0.6, halign: left, sm(tg))
-    node(cx.at(1), y, cw.at(1), rh, paint: green, thick: 0.5pt, radius: 0.6, halign: left, text(size: fs-small, fill: green, est))
+    node(cx.at(0), y, cw.at(0), rh, paint: ref, thick: 0.5pt, radius: 0.6, halign: left, sm(tg))
+    node(cx.at(1), y, cw.at(1), rh, paint: sup, thick: 0.5pt, radius: 0.6, halign: left, text(size: fs-small, est))
     node(cx.at(2), y, cw.at(2), rh, paint: rule, thick: 0.5pt, radius: 0.6, halign: left, text(size: fs-small, fill: muted, no))
   }
 
@@ -55,7 +55,7 @@
   for (i, (t, d, wt, wb)) in stages.enumerate() {
     let y = sy0 + i * (sh + sg)
     poly(((mid - wt / 2, y), (mid + wt / 2, y), (mid + wb / 2, y + sh), (mid - wb / 2, y + sh)),
-      fill: orange-t, paint: orange)
+      fill: ref-t, paint: ref)
     label(mid, y + sh / 2, anchor: "center", box(width: (wb - 6) * 1mm, align(center, [#head(t)#v(0.6mm)#sm(d)])))
     if i < 2 {
       arrow((mid, y + sh + 0.4), (mid, y + sh + sg - 0.3), thick: 0.8pt)
@@ -98,15 +98,15 @@
   let foc = (-0.22, -0.22, -0.06, -0.18, -0.20, -0.20)
   seg((sx(0) - 1.5, s2y(-0.18)), (sx(5) + 1.5, s2y(-0.18)), paint: muted, thick: 0.6pt, dash: "dashed")
   for i in range(5) {
-    seg((sx(i), s2y(foc.at(i))), (sx(i + 1), s2y(foc.at(i + 1))), paint: teal, thick: 0.9pt)
+    seg((sx(i), s2y(foc.at(i))), (sx(i + 1), s2y(foc.at(i + 1))), paint: inf, thick: 0.9pt)
   }
   for i in range(6) {
-    draw.circle(P(sx(i), s2y(foc.at(i))), radius: 0.7, fill: teal, stroke: none)
+    draw.circle(P(sx(i), s2y(foc.at(i))), radius: 0.7, fill: inf, stroke: none)
     label(sx(i), s2y(-0.25) + 1.2, anchor: "north", text(size: fs-small)[#(i + 1)])
   }
-  label(sx(2) + 0.9, s2y(-0.06) - 0.4, anchor: "south-west", text(size: fs-small, fill: teal)[focal deficit])
+  label(sx(2) + 0.9, s2y(-0.06) - 0.4, anchor: "south-west", text(size: fs-small)[focal deficit])
   label(px + pw / 2 + 3.0, s2y(-0.25) + 4.6, anchor: "north", text(size: fs-small, fill: muted)[segment])
-  label(px + 2.0, by + 42.5, width: pw - 4.0, sm[Uniform (dashed) and focal (teal) fields share a global mean of −0.18. Recovering the mean is not a pass.])
+  label(px + 2.0, by + 42.5, width: pw - 4.0, sm[Uniform (dashed) and focal (solid) fields share a global mean of −0.18. Recovering the mean is not a pass.])
 
   label(0, H - 0.6, anchor: "south-west",
     text(size: fs-small, fill: muted)[Counts denote resource units, not independent test participants. Conceptual synthesis; no study data.])
