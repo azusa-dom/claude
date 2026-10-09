@@ -30,8 +30,8 @@ EVIDENCE = [
 ]
 
 X0, X1 = 31.0, 157.0
-EARLY = (1998.5, 2011.5)
-LATE = (2016.5, 2026.5)
+EARLY = (1998.5, 2000.5)
+LATE = (2008.5, 2026.5)
 EARLY_MM_PER_YR = 2.0
 GAP = 5.0
 LATE_MM_PER_YR = (X1 - X0 - (EARLY[1] - EARLY[0]) * EARLY_MM_PER_YR - GAP) / (LATE[1] - LATE[0])
@@ -114,11 +114,11 @@ def main():
     top = H - 2.0
     bottom = top - timeline_h
 
-    ticks = [1999, 2000, 2011] + list(range(2017, 2027))
+    ticks = [1999, 2000] + list(range(2009, 2027))
     gx0 = year_x(EARLY[1])
     # Full-height year grid lines ran through dense method labels. Position is
     # already encoded by the shared x-axis and dots, so whitespace is clearer.
-    ax.text(gx0 + GAP / 2, bottom + timeline_h / 2, "2012–2016: no entries", rotation=90,
+    ax.text(gx0 + GAP / 2, bottom + timeline_h / 2, "2001–2008: no entries", rotation=90,
             rotation_mode="anchor", ha="center", va="center", fontsize=FS_SMALL, color=MUTED)
 
     y_cursor = top
@@ -151,7 +151,7 @@ def main():
     for y in ticks:
         x = year_x(y)
         ax.plot([x, x], [ax_y, ax_y - 0.4], color=INK, lw=0.6)
-        label = str(y) if y in (1999, 2011) or y >= 2017 else ""
+        label = str(y) if y in (1999,) or y >= 2009 else ""
         if y == 2000:
             label = "2000"
         label_x = x - 0.65 if y == 1999 else x + 0.65 if y == 2000 else x
@@ -163,7 +163,7 @@ def main():
 
     counts = Counter(r["evidence"] for r in rows)
     ly = ax_y - axis_h - 2.5
-    bar_x0, bar_scale = 138.0, 0.85
+    bar_x0, bar_scale = 136.0, 0.62
     ax.text(bar_x0, ly + 2.6, "entries", ha="left", va="bottom", fontsize=FS_SMALL, color=MUTED)
     for key, text in EVIDENCE:
         ax.plot([X0 + 0.5], [ly], **marker_style(key))

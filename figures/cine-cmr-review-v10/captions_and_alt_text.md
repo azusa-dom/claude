@@ -18,9 +18,9 @@ Alt text: Three schematic annuli showing cine, tagging and DENSE information; tw
 
 **Figure 3 — `Figure_3_method_timeline`** (190 × 147 mm)
 
-Cine-CMR motion estimators by year and by the strongest validation evidence each cited source reports (Supplementary Table S3). Lanes group methods by family; marker fill encodes evidence type. Most cardiac-specific designs from 2018 to 2026 report mask or landmark agreement; material-sensitive references (known motion, DENSE or tagging) appear in 9 of 38 entries, in healthy or mixed cohorts; a prescribed focal deficit appears in one independent synthetic evaluation (MRXCAT2.0 test of DeepStrain). Evidence classes were assigned from the Table S3 cells, which are abstract- or metadata-level readings; boundary feature tracking, a method family without a single year, is not plotted. Years 2012–2016 contain no entries and are compressed. [tool statement]
+Cine-CMR motion estimators by year and by the strongest validation evidence each cited source reports (Supplementary Table S3). Lanes group methods by family; marker fill encodes evidence type. Most cardiac-specific designs from 2018 to 2026 report mask or landmark agreement; material-sensitive references (known motion, DENSE or tagging) appear in 14 of 48 entries, in healthy or mixed cohorts or in simulation; a prescribed focal deficit appears in one independent synthetic evaluation (MRXCAT2.0 test of DeepStrain). Evidence classes were assigned from the Table S3 cells, which are abstract- or metadata-level readings; boundary feature tracking, a method family without a single year, is not plotted. Years 2001–2008 contain no entries and are compressed. [tool statement]
 
-Alt text: Timeline from 1999 to 2026 with five horizontal lanes of labelled markers; marker colour shows whether each method was validated by mask agreement, a downstream label, a material-sensitive reference or prescribed focal motion; a bar legend counts 19, 7, 9, 1 and 3 entries.
+Alt text: Timeline from 1999 to 2026 with five horizontal lanes of labelled markers; marker colour shows whether each method was validated by mask agreement, a downstream label, a material-sensitive reference or prescribed focal motion; a bar legend counts 22, 8, 14, 1 and 3 entries.
 
 **Figure 4 — `Figure_4_attribute_specific_recovery`** (190 × 107 mm)
 

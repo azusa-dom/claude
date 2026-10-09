@@ -69,7 +69,7 @@ def main():
     pa.text(-0.28, 0.31, "Green–Lagrange  $E = e + e^2/2$", fontsize=8.6, va="top", color=INK)
     pa.text(-0.28, 0.24, "engineering  $e$ (dashed)", fontsize=FS_SMALL, va="top", color=MUTED)
     pa.text(-0.17, -0.205, "$e = -0.20$  vs  $E = -0.18$", fontsize=FS_SMALL, color=INK, va="center")
-    note(ax, 0, 0, "The same one-dimensional motion; the 0.02 gap is a\ndefinitional difference, not a tracking error.")
+    note(ax, 0, 0, "The same one-dimensional motion; the 0.02 gap is a\ndefinitional difference and involves no tracking error.")
 
     title(ax, 1, 0, "b", "Coordinate axes and myocardial layer")
     cx, cy = HW + 30.0, ROW_TOP[0] - 25.0

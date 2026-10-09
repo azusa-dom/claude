@@ -111,7 +111,7 @@ def main():
     d, dsd = v[("deepstrain_displacement_error_mm", "", "all_cases")]
     dice = v[("deepstrain_dice", "", "all_phases")][0]
     ax.text(84.5, 41.0, "Radial SDs overlap, so no ranking of cases is\nimplied. Errors are case-level means over whole\n"
-            "slices, not errors inside the scar region.\n"
+            "slices; errors inside the scar region were not reported.\n"
             f"Also reported: Dice {dice:.2f}; displacement error {d:.1f} ± {dsd:.1f} mm.",
             fontsize=FS_SMALL, va="top", color=INK, linespacing=1.25)
 

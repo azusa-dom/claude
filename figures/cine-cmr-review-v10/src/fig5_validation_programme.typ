@@ -30,9 +30,9 @@
   let rows = (
     ([Known motion (phantom, STRAUS, MRXCAT2.0)], [representation capacity and technical error in the simulated regime], [in-vivo accuracy]),
     ([Paired DENSE or tagging], [material-sensitive agreement under matched definitions], [focal location or extent, unless measured]),
-    ([Scan–rescan], [precision, not accuracy], [bias]),
-    ([LGE or tissue characterisation], [biological association, not motion error], [pointwise displacement error]),
-    ([Outcome], [prognostic association, not clinical utility], [decision impact]),
+    ([Scan–rescan], [precision; accuracy needs a reference], [bias]),
+    ([LGE or tissue characterisation], [biological association; motion error stays unmeasured], [pointwise displacement error]),
+    ([Outcome], [prognostic association; utility needs a decision study], [decision impact]),
   )
   let rh = 7.0
   for (i, (tg, est, no)) in rows.enumerate() {
@@ -100,6 +100,6 @@
   }
   label(sx(2) + 0.9, s2y(-0.06) - 0.4, anchor: "south-west", sm[focal deficit])
   label(px + pw / 2 + 3.0, s2y(-0.25) + 4.6, anchor: "north", mut[segment])
-  label(px, by + 44.5, width: pw, par(leading: 0.5em, mut[Uniform (dashed) and focal (solid) fields share a global mean of −0.18. Recovering the mean is not a pass.]))
+  label(px, by + 44.5, width: pw, par(leading: 0.5em, mut[Uniform (dashed) and focal (solid) fields share a global mean of −0.18. Recovering the mean proves nothing about the deficit.]))
 
 })

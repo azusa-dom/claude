@@ -76,7 +76,7 @@
   let cy = 84.0
   label(0, cy, panel("c"))
   bar(6.0, cy + 0.2, cy + 7.6, sup, thick: 0.9)
-  label(9.0, cy + 3.9, anchor: "west", text(size: 8.5pt, style: "italic")[Validation must follow the finest claimed spatial and temporal scale, not inherit credibility from an upstream task.])
+  label(9.0, cy + 3.9, anchor: "west", text(size: 8.5pt, style: "italic")[Validation must follow the finest claimed spatial and temporal scale; upstream credibility does not transfer down.])
 
   let ky = 95.6
   arrow((0.8, ky), (7.0, ky), thick: 0.7pt, paint: muted, head: 1.5)

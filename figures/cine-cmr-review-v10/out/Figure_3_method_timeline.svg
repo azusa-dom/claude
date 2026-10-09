@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="538.5827pt" height="417.3006pt" viewBox="0.0000 2.6277 453.5433 351.4110" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="538.5827pt" height="512.9016pt" viewBox="0.0000 2.6275 453.5433 431.9171" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-09T04:54:58.537172</dc:date>
+    <dc:date>2026-10-09T05:02:04.283718</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,8 +21,8 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 373.03937 
-L 453.543307 373.03937 
+   <path d="M 0 453.543307 
+L 453.543307 453.543307 
 L 453.543307 0 
 L 0 0 
 z
@@ -31,192 +31,227 @@ z
   <g id="axes_1">
    <g id="line2d_1">
     <path d="M 2.834646 5.669291 
-L 162.992126 5.669291 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+L 100.629921 5.669291 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
-    <path d="M 174.330709 5.669291 
+    <path d="M 111.968504 5.669291 
 L 449.291339 5.669291 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
-    <path d="M 2.834646 33.732283 
-L 162.992126 33.732283 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 2.834646 53.858268 
+L 100.629921 53.858268 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
-    <path d="M 174.330709 33.732283 
-L 449.291339 33.732283 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 111.968504 53.858268 
+L 449.291339 53.858268 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_5">
-    <path d="M 2.834646 61.795276 
-L 162.992126 61.795276 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 2.834646 91.984252 
+L 100.629921 91.984252 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_6">
-    <path d="M 174.330709 61.795276 
-L 449.291339 61.795276 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 111.968504 91.984252 
+L 449.291339 91.984252 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_7">
-    <path d="M 2.834646 150.23622 
-L 162.992126 150.23622 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 2.834646 200.551181 
+L 100.629921 200.551181 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_8">
-    <path d="M 174.330709 150.23622 
-L 449.291339 150.23622 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 111.968504 200.551181 
+L 449.291339 200.551181 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_9">
-    <path d="M 2.834646 198.425197 
-L 162.992126 198.425197 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 2.834646 258.80315 
+L 100.629921 258.80315 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_10">
-    <path d="M 174.330709 198.425197 
-L 449.291339 198.425197 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 111.968504 258.80315 
+L 449.291339 258.80315 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="patch_2">
-    <path d="M 391.181102 299.905512 
-L 436.96063 299.905512 
-L 436.96063 294.23622 
-L 391.181102 294.23622 
+    <path d="M 385.511811 380.409449 
+L 424.176378 380.409449 
+L 424.176378 374.740157 
+L 385.511811 374.740157 
 z
-" clip-path="url(#p1d0f1f79c3)" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6; stroke-linejoin: miter"/>
+" clip-path="url(#pdf4f2c5c3c)" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 391.181102 309.543307 
-L 408.047244 309.543307 
-L 408.047244 303.874016 
-L 391.181102 303.874016 
+    <path d="M 385.511811 390.047244 
+L 399.571654 390.047244 
+L 399.571654 384.377953 
+L 385.511811 384.377953 
 z
-" clip-path="url(#p1d0f1f79c3)" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6; stroke-linejoin: miter"/>
+" clip-path="url(#pdf4f2c5c3c)" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
-    <path d="M 391.181102 319.181102 
-L 412.866142 319.181102 
-L 412.866142 313.511811 
-L 391.181102 313.511811 
+    <path d="M 385.511811 399.685039 
+L 410.116535 399.685039 
+L 410.116535 394.015748 
+L 385.511811 394.015748 
 z
-" clip-path="url(#p1d0f1f79c3)" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6; stroke-linejoin: miter"/>
+" clip-path="url(#pdf4f2c5c3c)" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 391.181102 328.818898 
-L 393.590551 328.818898 
-L 393.590551 323.149606 
-L 391.181102 323.149606 
+    <path d="M 385.511811 409.322835 
+L 387.269291 409.322835 
+L 387.269291 403.653543 
+L 385.511811 403.653543 
 z
-" clip-path="url(#p1d0f1f79c3)" style="fill: #7a4720; stroke: #33261f; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#pdf4f2c5c3c)" style="fill: #7a4720; stroke: #33261f; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
-    <path d="M 391.181102 338.456693 
-L 398.409449 338.456693 
-L 398.409449 332.787402 
-L 391.181102 332.787402 
+    <path d="M 385.511811 418.96063 
+L 390.784252 418.96063 
+L 390.784252 413.291339 
+L 385.511811 413.291339 
 z
-" clip-path="url(#p1d0f1f79c3)" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6; stroke-linejoin: miter"/>
+" clip-path="url(#pdf4f2c5c3c)" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_11">
-    <path d="M 2.834646 266.740157 
-L 162.992126 266.740157 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 2.834646 347.244094 
+L 100.629921 347.244094 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_12">
-    <path d="M 174.330709 266.740157 
-L 449.291339 266.740157 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
+    <path d="M 111.968504 347.244094 
+L 449.291339 347.244094 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.5; stroke-linecap: square"/>
    </g>
    <g id="line2d_13">
-    <path d="M 85.03937 270.141732 
-L 164.976378 270.141732 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 85.03937 350.645669 
+L 102.614173 350.645669 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_14">
-    <path d="M 172.346457 270.141732 
-L 447.874016 270.141732 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 109.984252 350.645669 
+L 447.874016 350.645669 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_15">
-    <path d="M 163.559055 272.692913 
-L 166.393701 267.590551 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 101.19685 353.19685 
+L 104.031496 348.094488 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_16">
-    <path d="M 170.929134 272.692913 
-L 173.76378 267.590551 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 108.566929 353.19685 
+L 111.401575 348.094488 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_17">
-    <path d="M 90.708661 270.141732 
-L 90.708661 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 90.708661 350.645669 
+L 90.708661 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_18">
-    <path d="M 96.377953 270.141732 
-L 96.377953 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 96.377953 350.645669 
+L 96.377953 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_19">
-    <path d="M 158.740157 270.141732 
-L 158.740157 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 122.598425 350.645669 
+L 122.598425 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_20">
-    <path d="M 189.212598 270.141732 
-L 189.212598 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 141.023622 350.645669 
+L 141.023622 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_21">
-    <path d="M 216.141732 270.141732 
-L 216.141732 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 159.448819 350.645669 
+L 159.448819 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_22">
-    <path d="M 243.070866 270.141732 
-L 243.070866 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 177.874016 350.645669 
+L 177.874016 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_23">
-    <path d="M 270 270.141732 
-L 270 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 196.299213 350.645669 
+L 196.299213 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_24">
-    <path d="M 296.929134 270.141732 
-L 296.929134 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 214.724409 350.645669 
+L 214.724409 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_25">
-    <path d="M 323.858268 270.141732 
-L 323.858268 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 233.149606 350.645669 
+L 233.149606 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_26">
-    <path d="M 350.787402 270.141732 
-L 350.787402 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 251.574803 350.645669 
+L 251.574803 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_27">
-    <path d="M 377.716535 270.141732 
-L 377.716535 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 270 350.645669 
+L 270 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_28">
-    <path d="M 404.645669 270.141732 
-L 404.645669 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 288.425197 350.645669 
+L 288.425197 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_29">
-    <path d="M 431.574803 270.141732 
-L 431.574803 271.275591 
-" clip-path="url(#p1d0f1f79c3)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+    <path d="M 306.850394 350.645669 
+L 306.850394 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_30">
+    <path d="M 325.275591 350.645669 
+L 325.275591 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_31">
+    <path d="M 343.700787 350.645669 
+L 343.700787 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_32">
+    <path d="M 362.125984 350.645669 
+L 362.125984 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_33">
+    <path d="M 380.551181 350.645669 
+L 380.551181 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_34">
+    <path d="M 398.976378 350.645669 
+L 398.976378 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_35">
+    <path d="M 417.401575 350.645669 
+L 417.401575 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_36">
+    <path d="M 435.826772 350.645669 
+L 435.826772 351.779528 
+" clip-path="url(#pdf4f2c5c3c)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_37">
     <defs>
-     <path id="mf340c9c05f" d="M 0 2.692913 
+     <path id="m3dc98fdfc1" d="M 0 2.692913 
 C 0.714169 2.692913 1.399184 2.409171 1.904177 1.904177 
 C 2.409171 1.399184 2.692913 0.714169 2.692913 0 
 C 2.692913 -0.714169 2.409171 -1.399184 1.904177 -1.904177 
@@ -228,13 +263,13 @@ C -1.399184 2.409171 -0.714169 2.692913 0 2.692913
 z
 " style="stroke: #b2aaa2; stroke-width: 0.6"/>
     </defs>
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="89.291339" y="297.070866" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="89.291339" y="377.574803" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
-   <g id="line2d_31">
+   <g id="line2d_38">
     <defs>
-     <path id="m3b44827910" d="M 0 2.692913 
+     <path id="md498fd3b95" d="M 0 2.692913 
 C 0.714169 2.692913 1.399184 2.409171 1.904177 1.904177 
 C 2.409171 1.399184 2.692913 0.714169 2.692913 0 
 C 2.692913 -0.714169 2.409171 -1.399184 1.904177 -1.904177 
@@ -246,13 +281,13 @@ C -1.399184 2.409171 -0.714169 2.692913 0 2.692913
 z
 " style="stroke: #cc5f4f; stroke-width: 0.6"/>
     </defs>
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m3b44827910" x="89.291339" y="306.708661" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="89.291339" y="387.212598" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
     </g>
    </g>
-   <g id="line2d_32">
+   <g id="line2d_39">
     <defs>
-     <path id="mf83bf06776" d="M 0 2.692913 
+     <path id="m1b695af6bf" d="M 0 2.692913 
 C 0.714169 2.692913 1.399184 2.409171 1.904177 1.904177 
 C 2.409171 1.399184 2.692913 0.714169 2.692913 0 
 C 2.692913 -0.714169 2.409171 -1.399184 1.904177 -1.904177 
@@ -264,26 +299,26 @@ C -1.399184 2.409171 -0.714169 2.692913 0 2.692913
 z
 " style="stroke: #7a4720; stroke-width: 0.6"/>
     </defs>
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="89.291339" y="316.346457" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="89.291339" y="396.850394" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
-   <g id="line2d_33">
+   <g id="line2d_40">
     <defs>
-     <path id="m1203402071" d="M -0 3.617937 
+     <path id="mee687f042c" d="M -0 3.617937 
 L 3.617937 0 
 L 0 -3.617937 
 L -3.617937 -0 
 z
 " style="stroke: #33261f; stroke-width: 1.1; stroke-linejoin: miter"/>
     </defs>
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m1203402071" x="89.291339" y="325.984252" style="fill: #7a4720; stroke: #33261f; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#mee687f042c" x="89.291339" y="406.488189" style="fill: #7a4720; stroke: #33261f; stroke-width: 1.1; stroke-linejoin: miter"/>
     </g>
    </g>
-   <g id="line2d_34">
+   <g id="line2d_41">
     <defs>
-     <path id="m4a15ca6971" d="M 0 2.692913 
+     <path id="mbc0f2c69bf" d="M 0 2.692913 
 C 0.714169 2.692913 1.399184 2.409171 1.904177 1.904177 
 C 2.409171 1.399184 2.692913 0.714169 2.692913 0 
 C 2.692913 -0.714169 2.409171 -1.399184 1.904177 -1.904177 
@@ -295,428 +330,521 @@ C -1.399184 2.409171 -0.714169 2.692913 0 2.692913
 z
 " style="stroke: #33261f; stroke-width: 0.6"/>
     </defs>
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m4a15ca6971" x="89.291339" y="335.622047" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#mbc0f2c69bf" x="89.291339" y="416.125984" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="text_1">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #776a62" x="170.524699" y="136.204724" transform="rotate(-90 170.524699 136.204724)">2012–2016: no entries</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #776a62" x="108.162494" y="176.456693" transform="rotate(-90 108.162494 176.456693)">2001–2008: no entries</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(28.506016 18.334271)">Conventional &amp;</text>
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(37.691172 25.394452)">comparators</text>
-   </g>
-   <g id="line2d_35">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="90.708661" y="14.669291" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
-    </g>
-   </g>
-   <g id="line2d_36">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="96.377953" y="24.732283" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
-    </g>
-   </g>
-   <g id="line2d_37">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="158.740157" y="14.669291" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
-    </g>
-   </g>
-   <g id="line2d_38">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m3b44827910" x="189.212598" y="24.732283" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
-    </g>
-   </g>
-   <g id="line2d_39">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="270" y="14.669291" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
-    </g>
-   </g>
-   <g id="line2d_40">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="377.716535" y="14.669291" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
-    </g>
-   </g>
-   <g id="text_3">
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(33.515782 45.656052)">Unsupervised</text>
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(42.272032 53.750413)">registration</text>
-   </g>
-   <g id="line2d_41">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="243.070866" y="42.732283" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
-    </g>
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(28.506016 28.397263)">Conventional &amp;</text>
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(37.691172 35.457444)">comparators</text>
    </g>
    <g id="line2d_42">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="323.858268" y="42.732283" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="90.708661" y="14.669291" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_43">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="350.787402" y="52.795276" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="96.377953" y="24.732283" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_44">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="431.574803" y="42.732283" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="159.448819" y="14.669291" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
-   <g id="text_4">
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="79.370079" y="107.955201" transform="rotate(-0 79.370079 107.955201)">Cardiac-specific</text>
-   </g>
    <g id="line2d_45">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="216.141732" y="70.795276" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="270" y="34.795276" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_46">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m3b44827910" x="243.070866" y="80.858268" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="325.275591" y="24.732283" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_47">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="270" y="100.984252" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="398.976378" y="44.858268" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_48">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="270" y="90.92126" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="122.598425" y="14.669291" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_49">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="323.858268" y="70.795276" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="141.023622" y="24.732283" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_50">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="377.716535" y="70.795276" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="196.299213" y="24.732283" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_51">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m4a15ca6971" x="377.716535" y="80.858268" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="233.149606" y="14.669291" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_52">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="404.645669" y="100.984252" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="251.574803" y="24.732283" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_53">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m4a15ca6971" x="404.645669" y="90.92126" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="306.850394" y="14.669291" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
     </g>
    </g>
+   <g id="text_3">
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(33.515782 70.813533)">Unsupervised</text>
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(42.272032 78.907893)">registration</text>
+   </g>
    <g id="line2d_54">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="404.645669" y="111.047244" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="306.850394" y="62.858268" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_55">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="431.574803" y="121.110236" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="362.125984" y="62.858268" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_56">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="431.574803" y="131.173228" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="380.551181" y="72.92126" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_57">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m3b44827910" x="431.574803" y="141.23622" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="435.826772" y="82.984252" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
-   <g id="text_5">
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(46.443907 172.222982)">Physics &amp;</text>
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(33.515782 181.058553)">biomechanics</text>
+   <g id="text_4">
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="79.370079" y="148.20717" transform="rotate(-0 79.370079 148.20717)">Cardiac-specific</text>
    </g>
    <g id="line2d_58">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="350.787402" y="159.23622" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="288.425197" y="100.984252" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_59">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="350.787402" y="169.299213" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="306.850394" y="111.047244" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_60">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m4a15ca6971" x="431.574803" y="159.23622" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="325.275591" y="131.173228" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_61">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="431.574803" y="189.425197" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="325.275591" y="121.110236" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_62">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="431.574803" y="179.362205" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="362.125984" y="100.984252" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
-   <g id="text_6">
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(6.004844 230.47495)">Reference-supervised</text>
-    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(36.010704 239.310521)">&amp; end-to-end</text>
-   </g>
    <g id="line2d_63">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m3b44827910" x="216.141732" y="207.425197" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="398.976378" y="121.110236" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_64">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m3b44827910" x="243.070866" y="217.488189" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#mbc0f2c69bf" x="398.976378" y="141.23622" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_65">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="296.929134" y="217.488189" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="417.401575" y="100.984252" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_66">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="296.929134" y="207.425197" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#mbc0f2c69bf" x="417.401575" y="131.173228" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_67">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m1203402071" x="350.787402" y="227.551181" style="fill: #7a4720; stroke: #33261f; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="417.401575" y="161.362205" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_68">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="350.787402" y="217.488189" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="435.826772" y="171.425197" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_69">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m3b44827910" x="350.787402" y="207.425197" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="435.826772" y="191.551181" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_70">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="404.645669" y="237.614173" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="435.826772" y="141.23622" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_71">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf83bf06776" x="404.645669" y="247.677165" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="380.551181" y="111.047244" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_72">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#m3b44827910" x="404.645669" y="257.740157" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="417.401575" y="151.299213" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="line2d_73">
-    <g clip-path="url(#p1d0f1f79c3)">
-     <use xlink:href="#mf340c9c05f" x="431.574803" y="217.488189" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="435.826772" y="181.488189" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(46.443907 227.569438)">Physics &amp;</text>
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(33.515782 236.40501)">biomechanics</text>
+   </g>
+   <g id="line2d_74">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="380.551181" y="209.551181" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_75">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="380.551181" y="219.614173" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_76">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#mbc0f2c69bf" x="435.826772" y="229.677165" style="fill: #ffffff; stroke: #33261f; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_77">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="435.826772" y="249.80315" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_78">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="435.826772" y="239.740157" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(6.004844 300.915895)">Reference-supervised</text>
+    <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(36.010704 309.751466)">&amp; end-to-end</text>
+   </g>
+   <g id="line2d_79">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="288.425197" y="267.80315" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_80">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="306.850394" y="277.866142" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_81">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="343.700787" y="287.929134" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_82">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="343.700787" y="267.80315" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_83">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#mee687f042c" x="380.551181" y="297.992126" style="fill: #7a4720; stroke: #33261f; stroke-width: 1.1; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="line2d_84">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="380.551181" y="308.055118" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_85">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="380.551181" y="277.866142" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_86">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="417.401575" y="318.11811" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_87">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m1b695af6bf" x="417.401575" y="328.181102" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_88">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#md498fd3b95" x="417.401575" y="338.244094" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6"/>
+    </g>
+   </g>
+   <g id="line2d_89">
+    <g clip-path="url(#pdf4f2c5c3c)">
+     <use xlink:href="#m3dc98fdfc1" x="435.826772" y="267.80315" style="fill: #b2aaa2; stroke: #b2aaa2; stroke-width: 0.6"/>
     </g>
    </g>
    <g id="text_7">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="94.107939" y="280.062992" transform="rotate(-90 94.107939 280.062992)">1999</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="94.107939" y="360.566929" transform="rotate(-90 94.107939 360.566929)">1999</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="103.462269" y="280.062992" transform="rotate(-90 103.462269 280.062992)">2000</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="103.462269" y="360.566929" transform="rotate(-90 103.462269 360.566929)">2000</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="158.740157" y="279.918962" transform="rotate(-0 158.740157 279.918962)">2011</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="122.598425" y="360.422899" transform="rotate(-0 122.598425 360.422899)">2009</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="189.212598" y="279.918962" transform="rotate(-0 189.212598 279.918962)">2017</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="141.023622" y="360.422899" transform="rotate(-0 141.023622 360.422899)">2010</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="216.141732" y="279.918962" transform="rotate(-0 216.141732 279.918962)">2018</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="159.448819" y="360.422899" transform="rotate(-0 159.448819 360.422899)">2011</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="243.070866" y="279.918962" transform="rotate(-0 243.070866 279.918962)">2019</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="177.874016" y="360.422899" transform="rotate(-0 177.874016 360.422899)">2012</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="270" y="279.918962" transform="rotate(-0 270 279.918962)">2020</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="196.299213" y="360.422899" transform="rotate(-0 196.299213 360.422899)">2013</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="296.929134" y="279.918962" transform="rotate(-0 296.929134 279.918962)">2021</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="214.724409" y="360.422899" transform="rotate(-0 214.724409 360.422899)">2014</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="323.858268" y="279.918962" transform="rotate(-0 323.858268 279.918962)">2022</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="233.149606" y="360.422899" transform="rotate(-0 233.149606 360.422899)">2015</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="350.787402" y="279.918962" transform="rotate(-0 350.787402 279.918962)">2023</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="251.574803" y="360.422899" transform="rotate(-0 251.574803 360.422899)">2016</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="377.716535" y="279.918962" transform="rotate(-0 377.716535 279.918962)">2024</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="270" y="360.422899" transform="rotate(-0 270 360.422899)">2017</text>
    </g>
    <g id="text_18">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="404.645669" y="279.918962" transform="rotate(-0 404.645669 279.918962)">2025</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="288.425197" y="360.422899" transform="rotate(-0 288.425197 360.422899)">2018</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="431.574803" y="279.918962" transform="rotate(-0 431.574803 279.918962)">2026</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="306.850394" y="360.422899" transform="rotate(-0 306.850394 360.422899)">2019</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(56.818329 280.963033)">Year of</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(44.947329 287.688142)">publication</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="325.275591" y="360.422899" transform="rotate(-0 325.275591 360.422899)">2020</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #776a62" x="391.181102" y="288.185553" transform="rotate(-0 391.181102 288.185553)">entries</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="343.700787" y="360.422899" transform="rotate(-0 343.700787 360.422899)">2021</text>
    </g>
    <g id="text_22">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="298.934147" transform="rotate(-0 95.244094 298.934147)">Mask, landmark, registration or inter-method agreement</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="362.125984" y="360.422899" transform="rotate(-0 362.125984 360.422899)">2022</text>
    </g>
    <g id="text_23">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="439.795276" y="298.934147" transform="rotate(-0 439.795276 298.934147)">19</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="380.551181" y="360.422899" transform="rotate(-0 380.551181 360.422899)">2023</text>
    </g>
    <g id="text_24">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="308.571943" transform="rotate(-0 95.244094 308.571943)">Downstream label: class, LGE, outcome or expert reading</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="398.976378" y="360.422899" transform="rotate(-0 398.976378 360.422899)">2024</text>
    </g>
    <g id="text_25">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="410.88189" y="308.571943" transform="rotate(-0 410.88189 308.571943)">7</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="417.401575" y="360.422899" transform="rotate(-0 417.401575 360.422899)">2025</text>
    </g>
    <g id="text_26">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="318.209738" transform="rotate(-0 95.244094 318.209738)">Material-sensitive reference: known motion, DENSE or tagging; no focal deficit</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="435.826772" y="360.422899" transform="rotate(-0 435.826772 360.422899)">2026</text>
    </g>
    <g id="text_27">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="415.700787" y="318.209738" transform="rotate(-0 415.700787 318.209738)">9</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(56.818329 361.46697)">Year of</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(44.947329 368.192079)">publication</text>
    </g>
    <g id="text_28">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="327.847533" transform="rotate(-0 95.244094 327.847533)">Prescribed focal deficit with known motion (independent evaluation)</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #776a62" x="385.511811" y="368.68949" transform="rotate(-0 385.511811 368.68949)">entries</text>
    </g>
    <g id="text_29">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="396.425197" y="327.847533" transform="rotate(-0 396.425197 327.847533)">1</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="379.438084" transform="rotate(-0 95.244094 379.438084)">Mask, landmark, registration or inter-method agreement</text>
    </g>
    <g id="text_30">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="337.485328" transform="rotate(-0 95.244094 337.485328)">Validation data not reported</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="427.011024" y="379.438084" transform="rotate(-0 427.011024 379.438084)">22</text>
    </g>
    <g id="text_31">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="401.244094" y="337.485328" transform="rotate(-0 401.244094 337.485328)">3</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="389.07588" transform="rotate(-0 95.244094 389.07588)">Downstream label: class, LGE, outcome or expert reading</text>
    </g>
    <g id="text_32">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #776a62" x="2.834646" y="349.644075" transform="rotate(-0 2.834646 349.644075)">* tagging-side comparator   † preprint (MSc thesis)   ‡ workshop paper or no abstract retrieved   § rat model</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="402.406299" y="389.07588" transform="rotate(-0 402.406299 389.07588)">8</text>
    </g>
    <g id="text_33">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.527559" y="16.532573" transform="rotate(-0 95.527559 16.532573)">FFD</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="398.713675" transform="rotate(-0 95.244094 398.713675)">Material-sensitive reference: known motion, DENSE or tagging; no focal deficit</text>
    </g>
    <g id="text_34">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="101.19685" y="26.595565" transform="rotate(-0 101.19685 26.595565)">HARP*</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="412.951181" y="398.713675" transform="rotate(-0 412.951181 398.713675)">14</text>
    </g>
    <g id="text_35">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="163.559055" y="16.532573" transform="rotate(-0 163.559055 16.532573)">nD+t B-spline</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="408.35147" transform="rotate(-0 95.244094 408.35147)">Prescribed focal deficit with known motion (independent evaluation)</text>
    </g>
    <g id="text_36">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="194.031496" y="26.625729" transform="rotate(-0 194.031496 26.625729)">Vigneault/Puyol-Antón</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="390.103937" y="408.35147" transform="rotate(-0 390.103937 408.35147)">1</text>
    </g>
    <g id="text_37">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="274.818898" y="16.532573" transform="rotate(-0 274.818898 16.532573)">Anatomy-Aware</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.244094" y="417.989266" transform="rotate(-0 95.244094 417.989266)">Validation data not reported</text>
    </g>
    <g id="text_38">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="382.535433" y="16.532573" transform="rotate(-0 382.535433 16.532573)">Groupwise LLR</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="393.618898" y="417.989266" transform="rotate(-0 393.618898 417.989266)">3</text>
    </g>
    <g id="text_39">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="247.889764" y="44.595565" transform="rotate(-0 247.889764 44.595565)">VoxelMorph</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #776a62" x="2.834646" y="430.148012" transform="rotate(-0 2.834646 430.148012)">* tagging-side comparator   † preprint (MSc thesis)   ‡ workshop paper or no abstract retrieved   § rat model</text>
    </g>
    <g id="text_40">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="328.677165" y="44.595565" transform="rotate(-0 328.677165 44.595565)">TransMorph</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="95.527559" y="16.532573" transform="rotate(-0 95.527559 16.532573)">FFD</text>
    </g>
    <g id="text_41">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="355.606299" y="54.658557" transform="rotate(-0 355.606299 54.658557)">Fourier-Net</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="101.19685" y="26.595565" transform="rotate(-0 101.19685 26.595565)">HARP*</text>
    </g>
    <g id="text_42">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="426.755906" y="44.595565" transform="rotate(-0 426.755906 44.595565)">Fourier-Net+</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="164.267717" y="16.532573" transform="rotate(-0 164.267717 16.532573)">nD+t B-spline</text>
    </g>
    <g id="text_43">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="220.96063" y="72.658557" transform="rotate(-0 220.96063 72.658557)">Joint motion+seg</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="274.818898" y="36.688721" transform="rotate(-0 274.818898 36.688721)">Vigneault/Puyol-Antón</text>
    </g>
    <g id="text_44">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="247.889764" y="82.721549" transform="rotate(-0 247.889764 82.721549)">Apparent flow</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="330.094488" y="26.595565" transform="rotate(-0 330.094488 26.595565)">Anatomy-Aware</text>
    </g>
    <g id="text_45">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="274.818898" y="102.847533" transform="rotate(-0 274.818898 102.847533)">MPN</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="394.15748" y="46.721549" transform="rotate(-0 394.15748 46.721549)">Groupwise LLR</text>
    </g>
    <g id="text_46">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="274.818898" y="92.784541" transform="rotate(-0 274.818898 92.784541)">FOAL</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="127.417323" y="16.532573" transform="rotate(-0 127.417323 16.532573)">Maret</text>
    </g>
    <g id="text_47">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="328.677165" y="72.658557" transform="rotate(-0 328.677165 72.658557)">MulViMotion</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="145.84252" y="26.595565" transform="rotate(-0 145.84252 26.595565)">Hor</text>
    </g>
    <g id="text_48">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="382.535433" y="72.658557" transform="rotate(-0 382.535433 72.658557)">DeepMesh</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="201.11811" y="26.595565" transform="rotate(-0 201.11811 26.595565)">Augustine</text>
    </g>
    <g id="text_49">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="382.535433" y="82.721549" transform="rotate(-0 382.535433 82.721549)">Low-rank GW†</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="237.968504" y="16.532573" transform="rotate(-0 237.968504 16.532573)">Laplace mapping</text>
    </g>
    <g id="text_50">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="409.464567" y="102.847533" transform="rotate(-0 409.464567 102.847533)">MCM‡</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="256.393701" y="26.595565" transform="rotate(-0 256.393701 26.595565)">Data assimilation</text>
    </g>
    <g id="text_51">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="409.464567" y="92.784541" transform="rotate(-0 409.464567 92.784541)">CMR FMs</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="311.669291" y="16.532573" transform="rotate(-0 311.669291 16.532573)">Optical flow</text>
    </g>
    <g id="text_52">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="399.826772" y="112.910525" transform="rotate(-0 399.826772 112.910525)">Semi-sup. flow</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="311.669291" y="64.721549" transform="rotate(-0 311.669291 64.721549)">VoxelMorph</text>
    </g>
    <g id="text_53">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="426.755906" y="122.973517" transform="rotate(-0 426.755906 122.973517)">CardioMorphNet</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="366.944882" y="64.721549" transform="rotate(-0 366.944882 64.721549)">TransMorph</text>
    </g>
    <g id="text_54">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="426.755906" y="133.03651" transform="rotate(-0 426.755906 133.03651)">Latent ODE</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="385.370079" y="74.784541" transform="rotate(-0 385.370079 74.784541)">Fourier-Net</text>
    </g>
    <g id="text_55">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="426.755906" y="143.099502" transform="rotate(-0 426.755906 143.099502)">STCMT</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="84.847533" transform="rotate(-0 431.007874 84.847533)">Fourier-Net+</text>
    </g>
    <g id="text_56">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="355.606299" y="161.099502" transform="rotate(-0 355.606299 161.099502)">Biomech prior</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="293.244094" y="102.847533" transform="rotate(-0 293.244094 102.847533)">Joint motion+seg</text>
    </g>
    <g id="text_57">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="355.606299" y="171.162494" transform="rotate(-0 355.606299 171.162494)">WarpPINN</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="311.669291" y="112.910525" transform="rotate(-0 311.669291 112.910525)">Apparent flow</text>
    </g>
    <g id="text_58">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="426.755906" y="161.099502" transform="rotate(-0 426.755906 161.099502)">INR‡</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="330.094488" y="133.03651" transform="rotate(-0 330.094488 133.03651)">MPN</text>
    </g>
    <g id="text_59">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="426.755906" y="191.288478" transform="rotate(-0 426.755906 191.288478)">WarpPINN-fibers</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="330.094488" y="122.973517" transform="rotate(-0 330.094488 122.973517)">FOAL</text>
    </g>
    <g id="text_60">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="426.755906" y="181.225486" transform="rotate(-0 426.755906 181.225486)">Space-time FE</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="366.944882" y="102.847533" transform="rotate(-0 366.944882 102.847533)">MulViMotion</text>
    </g>
    <g id="text_61">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="220.96063" y="209.288478" transform="rotate(-0 220.96063 209.288478)">Cine-only MI</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="403.795276" y="122.973517" transform="rotate(-0 403.795276 122.973517)">DeepMesh</text>
    </g>
    <g id="text_62">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="247.889764" y="219.35147" transform="rotate(-0 247.889764 219.35147)">Survival-sup.</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="394.15748" y="143.099502" transform="rotate(-0 394.15748 143.099502)">Low-rank GW†</text>
    </g>
    <g id="text_63">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="301.748031" y="219.35147" transform="rotate(-0 301.748031 219.35147)">DeepTag*</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="422.220472" y="102.847533" transform="rotate(-0 422.220472 102.847533)">MCM‡</text>
    </g>
    <g id="text_64">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="301.748031" y="209.288478" transform="rotate(-0 301.748031 209.288478)">DeepStrain</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="412.582677" y="133.03651" transform="rotate(-0 412.582677 133.03651)">CMR FMs</text>
    </g>
    <g id="text_65">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="345.968504" y="229.414462" transform="rotate(-0 345.968504 229.414462)">MRXCAT2.0 test of DeepStrain</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="412.582677" y="163.225486" transform="rotate(-0 412.582677 163.225486)">Semi-sup. flow</text>
    </g>
    <g id="text_66">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="355.606299" y="219.35147" transform="rotate(-0 355.606299 219.35147)">StrainNet</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="173.288478" transform="rotate(-0 431.007874 173.288478)">CardioMorphNet</text>
    </g>
    <g id="text_67">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="355.606299" y="209.288478" transform="rotate(-0 355.606299 209.288478)">DL synthetic strain</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="193.414462" transform="rotate(-0 431.007874 193.414462)">Latent ODE</text>
    </g>
    <g id="text_68">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="399.826772" y="239.477454" transform="rotate(-0 399.826772 239.477454)">3D tagging nets*</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="143.099502" transform="rotate(-0 431.007874 143.099502)">STCMT</text>
    </g>
    <g id="text_69">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="399.826772" y="249.540447" transform="rotate(-0 399.826772 249.540447)">DENSE-rotation</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="385.370079" y="112.910525" transform="rotate(-0 385.370079 112.910525)">Bidirectional reg.</text>
    </g>
    <g id="text_70">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="399.826772" y="259.603439" transform="rotate(-0 399.826772 259.603439)">DL aligned strain</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="412.582677" y="153.162494" transform="rotate(-0 412.582677 153.162494)">SegMorph</text>
    </g>
    <g id="text_71">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="426.755906" y="219.35147" transform="rotate(-0 426.755906 219.35147)">MyoNet§</text>
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="183.35147" transform="rotate(-0 431.007874 183.35147)">IG-BiReg</text>
+   </g>
+   <g id="text_72">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="385.370079" y="211.414462" transform="rotate(-0 385.370079 211.414462)">Biomech prior</text>
+   </g>
+   <g id="text_73">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="385.370079" y="221.477454" transform="rotate(-0 385.370079 221.477454)">WarpPINN</text>
+   </g>
+   <g id="text_74">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="231.540447" transform="rotate(-0 431.007874 231.540447)">INR‡</text>
+   </g>
+   <g id="text_75">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="251.666431" transform="rotate(-0 431.007874 251.666431)">WarpPINN-fibers</text>
+   </g>
+   <g id="text_76">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="241.603439" transform="rotate(-0 431.007874 241.603439)">Space-time FE</text>
+   </g>
+   <g id="text_77">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="293.244094" y="269.666431" transform="rotate(-0 293.244094 269.666431)">Cine-only MI</text>
+   </g>
+   <g id="text_78">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="311.669291" y="279.729423" transform="rotate(-0 311.669291 279.729423)">Survival-sup.</text>
+   </g>
+   <g id="text_79">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="348.519685" y="289.792415" transform="rotate(-0 348.519685 289.792415)">DeepTag*</text>
+   </g>
+   <g id="text_80">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="348.519685" y="269.666431" transform="rotate(-0 348.519685 269.666431)">DeepStrain</text>
+   </g>
+   <g id="text_81">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="375.732283" y="299.855407" transform="rotate(-0 375.732283 299.855407)">MRXCAT2.0 test of DeepStrain</text>
+   </g>
+   <g id="text_82">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="385.370079" y="309.918399" transform="rotate(-0 385.370079 309.918399)">StrainNet</text>
+   </g>
+   <g id="text_83">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="385.370079" y="279.729423" transform="rotate(-0 385.370079 279.729423)">DL synthetic strain</text>
+   </g>
+   <g id="text_84">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="412.582677" y="319.981391" transform="rotate(-0 412.582677 319.981391)">3D tagging nets*</text>
+   </g>
+   <g id="text_85">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="412.582677" y="330.044384" transform="rotate(-0 412.582677 330.044384)">DENSE-rotation</text>
+   </g>
+   <g id="text_86">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="412.582677" y="340.107376" transform="rotate(-0 412.582677 340.107376)">DL aligned strain</text>
+   </g>
+   <g id="text_87">
+    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="431.007874" y="269.666431" transform="rotate(-0 431.007874 269.666431)">MyoNet§</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p1d0f1f79c3">
-   <rect x="0" y="0" width="453.543307" height="373.03937"/>
+  <clipPath id="pdf4f2c5c3c">
+   <rect x="0" y="0" width="453.543307" height="453.543307"/>
   </clipPath>
  </defs>
 </svg>
