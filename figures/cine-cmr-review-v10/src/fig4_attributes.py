@@ -6,7 +6,7 @@ from pathlib import Path
 from matplotlib.patches import Circle, FancyBboxPatch, Rectangle
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from figstyle import (CORAL, CORAL_T, FS_BODY, FS_SMALL, FS_TITLE, SUP, OBS, INK, MAIN_W,  # noqa: E402
+from figstyle import (CORAL, CORAL_T, FS_BODY, FS_SMALL, FS_TITLE, OBS, INK, MAIN_W,  # noqa: E402
                       MUTED, ERR, REF, RULE, canvas, panel_label, save, sub_axes)
 
 DATA = Path(__file__).resolve().parents[1] / "data" / "mrxcat2_values.csv"
@@ -20,16 +20,6 @@ def values():
             key = (r["quantity"], r["component"], r["group"])
             out[key] = (float(r["mean"]), float(r["sd"]) if r["sd"] else None)
     return out
-
-
-def check(ax, x, y, s=1.3, color=SUP):
-    ax.plot([x - s, x - s * 0.35, x + s], [y, y - s * 0.7, y + s * 0.9], color=color, lw=1.2,
-            solid_capstyle="round", solid_joinstyle="round")
-
-
-def cross(ax, x, y, s=1.0, color=ERR):
-    ax.plot([x - s, x + s], [y - s, y + s], color=color, lw=1.2, solid_capstyle="round")
-    ax.plot([x - s, x + s], [y + s, y - s], color=color, lw=1.2, solid_capstyle="round")
 
 
 def open_circle(ax, x, y, dashed=False):
@@ -71,7 +61,7 @@ def main():
     ef = int(v[("ejection_fraction_pct", "", "infarct")][0])
     pa.text(0.75, 1.02, f"Infarct case EF {ef}%:\nremote tissue compensates", ha="left", va="top",
             fontsize=FS_SMALL, color=INK, linespacing=1.15)
-    pa.text(0.75, 0.62, "Radial and circumferential\nstrain largely abolished in\nscar; longitudinal almost\nunchanged",
+    pa.text(0.75, 0.62, "Radial strain markedly\nreduced (0.95 → 0.30);\ncircumferential near zero;\nlongitudinal almost unchanged",
             ha="left", va="top", fontsize=FS_SMALL, color=MUTED, linespacing=1.15)
     lx, ly = 15.0, 37.5
     ax.add_patch(Rectangle((lx, ly - 1.1), 3.2, 2.2, facecolor=REF, edgecolor=REF, lw=0.6))
@@ -85,7 +75,7 @@ def main():
     ax.text(84.5, top - 0.9, "Estimator error (DeepStrain)", fontsize=FS_TITLE, fontweight="bold", va="top")
     pb = sub_axes(fig, W, H, 108.0, 50.0, 49.0, 32.0)
     rows = [
-        ("Circumferential,\nall four cases", v[("deepstrain_error", "circumferential", "all_cases")], SUP, True),
+        ("Circumferential,\nall four cases", v[("deepstrain_error", "circumferential", "all_cases")], OBS, True),
         ("Radial,\nall four cases", v[("deepstrain_error", "radial", "all_cases")], ERR, True),
         ("Radial,\ninfarct case", v[("deepstrain_error", "radial", "infarct_case")], ERR, False),
     ]
@@ -110,8 +100,8 @@ def main():
     pb.text(0.0, 2.6, "no error", ha="center", va="bottom", fontsize=FS_SMALL, color=MUTED)
     d, dsd = v[("deepstrain_displacement_error_mm", "", "all_cases")]
     dice = v[("deepstrain_dice", "", "all_phases")][0]
-    ax.text(84.5, 41.0, "Radial SDs overlap, so no ranking of cases is\nimplied. Errors are case-level means over whole\n"
-            "slices; errors inside the scar region were not reported.\n"
+    ax.text(84.5, 41.0, "No between-case test was reported, so no case\nordering is implied. Errors are case-level means over\n"
+            "whole slices; scar-region errors were not reported.\n"
             f"Also reported: Dice {dice:.2f}; displacement error {d:.1f} ± {dsd:.1f} mm.",
             fontsize=FS_SMALL, va="top", color=INK, linespacing=1.25)
 
@@ -119,7 +109,7 @@ def main():
     panel_label(ax, 0.5, 29.5, "c")
     ax.text(5.0, 28.6, "Abnormality attributes in this experiment", fontsize=FS_TITLE, fontweight="bold", va="top")
     items = [
-        ("Magnitude", "partial", "Ecc close to ground truth;\nErr under-estimated"),
+        ("Magnitude", "nr", "scar-level error not reported;\nslice means: Ecc error small,\nErr under-estimated"),
         ("Location", "nr", "myocardial Dice only;\nno lesion-centroid error"),
         ("Extent", "nr", "one fixed scar geometry;\nextent recovery not measured"),
         ("Timing", "ni", "peak-time error not\nin the record read"),
@@ -133,23 +123,16 @@ def main():
         ax.text(bx + 2.0, y - 3.0, name, fontsize=FS_BODY, fontweight="bold", va="center")
         ax.text(bx + 2.0, y - 6.0, note, fontsize=FS_SMALL, va="top", color=MUTED, linespacing=1.2)
         sx, sy = bx + bw_ - 3.4, y - 3.0
-        if status == "partial":
-            check(ax, sx - 4.4, sy)
-            cross(ax, sx, sy)
-        elif status == "nr":
+        if status == "nr":
             open_circle(ax, sx, sy)
         else:
             open_circle(ax, sx, sy, dashed=True)
     ky = y - bh - 4.0
     kx = 0.8
-    check(ax, kx + 1.4, ky, s=0.9)
-    ax.text(kx + 3.2, ky, "held", fontsize=FS_SMALL, va="center")
-    cross(ax, kx + 12.0, ky, s=0.75)
-    ax.text(kx + 13.6, ky, "lost or biased", fontsize=FS_SMALL, va="center")
-    open_circle(ax, kx + 33.5, ky)
-    ax.text(kx + 35.2, ky, "not reported", fontsize=FS_SMALL, va="center")
-    open_circle(ax, kx + 54.0, ky, dashed=True)
-    ax.text(kx + 55.7, ky, "not inspected", fontsize=FS_SMALL, va="center")
+    open_circle(ax, kx + 1.4, ky)
+    ax.text(kx + 3.1, ky, "not reported at the attribute's own (scar) level", fontsize=FS_SMALL, va="center")
+    open_circle(ax, kx + 68.0, ky, dashed=True)
+    ax.text(kx + 69.7, ky, "not inspected in the record read", fontsize=FS_SMALL, va="center")
 
     # Panels a and b have deliberately different inferential roles and plot-area
     # geometries; panel c is a card grid. Treat the alignment gate as N/A rather
