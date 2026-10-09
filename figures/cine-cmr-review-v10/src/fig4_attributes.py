@@ -128,10 +128,10 @@ def main():
     y = 23.0
     for i, (name, status, note) in enumerate(items):
         bx = 0.8 + i * (bw_ + gap)
-        ax.add_patch(FancyBboxPatch((bx, y - bh), bw_, bh, boxstyle="round,pad=0,rounding_size=1.0",
-                                    facecolor="white", edgecolor=RULE, lw=0.7))
+        if i:
+            ax.plot([bx - gap / 2, bx - gap / 2], [y - bh + 1.0, y - 0.5], color=RULE, lw=0.6)
         ax.text(bx + 2.0, y - 3.0, name, fontsize=FS_BODY, fontweight="bold", va="center")
-        ax.text(bx + 2.0, y - 6.0, note, fontsize=FS_SMALL, va="top", color=INK, linespacing=1.2)
+        ax.text(bx + 2.0, y - 6.0, note, fontsize=FS_SMALL, va="top", color=MUTED, linespacing=1.2)
         sx, sy = bx + bw_ - 3.4, y - 3.0
         if status == "partial":
             check(ax, sx - 4.4, sy)

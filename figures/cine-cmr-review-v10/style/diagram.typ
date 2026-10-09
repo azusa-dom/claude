@@ -47,3 +47,34 @@
 
 // Invisible rectangle that fixes the canvas to exactly W x H millimetres.
 #let frame(w, h) = draw.rect(P(0, 0), P(w, h), stroke: none, fill: none)
+
+// ---- light-weight elements: colour as accent, text on white ----
+#let badge(x, y, n, fill, r: 2.6, size: 7.5pt) = {
+  draw.circle(P(x, y), radius: r, fill: fill, stroke: none)
+  draw.content(P(x, y), text(size: size, weight: "bold", fill: white, n))
+}
+
+#let ring(x, y, r, paint, thick: 0.7pt, fill: white) = draw.circle(P(x, y), radius: r, fill: fill,
+  stroke: (paint: paint, thickness: thick))
+
+#let hrule(x0, x1, y, paint: rule, thick: 0.4pt) = seg((x0, y), (x1, y), paint: paint, thick: thick)
+
+#let bar(x, y0, y1, paint, thick: 1.0) = draw.rect(P(x, y0), P(x + thick, y1), fill: paint, stroke: none)
+
+#let pill(x, y, w, h, body, paint: rule) = {
+  draw.rect(P(x, y), P(x + w, y + h), radius: h / 2, fill: white, stroke: (paint: paint, thickness: 0.5pt))
+  draw.content(P(x + h / 2.2, y + h / 2), anchor: "west", text(size: fs-small, body))
+}
+
+#let tick(x, y, s: 1.0, paint: sup) = draw.line(P(x - s, y), P(x - s * 0.3, y + s * 0.7), P(x + s, y - s * 0.8),
+  stroke: (paint: paint, thickness: 0.9pt, cap: "round", join: "round"))
+
+#let cross(x, y, s: 0.8, paint: muted) = {
+  draw.line(P(x - s, y - s), P(x + s, y + s), stroke: (paint: paint, thickness: 0.8pt, cap: "round"))
+  draw.line(P(x - s, y + s), P(x + s, y - s), stroke: (paint: paint, thickness: 0.8pt, cap: "round"))
+}
+
+#let dotkey(x, y, fill, body) = {
+  draw.circle(P(x, y), radius: 1.1, fill: fill, stroke: none)
+  draw.content(P(x + 2.2, y), anchor: "west", text(size: fs-small, fill: muted, body))
+}

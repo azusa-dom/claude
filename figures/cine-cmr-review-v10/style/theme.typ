@@ -32,7 +32,7 @@
 
 #let setup(width, height: auto, body) = {
   set page(width: width, height: height, margin: 0pt, fill: white)
-  set text(font: sans, size: fs-body, fill: ink, lang: "en")
+  set text(font: sans, size: fs-body, fill: ink, lang: "en", hyphenate: false)
   set par(leading: 0.45em, justify: false)
   body
 }

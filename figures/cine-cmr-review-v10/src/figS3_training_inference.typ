@@ -3,52 +3,60 @@
 #show: setup.with(166mm)
 
 #let W = 166
-#let H = 69.0
+#let H = 64.0
 #let head(t) = text(weight: "bold", size: fs-body, t)
 #let sm(t) = text(size: fs-small, t)
+#let mut(t) = text(size: fs-small, fill: muted, t)
 
 #canvas(length: 1mm, {
   frame(W, H)
-  let colw = 78.0
-  let cols = (
-    (0.8, [Training-time control], (
-      ([Loss weight #m[λ]], [changed in the training objective]),
+  let lanes = (
+    (9.0, [Training-time control], [the setting lives in the training objective], (
+      ([Loss weight #m[λ]], [changed in the objective]),
       ([Matched retraining], [same data, splits and schedule]),
       ([Models A, B], [one trained model per setting]),
     )),
-    (W - colw - 0.8, [Inference-time control], (
+    (27.0, [Inference-time control], [the setting is exposed at test time], (
       ([Exposed parameter], [post-processing or a biomechanical solve]),
       ([Same trained model], [no retraining]),
       ([Outputs A, B], [one output per setting]),
     )),
   )
-  let bw = 24.0
-  let bh = 23.0
-  let by = 7.5
-  for (x0, heading, boxes) in cols {
-    label(x0, 0.8, text(size: fs-title, weight: "bold", heading))
-    for (i, (t, d)) in boxes.enumerate() {
-      let x = x0 + i * (bw + 3.0)
-      let f = if i == 0 { white } else { inf-t }
-      let p = if i == 0 { ink } else { inf }
-      node(x, by, bw, bh, fill: f, paint: p, [#head(t)#v(0.8mm)#sm(d)])
+  let sx = (44.0, 85.0, 126.0)
+  let joinx = W - 1.0
+  for (y, name, sub, steps) in lanes {
+    label(0.8, y - 2.4, box(width: 38mm, stack(dir: ttb, spacing: 1.3mm, text(size: fs-title, weight: "bold", name), mut(sub))))
+    for (i, (t, d)) in steps.enumerate() {
+      let x = sx.at(i)
+      draw.circle(P(x, y), radius: 1.2, fill: if i == 0 { ink } else { inf }, stroke: none)
+      label(x + 2.4, y - 2.4, box(width: 32mm, stack(dir: ttb, spacing: 1.3mm, head(t), par(leading: 0.5em, mut(d)))))
       if i < 2 {
-        arrow((x + bw + 0.3, by + bh / 2), (x + bw + 2.7, by + bh / 2), thick: 0.8pt, head: 1.4)
+        arrow((x + 34.0, y), (sx.at(i + 1) - 2.2, y), thick: 0.6pt, paint: muted, head: 1.4)
       }
     }
-    let last = x0 + 2 * (bw + 3.0) + bw / 2
-    arrow((last, by + bh + 0.4), (last, 38.6), thick: 0.8pt)
+    seg((sx.at(2) + 36.4, y), (joinx, y), paint: muted, thick: 0.6pt)
   }
-  label(0.8, by + bh + 2.0, width: 2 * bw + 3.0,
-    text(size: fs-small, fill: muted)[Varying #m[λ] only at test time has no effect unless the trained model exposes it.])
+  seg((joinx, 9.0), (joinx, 27.0), paint: muted, thick: 0.6pt)
+  arrow((joinx, 27.0), (joinx, 41.6), thick: 0.6pt, paint: muted, head: 1.5)
 
-  node(0.8, 39.0, W - 1.6, 16.0, fill: ref-t, paint: ref, halign: center,
-    [#head[Shared held-out evaluation]#v(1.0mm)#sm[held-out cases · same estimand · same reference · attribute-specific losses (magnitude, location, extent, timing, field validity)]#v(0.6mm)#text(size: fs-small, fill: muted)[final test cases kept out of model, hyperparameter and rule selection]])
+  label(0.8, 36.0, text(size: fs-small, style: "italic", fill: muted)[Varying #m[λ] only at test time has no effect unless the trained model exposes it.])
 
-  let ky = 60.5
-  arrow((1.0, ky), (8.0, ky), thick: 0.8pt, head: 1.4)
-  label(9.2, ky, sm[produces the input to the next step], anchor: "west")
-  swatch(70.0, ky, inf-t, inf, [estimator state])
-  swatch(100.0, ky, ref-t, ref, [evaluation against a reference])
-  label(W - 0.8, H - 0.6, anchor: "south-east", text(size: fs-small, fill: muted)[Conceptual schematic; no study data.])
+  let ey = 42.6
+  hrule(0.8, W - 0.8, ey, paint: ref, thick: 0.9pt)
+  label(0.8, ey + 4.6, anchor: "west", text(size: fs-title, weight: "bold")[Shared held-out evaluation])
+  let px = 52.0
+  for (w, t) in ((24.0, [held-out cases]), (24.0, [same estimand]), (25.0, [same reference]), (34.0, [attribute-specific losses])) {
+    pill(px, ey + 2.3, w, 4.6, t, paint: ref)
+    px += w + 2.0
+  }
+  label(0.8, ey + 9.6, mut[attribute-specific losses: magnitude, location, extent, timing, field validity · final test cases are kept out of model, hyperparameter and rule selection])
+
+  let ky = H - 2.4
+  draw.circle(P(1.8, ky), radius: 1.1, fill: ink, stroke: none)
+  label(3.8, ky, anchor: "west", mut[control setting])
+  draw.circle(P(27.0, ky), radius: 1.1, fill: inf, stroke: none)
+  label(29.0, ky, anchor: "west", mut[estimator state])
+  seg((50.0, ky), (55.0, ky), paint: ref, thick: 0.9pt)
+  label(56.4, ky, anchor: "west", mut[evaluation against a reference])
+  label(W - 0.8, ky, anchor: "east", mut[Conceptual schematic; no study data.])
 })
