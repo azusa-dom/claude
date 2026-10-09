@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1800">
+<title>Two-Track Evidence Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #33261F;
+    --muted: #776A62;
+    --agar: #8D6449;        /* 沈香墨 */
+    --agar-deep: #7A4720;
+    --silk: #F8F3E7;        /* 素绢白 */
+    --sandal: #C0997F;      /* 檀木棕 */
+    --pear: #E7A49A;        /* 棠梨绯 */
+    --pear-deep: #C0584A;
+    --pear-tint: #F8E0DA;
+    --err: #A33A2E;
+    --obs: #8E857D;
+    --head-grad: linear-gradient(92deg, #8D6449 0%, #A8705F 55%, #C0584A 100%);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #FBF7EF; }
+  body { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+  .poster {
+    position: relative; width: 1800px; height: 1400px; overflow: hidden;
+    background:
+      radial-gradient(900px 620px at 92% 4%, rgba(231,164,154,.42), transparent 70%),
+      radial-gradient(700px 520px at 2% 98%, rgba(192,153,127,.30), transparent 70%),
+      radial-gradient(600px 400px at 55% 60%, rgba(248,224,218,.35), transparent 75%),
+      linear-gradient(180deg, #FCF8F1 0%, #F8F1E6 100%);
+  }
+  .watermark {
+    position: absolute; right: 30px; top: -170px; font-size: 820px; font-weight: 900; line-height: 1;
+    background: var(--head-grad); -webkit-background-clip: text; background-clip: text; color: transparent; opacity: .07;
+    pointer-events: none;
+  }
+  .grad-text { background: var(--head-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  /* ---------- header ---------- */
+  .header { position: absolute; left: 80px; top: 58px; width: 1640px; }
+  .eyebrow { display: flex; align-items: center; gap: 16px; font-size: 17px; letter-spacing: .2em; color: var(--agar); font-weight: 500; }
+  .eyebrow::before { content: ""; width: 44px; height: 2px; background: var(--agar); }
+  h1 { margin-top: 18px; font-size: 56px; line-height: 1.08; font-weight: 800; letter-spacing: -.024em; max-width: 1640px; }
+  .sub { margin-top: 16px; font-size: 24px; font-style: italic; font-weight: 500; color: var(--agar); }
+  .legend { position: absolute; right: 0; top: 0; display: flex; gap: 22px; font-size: 16px; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .legend i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+
+  /* ---------- tracks ---------- */
+  .track { position: absolute; left: 80px; width: 1640px; border-radius: 30px; display: flex; padding: 26px; gap: 28px; }
+  .track-a {
+    top: 300px; height: 400px;
+    background: linear-gradient(100deg, rgba(255,255,255,.78) 0%, rgba(255,250,245,.72) 45%, rgba(248,224,218,.70) 100%);
+    border: 1px solid rgba(192,153,127,.32);
+    box-shadow: 0 30px 60px -30px rgba(122,71,32,.28), 0 2px 0 rgba(255,255,255,.8) inset;
+  }
+  .track-b {
+    top: 912px; height: 262px;
+    background:
+      radial-gradient(600px 300px at 100% 0%, rgba(231,164,154,.30), transparent 70%),
+      linear-gradient(100deg, #34251D 0%, #4E3527 40%, #7A5040 80%, #8E5A4A 100%);
+    box-shadow: 0 36px 70px -30px rgba(52,37,29,.55);
+    color: #F8F3E7;
+  }
+  .label { width: 232px; flex: none; display: flex; flex-direction: column; justify-content: center; padding-left: 10px; }
+  .label .letter { font-size: 96px; font-weight: 900; line-height: .9; letter-spacing: -.04em; }
+  .label .kick { margin-top: 14px; font-size: 15px; letter-spacing: .2em; font-weight: 600; }
+  .label .desc { margin-top: 8px; font-size: 19px; line-height: 1.3; font-weight: 500; }
+  .track-a .label .kick { color: var(--agar); }
+  .track-a .label .desc { color: var(--muted); }
+  .track-b .label .letter { background: linear-gradient(160deg, #F8E0DA, #E7A49A 60%, #C0997F); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .track-b .label .kick { color: #E7A49A; }
+  .track-b .label .desc { color: rgba(248,243,231,.78); }
+
+  .stages { flex: 1; display: flex; align-items: stretch; gap: 0; }
+  .stage {
+    flex: 1; position: relative; border-radius: 22px; padding: 22px 22px 20px;
+    background: rgba(255,255,255,.86);
+    box-shadow: 0 18px 36px -22px rgba(122,71,32,.35);
+    display: flex; flex-direction: column;
+  }
+  .stage::before { content: ""; position: absolute; left: 22px; top: 0; width: 46px; height: 4px; border-radius: 0 0 4px 4px; background: var(--c, var(--agar)); }
+  .stage .top { display: flex; align-items: center; gap: 10px; }
+  .chip { width: 30px; height: 30px; border-radius: 50%; color: #fff; font-weight: 700; font-size: 15px; display: grid; place-items: center; background: var(--c); }
+  .stage .tag { font-size: 13px; letter-spacing: .18em; font-weight: 600; color: var(--c); }
+  .stage h3 { margin-top: 10px; font-size: 24px; line-height: 1.12; font-weight: 750; letter-spacing: -.01em; }
+  .stage .vis { flex: 1; display: grid; place-items: center; min-height: 150px; padding: 8px 0; }
+  .stage .cap { font-size: 15.5px; line-height: 1.35; color: var(--muted); }
+  .stage .cap b { color: var(--ink); font-weight: 650; }
+  .arrow { width: 44px; flex: none; display: grid; place-items: center; }
+  .s-obs  { --c: #8E857D; }
+  .s-inf  { --c: #C0584A; }
+  .s-inf2 { --c: #B04E44; }
+  .s-def  { --c: #8D6449; }
+  .hat { position: relative; display: inline-block; }
+  .hat::after { content: "^"; position: absolute; left: 50%; top: -.3em; transform: translateX(-45%); font-style: normal; font-size: .8em; }
+  .formula { font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif; font-style: italic; color: var(--ink); }
+
+  /* ---------- bridge (attributes) ---------- */
+  .bridge { position: absolute; left: 80px; top: 728px; width: 1640px; height: 160px; display: flex; gap: 28px; padding: 0 26px; }
+  .bridge .label { padding-left: 10px; }
+  .bridge .label .kick { margin-top: 0; color: var(--agar); }
+  .bridge .label .desc { color: var(--ink); font-weight: 650; font-size: 21px; }
+  .bridge .label .note { margin-top: 8px; font-size: 14.5px; color: var(--muted); line-height: 1.35; }
+  .attrs { flex: 1; min-width: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  .attr {
+    position: relative; border-radius: 20px; padding: 16px 18px 14px;
+    background: linear-gradient(160deg, rgba(255,255,255,.92), rgba(248,243,231,.86));
+    border: 1px solid rgba(192,153,127,.30);
+    display: grid; grid-template-columns: 50px minmax(0, 1fr) 112px; grid-template-rows: auto auto; column-gap: 10px; align-items: center;
+  }
+  .attr .L { grid-row: 1 / span 2; font-size: 54px; font-weight: 900; line-height: 1; letter-spacing: -.04em; }
+  .attr .name { font-size: 21px; font-weight: 750; }
+  .attr .q { font-size: 14px; line-height: 1.25; color: var(--muted); }
+  .attr svg.curve { grid-row: 1 / span 2; grid-column: 3; }
+  .attr .meter { grid-column: 1 / span 3; margin-top: 10px; display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--muted); }
+  .attr .meter i { width: 12px; height: 12px; border-radius: 50%; border: 1.6px solid #C0997F; display: inline-block; }
+  .attr .meter i.on { border-color: transparent; background: linear-gradient(135deg, #8D6449, #C0584A); }
+  .attr .meter b { margin-left: auto; font-size: 22px; font-weight: 800; color: var(--ink); letter-spacing: -.01em; }
+  .attr .meter b small { font-size: 14px; font-weight: 600; color: var(--muted); }
+  .attr.weak .meter b { color: var(--err); }
+
+  .connector { position: absolute; left: 50%; width: 2px; transform: translateX(-1px); }
+
+  /* ---------- validation targets ---------- */
+  .targets { flex: 1; min-width: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+  .target {
+    border-radius: 20px; padding: 18px 20px 16px;
+    background: linear-gradient(170deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+    border: 1px solid rgba(248,243,231,.18);
+    display: flex; flex-direction: column;
+  }
+  .target .hd { display: flex; align-items: center; gap: 14px; }
+  .target h4 { font-size: 21px; line-height: 1.12; font-weight: 750; color: #FFF8EF; }
+  .target .src { margin-top: 3px; font-size: 13px; letter-spacing: .06em; color: rgba(248,243,231,.6); }
+  .target .yes, .target .no { margin-top: 12px; font-size: 15.5px; line-height: 1.32; display: flex; gap: 9px; }
+  .target .yes { color: #F8F3E7; }
+  .target .no { margin-top: 8px; color: #F1B8AE; }
+  .target .yes::before, .target .no::before { flex: none; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 800; margin-top: 1px; }
+  .target .yes::before { content: "✓"; background: rgba(248,243,231,.92); color: #4E3527; }
+  .target .no::before { content: "✕"; background: rgba(231,164,154,.25); color: #F1B8AE; border: 1px solid rgba(231,164,154,.6); }
+
+  /* ---------- verdict ---------- */
+  .verdict { position: absolute; left: 80px; top: 1206px; width: 1640px; }
+  .bar-wrap { display: flex; align-items: center; gap: 18px; font-size: 15px; color: var(--muted); }
+  .bar { flex: 1; height: 16px; border-radius: 10px; background: linear-gradient(90deg, #5B3E2E 0%, #8D6449 22%, #C0997F 48%, #E7A49A 66%, #C0584A 84%, #A33A2E 100%); box-shadow: 0 8px 18px -10px rgba(163,58,46,.6); position: relative; }
+  .bar::after { content: ""; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); border-left: 14px solid #A33A2E; border-top: 11px solid transparent; border-bottom: 11px solid transparent; }
+  .cols { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; }
+  .col { border-top: 3px solid var(--c); padding-top: 12px; }
+  .col h5 { font-size: 26px; font-weight: 800; color: var(--c); letter-spacing: -.01em; }
+  .col p { margin-top: 4px; font-size: 17px; line-height: 1.38; color: var(--ink); }
+  .footer { position: absolute; left: 80px; right: 80px; bottom: 26px; display: flex; justify-content: space-between; font-size: 13.5px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="watermark">ε</div>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="eyebrow">FIGURE 1 · TWO-TRACK EVIDENCE MAP</div>
+    <h1>Cine supplies the cues; correspondence is inferred — <span class="grad-text">each regional attribute is validated on its own</span></h1>
+    <div class="sub">From routine cine CMR to regional myocardial dysfunction</div>
+    <div class="legend">
+      <span><i style="background:#8E857D"></i>observed in cine</span>
+      <span><i style="background:#C0584A"></i>inferred</span>
+      <span><i style="background:#7A4720"></i>reference</span>
+    </div>
+  </header>
+
+  <!-- ===== Track A: estimation ===== -->
+  <section class="track track-a">
+    <div class="label">
+      <div class="letter grad-text">A</div>
+      <div class="kick">ESTIMATION TRACK</div>
+      <div class="desc">What the pipeline infers from routine cine</div>
+    </div>
+    <div class="stages">
+      <!-- 1 cine -->
+      <div class="stage s-obs">
+        <div class="top"><span class="chip">1</span><span class="tag">OBSERVED</span></div>
+        <h3>Routine cine CMR</h3>
+        <div class="vis">
+          <svg width="250" height="140" viewBox="0 0 250 140">
+            <defs>
+              <radialGradient id="mri" cx="50%" cy="50%" r="60%">
+                <stop offset="0" stop-color="#4a3b33"/><stop offset="1" stop-color="#1f1814"/>
+              </radialGradient>
+              <radialGradient id="pool" cx="45%" cy="40%" r="60%">
+                <stop offset="0" stop-color="#FFF9F0"/><stop offset="1" stop-color="#D9CFC4"/>
+              </radialGradient>
+            </defs>
+            <!-- ED frame -->
+            <g transform="translate(8,6)">
+              <rect width="128" height="128" rx="18" fill="url(#mri)"/>
+              <circle cx="64" cy="64" r="48" fill="#7d6f66"/>
+              <circle cx="64" cy="64" r="31" fill="url(#pool)"/>
+              <g id="speckle" fill="#a29489" opacity=".85"></g>
+              <text x="10" y="120" font-size="13" fill="#E9DED2" font-weight="600">ED</text>
+            </g>
+            <!-- ES frame (offset, stacked = time) -->
+            <g transform="translate(114,6)">
+              <rect width="128" height="128" rx="18" fill="url(#mri)" stroke="#FBF7EF" stroke-width="3"/>
+              <circle cx="64" cy="64" r="44" fill="#7d6f66"/>
+              <circle cx="64" cy="64" r="21" fill="url(#pool)"/>
+              <g id="speckle2" fill="#a29489" opacity=".85"></g>
+              <text x="104" y="120" font-size="13" fill="#E9DED2" font-weight="600">ES</text>
+            </g>
+          </svg>
+        </div>
+        <div class="cap"><b>boundaries · texture · time</b><br>intramyocardial texture is weak</div>
+      </div>
+      <div class="arrow"><svg width="40" height="24"><path d="M2 12H32" stroke="#C0997F" stroke-width="2.5"/><path d="M28 5l9 7-9 7" fill="none" stroke="#C0997F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+      <!-- 2 estimator -->
+      <div class="stage s-inf">
+        <div class="top"><span class="chip">2</span><span class="tag">INFERRED</span></div>
+        <h3>Estimator + prior</h3>
+        <div class="vis">
+          <div style="text-align:center">
+            <div class="formula" style="font-size:23px; line-height:1.3; white-space:nowrap"><span class="hat">φ</span> = arg min<sub style="font-size:15px">φ</sub> 𝒟(I<sub style="font-size:15px">0</sub>, I<sub style="font-size:15px">t</sub>∘φ)<br><span style="color:#C0584A">+ α ℛ(φ)</span></div>
+            <div style="margin-top:12px; display:flex; flex-wrap:wrap; gap:6px; justify-content:center; font-size:13px; color:#8D6449">
+              <span style="padding:3px 9px; border-radius:20px; background:#F8E0DA">tracking</span>
+              <span style="padding:3px 9px; border-radius:20px; background:#F8E0DA">registration</span>
+              <span style="padding:3px 9px; border-radius:20px; background:#F8E0DA">biomechanics</span>
+              <span style="padding:3px 9px; border-radius:20px; background:#F8E0DA">learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="cap"><b>The prior selects</b> among equally well-fitting fields</div>
+      </div>
+      <div class="arrow"><svg width="40" height="24"><path d="M2 12H32" stroke="#D88A7E" stroke-width="2.5"/><path d="M28 5l9 7-9 7" fill="none" stroke="#D88A7E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+      <!-- 3 correspondence -->
+      <div class="stage s-inf2">
+        <div class="top"><span class="chip">3</span><span class="tag">INFERRED</span></div>
+        <h3>Material correspondence</h3>
+        <div class="vis">
+          <svg width="250" height="140" viewBox="0 0 250 140" id="corr"></svg>
+        </div>
+        <div class="cap">Same contours, <b>different material strain</b> (Dice = 1)</div>
+      </div>
+      <div class="arrow"><svg width="40" height="24"><path d="M2 12H32" stroke="#B88468" stroke-width="2.5"/><path d="M28 5l9 7-9 7" fill="none" stroke="#B88468" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+      <!-- 4 regional strain -->
+      <div class="stage s-def">
+        <div class="top"><span class="chip">4</span><span class="tag">DEFINED</span></div>
+        <h3>Regional strain report</h3>
+        <div class="vis">
+          <div style="display:flex; align-items:center; gap:14px">
+            <svg width="112" height="112" viewBox="0 0 132 132" id="bull"></svg>
+            <div style="font-size:13.5px; line-height:1.55; color:#776A62">
+              <div class="formula" style="font-size:18px; color:#33261F; white-space:nowrap">E = ½(FᵀF − I)</div>
+              reference · layer<br>axes · peak rule<br>aggregation
+            </div>
+          </div>
+        </div>
+        <div class="cap">The value depends on <b>every upstream choice</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- connectors A → bridge → B -->
+  <svg style="position:absolute; left:0; top:700px" width="1800" height="30">
+    <defs><linearGradient id="vg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C0997F"/><stop offset="1" stop-color="#C0584A"/></linearGradient></defs>
+    <g id="conn1"></g>
+  </svg>
+  <svg style="position:absolute; left:0; top:886px" width="1800" height="28">
+    <g id="conn2"></g>
+  </svg>
+
+  <!-- ===== Bridge: attributes ===== -->
+  <section class="bridge">
+    <div class="label">
+      <div class="kick">TESTED SEPARATELY</div>
+      <div class="desc">per attribute, per estimator, per acquisition</div>
+      <div class="note">●&nbsp;= study with a direct endpoint for that attribute (7 paired / known-motion studies)</div>
+    </div>
+    <div class="attrs" id="attrs"></div>
+  </section>
+
+  <!-- ===== Track B: validation ===== -->
+  <section class="track track-b">
+    <div class="label">
+      <div class="letter">B</div>
+      <div class="kick">VALIDATION TRACK</div>
+      <div class="desc">What each external reference can establish</div>
+    </div>
+    <div class="targets">
+      <div class="target">
+        <div class="hd">
+          <svg width="46" height="46" viewBox="0 0 46 46"><circle cx="23" cy="23" r="17" fill="none" stroke="#E7A49A" stroke-width="7" opacity=".9"/><path d="M23 3a20 20 0 0 1 19 14" fill="none" stroke="#F8F3E7" stroke-width="2.2"/><path d="M42 11l0 7-7-1" fill="none" stroke="#F8F3E7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h4>Known motion</h4><div class="src">STRAUS · MRXCAT2.0 · phantoms</div></div>
+        </div>
+        <div class="yes">Representation capacity &amp; technical error</div>
+        <div class="no">In-vivo accuracy outside the simulated regime</div>
+      </div>
+      <div class="target">
+        <div class="hd">
+          <svg width="46" height="46" viewBox="0 0 46 46"><defs><clipPath id="cc"><circle cx="23" cy="23" r="20"/></clipPath></defs><circle cx="23" cy="23" r="20" fill="rgba(248,243,231,.1)" stroke="#E7A49A" stroke-width="1.6"/><g clip-path="url(#cc)" stroke="#F8F3E7" stroke-width="1.4" opacity=".85"><path d="M3 11H43M3 19H43M3 27H43M3 35H43M11 3V43M19 3V43M27 3V43M35 3V43"/></g><circle cx="23" cy="23" r="8" fill="#5B3E2E" stroke="#E7A49A" stroke-width="1.6"/></svg>
+          <div><h4>Paired DENSE / tagging</h4><div class="src">Militaru · Cao · Wehner · Jahromi</div></div>
+        </div>
+        <div class="yes">Material-sensitive in-vivo agreement</div>
+        <div class="no">Literal ground truth — the reference has its own error</div>
+      </div>
+      <div class="target">
+        <div class="hd">
+          <svg width="46" height="46" viewBox="0 0 46 46"><circle cx="18" cy="23" r="13" fill="none" stroke="#F8F3E7" stroke-width="2"/><circle cx="28" cy="23" r="13" fill="none" stroke="#E7A49A" stroke-width="2" stroke-dasharray="4 3"/></svg>
+          <div><h4>Scan–rescan</h4><div class="src">Strain-8 · travelling volunteers</div></div>
+        </div>
+        <div class="yes">Precision at the tested scale</div>
+        <div class="no">Accuracy — a repeatable method can be biased</div>
+      </div>
+      <div class="target">
+        <div class="hd">
+          <svg width="46" height="46" viewBox="0 0 46 46"><circle cx="23" cy="23" r="16" fill="none" stroke="rgba(248,243,231,.35)" stroke-width="8"/><path d="M9.1 15A16 16 0 0 1 23 7" fill="none" stroke="#FFF2E6" stroke-width="8"/><path d="M33 34l7 7" stroke="#E7A49A" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <div><h4>Tissue &amp; outcome</h4><div class="src">LGE · Kihlberg · Bello · Mangion</div></div>
+        </div>
+        <div class="yes">Biological &amp; prognostic association</div>
+        <div class="no">Pointwise displacement error or clinical utility</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Verdict ===== -->
+  <section class="verdict">
+    <div class="bar-wrap"><span>global · whole-slice · segment</span><div class="bar"></div><span style="padding-left:6px">focal</span></div>
+    <div class="cols">
+      <div class="col" style="--c:#7A4720"><h5>Supported</h5><p>Ecc at whole-slice, global and AHA-segment scales — under matched acquisition, software, layer and time point</p></div>
+      <div class="col" style="--c:#B88468"><h5>Qualified</h5><p>Radial strain: product- and method-dependent; basal/apical, endo/transmural, ES/peak not exchangeable</p></div>
+      <div class="col" style="--c:#A33A2E"><h5>Unresolved</h5><p>Focal centroid, lesion boundary, extent and peak timing — rarely tested against a material reference</p></div>
+    </div>
+  </section>
+
+  <div class="footer"><span>Conceptual schematic. Attribute counts: direct endpoints across 7 studies (Gao, Wehner, Militaru, Kihlberg, StrainNet, DeepStrain/MRXCAT2.0, Jahromi).</span><span>Huo · Critical narrative review · 2026</span></div>
+</div>
+
+<script>
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+
+  // deterministic pseudo-random for speckle texture
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  function speckle(id, rOut, rIn) {
+    const g = document.getElementById(id);
+    for (let i = 0; i < 70; i++) {
+      const a = rnd() * Math.PI * 2, r = rIn + 2 + rnd() * (rOut - rIn - 4);
+      el("circle", { cx: 64 + r * Math.cos(a), cy: 64 + r * Math.sin(a), r: .8 + rnd() * 1.6, opacity: .4 + rnd() * .6 }, g);
+    }
+  }
+  speckle("speckle", 48, 31); speckle("speckle2", 44, 21);
+
+  // material correspondence: identical annulus, two mappings
+  (function () {
+    const s = document.getElementById("corr");
+    const cols = ["#8D6449", "#C0584A", "#E7A49A", "#33261F", "#C0997F", "#A33A2E", "#7A4720", "#D88A7E"];
+    const ring = (cx, label, warp) => {
+      el("circle", { cx, cy: 64, r: 44, fill: "#F8E0DA" }, s);
+      el("circle", { cx, cy: 64, r: 26, fill: "#fff" }, s);
+      el("circle", { cx, cy: 64, r: 44, fill: "none", stroke: "#E7A49A", "stroke-width": 1.5 }, s);
+      el("circle", { cx, cy: 64, r: 26, fill: "none", stroke: "#E7A49A", "stroke-width": 1.5 }, s);
+      for (let k = 0; k < 8; k++) {
+        const th = k * Math.PI / 4, th2 = warp ? th + 0.5 * Math.sin(th) : th;
+        if (warp && Math.abs(th2 - th) > 0.05) {
+          const r = 35, a0 = th, a1 = th2;
+          el("path", { d: `M${cx + r * Math.cos(a0)} ${64 - r * Math.sin(a0)} A${r} ${r} 0 0 ${a1 > a0 ? 0 : 1} ${cx + r * Math.cos(a1)} ${64 - r * Math.sin(a1)}`, fill: "none", stroke: "#C0584A", "stroke-width": 1.4, "stroke-dasharray": "2 2" }, s);
+          el("circle", { cx: cx + 35 * Math.cos(th), cy: 64 - 35 * Math.sin(th), r: 4.2, fill: "none", stroke: cols[k], "stroke-width": 1.3, opacity: .7 }, s);
+        }
+        el("circle", { cx: cx + 35 * Math.cos(th2), cy: 64 - 35 * Math.sin(th2), r: 5.6, fill: cols[k], stroke: "#fff", "stroke-width": 1.5 }, s);
+      }
+      const t = el("text", { x: cx, y: 128, "text-anchor": "middle", "font-size": 13, fill: "#776A62", "font-style": "italic" }, s);
+      t.textContent = label;
+    };
+    ring(58, "θ ↦ θ", false);
+    ring(192, "θ ↦ θ + a·sin θ", true);
+    const eq = el("text", { x: 125, y: 69, "text-anchor": "middle", "font-size": 20, fill: "#C0584A", "font-weight": 700 }, s);
+    eq.textContent = "≠";
+  })();
+
+  // mid-ventricular bullseye with one focal deficit
+  (function () {
+    const s = document.getElementById("bull"), cx = 66, cy = 66, R = 62, r = 28;
+    const vals = ["#8D6449", "#9E6E52", "#C0997F", "#C0584A", "#B07A5E", "#8D6449"];
+    for (let i = 0; i < 6; i++) {
+      const a0 = (-90 + i * 60) * Math.PI / 180, a1 = (-90 + (i + 1) * 60) * Math.PI / 180;
+      const p = (rad, a) => `${cx + rad * Math.cos(a)} ${cy + rad * Math.sin(a)}`;
+      el("path", { d: `M${p(R, a0)} A${R} ${R} 0 0 1 ${p(R, a1)} L${p(r, a1)} A${r} ${r} 0 0 0 ${p(r, a0)} Z`, fill: vals[i], stroke: "#fff", "stroke-width": 2.5 }, s);
+    }
+    el("circle", { cx, cy, r: r - 4, fill: "#FBF4EC" }, s);
+    const t = el("text", { x: cx, y: cy + 6, "text-anchor": "middle", "font-size": 16, "font-weight": 700, fill: "#8D6449" }, s);
+    t.textContent = "Ecc";
+    // focal marker on segment 4
+    const am = (-90 + 3.5 * 60) * Math.PI / 180;
+    el("circle", { cx: cx + 45 * Math.cos(am), cy: cy + 45 * Math.sin(am), r: 7, fill: "none", stroke: "#fff", "stroke-width": 2, "stroke-dasharray": "3 2" }, s);
+  })();
+
+  // attribute tiles with error-shape glyphs and coverage meters
+  (function () {
+    const host = document.getElementById("attrs");
+    const g = (x, mu, sd, amp) => amp * Math.exp(-((x - mu) ** 2) / (2 * sd * sd));
+    const path = (mu, sd, amp, dip) => {
+      let d = ""; for (let i = 0; i <= 60; i++) { const x = i / 60, y = g(x, mu, sd, amp); d += (i ? "L" : "M") + (6 + x * 118).toFixed(1) + " " + (dip ? 18 + y * 46 : 62 - y * 46).toFixed(1); }
+      return d;
+    };
+    const A = [
+      { L: "M", n: "Magnitude", q: "how much strain is lost", ref: [.5, .11, 1], est: [.5, .11, .58], k: 6 },
+      { L: "L", n: "Location", q: "where the deficit sits", ref: [.38, .11, 1], est: [.62, .11, 1], k: 1 },
+      { L: "E", n: "Extent", q: "boundary &amp; width", ref: [.5, .09, 1], est: [.5, .19, .62], k: 0 },
+      { L: "T", n: "Timing", q: "onset and peak time", ref: [.4, .12, 1], est: [.6, .12, 1], k: 1, dip: true },
+    ];
+    for (const a of A) {
+      const d = document.createElement("div"); d.className = "attr" + (a.k <= 1 ? " weak" : "");
+      d.innerHTML = `<div class="L grad-text">${a.L}</div><div class="name">${a.n}</div><div class="q">${a.q}</div>
+        <svg class="curve" width="112" height="62" viewBox="0 0 130 70">
+          <line x1="6" x2="124" y1="${a.dip ? 18 : 62}" y2="${a.dip ? 18 : 62}" stroke="#E2D3C6" stroke-width="1.5"/>
+          <path d="${path(...a.ref, a.dip)}" fill="none" stroke="#7A4720" stroke-width="2.6"/>
+          <path d="${path(...a.est, a.dip)}" fill="none" stroke="#C0584A" stroke-width="2.4" stroke-dasharray="5 4"/>
+        </svg>
+        <div class="meter">${Array.from({ length: 7 }, (_, i) => `<i class="${i < a.k ? "on" : ""}"></i>`).join("")}<b>${a.k}<small> / 7 direct</small></b></div>`;
+      host.appendChild(d);
+    }
+  })();
+
+  // vertical connectors between tracks, aligned to attribute tiles
+  (function () {
+    const tiles = [...document.querySelectorAll(".attr")];
+    const c1 = document.getElementById("conn1"), c2 = document.getElementById("conn2");
+    for (const t of tiles) {
+      const r = t.getBoundingClientRect(), x = r.left + r.width / 2;
+      el("path", { d: `M${x} 2V20`, stroke: "#C0997F", "stroke-width": 2, "stroke-dasharray": "3 4" }, c1);
+      el("path", { d: `M${x - 6} 16l6 7 6-7`, fill: "none", stroke: "#C0997F", "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round" }, c1);
+      el("path", { d: `M${x} 2V18`, stroke: "#8D6449", "stroke-width": 2, "stroke-dasharray": "3 4" }, c2);
+      el("path", { d: `M${x - 6} 14l6 7 6-7`, fill: "none", stroke: "#8D6449", "stroke-width": 2, "stroke-linecap": "round", "stroke-linejoin": "round" }, c2);
+    }
+  })();
+</script>
+</body>
+</html>
