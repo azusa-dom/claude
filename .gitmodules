@@ -34,3 +34,6 @@
 [submodule "design-templates/scientific-diagrams/scientific-figure-skills"]
 	path = design-templates/scientific-diagrams/scientific-figure-skills
 	url = https://github.com/enesgul23/scientific-figure-skills
+[submodule "design-templates/neko-style"]
+	path = design-templates/neko-style
+	url = https://github.com/iridite/slidev-templates
