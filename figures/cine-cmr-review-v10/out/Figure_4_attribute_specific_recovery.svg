@@ -1,699 +1,139 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="538.5827pt" height="303.6834pt" viewBox="0.0000 0.0000 453.5433 255.7334" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-09T05:18:05.593324</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 260.787402 
-L 453.543307 260.787402 
-L 453.543307 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 42.519685 157.606299 
-L 51.590551 157.606299 
-L 51.590551 151.370079 
-L 42.519685 151.370079 
-z
-" clip-path="url(#pc4c9d7877b)" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 127.559055 157.606299 
-L 136.629921 157.606299 
-L 136.629921 151.370079 
-L 127.559055 151.370079 
-z
-" clip-path="url(#pc4c9d7877b)" style="fill: url(#hb5c087c607); stroke: #cc5f4f; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 100.346457 207.070866 
-C 101.135801 207.070866 101.892923 206.757256 102.451074 206.199105 
-C 103.009225 205.640954 103.322835 204.883833 103.322835 204.094488 
-C 103.322835 203.305144 103.009225 202.548022 102.451074 201.989871 
-C 101.892923 201.43172 101.135801 201.11811 100.346457 201.11811 
-C 99.557112 201.11811 98.799991 201.43172 98.24184 201.989871 
-C 97.683689 202.548022 97.370079 203.305144 97.370079 204.094488 
-C 97.370079 204.883833 97.683689 205.640954 98.24184 206.199105 
-C 98.799991 206.757256 99.557112 207.070866 100.346457 207.070866 
-z
-" clip-path="url(#pc4c9d7877b)" style="fill: #ffffff; stroke: #776a62; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 213.732283 207.070866 
-C 214.521628 207.070866 215.27875 206.757256 215.8369 206.199105 
-C 216.395051 205.640954 216.708661 204.883833 216.708661 204.094488 
-C 216.708661 203.305144 216.395051 202.548022 215.8369 201.989871 
-C 215.27875 201.43172 214.521628 201.11811 213.732283 201.11811 
-C 212.942939 201.11811 212.185817 201.43172 211.627666 201.989871 
-C 211.069515 202.548022 210.755906 203.305144 210.755906 204.094488 
-C 210.755906 204.883833 211.069515 205.640954 211.627666 206.199105 
-C 212.185817 206.757256 212.942939 207.070866 213.732283 207.070866 
-z
-" clip-path="url(#pc4c9d7877b)" style="fill: #ffffff; stroke: #776a62; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_6">
-    <path d="M 327.11811 207.070866 
-C 327.907455 207.070866 328.664576 206.757256 329.222727 206.199105 
-C 329.780878 205.640954 330.094488 204.883833 330.094488 204.094488 
-C 330.094488 203.305144 329.780878 202.548022 329.222727 201.989871 
-C 328.664576 201.43172 327.907455 201.11811 327.11811 201.11811 
-C 326.328766 201.11811 325.571644 201.43172 325.013493 201.989871 
-C 324.455342 202.548022 324.141732 203.305144 324.141732 204.094488 
-C 324.141732 204.883833 324.455342 205.640954 325.013493 206.199105 
-C 325.571644 206.757256 326.328766 207.070866 327.11811 207.070866 
-z
-" clip-path="url(#pc4c9d7877b)" style="fill: #ffffff; stroke: #776a62; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_7">
-    <path d="M 440.503937 207.070866 
-C 441.293282 207.070866 442.050403 206.757256 442.608554 206.199105 
-C 443.166705 205.640954 443.480315 204.883833 443.480315 204.094488 
-C 443.480315 203.305144 443.166705 202.548022 442.608554 201.989871 
-C 442.050403 201.43172 441.293282 201.11811 440.503937 201.11811 
-C 439.714592 201.11811 438.957471 201.43172 438.39932 201.989871 
-C 437.841169 202.548022 437.527559 203.305144 437.527559 204.094488 
-C 437.527559 204.883833 437.841169 205.640954 438.39932 206.199105 
-C 438.957471 206.757256 439.714592 207.070866 440.503937 207.070866 
-z
-" clip-path="url(#pc4c9d7877b)" style="fill: #ffffff; stroke-dasharray: 1.2,0.96; stroke-dashoffset: 0; stroke: #776a62; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_8">
-    <path d="M 6.23622 252.425197 
-C 7.025565 252.425197 7.782687 252.111587 8.340838 251.553436 
-C 8.898988 250.995285 9.212598 250.238164 9.212598 249.448819 
-C 9.212598 248.659474 8.898988 247.902353 8.340838 247.344202 
-C 7.782687 246.786051 7.025565 246.472441 6.23622 246.472441 
-C 5.446876 246.472441 4.689754 246.786051 4.131603 247.344202 
-C 3.573452 247.902353 3.259843 248.659474 3.259843 249.448819 
-C 3.259843 250.238164 3.573452 250.995285 4.131603 251.553436 
-C 4.689754 252.111587 5.446876 252.425197 6.23622 252.425197 
-z
-" clip-path="url(#pc4c9d7877b)" style="fill: #ffffff; stroke: #776a62; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_9">
-    <path d="M 195.023622 252.425197 
-C 195.812967 252.425197 196.570088 252.111587 197.128239 251.553436 
-C 197.68639 250.995285 198 250.238164 198 249.448819 
-C 198 248.659474 197.68639 247.902353 197.128239 247.344202 
-C 196.570088 246.786051 195.812967 246.472441 195.023622 246.472441 
-C 194.234277 246.472441 193.477156 246.786051 192.919005 247.344202 
-C 192.360854 247.902353 192.047244 248.659474 192.047244 249.448819 
-C 192.047244 250.238164 192.360854 250.995285 192.919005 251.553436 
-C 193.477156 252.111587 194.234277 252.425197 195.023622 252.425197 
-z
-" clip-path="url(#pc4c9d7877b)" style="fill: #ffffff; stroke-dasharray: 1.2,0.96; stroke-dashoffset: 0; stroke: #776a62; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="line2d_1">
-    <path d="M 112.818898 235.275591 
-L 112.818898 197.007874 
-" clip-path="url(#pc4c9d7877b)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.6; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_2">
-    <path d="M 226.204724 235.275591 
-L 226.204724 197.007874 
-" clip-path="url(#pc4c9d7877b)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.6; stroke-linecap: square"/>
-   </g>
-   <g id="line2d_3">
-    <path d="M 339.590551 235.275591 
-L 339.590551 197.007874 
-" clip-path="url(#pc4c9d7877b)" style="fill: none; stroke: #e3d9cf; stroke-width: 0.6; stroke-linecap: square"/>
-   </g>
-   <g id="text_1">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="1.417323" y="8.697596" transform="rotate(-0 1.417323 8.697596)">a</text>
-   </g>
-   <g id="text_2">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="14.173228" y="10.52075" transform="rotate(-0 14.173228 10.52075)">Prescribed deficit (ground truth)</text>
-   </g>
-   <g id="text_3">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="54.425197" y="156.35147" transform="rotate(-0 54.425197 156.35147)">Remote myocardium</text>
-   </g>
-   <g id="text_4">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="139.464567" y="156.35147" transform="rotate(-0 139.464567 156.35147)">Scar</text>
-   </g>
-   <g id="text_5">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="226.771654" y="8.697596" transform="rotate(-0 226.771654 8.697596)">b</text>
-   </g>
-   <g id="text_6">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="239.527559" y="10.52075" transform="rotate(-0 239.527559 10.52075)">Estimator error (DeepStrain)</text>
-   </g>
-   <g id="text_7">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(239.527559 150.651949)">No between-case test was reported, so no case</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(239.527559 159.098238)">ordering is implied. Errors are case-level means over</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(239.527559 167.544527)">whole slices; scar-region errors were not reported.</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(239.527559 175.990816)">Also reported: Dice 0.82; displacement error 1.0 ± 0.9 mm.</text>
-   </g>
-   <g id="text_8">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start; fill: #33261f" x="1.417323" y="184.445628" transform="rotate(-0 1.417323 184.445628)">c</text>
-   </g>
-   <g id="text_9">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="14.173228" y="186.268782" transform="rotate(-0 14.173228 186.268782)">Abnormality attributes in this experiment</text>
-   </g>
-   <g id="text_10">
-    <text style="font-weight: 700; font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="7.937008" y="206.030059" transform="rotate(-0 7.937008 206.030059)">Magnitude</text>
-   </g>
-   <g id="text_11">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(7.937008 218.514519)">scar-level error not reported;</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(7.937008 226.909269)">slice means: Ecc error small,</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(7.937008 235.442956)">Err under-estimated</text>
-   </g>
-   <g id="text_12">
-    <text style="font-weight: 700; font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="121.322835" y="206.035406" transform="rotate(-0 121.322835 206.035406)">Location</text>
-   </g>
-   <g id="text_13">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(121.322835 218.514519)">myocardial Dice only;</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(121.322835 227.334519)">no lesion-centroid error</text>
-   </g>
-   <g id="text_14">
-    <text style="font-weight: 700; font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="234.708661" y="206.035406" transform="rotate(-0 234.708661 206.035406)">Extent</text>
-   </g>
-   <g id="text_15">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(234.708661 218.514519)">one fixed scar geometry;</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(234.708661 226.622956)">extent recovery not measured</text>
-   </g>
-   <g id="text_16">
-    <text style="font-weight: 700; font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="348.094488" y="206.030059" transform="rotate(-0 348.094488 206.030059)">Timing</text>
-   </g>
-   <g id="text_17">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(348.094488 218.514519)">peak-time error not</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(348.094488 227.334519)">in the record read</text>
-   </g>
-   <g id="text_18">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="11.055118" y="251.3121" transform="rotate(-0 11.055118 251.3121)">not reported at the attribute's own (scar) level</text>
-   </g>
-   <g id="text_19">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: start" x="199.84252" y="251.3121" transform="rotate(-0 199.84252 251.3121)">not inspected in the record read</text>
-   </g>
-  </g>
-  <g id="axes_2">
-   <g id="patch_10">
-    <path d="M 36.850394 130.393701 
-L 201.259843 130.393701 
-L 201.259843 22.677165 
-L 36.850394 22.677165 
-z
-" style="fill: #ffffff"/>
-   </g>
-   <g id="patch_11">
-    <path d="M 48.667323 101.016464 
-L 67.163386 101.016464 
-L 67.163386 34.567952 
-L 48.667323 34.567952 
-z
-" clip-path="url(#p09da1250ce)" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_12">
-    <path d="M 68.190945 101.016464 
-L 86.687008 101.016464 
-L 86.687008 80.032723 
-L 68.190945 80.032723 
-z
-" clip-path="url(#p09da1250ce)" style="fill: url(#hb5c087c607); stroke: #cc5f4f; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_13">
-    <path d="M 100.045276 101.016464 
-L 118.541339 101.016464 
-L 118.541339 113.606708 
-L 100.045276 113.606708 
-z
-" clip-path="url(#p09da1250ce)" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_14">
-    <path d="M 119.568898 101.016464 
-L 138.064961 101.016464 
-L 138.064961 112.90725 
-L 119.568898 112.90725 
-z
-" clip-path="url(#p09da1250ce)" style="fill: url(#hb5c087c607); stroke: #cc5f4f; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_15">
-    <path d="M 151.423228 101.016464 
-L 169.919291 101.016464 
-L 169.919291 113.606708 
-L 151.423228 113.606708 
-z
-" clip-path="url(#p09da1250ce)" style="fill: #7a4720; stroke: #7a4720; stroke-width: 0.6; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_16">
-    <path d="M 170.94685 101.016464 
-L 189.442913 101.016464 
-L 189.442913 100.317006 
-L 170.94685 100.317006 
-z
-" clip-path="url(#p09da1250ce)" style="fill: url(#hb5c087c607); stroke: #cc5f4f; stroke-width: 0.8; stroke-linejoin: miter"/>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_4"/>
-     <g id="text_20">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="67.677165" y="136.635498" transform="rotate(-0 67.677165 136.635498)">Radial</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_5"/>
-     <g id="text_21">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="119.055118" y="136.635498" transform="rotate(-0 119.055118 136.635498)">Longitudinal</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_6"/>
-     <g id="text_22">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="170.433071" y="136.635498" transform="rotate(-0 170.433071 136.635498)">Circumferential</text>
-     </g>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2">
-    <g id="ytick_1">
-     <g id="line2d_7">
-      <defs>
-       <path id="m465ad3dfc8" d="M 0 0 
-L -2.5 0 
-" style="stroke: #33261f; stroke-width: 0.6"/>
-      </defs>
-      <g>
-       <use xlink:href="#m465ad3dfc8" x="36.850394" y="115.005624" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_23">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="30.850394" y="117.626523" transform="rotate(-0 30.850394 117.626523)">−0.2</text>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#m465ad3dfc8" x="36.850394" y="101.016464" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_24">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="30.850394" y="103.637362" transform="rotate(-0 30.850394 103.637362)">0.0</text>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_9">
-      <g>
-       <use xlink:href="#m465ad3dfc8" x="36.850394" y="87.027303" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_25">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="30.850394" y="89.648202" transform="rotate(-0 30.850394 89.648202)">0.2</text>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_10">
-      <g>
-       <use xlink:href="#m465ad3dfc8" x="36.850394" y="73.038143" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_26">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="30.850394" y="75.659041" transform="rotate(-0 30.850394 75.659041)">0.4</text>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_11">
-      <g>
-       <use xlink:href="#m465ad3dfc8" x="36.850394" y="59.048983" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_27">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="30.850394" y="61.669881" transform="rotate(-0 30.850394 61.669881)">0.6</text>
-     </g>
-    </g>
-    <g id="ytick_6">
-     <g id="line2d_12">
-      <g>
-       <use xlink:href="#m465ad3dfc8" x="36.850394" y="45.059822" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_28">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="30.850394" y="47.680721" transform="rotate(-0 30.850394 47.680721)">0.8</text>
-     </g>
-    </g>
-    <g id="ytick_7">
-     <g id="line2d_13">
-      <g>
-       <use xlink:href="#m465ad3dfc8" x="36.850394" y="31.070662" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_29">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="30.850394" y="33.69156" transform="rotate(-0 30.850394 33.69156)">1.0</text>
-     </g>
-    </g>
-    <g id="text_30">
-     <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="13.058775" y="76.535433" transform="rotate(-90 13.058775 76.535433)">Peak systolic strain</text>
-    </g>
-   </g>
-   <g id="line2d_14">
-    <path d="M 36.850394 101.016464 
-L 201.259843 101.016464 
-" clip-path="url(#p09da1250ce)" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linecap: square"/>
-   </g>
-   <g id="patch_17">
-    <path d="M 36.850394 130.393701 
-L 36.850394 22.677165 
-" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="text_31">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="58.429134" y="30.604614" transform="rotate(-0 58.429134 30.604614)">0.95</text>
-   </g>
-   <g id="text_32">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="76.925197" y="76.069386" transform="rotate(-0 76.925197 76.069386)">0.30</text>
-   </g>
-   <g id="text_33">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="109.807087" y="121.296608" transform="rotate(-0 109.807087 121.296608)">−0.18</text>
-   </g>
-   <g id="text_34">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="128.30315" y="127.59173" transform="rotate(-0 128.30315 127.59173)">−0.17</text>
-   </g>
-   <g id="text_35">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="161.185039" y="121.296608" transform="rotate(-0 161.185039 121.296608)">−0.18</text>
-   </g>
-   <g id="text_36">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="179.681102" y="96.353668" transform="rotate(-0 179.681102 96.353668)">0.01</text>
-   </g>
-   <g id="text_37">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(106.21063 36.126539)">Infarct case EF 49%:</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(106.21063 43.189499)">remote tissue compensates</text>
-   </g>
-   <g id="text_38">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(106.21063 63.397234)">Radial strain markedly</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(106.21063 71.169508)">reduced (0.95 → 0.30);</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(106.21063 79.224719)">circumferential near zero;</text>
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #776a62" transform="translate(106.21063 86.708992)">longitudinal almost unchanged</text>
-   </g>
-  </g>
-  <g id="axes_3">
-   <g id="patch_18">
-    <path d="M 306.141732 119.055118 
-L 445.03937 119.055118 
-L 445.03937 28.346457 
-L 306.141732 28.346457 
-z
-" style="fill: #ffffff"/>
-   </g>
-   <g id="matplotlib.axis_3">
-    <g id="xtick_4">
-     <g id="line2d_15">
-      <defs>
-       <path id="m807492811b" d="M 0 0 
-L 0 2.5 
-" style="stroke: #33261f; stroke-width: 0.6"/>
-      </defs>
-      <g>
-       <use xlink:href="#m807492811b" x="332.185039" y="119.055118" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_39">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="332.185039" y="130.296915" transform="rotate(-0 332.185039 130.296915)">−0.4</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_16">
-      <g>
-       <use xlink:href="#m807492811b" x="375.590551" y="119.055118" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_40">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="375.590551" y="130.296915" transform="rotate(-0 375.590551 130.296915)">−0.2</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_17">
-      <g>
-       <use xlink:href="#m807492811b" x="418.996063" y="119.055118" style="fill: #33261f; stroke: #33261f; stroke-width: 0.6"/>
-      </g>
-     </g>
-     <g id="text_41">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="418.996063" y="130.296915" transform="rotate(-0 418.996063 130.296915)">0</text>
-     </g>
-    </g>
-    <g id="text_42">
-     <text style="font-size: 7.5px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="375.590551" y="139.272354" transform="rotate(-0 375.590551 139.272354)">Reported strain error (mean ± SD)</text>
-    </g>
-   </g>
-   <g id="matplotlib.axis_4">
-    <g id="ytick_8">
-     <g id="line2d_18"/>
-     <g id="text_43">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(252.230482 44.596856)">Circumferential,</text>
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(260.224732 52.433184)">all four cases</text>
-     </g>
-    </g>
-    <g id="ytick_9">
-     <g id="line2d_19"/>
-     <g id="text_44">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(280.230607 73.393256)">Radial,</text>
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(260.224732 81.229584)">all four cases</text>
-     </g>
-    </g>
-    <g id="ytick_10">
-     <g id="line2d_20"/>
-     <g id="text_45">
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(280.230607 102.189656)">Radial,</text>
-      <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; fill: #33261f" transform="translate(265.828357 110.025985)">infarct case</text>
-     </g>
-    </g>
-   </g>
-   <g id="LineCollection_1">
-    <path d="M 414.655512 45.624297 
-L 432.017717 45.624297 
-" clip-path="url(#pa5d3fa5f6c)" style="fill: none; stroke: #8e857d"/>
-   </g>
-   <g id="line2d_21">
-    <defs>
-     <path id="m5115a0f4d7" d="M 0 2.2 
-L 0 -2.2 
-" style="stroke: #8e857d"/>
-    </defs>
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#m5115a0f4d7" x="414.655512" y="45.624297" style="fill: #8e857d; stroke: #8e857d"/>
-    </g>
-   </g>
-   <g id="line2d_22">
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#m5115a0f4d7" x="432.017717" y="45.624297" style="fill: #8e857d; stroke: #8e857d"/>
-    </g>
-   </g>
-   <g id="LineCollection_2">
-    <path d="M 321.333661 74.420697 
-L 412.485236 74.420697 
-" clip-path="url(#pa5d3fa5f6c)" style="fill: none; stroke: #a33a2e"/>
-   </g>
-   <g id="line2d_23">
-    <defs>
-     <path id="m87c82b87fb" d="M 0 2.2 
-L 0 -2.2 
-" style="stroke: #a33a2e"/>
-    </defs>
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#m87c82b87fb" x="321.333661" y="74.420697" style="fill: #a33a2e; stroke: #a33a2e"/>
-    </g>
-   </g>
-   <g id="line2d_24">
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#m87c82b87fb" x="412.485236" y="74.420697" style="fill: #a33a2e; stroke: #a33a2e"/>
-    </g>
-   </g>
-   <g id="LineCollection_3">
-    <path d="M 330.014764 103.217098 
-L 421.166339 103.217098 
-" clip-path="url(#pa5d3fa5f6c)" style="fill: none; stroke: #a33a2e"/>
-   </g>
-   <g id="line2d_25">
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#m87c82b87fb" x="330.014764" y="103.217098" style="fill: #a33a2e; stroke: #a33a2e"/>
-    </g>
-   </g>
-   <g id="line2d_26">
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#m87c82b87fb" x="421.166339" y="103.217098" style="fill: #a33a2e; stroke: #a33a2e"/>
-    </g>
-   </g>
-   <g id="line2d_27">
-    <path d="M 418.996063 119.055118 
-L 418.996063 28.346457 
-" clip-path="url(#pa5d3fa5f6c)" style="fill: none; stroke-dasharray: 1.2,0.9; stroke-dashoffset: 0; stroke: #776a62; stroke-width: 0.6"/>
-   </g>
-   <g id="line2d_28">
-    <defs>
-     <path id="meb218fdd92" d="M 0 2.1 
-C 0.556927 2.1 1.091118 1.878731 1.484924 1.484924 
-C 1.878731 1.091118 2.1 0.556927 2.1 0 
-C 2.1 -0.556927 1.878731 -1.091118 1.484924 -1.484924 
-C 1.091118 -1.878731 0.556927 -2.1 0 -2.1 
-C -0.556927 -2.1 -1.091118 -1.878731 -1.484924 -1.484924 
-C -1.878731 -1.091118 -2.1 -0.556927 -2.1 0 
-C -2.1 0.556927 -1.878731 1.091118 -1.484924 1.484924 
-C -1.091118 1.878731 -0.556927 2.1 0 2.1 
-z
-" style="stroke: #8e857d"/>
-    </defs>
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#meb218fdd92" x="423.336614" y="45.624297" style="fill: #8e857d; stroke: #8e857d"/>
-    </g>
-   </g>
-   <g id="line2d_29">
-    <defs>
-     <path id="m4a2960ebed" d="M 0 2.1 
-C 0.556927 2.1 1.091118 1.878731 1.484924 1.484924 
-C 1.878731 1.091118 2.1 0.556927 2.1 0 
-C 2.1 -0.556927 1.878731 -1.091118 1.484924 -1.484924 
-C 1.091118 -1.878731 0.556927 -2.1 0 -2.1 
-C -0.556927 -2.1 -1.091118 -1.878731 -1.484924 -1.484924 
-C -1.878731 -1.091118 -2.1 -0.556927 -2.1 0 
-C -2.1 0.556927 -1.878731 1.091118 -1.484924 1.484924 
-C -1.091118 1.878731 -0.556927 2.1 0 2.1 
-z
-" style="stroke: #a33a2e"/>
-    </defs>
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#m4a2960ebed" x="366.909449" y="74.420697" style="fill: #a33a2e; stroke: #a33a2e"/>
-    </g>
-   </g>
-   <g id="line2d_30">
-    <defs>
-     <path id="m1b825e35db" d="M 0 2.1 
-C 0.556927 2.1 1.091118 1.878731 1.484924 1.484924 
-C 1.878731 1.091118 2.1 0.556927 2.1 0 
-C 2.1 -0.556927 1.878731 -1.091118 1.484924 -1.484924 
-C 1.091118 -1.878731 0.556927 -2.1 0 -2.1 
-C -0.556927 -2.1 -1.091118 -1.878731 -1.484924 -1.484924 
-C -1.878731 -1.091118 -2.1 -0.556927 -2.1 0 
-C -2.1 0.556927 -1.878731 1.091118 -1.484924 1.484924 
-C -1.091118 1.878731 -0.556927 2.1 0 2.1 
-z
-" style="stroke: #a33a2e"/>
-    </defs>
-    <g clip-path="url(#pa5d3fa5f6c)">
-     <use xlink:href="#m1b825e35db" x="375.590551" y="103.217098" style="fill: #ffffff; stroke: #a33a2e"/>
-    </g>
-   </g>
-   <g id="patch_19">
-    <path d="M 306.141732 119.055118 
-L 445.03937 119.055118 
-" style="fill: none; stroke: #33261f; stroke-width: 0.6; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="text_46">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: end; fill: #33261f" x="411.400098" y="47.487578" transform="rotate(-0 411.400098 47.487578)">0.02 ± 0.04</text>
-   </g>
-   <g id="text_47">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="366.909449" y="65.706363" transform="rotate(-0 366.909449 65.706363)">−0.24 ± 0.21</text>
-   </g>
-   <g id="text_48">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #33261f" x="375.590551" y="94.502763" transform="rotate(-0 375.590551 94.502763)">−0.20 ± 0.21</text>
-   </g>
-   <g id="text_49">
-    <text style="font-size: 7.2px; font-family: 'Arial', 'Liberation Sans', sans-serif; text-anchor: middle; fill: #776a62" x="418.996063" y="26.831222" transform="rotate(-0 418.996063 26.831222)">no error</text>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="pc4c9d7877b">
-   <rect x="0" y="0" width="453.543307" height="260.787402"/>
-  </clipPath>
-  <clipPath id="p09da1250ce">
-   <rect x="36.850394" y="22.677165" width="164.409449" height="107.716535"/>
-  </clipPath>
-  <clipPath id="pa5d3fa5f6c">
-   <rect x="306.141732" y="28.346457" width="138.897638" height="90.708661"/>
-  </clipPath>
- </defs>
- <defs>
-  <pattern id="hb5c087c607" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
-   <rect x="0" y="0" width="73" height="73" fill="#f6dcd6"/>
-   <path d="M -36 36 
-L 36 -36 
-M -34 38 
-L 38 -34 
-M -32 40 
-L 40 -32 
-M -30 42 
-L 42 -30 
-M -28 44 
-L 44 -28 
-M -26 46 
-L 46 -26 
-M -24 48 
-L 48 -24 
-M -22 50 
-L 50 -22 
-M -20 52 
-L 52 -20 
-M -18 54 
-L 54 -18 
-M -16 56 
-L 56 -16 
-M -14 58 
-L 58 -14 
-M -12 60 
-L 60 -12 
-M -10 62 
-L 62 -10 
-M -8 64 
-L 64 -8 
-M -6 66 
-L 66 -6 
-M -4 68 
-L 68 -4 
-M -2 70 
-L 70 -2 
-M 0 72 
-L 72 0 
-M 2 74 
-L 74 2 
-M 4 76 
-L 76 4 
-M 6 78 
-L 78 6 
-M 8 80 
-L 80 8 
-M 10 82 
-L 82 10 
-M 12 84 
-L 84 12 
-M 14 86 
-L 86 14 
-M 16 88 
-L 88 16 
-M 18 90 
-L 90 18 
-M 20 92 
-L 92 20 
-M 22 94 
-L 94 22 
-M 24 96 
-L 96 24 
-M 26 98 
-L 98 26 
-M 28 100 
-L 100 28 
-M 30 102 
-L 102 30 
-M 32 104 
-L 104 32 
-M 34 106 
-L 106 34 
-M 36 108 
-L 108 36 
-" style="fill: #cc5f4f; stroke: #cc5f4f; stroke-width: 0.6; stroke-linecap: butt; stroke-linejoin: miter"/>
-  </pattern>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="538.583pt" height="311.031pt" viewBox="0 0 800 462" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif">
+<defs>
+<linearGradient id="cellDirect" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8D6449"/><stop offset="1" stop-color="#5B3E2E"/></linearGradient>
+<pattern id="hatchInf" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#F8E0DA"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C0584A" stroke-width="2"/></pattern>
+</defs>
+<rect x="0.0" y="0.0" width="800.0" height="462.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
+<g transform="translate(0,0)">
+<text x="20.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
+<text x="44.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Prescribed scar: radial strain 0.95 → 0.30</text>
+<line x1="66.0" y1="50.0" x2="66.0" y2="218.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="62.0" y1="203.6" x2="66.0" y2="203.6" stroke="#33261F" stroke-width="0.9" />
+<text x="59.0" y="207.6" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >−0.2</text>
+<line x1="62.0" y1="179.6" x2="66.0" y2="179.6" stroke="#33261F" stroke-width="0.9" />
+<text x="59.0" y="183.6" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >0.0</text>
+<line x1="62.0" y1="155.6" x2="66.0" y2="155.6" stroke="#33261F" stroke-width="0.9" />
+<text x="59.0" y="159.6" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >0.2</text>
+<line x1="62.0" y1="131.6" x2="66.0" y2="131.6" stroke="#33261F" stroke-width="0.9" />
+<text x="59.0" y="135.6" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >0.4</text>
+<line x1="62.0" y1="107.6" x2="66.0" y2="107.6" stroke="#33261F" stroke-width="0.9" />
+<text x="59.0" y="111.6" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >0.6</text>
+<line x1="62.0" y1="83.6" x2="66.0" y2="83.6" stroke="#33261F" stroke-width="0.9" />
+<text x="59.0" y="87.6" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >0.8</text>
+<line x1="62.0" y1="59.6" x2="66.0" y2="59.6" stroke="#33261F" stroke-width="0.9" />
+<text x="59.0" y="63.6" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >1.0</text>
+<text transform="translate(30.0,134.0) rotate(-90)" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >peak systolic strain (ground truth)</text>
+<line x1="66.0" y1="179.6" x2="362.0" y2="179.6" stroke="#33261F" stroke-width="0.9" />
+<rect x="84.3" y="65.6" width="30.0" height="114.0" rx="0" fill="#7A4720" stroke="none" stroke-width="0" />
+<text x="99.3" y="60.6" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="middle" >0.95</text>
+<rect x="116.3" y="143.6" width="30.0" height="36.0" rx="0" fill="url(#hatchInf)" stroke="#C0584A" stroke-width="0.9" />
+<text x="131.3" y="138.6" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="middle" >0.30</text>
+<text x="115.3" y="232.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="middle" >Radial</text>
+<text x="115.3" y="246.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >Δ −0.65</text>
+<rect x="183.0" y="179.6" width="30.0" height="21.6" rx="0" fill="#7A4720" stroke="none" stroke-width="0" />
+<text x="198.0" y="214.2" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="middle" >−0.18</text>
+<rect x="215.0" y="179.6" width="30.0" height="20.4" rx="0" fill="url(#hatchInf)" stroke="#C0584A" stroke-width="0.9" />
+<text x="230.0" y="213.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="middle" >−0.17</text>
+<text x="214.0" y="232.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="middle" >Longitudinal</text>
+<text x="214.0" y="246.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >Δ +0.01</text>
+<rect x="281.7" y="179.6" width="30.0" height="21.6" rx="0" fill="#7A4720" stroke="none" stroke-width="0" />
+<text x="296.7" y="214.2" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="middle" >−0.18</text>
+<rect x="313.7" y="178.4" width="30.0" height="1.6" rx="0" fill="url(#hatchInf)" stroke="#C0584A" stroke-width="0.9" />
+<text x="328.7" y="173.4" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="middle" >0.01</text>
+<text x="312.7" y="232.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="middle" >Circumferential</text>
+<text x="312.7" y="246.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >Δ +0.19</text>
+<text x="196.0" y="70.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Infarct case EF 49%:</text>
+<text x="196.0" y="83.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >remote tissue compensates</text>
+<text x="196.0" y="112.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >circumferential near zero in scar;</text>
+<text x="196.0" y="125.5" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >longitudinal almost unchanged</text>
+<rect x="66.0" y="258.0" width="12.0" height="10.0" rx="1.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="83.0" y="268.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >remote myocardium</text>
+<rect x="212.7" y="258.0" width="12.0" height="10.0" rx="1.5" fill="url(#hatchInf)" stroke="none" stroke-width="1.0" />
+<text x="229.7" y="268.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >scar</text>
+<line x1="398.0" y1="6.0" x2="398.0" y2="288.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="410.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
+<text x="434.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Slice-mean error: Ecc small, Err biased low</text>
+<line x1="562.0" y1="52.0" x2="562.0" y2="152.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="614.0" y1="52.0" x2="614.0" y2="152.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="666.0" y1="52.0" x2="666.0" y2="152.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="666.0" y1="52.0" x2="666.0" y2="152.0" stroke="#33261F" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="528.0" y="74.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Ecc, all four cases</text>
+<line x1="660.8" y1="70.0" x2="681.6" y2="70.0" stroke="#8E857D" stroke-width="1.6" />
+<circle cx="671.2" cy="70.0" r="3.6" fill="#8E857D" stroke="#8E857D" stroke-width="1.4" />
+<text x="528.0" y="104.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Err, all four cases</text>
+<line x1="549.0" y1="100.0" x2="658.2" y2="100.0" stroke="#C0584A" stroke-width="1.6" />
+<circle cx="603.6" cy="100.0" r="3.6" fill="#C0584A" stroke="#C0584A" stroke-width="1.4" />
+<text x="528.0" y="134.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Err, infarct case</text>
+<line x1="559.4" y1="130.0" x2="668.6" y2="130.0" stroke="#C0584A" stroke-width="1.6" />
+<circle cx="614.0" cy="130.0" r="3.6" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.4" />
+<line x1="536.0" y1="152.0" x2="692.0" y2="152.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="562.0" y1="152.0" x2="562.0" y2="156.0" stroke="#33261F" stroke-width="0.9" />
+<text x="562.0" y="167.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−0.4</text>
+<line x1="614.0" y1="152.0" x2="614.0" y2="156.0" stroke="#33261F" stroke-width="0.9" />
+<text x="614.0" y="167.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−0.2</text>
+<line x1="666.0" y1="152.0" x2="666.0" y2="156.0" stroke="#33261F" stroke-width="0.9" />
+<text x="666.0" y="167.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
+<text x="614.0" y="181.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >reported strain error (mean ± SD)</text>
+<text x="706.0" y="74.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >0.02 ± 0.04</text>
+<text x="706.0" y="104.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >−0.24 ± 0.21</text>
+<text x="706.0" y="134.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >−0.20 ± 0.21</text>
+<text x="666.0" y="48.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >no error</text>
+<line x1="410.0" y1="199.0" x2="778.0" y2="199.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="410.0" y="212.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >myocardial Dice, all phases</text>
+<text x="778.0" y="212.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >0.82</text>
+<line x1="410.0" y1="216.0" x2="778.0" y2="216.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="410.0" y="229.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >displacement error</text>
+<text x="778.0" y="229.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >1.0 ± 0.9 mm</text>
+<line x1="410.0" y1="233.0" x2="778.0" y2="233.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="410.0" y="246.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >EF, NOR / DCM / HCM / infarct</text>
+<text x="778.0" y="246.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >51 / 34 / 41 / 49%</text>
+<text x="410.0" y="270.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Case-level means over whole slices; errors inside the scar were not reported.</text>
+<text x="410.0" y="283.5" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >No between-case test was reported, so no case ordering is implied.</text>
+<line x1="20.0" y1="298.0" x2="780.0" y2="298.0" stroke="#33261F" stroke-width="1.2" />
+<text x="20.0" y="324.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
+<text x="44.0" y="322.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >No abnormality attribute was reported at the scar's own level</text>
+<text x="20.0" y="352.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Magnitude</text>
+<circle cx="180.0" cy="348.0" r="6.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" />
+<line x1="22.0" y1="396.0" x2="132.0" y2="396.0" stroke="#CDBFB2" stroke-width="0.8" />
+<path d="M22.0 395.0 L23.8 395.0 L25.7 395.0 L27.5 395.0 L29.3 395.0 L31.2 395.0 L33.0 395.0 L34.8 394.9 L36.7 394.9 L38.5 394.8 L40.3 394.7 L42.2 394.5 L44.0 394.3 L45.8 393.9 L47.7 393.4 L49.5 392.7 L51.3 391.8 L53.2 390.7 L55.0 389.3 L56.8 387.5 L58.7 385.5 L60.5 383.2 L62.3 380.6 L64.2 377.9 L66.0 375.2 L67.8 372.5 L69.7 370.0 L71.5 367.9 L73.3 366.3 L75.2 365.3 L77.0 365.0 L78.8 365.3 L80.7 366.3 L82.5 367.9 L84.3 370.0 L86.2 372.5 L88.0 375.2 L89.8 377.9 L91.7 380.6 L93.5 383.2 L95.3 385.5 L97.2 387.5 L99.0 389.3 L100.8 390.7 L102.7 391.8 L104.5 392.7 L106.3 393.4 L108.2 393.9 L110.0 394.3 L111.8 394.5 L113.7 394.7 L115.5 394.8 L117.3 394.9 L119.2 394.9 L121.0 395.0 L122.8 395.0 L124.7 395.0 L126.5 395.0 L128.3 395.0 L130.2 395.0 L132.0 395.0" stroke="#7A4720" stroke-width="1.6" fill="none" />
+<line x1="77.0" y1="395.0" x2="77.0" y2="367.0" stroke="#33261F" stroke-width="0.9" />
+<path d="M78.7 370.6 L77.0 367.0 L75.3 370.6" stroke="#33261F" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="140.0" y="383.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" font-style="italic" >ΔM</text>
+<text x="20.0" y="414.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >scar-level error not reported;</text>
+<text x="20.0" y="427.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >slice means: Ecc error small,</text>
+<text x="20.0" y="440.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Err under-estimated</text>
+<line x1="202.0" y1="338.0" x2="202.0" y2="444.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="210.0" y="352.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Location</text>
+<circle cx="370.0" cy="348.0" r="6.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" />
+<line x1="212.0" y1="396.0" x2="322.0" y2="396.0" stroke="#CDBFB2" stroke-width="0.8" />
+<path d="M212.0 395.0 L213.8 395.0 L215.7 395.0 L217.5 395.0 L219.3 395.0 L221.2 395.0 L223.0 395.0 L224.8 394.9 L226.7 394.9 L228.5 394.8 L230.3 394.7 L232.2 394.5 L234.0 394.3 L235.8 393.9 L237.7 393.4 L239.5 392.7 L241.3 391.8 L243.2 390.7 L245.0 389.3 L246.8 387.5 L248.7 385.5 L250.5 383.2 L252.3 380.6 L254.2 377.9 L256.0 375.2 L257.8 372.5 L259.7 370.0 L261.5 367.9 L263.3 366.3 L265.2 365.3 L267.0 365.0 L268.8 365.3 L270.7 366.3 L272.5 367.9 L274.3 370.0 L276.2 372.5 L278.0 375.2 L279.8 377.9 L281.7 380.6 L283.5 383.2 L285.3 385.5 L287.2 387.5 L289.0 389.3 L290.8 390.7 L292.7 391.8 L294.5 392.7 L296.3 393.4 L298.2 393.9 L300.0 394.3 L301.8 394.5 L303.7 394.7 L305.5 394.8 L307.3 394.9 L309.2 394.9 L311.0 395.0 L312.8 395.0 L314.7 395.0 L316.5 395.0 L318.3 395.0 L320.2 395.0 L322.0 395.0" stroke="#7A4720" stroke-width="1.6" fill="none" />
+<line x1="267.0" y1="400.0" x2="267.0" y2="361.0" stroke="#33261F" stroke-width="0.9" stroke-dasharray="3 2"/>
+<text x="330.0" y="383.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" font-style="italic" >Δθ</text>
+<text x="210.0" y="414.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >myocardial Dice only;</text>
+<text x="210.0" y="427.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >no lesion-centroid error</text>
+<line x1="392.0" y1="338.0" x2="392.0" y2="444.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="400.0" y="352.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Extent</text>
+<circle cx="560.0" cy="348.0" r="6.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" />
+<line x1="402.0" y1="396.0" x2="512.0" y2="396.0" stroke="#CDBFB2" stroke-width="0.8" />
+<path d="M402.0 395.0 L403.8 395.0 L405.7 395.0 L407.5 395.0 L409.3 395.0 L411.2 395.0 L413.0 395.0 L414.8 394.9 L416.7 394.9 L418.5 394.8 L420.3 394.7 L422.2 394.5 L424.0 394.3 L425.8 393.9 L427.7 393.4 L429.5 392.7 L431.3 391.8 L433.2 390.7 L435.0 389.3 L436.8 387.5 L438.7 385.5 L440.5 383.2 L442.3 380.6 L444.2 377.9 L446.0 375.2 L447.8 372.5 L449.7 370.0 L451.5 367.9 L453.3 366.3 L455.2 365.3 L457.0 365.0 L458.8 365.3 L460.7 366.3 L462.5 367.9 L464.3 370.0 L466.2 372.5 L468.0 375.2 L469.8 377.9 L471.7 380.6 L473.5 383.2 L475.3 385.5 L477.2 387.5 L479.0 389.3 L480.8 390.7 L482.7 391.8 L484.5 392.7 L486.3 393.4 L488.2 393.9 L490.0 394.3 L491.8 394.5 L493.7 394.7 L495.5 394.8 L497.3 394.9 L499.2 394.9 L501.0 395.0 L502.8 395.0 L504.7 395.0 L506.5 395.0 L508.3 395.0 L510.2 395.0 L512.0 395.0" stroke="#7A4720" stroke-width="1.6" fill="none" />
+<line x1="442.8" y1="380.0" x2="471.2" y2="380.0" stroke="#33261F" stroke-width="0.9" />
+<text x="520.0" y="383.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" font-style="italic" >w</text>
+<text x="400.0" y="414.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one fixed scar geometry;</text>
+<text x="400.0" y="427.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >extent recovery not measured</text>
+<line x1="582.0" y1="338.0" x2="582.0" y2="444.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="590.0" y="352.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Timing</text>
+<circle cx="750.0" cy="348.0" r="6.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" stroke-dasharray="2 1.6"/>
+<line x1="592.0" y1="396.0" x2="702.0" y2="396.0" stroke="#CDBFB2" stroke-width="0.8" />
+<path d="M592.0 394.7 L593.8 394.5 L595.7 394.3 L597.5 394.1 L599.3 393.8 L601.2 393.3 L603.0 392.8 L604.8 392.1 L606.7 391.3 L608.5 390.3 L610.3 389.2 L612.2 387.8 L614.0 386.3 L615.8 384.6 L617.7 382.7 L619.5 380.6 L621.3 378.5 L623.2 376.4 L625.0 374.2 L626.8 372.2 L628.7 370.2 L630.5 368.5 L632.3 367.1 L634.2 366.0 L636.0 365.3 L637.8 365.0 L639.7 365.1 L641.5 365.7 L643.3 366.6 L645.2 367.9 L647.0 369.5 L648.8 371.4 L650.7 373.4 L652.5 375.5 L654.3 377.7 L656.2 379.8 L658.0 381.9 L659.8 383.8 L661.7 385.6 L663.5 387.2 L665.3 388.6 L667.2 389.9 L669.0 390.9 L670.8 391.8 L672.7 392.5 L674.5 393.1 L676.3 393.6 L678.2 394.0 L680.0 394.2 L681.8 394.5 L683.7 394.6 L685.5 394.7 L687.3 394.8 L689.2 394.9 L691.0 394.9 L692.8 394.9 L694.7 395.0 L696.5 395.0 L698.3 395.0 L700.2 395.0 L702.0 395.0" stroke="#7A4720" stroke-width="1.6" fill="none" />
+<line x1="638.2" y1="400.0" x2="638.2" y2="361.0" stroke="#33261F" stroke-width="0.9" stroke-dasharray="3 2"/>
+<text x="710.0" y="383.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" font-style="italic" >Δt</text>
+<text x="590.0" y="414.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >peak-time error not</text>
+<text x="590.0" y="427.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >in the record read</text>
+<circle cx="26.0" cy="454.0" r="5.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" />
+<text x="38.0" y="458.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >not reported at the attribute's own (scar) level</text>
+<circle cx="330.0" cy="454.0" r="5.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" stroke-dasharray="2 1.6"/>
+<text x="342.0" y="458.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >not inspected in the record read</text>
+<line x1="560.0" y1="454.0" x2="578.0" y2="454.0" stroke="#7A4720" stroke-width="1.6" />
+<text x="584.0" y="458.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >reference profile (schematic)</text>
+</g>
 </svg>

@@ -6,9 +6,11 @@ Results-level question: What evidence is required to support regional or focal c
 
 Figure archetype: Schematic-led figure sequence with quantitative and analytic validation panels.
 
-Target/output: Journal manuscript figures at the existing 160 mm main-text and 166 mm supplement widths; editable SVG/PDF plus high-resolution PNG previews.
+Target/output: Journal figures at the 190 mm double-column width (graphical abstract 2600 × 1000 px); editable SVG (live text), PDF with embedded fonts, and 600 dpi PNG.
 
-Backend: Existing Python/Matplotlib plotting sources, with existing Typst/CeTZ retained for non-plot schematic assets.
+Backend: Figures 2–5, S1–S3 and the graphical abstract use the agarwood-scifig house style (design-templates/house-style/agarwood-scifig/scifig.py, explicit coordinates, rendered by headless Chromium); Figure 1 keeps its Typst/CeTZ source.
+
+House-style rules applied: white canvas with thin rules and no cards; lowercase bold panel letter plus a claim-style panel title; values printed on marks; two muted caption lines per sub-panel; readout tables in schematics; text in ink or muted only; smallest text ≥ 7 pt and scripts ≥ 6 pt at 190 mm. Any value added to a schematic is computed from the drawn curves or transcribed from data/*.csv.
 
 Evidence hierarchy:
 

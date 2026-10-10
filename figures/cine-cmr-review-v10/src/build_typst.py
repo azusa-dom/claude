@@ -1,4 +1,7 @@
-"""Compile the Typst diagrams to PDF, SVG and PNG."""
+"""Compile the remaining Typst diagram (Figure 1) to PDF, SVG and PNG.
+
+Every other figure is drawn in the agarwood-scifig house style (src/*.py via style/scifig_common.py).
+"""
 import sys
 from pathlib import Path
 
@@ -8,9 +11,6 @@ ROOT = Path(__file__).resolve().parents[1]
 FONTS = ["/usr/share/fonts/truetype/liberation"]
 TARGETS = {
     "fig1_measurement_chain.typ": ("Figure_1_measurement_chain", 600),
-    "fig5_validation_programme.typ": ("Figure_5_validation_targets_programme", 600),
-    "figS3_training_inference.typ": ("Figure_S3_training_vs_inference_controls", 600),
-    "graphical_abstract.typ": ("Graphical_abstract", 254),
 }
 
 

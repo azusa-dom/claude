@@ -1,148 +1,130 @@
-"""Figure 4: attribute-specific recovery in the MRXCAT2.0 prescribed-scar evaluation of DeepStrain."""
+"""Figure 4: attribute-specific recovery in the MRXCAT2.0 prescribed-scar evaluation of DeepStrain.
+
+agarwood-scifig house style, 190 mm. Every number comes from data/mrxcat2_values.csv (each row quotes
+the MRXCAT2.0 sentence it was transcribed from); Δ values are simple differences of those numbers.
+Panel c glyphs only define each attribute on a reference profile (schematic, no estimate drawn).
+"""
 import csv
+import math
 import sys
 from pathlib import Path
 
-from matplotlib.patches import Circle, FancyBboxPatch, Rectangle
-
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from figstyle import (CORAL, CORAL_T, FS_BODY, FS_SMALL, FS_TITLE, OBS, INK, MAIN_W,  # noqa: E402
-                      MUTED, ERR, REF, RULE, canvas, panel_label, save, sub_axes)
+from scifig_common import C, T, export, num, start  # noqa: E402
+from scifig import gauss  # noqa: E402
 
 DATA = Path(__file__).resolve().parents[1] / "data" / "mrxcat2_values.csv"
-W, H = MAIN_W, 92.0
 
 
 def values():
     out = {}
     with DATA.open(newline="") as f:
         for r in csv.DictReader(f):
-            key = (r["quantity"], r["component"], r["group"])
-            out[key] = (float(r["mean"]), float(r["sd"]) if r["sd"] else None)
+            out[(r["quantity"], r["component"], r["group"])] = (float(r["mean"]), float(r["sd"]) if r["sd"] else None)
     return out
 
 
-def open_circle(ax, x, y, dashed=False):
-    ax.add_patch(Circle((x, y), 1.05, facecolor="white", edgecolor=MUTED, lw=0.8,
-                        ls=(0, (1.5, 1.2)) if dashed else "-"))
+v = values()
+H = 462
 
 
-def main():
-    v = values()
-    fig, ax = canvas(W, H)
-    top = H - 0.5
+def f2(x):
+    return f"{x:.2f}".replace("-", "−")
 
-    # a: ground-truth strain, remote vs scar
-    panel_label(ax, 0.5, top, "a")
-    ax.text(5.0, top - 0.9, "Prescribed deficit (ground truth)", fontsize=FS_TITLE, fontweight="bold", va="top")
-    pa = sub_axes(fig, W, H, 13.0, 46.0, 58.0, 38.0)
-    comps = ["radial", "longitudinal", "circumferential"]
-    names = ["Radial", "Longitudinal", "Circumferential"]
-    bw = 0.36
-    for i, c in enumerate(comps):
-        rem = v[("gt_peak_systolic_strain", c, "remote")][0]
-        scar = v[("gt_peak_systolic_strain", c, "scar")][0]
-        pa.bar(i - bw / 2 - 0.01, rem, bw, color=REF, edgecolor=REF, lw=0.6)
-        pa.bar(i + bw / 2 + 0.01, scar, bw, facecolor=CORAL_T, edgecolor=CORAL, hatch="//////", lw=0.8)
-        for j, (x, val) in enumerate(((i - bw / 2, rem), (i + bw / 2, scar))):
-            neg = val < 0
-            off = (-0.035 - (0.10 if (neg and j == 1) else 0)) if neg else 0.035
-            pa.text(x, val + off, f"{val:.2f}".replace("-", "−"), ha="center",
-                    va="top" if neg else "bottom", fontsize=FS_SMALL, color=INK)
-    pa.axhline(0, color=INK, lw=0.6)
-    pa.set_xticks(range(3), names)
-    pa.tick_params(axis="x", length=0, pad=1)
-    pa.set_ylim(-0.42, 1.12)
-    pa.set_yticks([-0.2, 0, 0.2, 0.4, 0.6, 0.8, 1.0])
-    pa.set_yticklabels([f"{t:.1f}".replace("-", "−") for t in pa.get_yticks()])
-    pa.set_xlim(-0.6, 2.6)
-    pa.spines["bottom"].set_visible(False)
-    pa.set_ylabel("Peak systolic strain", labelpad=2)
-    ef = int(v[("ejection_fraction_pct", "", "infarct")][0])
-    pa.text(0.75, 1.02, f"Infarct case EF {ef}%:\nremote tissue compensates", ha="left", va="top",
-            fontsize=FS_SMALL, color=INK, linespacing=1.15)
-    pa.text(0.75, 0.62, "Radial strain markedly\nreduced (0.95 → 0.30);\ncircumferential near zero;\nlongitudinal almost unchanged",
-            ha="left", va="top", fontsize=FS_SMALL, color=MUTED, linespacing=1.15)
-    lx, ly = 15.0, 37.5
-    ax.add_patch(Rectangle((lx, ly - 1.1), 3.2, 2.2, facecolor=REF, edgecolor=REF, lw=0.6))
-    ax.text(lx + 4.2, ly, "Remote myocardium", va="center", fontsize=FS_SMALL)
-    ax.add_patch(Rectangle((lx + 30, ly - 1.1), 3.2, 2.2, facecolor=CORAL_T, edgecolor=CORAL,
-                           hatch="//////", lw=0.8))
-    ax.text(lx + 34.2, ly, "Scar", va="center", fontsize=FS_SMALL)
+fig = start(H, "Figure 4 | One focal test: slice means reported, scar attributes not",
+            legend=[("reference", C.REF), ("estimate", C.INF)],
+            footer=["Values as reported by the MRXCAT2.0 authors (one scar geometry, one estimator, mid-ventricular "
+                    "short axis); Δ = scar − remote; not pooled.",
+                    "Ecc / Err / Ell, circumferential / radial / longitudinal strain; EF, ejection fraction; "
+                    "NOR, DCM, HCM: normal, dilated, hypertrophic."])
 
-    # b: DeepStrain error
-    panel_label(ax, 80.0, top, "b")
-    ax.text(84.5, top - 0.9, "Estimator error (DeepStrain)", fontsize=FS_TITLE, fontweight="bold", va="top")
-    pb = sub_axes(fig, W, H, 108.0, 50.0, 49.0, 32.0)
-    rows = [
-        ("Circumferential,\nall four cases", v[("deepstrain_error", "circumferential", "all_cases")], OBS, True),
-        ("Radial,\nall four cases", v[("deepstrain_error", "radial", "all_cases")], ERR, True),
-        ("Radial,\ninfarct case", v[("deepstrain_error", "radial", "infarct_case")], ERR, False),
-    ]
-    for k, (lab, (m, sd), col, filled) in enumerate(rows):
-        y = 2 - k
-        pb.errorbar(m, y, xerr=sd, fmt="o", color=col, ms=4.2, mfc=col if filled else "white", mec=col,
-                    mew=1.0, elinewidth=1.0, capsize=2.2, capthick=0.9)
-        txt = f"{m:.2f} ± {sd:.2f}".replace("-", "−")
-        if k == 0:
-            pb.text(m - sd - 0.015, y, txt, ha="right", va="center", fontsize=FS_SMALL, color=INK)
-        else:
-            pb.text(m, y + 0.25, txt, ha="center", va="bottom", fontsize=FS_SMALL, color=INK)
-    pb.axvline(0, color=MUTED, lw=0.6, ls=(0, (2, 1.5)))
-    pb.set_yticks([2, 1, 0], [r[0] for r in rows])
-    pb.tick_params(axis="y", length=0)
-    pb.spines["left"].set_visible(False)
-    pb.set_ylim(-0.55, 2.6)
-    pb.set_xlim(-0.52, 0.12)
-    pb.set_xticks([-0.4, -0.2, 0.0])
-    pb.set_xticklabels(["−0.4", "−0.2", "0"])
-    pb.set_xlabel("Reported strain error (mean ± SD)", labelpad=2)
-    pb.text(0.0, 2.6, "no error", ha="center", va="bottom", fontsize=FS_SMALL, color=MUTED)
-    d, dsd = v[("deepstrain_displacement_error_mm", "", "all_cases")]
-    dice = v[("deepstrain_dice", "", "all_phases")][0]
-    ax.text(84.5, 41.0, "No between-case test was reported, so no case\nordering is implied. Errors are case-level means over\n"
-            "whole slices; scar-region errors were not reported.\n"
-            f"Also reported: Dice {dice:.2f}; displacement error {d:.1f} ± {dsd:.1f} mm.",
-            fontsize=FS_SMALL, va="top", color=INK, linespacing=1.25)
+# ---- a: ground truth, remote vs scar ---------------------------------------------------------
+fig.panel(20, 24, "a", "Prescribed scar: radial strain 0.95 → 0.30")
+ax = fig.axes(66, 50, 296, 168, (0, 3), (-0.32, 1.08), (), [-0.2, 0, 0.2, 0.4, 0.6, 0.8, 1.0],
+              ylabel="peak systolic strain (ground truth)", xaxis=False, yfmt=lambda t: f"{t:.1f}".replace("-", "−"))
+fig.line(66, ax.fy(0), 362, ax.fy(0), C.INK, 0.9)
+comps = [("radial", "Radial"), ("longitudinal", "Longitudinal"), ("circumferential", "Circumferential")]
+bw = 30
+for i, (c, name) in enumerate(comps):
+    rem = v[("gt_peak_systolic_strain", c, "remote")][0]
+    scar = v[("gt_peak_systolic_strain", c, "scar")][0]
+    xc = ax.fx(i + 0.5)
+    for j, (val, fill) in enumerate(((rem, C.REF), (scar, "url(#hatchInf)"))):
+        x = xc - bw - 1 if j == 0 else xc + 1
+        top, bot = (ax.fy(val), ax.fy(0)) if val >= 0 else (ax.fy(0), ax.fy(val))
+        fig.rect(x, top, bw, max(bot - top, 1.6), fill, C.INF if j else "none", 0.9 if j else 0)
+        ty = top - 5 if val >= 0 else bot + 13
+        fig.text(x + bw / 2, ty, f2(val), T.SMALL + 0.5, 700, anchor="middle")
+    fig.text(xc, ax.fy(-0.32) + 14, name, T.LABEL, anchor="middle")
+    fig.text(xc, ax.fy(-0.32) + 28, f"Δ {'+' if scar - rem > 0 else ''}{f2(scar - rem)}", T.SMALL, fill=C.MUTED,
+             anchor="middle")
+ef = int(v[("ejection_fraction_pct", "", "infarct")][0])
+fig.lines(196, 70, [f"Infarct case EF {ef}%:", "remote tissue compensates"],
+          T.SMALL, fill=C.INK, leading=13.5)
+fig.lines(196, 112, ["circumferential near zero in scar;", "longitudinal almost unchanged"], T.SMALL, leading=13.5)
+fig.legend_items(66, 268, [("remote myocardium", "box", C.REF), ("scar", "hatch", C.INF)], gap=26)
 
-    # c: attribute status
-    panel_label(ax, 0.5, 29.5, "c")
-    ax.text(5.0, 28.6, "Abnormality attributes in this experiment", fontsize=FS_TITLE, fontweight="bold", va="top")
-    items = [
-        ("Magnitude", "nr", "scar-level error not reported;\nslice means: Ecc error small,\nErr under-estimated"),
-        ("Location", "nr", "myocardial Dice only;\nno lesion-centroid error"),
-        ("Extent", "nr", "one fixed scar geometry;\nextent recovery not measured"),
-        ("Timing", "ni", "peak-time error not\nin the record read"),
-    ]
-    bw_, bh, gap = 38.0, 15.0, 2.0
-    y = 23.0
-    for i, (name, status, note) in enumerate(items):
-        bx = 0.8 + i * (bw_ + gap)
-        if i:
-            ax.plot([bx - gap / 2, bx - gap / 2], [y - bh + 1.0, y - 0.5], color=RULE, lw=0.6)
-        ax.text(bx + 2.0, y - 3.0, name, fontsize=FS_BODY, fontweight="bold", va="center")
-        ax.text(bx + 2.0, y - 6.0, note, fontsize=FS_SMALL, va="top", color=MUTED, linespacing=1.2)
-        sx, sy = bx + bw_ - 3.4, y - 3.0
-        if status == "nr":
-            open_circle(ax, sx, sy)
-        else:
-            open_circle(ax, sx, sy, dashed=True)
-    ky = y - bh - 4.0
-    kx = 0.8
-    open_circle(ax, kx + 1.4, ky)
-    ax.text(kx + 3.1, ky, "not reported at the attribute's own (scar) level", fontsize=FS_SMALL, va="center")
-    open_circle(ax, kx + 68.0, ky, dashed=True)
-    ax.text(kx + 69.7, ky, "not inspected in the record read", fontsize=FS_SMALL, va="center")
+# ---- b: DeepStrain error -----------------------------------------------------------------------
+fig.col_rule(398, 6, 288)
+fig.panel(410, 24, "b", "Slice-mean error: Ecc small, Err biased low")
+rows = [("Ecc, all four cases", v[("deepstrain_error", "circumferential", "all_cases")], C.OBS, False),
+        ("Err, all four cases", v[("deepstrain_error", "radial", "all_cases")], C.INF, False),
+        ("Err, infarct case", v[("deepstrain_error", "radial", "infarct_case")], C.INF, True)]
+fax = fig.forest(410, 52, 156, [(lab, m, m - sd, m + sd, col, op) for lab, (m, sd), col, op in rows],
+                 xlim=(-0.5, 0.1), ticks=[-0.4, -0.2, 0], xlabel="reported strain error (mean ± SD)", row_h=30,
+                 label_w=126, fmt=lambda t: num(t, 1))
+for i, (lab, (m, sd), col, op) in enumerate(rows):
+    yy = 52 + 18 + i * 30
+    fig.text(706, yy + 4, f"{f2(m)} ± {f2(sd)}", T.SMALL + 0.5, 700)
+fig.text(fax.fx(0), 48, "no error", T.SMALL, fill=C.MUTED, anchor="middle")
+d, dsd = v[("deepstrain_displacement_error_mm", "", "all_cases")]
+dice = v[("deepstrain_dice", "", "all_phases")][0]
+fig.kv_table(410, 212, [("myocardial Dice, all phases", num(dice)),
+                        ("displacement error", f"{d:.1f} ± {dsd:.1f} mm"),
+                        ("EF, NOR / DCM / HCM / infarct", "51 / 34 / 41 / 49%")], w=368, row_h=17)
+fig.lines(410, 270, ["Case-level means over whole slices; errors inside the scar were not reported.",
+                     "No between-case test was reported, so no case ordering is implied."], T.SMALL, leading=13.5)
 
-    # Panels a and b have deliberately different inferential roles and plot-area
-    # geometries; panel c is a card grid. Treat the alignment gate as N/A rather
-    # than forcing a false comparison between unlike axes.
-    save(fig, "Figure_4_attribute_specific_recovery", {
-        "axes": [pa],
-        "panel_ids": ["a"],
-    })
-    print(f"Figure 4: {W:.0f} x {H:.0f} mm")
+# ---- c: attribute status -------------------------------------------------------------------------
+fig.row_rule(298)
+fig.panel(20, 324, "c", "No abnormality attribute was reported at the scar's own level")
+items = [
+    ("Magnitude", "nr", "ΔM", ["scar-level error not reported;", "slice means: Ecc error small,", "Err under-estimated"]),
+    ("Location", "nr", "Δθ", ["myocardial Dice only;", "no lesion-centroid error"]),
+    ("Extent", "nr", "w", ["one fixed scar geometry;", "extent recovery not measured"]),
+    ("Timing", "ni", "Δt", ["peak-time error not", "in the record read"]),
+]
+cw = 190
+for k, (name, status, sym, note) in enumerate(items):
+    x = 20 + k * cw
+    if k:
+        fig.col_rule(x - 8, 338, 444)
+    fig.text(x, 352, name, T.SUB - 1, 700)
+    fig.ring(x + cw - 30, 348, 6, C.MUTED, dashed=(status == "ni"))
+    gx, gy, gw, gh = x + 2, 362, 110, 34
+    fig.line(gx, gy + gh, gx + gw, gy + gh, C.RULE, 0.8)
+    if name == "Timing":
+        pts = [(gx + gw * i / 60, gy + gh - 1 - (gh - 4) * gauss(i / 60, 0.42, 0.14)) for i in range(61)]
+    else:
+        pts = [(gx + gw * i / 60, gy + gh - 1 - (gh - 4) * gauss(i / 60, 0.5, 0.11)) for i in range(61)]
+    fig.path("M" + " L".join(f"{a:.1f} {b:.1f}" for a, b in pts), C.REF, 1.6)
+    pk = gx + gw * (0.42 if name == "Timing" else 0.5)
+    if name == "Magnitude":
+        fig.arrow(pk, gy + gh - 1, pk, gy + 5, C.INK, 0.9, 4)
+    elif name == "Location":
+        fig.line(pk, gy + gh + 4, pk, gy - 1, C.INK, 0.9, 'stroke-dasharray="3 2"')
+    elif name == "Extent":
+        half = gw * 0.11 * math.sqrt(2 * math.log(2))
+        fig.line(pk - half, gy + gh / 2 + 1, pk + half, gy + gh / 2 + 1, C.INK, 0.9)
+    else:
+        fig.line(pk, gy + gh + 4, pk, gy - 1, C.INK, 0.9, 'stroke-dasharray="3 2"')
+    fig.text(gx + gw + 8, gy + gh / 2 + 4, sym, T.SMALL + 0.5, 700, italic=True)
+    fig.lines(x, 414, note, T.SMALL, leading=13)
+fig.ring(26, H - 8, 5)
+fig.text(38, H - 4, "not reported at the attribute's own (scar) level", T.SMALL, fill=C.MUTED)
+fig.ring(330, H - 8, 5, dashed=True)
+fig.text(342, H - 4, "not inspected in the record read", T.SMALL, fill=C.MUTED)
+fig.line(560, H - 8, 578, H - 8, C.REF, 1.6)
+fig.text(584, H - 4, "reference profile (schematic)", T.SMALL, fill=C.MUTED)
 
-
-if __name__ == "__main__":
-    main()
+export(fig, "Figure_4_attribute_specific_recovery")
