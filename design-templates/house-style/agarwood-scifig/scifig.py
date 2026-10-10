@@ -82,6 +82,7 @@ class T:
 
 
 FONT = "Helvetica, Arial, 'Liberation Sans', sans-serif"
+MATH = "'Times New Roman', 'Liberation Serif', serif"   # maths in Times New Roman (manuscript rule)
 PT_PER_MM = 1 / 0.3528
 
 
@@ -317,13 +318,29 @@ class Figure:
     def stage_tag(self, x, y, label, color):
         """Small coloured dot + spaced caps tag ('OBSERVED', 'INFERRED', ...) above a sub-panel title."""
         self.circle(x + 4, y - 4, 4, color)
-        self.text(x + 12, y, label, 11, 700, color, extra='letter-spacing="1.2"')
+        self.text(x + 12, y, label, 11, 700, C.INK, extra='letter-spacing="1.2"')
         return x + 12 + len(label) * 8.2
 
-    def badge(self, x, y, n, color=C.ERR):
-        """Circled number for a failure point / step; reuse the same number in a key line."""
-        self.circle(x, y, 8, C.WHITE, color, 1.3)
-        self.text(x, y + 4, str(n), 11, 700, color, "middle")
+    def badge(self, x, y, n, color=C.INK):
+        """Filled ink disc with a letter/number for a failure point; explain it once in a key line.
+        Use letters (I, E, R …) when the panel already numbers its steps, so the two never collide."""
+        self.circle(x, y, 8, color)
+        self.text(x, y + 4, str(n), 10.5, 700, C.WHITE, "middle")
+
+    def math(self, x, y, s, size=13, fill=C.INK, anchor="start", weight=400):
+        """Italic serif maths. Use <tspan baseline-shift="sub"> via raw() for subscripts if needed."""
+        self._track_font(size, s)
+        self.raw(f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" font-style="italic" font-family="{MATH}" '
+                 f'font-weight="{weight}" fill="{fill}" text-anchor="{anchor}">{esc(s)}</text>')
+
+    def scoped_legend(self, x, y, scope, items: Sequence[tuple[str, str]], open_last=False):
+        """Legend that names its scope ('panel a:') — never put a role legend in the figure title row
+        when other panels reuse the same hues for other meanings."""
+        self.text(x - 8, y, scope, T.CAPTION, 700, C.INK, "end")
+        for i, (lab, c) in enumerate(items):
+            self.circle(x + 5, y - 4, 5, C.WHITE if (open_last and i == len(items) - 1) else c, c, 1.4)
+            self.text(x + 14, y, lab, T.CAPTION, fill=C.MUTED)
+            x += 14 + len(lab) * 6.3 + 20
 
     def check(self, x, y, s, size=T.CAPTION):
         """✓ line: what this item establishes."""
@@ -332,9 +349,9 @@ class Figure:
         self.text(x + 15, y, s, size)
 
     def cross(self, x, y, s, size=T.CAPTION):
-        """✕ line: what this item does not establish on its own (muted text, red symbol)."""
-        self.circle(x + 5, y - 4, 5.5, C.WHITE, C.INF, 1.1)
-        self.path(f"M{x + 2.6} {y - 6.4} l4.8 4.8 M{x + 7.4} {y - 6.4} l-4.8 4.8", C.INF, 1.2, extra='stroke-linecap="round"')
+        """✕ line: what this item does not establish on its own (muted text and symbol — red is a data role)."""
+        self.circle(x + 5, y - 4, 5.5, C.WHITE, C.MUTED, 1.1)
+        self.path(f"M{x + 2.6} {y - 6.4} l4.8 4.8 M{x + 7.4} {y - 6.4} l-4.8 4.8", C.MUTED, 1.2, extra='stroke-linecap="round"')
         self.text(x + 15, y, s, size, fill=C.MUTED)
 
     def legend_items(self, x, y, items: Sequence[tuple[str, str, str]], gap=26):
@@ -438,9 +455,10 @@ class Figure:
         for i, (lab, lo, hi, c, comp, vt) in enumerate(rows):
             yy = y + 14 + i * row_h
             self.text(ax0 - 8, yy + 4, lab, T.LABEL, anchor="end")
-            if comp is not None:
+            if comp is not None:  # open marker = comparator, always labelled with its value
                 self.line(ax.fx(comp) + 4, yy, ax.fx(lo) - 4, yy, C.GRID, 1)
-                self.circle(ax.fx(comp), yy, 4.2, C.WHITE, c, 1.4)
+                self.circle(ax.fx(comp), yy, 4.2, C.WHITE, C.OBS, 1.4)
+                self.text(ax.fx(comp) - 7, yy + 4, fmt(comp), T.MIN, fill=C.MUTED, anchor="end")
             if hi > lo:
                 self.line(ax.fx(lo), yy, ax.fx(hi), yy, c, 5, f'stroke-linecap="{cap}"')
             else:
@@ -467,11 +485,11 @@ class Figure:
         return ax
 
     def heatmap(self, x, y, rows: Sequence[str], cols: Sequence[str], M, fills: dict, cell_w=52, cell_h=21,
-                label_w=166, totals: Sequence[str] | None = None, totals_label="", col_color=C.AGAR):
+                label_w=166, totals: Sequence[str] | None = None, totals_label=""):
         """Categorical matrix (e.g. endpoint coverage). M[i][j] keys into fills {key: (fill, stroke)}."""
         gx = x + label_w
         for j, a in enumerate(cols):
-            self.text(gx + j * cell_w + cell_w / 2, y - 6, a, 12.5, 700, col_color, "middle")
+            self.text(gx + j * cell_w + cell_w / 2, y - 6, a, 12.5, 700, C.INK, "middle")
         for i, s in enumerate(rows):
             yy = y + i * cell_h
             self.text(gx - 8, yy + cell_h / 2 + 4, s, T.LABEL, anchor="end")

@@ -24,7 +24,12 @@ The user's default look for research figures: dense, journal-grade, white canvas
   sets reuse `figures/cine-cmr-review-v10/style/` (190 mm export, font and alignment audits).
 - Every panel: lowercase bold letter + claim-style title; numbers printed on marks; 2–3 muted
   caption lines; footer with provenance (schematic vs transcribed, sources, not pooled) and abbreviations.
-- Text in ink/muted only — never in the series colour. Colours keep their roles (OBS/INF/REF/SUP/ERR).
+- Text in ink/muted only — never in the series colour. One meaning per colour per figure; role legends
+  are scoped to the panel that uses them (`scoped_legend`), other panels get their own key.
+- Schematic readouts are computed from the drawn data; one attribute varies per comparison panel;
+  AHA orientation is standard (septum left, 7 top, counter-clockwise). Cite author–year, not numbers.
+- Manuscript (journal) figures also follow azusa-dom/academic_phd_task `CLAUDE.md`: pure white, no
+  beige or decorative gradients (solid track strips/cells), Arial labels, Times New Roman maths.
 - Never invent study numbers. Transcribed values cite their source; placeholders say "illustrative".
 
 ## Deliver
