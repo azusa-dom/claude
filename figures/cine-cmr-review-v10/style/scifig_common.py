@@ -21,6 +21,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
 HOUSE = REPO / "design-templates" / "house-style" / "agarwood-scifig"
+if not HOUSE.exists():  # standalone copy (e.g. the manuscript's editable_sources) ships the library alongside
+    HOUSE = ROOT / "house-style" / "agarwood-scifig"
 sys.path.insert(0, str(HOUSE))
 
 from scifig import C, T, Figure, num  # noqa: E402,F401
