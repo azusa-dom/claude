@@ -418,7 +418,7 @@ for n_, lab_, test_ in [(1, "input sufficiency", "re-image the same motion finer
                         (2, "estimation", "vary α with images fixed"),
                         (3, "representation", "project the known field onto the basis")]:
     failure_badge(kx + 8, fk_y - 4, n_)
-    rich(kx + 21, fk_y, [(lab_, 700, ERR, False), (" — " + test_, 400, MUTED, False)], 11.5)
+    rich(kx + 21, fk_y, [(lab_, 700, INK, False), (" — " + test_, 400, MUTED, False)], 11.5)
     kx += 21 + (len(lab_) + len(test_) + 3) * 6.15 + 26
 
 # ================================================================== PANEL b — validation track
@@ -435,7 +435,7 @@ def col_head(x, title, refs, yes, no):
     tick(x + 5, HY + 19, True)
     text(x + 15, HY + 19, yes, 11.5, fill=INK)
     tick(x + 5, HY + 35, False)
-    text(x + 15, HY + 35, "not alone: " + no, 11.5, fill=INF)
+    text(x + 15, HY + 35, "not alone: " + no, 11.5, fill=MUTED)
 
 
 PY = HY + 58  # top of plots
@@ -497,7 +497,7 @@ for i, (lab, (lo, hi), ft, note) in enumerate(icc):
         circle(fxi(ft), yy, 4.2, "#FFFFFF", stroke=AGAR, w=1.4)
         line(fxi(ft) + 4, yy, fxi(lo) - 4, yy, GRID, 1)
     lab_v = f"{num(lo)}–{num(hi)}" if hi > lo else num(lo, 3)
-    text(fxi(max(hi, ft or 0)) + 8, yy + 4, lab_v, 10.5, 700, c)
+    text(fxi(max(hi, ft or 0)) + 8, yy + 4, lab_v, 10.5, 700, INK)
 line(lx_ - 120, PY + 20 + 2.5 * 26, lx_ + 176, PY + 20 + 2.5 * 26, GRID, 0.8)
 circle(x0 + 6, BY1 - 15, 4, AGAR)
 text(x0 + 14, BY1 - 11, "DL / DENSE", 10.5, fill=MUTED)
@@ -529,7 +529,7 @@ line(fxc(20), cvy - 10, fxc(20), cvy + 30, ERR, 1.1, 'stroke-dasharray="3 2"')
 for t in (0, 20, 40):
     text(fxc(t), cvy + 44, f"{t}%", 10, fill=MUTED, anchor="middle")
 text(cvx - 24, cvy + 44, "CV", 10, 700, INK, "end")
-text(fxc(30), cvy + 24, "often > 20% (Ell, Err)", 10, fill=INF, anchor="middle")
+text(fxc(30), cvy + 24, "often > 20% (Ell, Err)", 10, fill=INK, anchor="middle")
 text(x0, BY1 - 11, "Mean global differences near zero; radial limits widest.", 11, fill=MUTED)
 
 # ---- b4 tissue: Kihlberg
@@ -545,12 +545,12 @@ for i, (lab, auc, sens, c) in enumerate(mods):
     yy = PY + 36 + i * 20
     text(lx_ - 8, yy + 4, lab, 11, fill=INK, anchor="end")
     rect(lx_, yy - 6, fxk(auc) - lx_, 12, c)
-    text(fxk(auc) + 5, yy + 4, num(auc), 10.5, 700, c)
+    text(fxk(auc) + 5, yy + 4, num(auc), 10.5, 700, INK)
 for i, (lab, auc, sens, c) in enumerate(mods):
     yy = PY + 112 + i * 20
     text(lx_ - 8, yy + 4, lab, 11, fill=INK, anchor="end")
     rect(lx_, yy - 6, fxk(sens) - lx_, 12, c, extra='opacity=".55"')
-    text(fxk(sens) + 5, yy + 4, f"{round(sens * 100)}%", 10.5, 700, c)
+    text(fxk(sens) + 5, yy + 4, f"{round(sens * 100)}%", 10.5, 700, INK)
 line(x0, PY + 84, lx_ + 210, PY + 84, GRID, 0.8)
 text(x0, BY1 - 26, "116 suspected CAD; 34 with qualifying scar.", 11, fill=MUTED)
 text(x0, BY1 - 11, "Ranks scar sensitivity, not material-motion accuracy.", 11, fill=MUTED)
@@ -568,7 +568,7 @@ for i, (lab, v, c, note) in enumerate(orow):
     text(lx_ - 8, yy + 4, lab, 11, fill=INK, anchor="end")
     line(lx_, yy, fxo(v), yy, c, 1.6)
     circle(fxo(v), yy, 4.5, c)
-    text(fxo(v) + 8, yy + 4, num(v), 10.5, 700, c)
+    text(fxo(v) + 8, yy + 4, f"{v:.2f}", 10.5, 700, INK)
     if note:
         text(lx_ - 8, yy + 16, note, 10, fill=MUTED, anchor="end")
 text(x0, PY + 180, "Clinical utility additionally needs a decision context,", 11, fill=MUTED)
@@ -651,7 +651,7 @@ text(gx - 8, ty + 14, "direct / 7", 11, 700, INK, "end")
 for j in range(4):
     n = sum(1 for row in M if row[j] == 2)
     c = AGAR if n > 1 else ERR
-    text(gx + j * CWd + CWd / 2, ty + 15, str(n), 14, 700, c, "middle")
+    text(gx + j * CWd + CWd / 2, ty + 15, str(n), 14, 700, INK, "middle")
 for k, (lab, f, st) in enumerate([("direct", "url(#cellD)", "none"), ("partial / indirect", PEAR_T, "none"), ("not prespecified", "#FFFFFF", GRID)]):
     lx_ = DX + 10 + [0, 70, 192][k]
     rect(lx_, ty + 31, 12, 10, f, stroke=st, rx=1.5)
@@ -673,7 +673,7 @@ for i, (lab, n, c) in enumerate(ev):
     yy = ey + i * 31
     text(bx, yy, lab, 11, fill=INK)
     rect(bx, yy + 5, fxe(n) - bx, 11, c, rx=1.5)
-    text(fxe(n) + 6, yy + 15, str(n), 12, 700, ERR if n == 1 else INK)
+    text(fxe(n) + 6, yy + 15, str(n), 12, 700, INK)
 xaxis(bx, ey + 5 * 31 + 2, bw, (0, 20), [0, 5, 10, 15, 20], "cited sources (n = 39)", fmt=lambda v: f"{v:g}")
 
 # ================================================================== footer

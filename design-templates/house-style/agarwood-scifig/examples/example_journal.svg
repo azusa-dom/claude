@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif">
+<defs>
+<linearGradient id="cellDirect" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8D6449"/><stop offset="1" stop-color="#5B3E2E"/></linearGradient>
+<pattern id="hatchInf" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#F8E0DA"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C0584A" stroke-width="2"/></pattern>
+</defs>
+<rect x="0.0" y="0.0" width="800.0" height="560.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
+<text x="20.0" y="26.0" font-size="18" font-weight="700" fill="#33261F" text-anchor="start" >Figure 2 | Example layout in the agarwood-scifig style</text>
+<circle cx="604.8" cy="21.0" r="5.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="613.8" y="25.5" font-size="12" font-weight="400" fill="#6F625A" text-anchor="start" >reference</text>
+<circle cx="698.2" cy="21.0" r="5.0" fill="#C0584A" stroke="none" stroke-width="1.0" />
+<text x="707.2" y="25.5" font-size="12" font-weight="400" fill="#6F625A" text-anchor="start" >estimate</text>
+<line x1="20.0" y1="36.0" x2="780.0" y2="36.0" stroke="#33261F" stroke-width="1.2" />
+<text x="20.0" y="62.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
+<text x="44.0" y="60.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Estimate lags the reference at peak</text>
+<line x1="70.0" y1="232.0" x2="360.0" y2="232.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="70.0" y1="232.0" x2="70.0" y2="236.0" stroke="#33261F" stroke-width="0.9" />
+<text x="70.0" y="247.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
+<line x1="215.0" y1="232.0" x2="215.0" y2="236.0" stroke="#33261F" stroke-width="0.9" />
+<text x="215.0" y="247.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.5</text>
+<line x1="360.0" y1="232.0" x2="360.0" y2="236.0" stroke="#33261F" stroke-width="0.9" />
+<text x="360.0" y="247.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >1</text>
+<text x="215.0" y="261.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >normalised cycle time</text>
+<line x1="70.0" y1="82.0" x2="70.0" y2="232.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="66.0" y1="204.2" x2="70.0" y2="204.2" stroke="#33261F" stroke-width="0.9" />
+<text x="63.0" y="208.2" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >−0.2</text>
+<line x1="66.0" y1="148.7" x2="70.0" y2="148.7" stroke="#33261F" stroke-width="0.9" />
+<text x="63.0" y="152.7" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >−0.1</text>
+<line x1="66.0" y1="93.1" x2="70.0" y2="93.1" stroke="#33261F" stroke-width="0.9" />
+<text x="63.0" y="97.1" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >0</text>
+<text transform="translate(34.0,157.0) rotate(-90)" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >Ecc</text>
+<path d="M70.0 88.2 L72.9 89.3 L75.8 90.5 L78.7 91.9 L81.6 93.4 L84.5 95.1 L87.4 97.0 L90.3 99.1 L93.2 101.5 L96.1 104.0 L99.0 106.7 L101.9 109.7 L104.8 112.9 L107.7 116.3 L110.6 119.9 L113.5 123.7 L116.4 127.7 L119.3 131.8 L122.2 136.1 L125.1 140.5 L128.0 144.9 L130.9 149.4 L133.8 153.9 L136.7 158.3 L139.6 162.7 L142.5 166.9 L145.4 171.0 L148.3 174.8 L151.2 178.4 L154.1 181.6 L157.0 184.6 L159.9 187.1 L162.8 189.2 L165.7 190.9 L168.6 192.1 L171.5 192.9 L174.4 193.1 L177.3 192.9 L180.2 192.1 L183.1 190.9 L186.0 189.2 L188.9 187.1 L191.8 184.6 L194.7 181.6 L197.6 178.4 L200.5 174.8 L203.4 171.0 L206.3 166.9 L209.2 162.7 L212.1 158.3 L215.0 153.9 L217.9 149.4 L220.8 144.9 L223.7 140.5 L226.6 136.1 L229.5 131.8 L232.4 127.7 L235.3 123.7 L238.2 119.9 L241.1 116.3 L244.0 112.9 L246.9 109.7 L249.8 106.7 L252.7 104.0 L255.6 101.5 L258.5 99.1 L261.4 97.0 L264.3 95.1 L267.2 93.4 L270.1 91.9 L273.0 90.5 L275.9 89.3 L278.8 88.2 L281.7 87.3 L284.6 86.5 L287.5 85.8 L290.4 85.2 L293.3 84.7 L296.2 84.2 L299.1 83.8 L302.0 83.5 L304.9 83.2 L307.8 83.0 L310.7 82.8 L313.6 82.7 L316.5 82.5 L319.4 82.4 L322.3 82.3 L325.2 82.3 L328.1 82.2 L331.0 82.2 L333.9 82.1 L336.8 82.1 L339.7 82.1 L342.6 82.1 L345.5 82.0 L348.4 82.0 L351.3 82.0 L354.2 82.0 L357.1 82.0 L360.0 82.0 L360.0 104.2 L357.1 104.2 L354.2 104.2 L351.3 104.3 L348.4 104.3 L345.5 104.3 L342.6 104.3 L339.7 104.3 L336.8 104.3 L333.9 104.4 L331.0 104.4 L328.1 104.4 L325.2 104.5 L322.3 104.6 L319.4 104.7 L316.5 104.8 L313.6 104.9 L310.7 105.0 L307.8 105.2 L304.9 105.5 L302.0 105.7 L299.1 106.0 L296.2 106.4 L293.3 106.9 L290.4 107.4 L287.5 108.0 L284.6 108.7 L281.7 109.5 L278.8 110.5 L275.9 111.5 L273.0 112.7 L270.1 114.1 L267.2 115.6 L264.3 117.4 L261.4 119.3 L258.5 121.4 L255.6 123.7 L252.7 126.2 L249.8 129.0 L246.9 131.9 L244.0 135.1 L241.1 138.5 L238.2 142.1 L235.3 145.9 L232.4 149.9 L229.5 154.0 L226.6 158.3 L223.7 162.7 L220.8 167.1 L217.9 171.6 L215.0 176.1 L212.1 180.5 L209.2 184.9 L206.3 189.1 L203.4 193.2 L200.5 197.0 L197.6 200.6 L194.7 203.9 L191.8 206.8 L188.9 209.3 L186.0 211.5 L183.1 213.1 L180.2 214.4 L177.3 215.1 L174.4 215.3 L171.5 215.1 L168.6 214.4 L165.7 213.1 L162.8 211.5 L159.9 209.3 L157.0 206.8 L154.1 203.9 L151.2 200.6 L148.3 197.0 L145.4 193.2 L142.5 189.1 L139.6 184.9 L136.7 180.5 L133.8 176.1 L130.9 171.6 L128.0 167.1 L125.1 162.7 L122.2 158.3 L119.3 154.0 L116.4 149.9 L113.5 145.9 L110.6 142.1 L107.7 138.5 L104.8 135.1 L101.9 131.9 L99.0 129.0 L96.1 126.2 L93.2 123.7 L90.3 121.4 L87.4 119.3 L84.5 117.4 L81.6 115.6 L78.7 114.1 L75.8 112.7 L72.9 111.5 L70.0 110.5 Z" stroke="none" stroke-width="1.0" fill="#C0997F" opacity="0.22"/>
+<path d="M70.0 99.3 L72.9 100.4 L75.8 101.6 L78.7 103.0 L81.6 104.5 L84.5 106.2 L87.4 108.1 L90.3 110.3 L93.2 112.6 L96.1 115.1 L99.0 117.8 L101.9 120.8 L104.8 124.0 L107.7 127.4 L110.6 131.0 L113.5 134.8 L116.4 138.8 L119.3 142.9 L122.2 147.2 L125.1 151.6 L128.0 156.0 L130.9 160.5 L133.8 165.0 L136.7 169.4 L139.6 173.8 L142.5 178.0 L145.4 182.1 L148.3 185.9 L151.2 189.5 L154.1 192.8 L157.0 195.7 L159.9 198.2 L162.8 200.3 L165.7 202.0 L168.6 203.2 L171.5 204.0 L174.4 204.2 L177.3 204.0 L180.2 203.2 L183.1 202.0 L186.0 200.3 L188.9 198.2 L191.8 195.7 L194.7 192.8 L197.6 189.5 L200.5 185.9 L203.4 182.1 L206.3 178.0 L209.2 173.8 L212.1 169.4 L215.0 165.0 L217.9 160.5 L220.8 156.0 L223.7 151.6 L226.6 147.2 L229.5 142.9 L232.4 138.8 L235.3 134.8 L238.2 131.0 L241.1 127.4 L244.0 124.0 L246.9 120.8 L249.8 117.8 L252.7 115.1 L255.6 112.6 L258.5 110.3 L261.4 108.1 L264.3 106.2 L267.2 104.5 L270.1 103.0 L273.0 101.6 L275.9 100.4 L278.8 99.3 L281.7 98.4 L284.6 97.6 L287.5 96.9 L290.4 96.3 L293.3 95.8 L296.2 95.3 L299.1 94.9 L302.0 94.6 L304.9 94.3 L307.8 94.1 L310.7 93.9 L313.6 93.8 L316.5 93.6 L319.4 93.5 L322.3 93.5 L325.2 93.4 L328.1 93.3 L331.0 93.3 L333.9 93.2 L336.8 93.2 L339.7 93.2 L342.6 93.2 L345.5 93.2 L348.4 93.1 L351.3 93.1 L354.2 93.1 L357.1 93.1 L360.0 93.1" stroke="#7A4720" stroke-width="1.8" fill="none" />
+<path d="M70.0 95.5 L72.9 96.0 L75.8 96.4 L78.7 97.0 L81.6 97.6 L84.5 98.3 L87.4 99.0 L90.3 99.9 L93.2 100.9 L96.1 102.0 L99.0 103.1 L101.9 104.5 L104.8 105.9 L107.7 107.5 L110.6 109.2 L113.5 111.0 L116.4 113.0 L119.3 115.2 L122.2 117.4 L125.1 119.9 L128.0 122.4 L130.9 125.1 L133.8 128.0 L136.7 130.9 L139.6 134.0 L142.5 137.1 L145.4 140.4 L148.3 143.7 L151.2 147.0 L154.1 150.4 L157.0 153.8 L159.9 157.1 L162.8 160.4 L165.7 163.6 L168.6 166.7 L171.5 169.7 L174.4 172.6 L177.3 175.2 L180.2 177.7 L183.1 179.9 L186.0 181.9 L188.9 183.6 L191.8 185.0 L194.7 186.1 L197.6 186.9 L200.5 187.4 L203.4 187.6 L206.3 187.4 L209.2 186.9 L212.1 186.1 L215.0 185.0 L217.9 183.6 L220.8 181.9 L223.7 179.9 L226.6 177.7 L229.5 175.2 L232.4 172.6 L235.3 169.7 L238.2 166.7 L241.1 163.6 L244.0 160.4 L246.9 157.1 L249.8 153.8 L252.7 150.4 L255.6 147.0 L258.5 143.7 L261.4 140.4 L264.3 137.1 L267.2 134.0 L270.1 130.9 L273.0 128.0 L275.9 125.1 L278.8 122.4 L281.7 119.9 L284.6 117.4 L287.5 115.2 L290.4 113.0 L293.3 111.0 L296.2 109.2 L299.1 107.5 L302.0 105.9 L304.9 104.5 L307.8 103.1 L310.7 102.0 L313.6 100.9 L316.5 99.9 L319.4 99.0 L322.3 98.3 L325.2 97.6 L328.1 97.0 L331.0 96.4 L333.9 96.0 L336.8 95.5 L339.7 95.2 L342.6 94.9 L345.5 94.6 L348.4 94.4 L351.3 94.2 L354.2 94.0 L357.1 93.8 L360.0 93.7" stroke="#C0584A" stroke-width="1.8" fill="none" stroke-dasharray="5 3"/>
+<line x1="174.4" y1="218.1" x2="200.5" y2="218.1" stroke="#33261F" stroke-width="1" />
+<path d="M196.9 219.9 L200.5 218.1 L196.9 216.4" stroke="#33261F" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="209.2" y="222.1" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >Δt</text>
+<line x1="70.0" y1="278.0" x2="88.0" y2="278.0" stroke="#7A4720" stroke-width="1.8" />
+<text x="94.0" y="282.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >reference ± SD</text>
+<line x1="205.4" y1="278.0" x2="223.4" y2="278.0" stroke="#C0584A" stroke-width="1.8" stroke-dasharray="5 3"/>
+<text x="229.4" y="282.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >estimate</text>
+<line x1="400.0" y1="48.0" x2="400.0" y2="300.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="415.0" y="62.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
+<text x="439.0" y="60.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Error is component-specific</text>
+<line x1="476.7" y1="76.0" x2="476.7" y2="198.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="590.0" y1="76.0" x2="590.0" y2="198.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="703.3" y1="76.0" x2="703.3" y2="198.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="703.3" y1="76.0" x2="703.3" y2="198.0" stroke="#33261F" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="422.0" y="86.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >circumferential</text>
+<line x1="692.0" y1="94.0" x2="737.3" y2="94.0" stroke="#7A4720" stroke-width="1.6" />
+<circle cx="714.7" cy="94.0" r="3.6" fill="#7A4720" stroke="#7A4720" stroke-width="1.4" />
+<text x="422.0" y="114.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >radial</text>
+<line x1="448.3" y1="122.0" x2="686.3" y2="122.0" stroke="#C0584A" stroke-width="1.6" />
+<circle cx="567.3" cy="122.0" r="3.6" fill="#C0584A" stroke="#C0584A" stroke-width="1.4" />
+<text x="422.0" y="142.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >radial, lesion only</text>
+<line x1="471.0" y1="150.0" x2="709.0" y2="150.0" stroke="#C0584A" stroke-width="1.6" />
+<circle cx="590.0" cy="150.0" r="3.6" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.4" />
+<text x="422.0" y="170.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >longitudinal</text>
+<line x1="658.0" y1="178.0" x2="714.7" y2="178.0" stroke="#8E857D" stroke-width="1.6" />
+<circle cx="686.3" cy="178.0" r="3.6" fill="#8E857D" stroke="#8E857D" stroke-width="1.4" />
+<line x1="420.0" y1="198.0" x2="760.0" y2="198.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="476.7" y1="198.0" x2="476.7" y2="202.0" stroke="#33261F" stroke-width="0.9" />
+<text x="476.7" y="213.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−0.4</text>
+<line x1="590.0" y1="198.0" x2="590.0" y2="202.0" stroke="#33261F" stroke-width="0.9" />
+<text x="590.0" y="213.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−0.2</text>
+<line x1="703.3" y1="198.0" x2="703.3" y2="202.0" stroke="#33261F" stroke-width="0.9" />
+<text x="703.3" y="213.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
+<text x="590.0" y="227.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >strain error (mean ± SD)</text>
+<circle cx="425.0" cy="258.0" r="5.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<path d="M422.2 258 l2 2.2 l3.6 -4.2" stroke="#FFFFFF" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="435.0" y="262.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="start" >magnitude recovered for Ecc</text>
+<circle cx="425.0" cy="278.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
+<path d="M422.6 275.6 l4.8 4.8 M427.4 275.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+<text x="435.0" y="282.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >not alone: focal location or extent</text>
+<line x1="20.0" y1="306.0" x2="780.0" y2="306.0" stroke="#33261F" stroke-width="1.2" />
+<text x="20.0" y="332.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
+<text x="44.0" y="330.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Few studies test location or timing</text>
+<text x="155.0" y="356.0" font-size="12.5" font-weight="700" fill="#8D6449" text-anchor="middle" >M</text>
+<text x="205.0" y="356.0" font-size="12.5" font-weight="700" fill="#8D6449" text-anchor="middle" >L</text>
+<text x="255.0" y="356.0" font-size="12.5" font-weight="700" fill="#8D6449" text-anchor="middle" >E</text>
+<text x="305.0" y="356.0" font-size="12.5" font-weight="700" fill="#8D6449" text-anchor="middle" >T</text>
+<text x="122.0" y="377.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Study A</text>
+<rect x="131.5" y="363.5" width="47.0" height="19.0" rx="2" fill="url(#cellDirect)" stroke="none" stroke-width="0.9" />
+<rect x="181.5" y="363.5" width="47.0" height="19.0" rx="2" fill="#F8E0DA" stroke="none" stroke-width="0.9" />
+<rect x="231.5" y="363.5" width="47.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
+<rect x="281.5" y="363.5" width="47.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
+<text x="122.0" y="399.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Study B</text>
+<rect x="131.5" y="385.5" width="47.0" height="19.0" rx="2" fill="url(#cellDirect)" stroke="none" stroke-width="0.9" />
+<rect x="181.5" y="385.5" width="47.0" height="19.0" rx="2" fill="#F8E0DA" stroke="none" stroke-width="0.9" />
+<rect x="231.5" y="385.5" width="47.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
+<rect x="281.5" y="385.5" width="47.0" height="19.0" rx="2" fill="url(#cellDirect)" stroke="none" stroke-width="0.9" />
+<text x="122.0" y="421.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Study C</text>
+<rect x="131.5" y="407.5" width="47.0" height="19.0" rx="2" fill="#F8E0DA" stroke="none" stroke-width="0.9" />
+<rect x="181.5" y="407.5" width="47.0" height="19.0" rx="2" fill="url(#cellDirect)" stroke="none" stroke-width="0.9" />
+<rect x="231.5" y="407.5" width="47.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
+<rect x="281.5" y="407.5" width="47.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
+<text x="122.0" y="443.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Study D</text>
+<rect x="131.5" y="429.5" width="47.0" height="19.0" rx="2" fill="url(#cellDirect)" stroke="none" stroke-width="0.9" />
+<rect x="181.5" y="429.5" width="47.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
+<rect x="231.5" y="429.5" width="47.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
+<rect x="281.5" y="429.5" width="47.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
+<line x1="26.0" y1="454.0" x2="330.0" y2="454.0" stroke="#33261F" stroke-width="0.9" />
+<text x="122.0" y="470.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >direct / 4</text>
+<text x="155.0" y="471.0" font-size="14" font-weight="700" fill="#33261F" text-anchor="middle" >3</text>
+<text x="205.0" y="471.0" font-size="14" font-weight="700" fill="#33261F" text-anchor="middle" >1</text>
+<text x="255.0" y="471.0" font-size="14" font-weight="700" fill="#33261F" text-anchor="middle" >0</text>
+<text x="305.0" y="471.0" font-size="14" font-weight="700" fill="#33261F" text-anchor="middle" >1</text>
+<rect x="26.0" y="486.0" width="12.0" height="10.0" rx="1.5" fill="#5B3E2E" stroke="none" stroke-width="1.0" />
+<text x="43.0" y="496.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >direct</text>
+<rect x="93.6" y="486.0" width="12.0" height="10.0" rx="1.5" fill="#F8E0DA" stroke="none" stroke-width="1.0" />
+<text x="110.6" y="496.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >partial</text>
+<rect x="167.3" y="486.0" width="12.0" height="10.0" rx="1.5" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="1.0" />
+<text x="184.3" y="496.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >none</text>
+<line x1="400.0" y1="316.0" x2="400.0" y2="520.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="415.0" y="332.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >d</text>
+<text x="439.0" y="330.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Discrimination by modality</text>
+<line x1="495.0" y1="350.0" x2="495.0" y2="422.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="620.0" y1="350.0" x2="620.0" y2="422.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="745.0" y1="350.0" x2="745.0" y2="422.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="487.0" y="366.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >DENSE</text>
+<rect x="495.0" y="356.0" width="217.5" height="12.0" rx="1.5" fill="#5B3E2E" stroke="none" stroke-width="1.0" />
+<text x="717.5" y="366.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.87</text>
+<text x="487.0" y="390.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Tagging</text>
+<rect x="495.0" y="380.0" width="207.5" height="12.0" rx="1.5" fill="#8D6449" stroke="none" stroke-width="1.0" />
+<text x="707.5" y="390.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.83</text>
+<text x="487.0" y="414.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >FT (cine)</text>
+<rect x="495.0" y="404.0" width="165.0" height="12.0" rx="1.5" fill="#C0584A" stroke="none" stroke-width="1.0" />
+<text x="665.0" y="414.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.66</text>
+<line x1="495.0" y1="422.0" x2="745.0" y2="422.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="495.0" y1="422.0" x2="495.0" y2="426.0" stroke="#33261F" stroke-width="0.9" />
+<text x="495.0" y="437.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
+<line x1="620.0" y1="422.0" x2="620.0" y2="426.0" stroke="#33261F" stroke-width="0.9" />
+<text x="620.0" y="437.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.5</text>
+<line x1="745.0" y1="422.0" x2="745.0" y2="426.0" stroke="#33261F" stroke-width="0.9" />
+<text x="745.0" y="437.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >1</text>
+<text x="620.0" y="451.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >AUC</text>
+<text x="415.0" y="490.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >Bars rank discrimination, not material-motion accuracy;</text>
+<text x="415.0" y="504.9" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >values printed at bar ends in ink, never in the series colour.</text>
+<line x1="20.0" y1="516.0" x2="780.0" y2="516.0" stroke="#33261F" stroke-width="1.2" />
+<text x="20.0" y="534.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Illustrative placeholder values — not study data. a, reference shaded ± SD; b, open marker = subgroup.</text>
+<text x="20.0" y="548.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >M magnitude · L location · E extent · T timing. FT, feature tracking.</text>
+</svg>

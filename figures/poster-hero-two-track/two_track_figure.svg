@@ -981,13 +981,13 @@
 <text x="78.0" y="388.0" font-size="11.5" font-weight="700" fill="#33261F" text-anchor="start" >Failure points, each testable on its own:</text>
 <circle cx="334.0" cy="384.0" r="8.0" fill="#FFFFFF" stroke="#A33A2E" stroke-width="1.3" />
 <text x="334.0" y="388.0" font-size="11" font-weight="700" fill="#A33A2E" text-anchor="middle" >1</text>
-<text x="347.0" y="388.0" font-size="11.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#A33A2E">input sufficiency</tspan><tspan font-weight="400" fill="#6F625A"> — re-image the same motion finer</tspan></text>
+<text x="347.0" y="388.0" font-size="11.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">input sufficiency</tspan><tspan font-weight="400" fill="#6F625A"> — re-image the same motion finer</tspan></text>
 <circle cx="688.5" cy="384.0" r="8.0" fill="#FFFFFF" stroke="#A33A2E" stroke-width="1.3" />
 <text x="688.5" y="388.0" font-size="11" font-weight="700" fill="#A33A2E" text-anchor="middle" >2</text>
-<text x="701.5" y="388.0" font-size="11.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#A33A2E">estimation</tspan><tspan font-weight="400" fill="#6F625A"> — vary α with images fixed</tspan></text>
+<text x="701.5" y="388.0" font-size="11.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">estimation</tspan><tspan font-weight="400" fill="#6F625A"> — vary α with images fixed</tspan></text>
 <circle cx="963.0" cy="384.0" r="8.0" fill="#FFFFFF" stroke="#A33A2E" stroke-width="1.3" />
 <text x="963.0" y="388.0" font-size="11" font-weight="700" fill="#A33A2E" text-anchor="middle" >3</text>
-<text x="976.0" y="388.0" font-size="11.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#A33A2E">representation</tspan><tspan font-weight="400" fill="#6F625A"> — project the known field onto the basis</tspan></text>
+<text x="976.0" y="388.0" font-size="11.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">representation</tspan><tspan font-weight="400" fill="#6F625A"> — project the known field onto the basis</tspan></text>
 <defs><linearGradient id="gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C0997F"/><stop offset="1" stop-color="#7A4720"/></linearGradient></defs>
 <rect x="40.0" y="414.0" width="20.0" height="362.0" rx="3" fill="url(#gb)" stroke="none" stroke-width="1.0" />
 <text transform="translate(54.5,595.0) rotate(-90)" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2.5">VALIDATION TRACK</text>
@@ -999,7 +999,7 @@
 <text x="93.0" y="485.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="start" >capacity &amp; technical error</text>
 <circle cx="83.0" cy="497.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M80.6 494.6 l4.8 4.8 M85.4 494.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-<text x="93.0" y="501.0" font-size="11.5" font-weight="400" fill="#C0584A" text-anchor="start" >not alone: in-vivo accuracy</text>
+<text x="93.0" y="501.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >not alone: in-vivo accuracy</text>
 <text x="78.0" y="526.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="start" >prescribed peak strain</text>
 <line x1="118.0" y1="536.0" x2="118.0" y2="636.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="114.0" y1="612.9" x2="118.0" y2="612.9" stroke="#33261F" stroke-width="0.9" />
@@ -1051,7 +1051,7 @@
 <text x="435.0" y="485.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="start" >material-sensitive in-vivo agreement</text>
 <circle cx="425.0" cy="497.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M422.6 494.6 l4.8 4.8 M427.4 494.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-<text x="435.0" y="501.0" font-size="11.5" font-weight="400" fill="#C0584A" text-anchor="start" >not alone: ground truth (reference error)</text>
+<text x="435.0" y="501.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >not alone: ground truth (reference error)</text>
 <line x1="552.0" y1="696.0" x2="728.0" y2="696.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="552.0" y1="696.0" x2="552.0" y2="700.0" stroke="#33261F" stroke-width="0.9" />
 <text x="552.0" y="711.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
@@ -1065,26 +1065,26 @@
 <text x="640.0" y="725.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >ICC</text>
 <text x="544.0" y="548.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Militaru · global LS</text>
 <line x1="713.9" y1="544.0" x2="717.4" y2="544.0" stroke="#8D6449" stroke-width="5" stroke-linecap="round"/>
-<text x="725.4" y="548.0" font-size="10.5" font-weight="700" fill="#8D6449" text-anchor="start" >0.92–0.94</text>
+<text x="725.4" y="548.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.92–0.94</text>
 <text x="544.0" y="574.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >global CS</text>
 <line x1="706.9" y1="570.0" x2="712.2" y2="570.0" stroke="#8D6449" stroke-width="5" stroke-linecap="round"/>
-<text x="720.2" y="574.0" font-size="10.5" font-weight="700" fill="#8D6449" text-anchor="start" >0.88–0.91</text>
+<text x="720.2" y="574.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.88–0.91</text>
 <text x="544.0" y="600.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >global RS</text>
 <line x1="569.6" y1="596.0" x2="694.6" y2="596.0" stroke="#C0584A" stroke-width="5" stroke-linecap="round"/>
-<text x="702.6" y="600.0" font-size="10.5" font-weight="700" fill="#C0584A" text-anchor="start" >0.1–0.81</text>
+<text x="702.6" y="600.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.1–0.81</text>
 <text x="544.0" y="626.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Cao · DENSE Ecc vs tag</text>
 <circle cx="688.9" cy="622.0" r="4.2" fill="#8D6449" stroke="none" stroke-width="1.0" />
-<text x="696.9" y="626.0" font-size="10.5" font-weight="700" fill="#8D6449" text-anchor="start" >0.778</text>
+<text x="696.9" y="626.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.778</text>
 <text x="544.0" y="652.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >StrainNet · global Ecc</text>
 <circle cx="705.1" cy="648.0" r="4.2" fill="#8D6449" stroke="none" stroke-width="1.0" />
 <circle cx="678.7" cy="648.0" r="4.2" fill="#FFFFFF" stroke="#8D6449" stroke-width="1.4" />
 <line x1="682.7" y1="648.0" x2="701.1" y2="648.0" stroke="#E8DFD6" stroke-width="1" />
-<text x="713.1" y="652.0" font-size="10.5" font-weight="700" fill="#8D6449" text-anchor="start" >0.87</text>
+<text x="713.1" y="652.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.87</text>
 <text x="544.0" y="678.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >AHA segmental Ecc</text>
 <circle cx="684.0" cy="674.0" r="4.2" fill="#8D6449" stroke="none" stroke-width="1.0" />
 <circle cx="636.5" cy="674.0" r="4.2" fill="#FFFFFF" stroke="#8D6449" stroke-width="1.4" />
 <line x1="640.5" y1="674.0" x2="680.0" y2="674.0" stroke="#E8DFD6" stroke-width="1" />
-<text x="692.0" y="678.0" font-size="10.5" font-weight="700" fill="#8D6449" text-anchor="start" >0.75</text>
+<text x="692.0" y="678.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.75</text>
 <line x1="432.0" y1="609.0" x2="728.0" y2="609.0" stroke="#E8DFD6" stroke-width="0.8" />
 <circle cx="426.0" cy="761.0" r="4.0" fill="#8D6449" stroke="none" stroke-width="1.0" />
 <text x="434.0" y="765.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >DL / DENSE</text>
@@ -1097,7 +1097,7 @@
 <text x="777.0" y="485.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="start" >precision at the tested scale</text>
 <circle cx="767.0" cy="497.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M764.6 494.6 l4.8 4.8 M769.4 494.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-<text x="777.0" y="501.0" font-size="11.5" font-weight="400" fill="#C0584A" text-anchor="start" >not alone: accuracy — repeatable can be biased</text>
+<text x="777.0" y="501.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >not alone: accuracy — repeatable can be biased</text>
 <text x="762.0" y="526.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="start" >REGAIN vs GRAPPA, global FT strain, 95% LoA (%)</text>
 <line x1="838.0" y1="622.0" x2="1064.0" y2="622.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="838.0" y1="622.0" x2="838.0" y2="626.0" stroke="#33261F" stroke-width="0.9" />
@@ -1138,7 +1138,7 @@
 <text x="951.0" y="718.0" font-size="10" font-weight="400" fill="#6F625A" text-anchor="middle" >20%</text>
 <text x="1064.0" y="718.0" font-size="10" font-weight="400" fill="#6F625A" text-anchor="middle" >40%</text>
 <text x="814.0" y="718.0" font-size="10" font-weight="700" fill="#33261F" text-anchor="end" >CV</text>
-<text x="1007.5" y="698.0" font-size="10" font-weight="400" fill="#C0584A" text-anchor="middle" >often &gt; 20% (Ell, Err)</text>
+<text x="1007.5" y="698.0" font-size="10" font-weight="400" fill="#33261F" text-anchor="middle" >often &gt; 20% (Ell, Err)</text>
 <text x="762.0" y="765.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="start" >Mean global differences near zero; radial limits widest.</text>
 <text x="1104.0" y="466.0" font-size="13.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">Tissue (LGE)</tspan><tspan font-weight="400" fill="#6F625A">  Kihlberg [78]</tspan></text>
 <circle cx="1109.0" cy="481.0" r="5.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
@@ -1146,7 +1146,7 @@
 <text x="1119.0" y="485.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="start" >scar-associated dysfunction</text>
 <circle cx="1109.0" cy="497.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M1106.6 494.6 l4.8 4.8 M1111.4 494.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-<text x="1119.0" y="501.0" font-size="11.5" font-weight="400" fill="#C0584A" text-anchor="start" >not alone: pointwise displacement error</text>
+<text x="1119.0" y="501.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >not alone: pointwise displacement error</text>
 <text x="1104.0" y="526.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="start" >segments with LGE &gt; 50% transmural</text>
 <text x="1104.0" y="544.0" font-size="10.5" font-weight="700" fill="#6F625A" text-anchor="start" >AUC</text>
 <text x="1104.0" y="620.0" font-size="10.5" font-weight="700" fill="#6F625A" text-anchor="start" >sensitivity at 80% specificity</text>
@@ -1163,22 +1163,22 @@
 <text x="1280.0" y="725.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >AUC · sensitivity</text>
 <text x="1172.0" y="564.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >DENSE</text>
 <rect x="1180.0" y="554.0" width="174.0" height="12.0" rx="0" fill="#5B3E2E" stroke="none" stroke-width="1.0" />
-<text x="1359.0" y="564.0" font-size="10.5" font-weight="700" fill="#5B3E2E" text-anchor="start" >0.87</text>
+<text x="1359.0" y="564.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.87</text>
 <text x="1172.0" y="584.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Tagging</text>
 <rect x="1180.0" y="574.0" width="166.0" height="12.0" rx="0" fill="#8D6449" stroke="none" stroke-width="1.0" />
-<text x="1351.0" y="584.0" font-size="10.5" font-weight="700" fill="#8D6449" text-anchor="start" >0.83</text>
+<text x="1351.0" y="584.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.83</text>
 <text x="1172.0" y="604.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >FT (cine)</text>
 <rect x="1180.0" y="594.0" width="132.0" height="12.0" rx="0" fill="#C0584A" stroke="none" stroke-width="1.0" />
-<text x="1317.0" y="604.0" font-size="10.5" font-weight="700" fill="#C0584A" text-anchor="start" >0.66</text>
+<text x="1317.0" y="604.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.66</text>
 <text x="1172.0" y="640.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >DENSE</text>
 <rect x="1180.0" y="630.0" width="164.0" height="12.0" rx="0" fill="#5B3E2E" stroke="none" stroke-width="1.0" opacity=".55"/>
-<text x="1349.0" y="640.0" font-size="10.5" font-weight="700" fill="#5B3E2E" text-anchor="start" >82%</text>
+<text x="1349.0" y="640.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >82%</text>
 <text x="1172.0" y="660.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Tagging</text>
 <rect x="1180.0" y="650.0" width="142.0" height="12.0" rx="0" fill="#8D6449" stroke="none" stroke-width="1.0" opacity=".55"/>
-<text x="1327.0" y="660.0" font-size="10.5" font-weight="700" fill="#8D6449" text-anchor="start" >71%</text>
+<text x="1327.0" y="660.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >71%</text>
 <text x="1172.0" y="680.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >FT (cine)</text>
 <rect x="1180.0" y="670.0" width="70.0" height="12.0" rx="0" fill="#C0584A" stroke="none" stroke-width="1.0" opacity=".55"/>
-<text x="1255.0" y="680.0" font-size="10.5" font-weight="700" fill="#C0584A" text-anchor="start" >35%</text>
+<text x="1255.0" y="680.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >35%</text>
 <line x1="1104.0" y1="608.0" x2="1390.0" y2="608.0" stroke="#E8DFD6" stroke-width="0.8" />
 <text x="1104.0" y="750.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="start" >116 suspected CAD; 34 with qualifying scar.</text>
 <text x="1104.0" y="765.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="start" >Ranks scar sensitivity, not material-motion accuracy.</text>
@@ -1188,7 +1188,7 @@
 <text x="1461.0" y="485.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="start" >prognostic / diagnostic association</text>
 <circle cx="1451.0" cy="497.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M1448.6 494.6 l4.8 4.8 M1453.4 494.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-<text x="1461.0" y="501.0" font-size="11.5" font-weight="400" fill="#C0584A" text-anchor="start" >not alone: clinical utility</text>
+<text x="1461.0" y="501.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >not alone: clinical utility</text>
 <text x="1446.0" y="526.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="start" >discrimination (chance = 0.5)</text>
 <line x1="1566.0" y1="652.0" x2="1742.0" y2="652.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="1566.0" y1="652.0" x2="1566.0" y2="656.0" stroke="#33261F" stroke-width="0.9" />
@@ -1204,16 +1204,16 @@
 <text x="1558.0" y="560.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Bello · DL motion</text>
 <line x1="1566.0" y1="556.0" x2="1654.0" y2="556.0" stroke="#8D6449" stroke-width="1.6" />
 <circle cx="1654.0" cy="556.0" r="4.5" fill="#8D6449" stroke="none" stroke-width="1.0" />
-<text x="1662.0" y="560.0" font-size="10.5" font-weight="700" fill="#8D6449" text-anchor="start" >0.75</text>
+<text x="1662.0" y="560.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.75</text>
 <text x="1558.0" y="572.0" font-size="10" font-weight="400" fill="#6F625A" text-anchor="end" >survival, n = 302</text>
 <text x="1558.0" y="590.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >human benchmark</text>
 <line x1="1566.0" y1="586.0" x2="1597.7" y2="586.0" stroke="#8E857D" stroke-width="1.6" />
 <circle cx="1597.7" cy="586.0" r="4.5" fill="#8E857D" stroke="none" stroke-width="1.0" />
-<text x="1605.7" y="590.0" font-size="10.5" font-weight="700" fill="#8E857D" text-anchor="start" >0.59</text>
+<text x="1605.7" y="590.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.59</text>
 <text x="1558.0" y="620.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="end" >Masutani · DL strain</text>
 <line x1="1566.0" y1="616.0" x2="1706.8" y2="616.0" stroke="#C0584A" stroke-width="1.6" />
 <circle cx="1706.8" cy="616.0" r="4.5" fill="#C0584A" stroke="none" stroke-width="1.0" />
-<text x="1714.8" y="620.0" font-size="10.5" font-weight="700" fill="#C0584A" text-anchor="start" >0.9</text>
+<text x="1714.8" y="620.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.90</text>
 <text x="1558.0" y="632.0" font-size="10" font-weight="400" fill="#6F625A" text-anchor="end" >WMA vs 4 readers</text>
 <text x="1446.0" y="704.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="start" >Clinical utility additionally needs a decision context,</text>
 <text x="1446.0" y="719.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="start" >comparator, threshold, cost of error and impact study.</text>
@@ -1350,10 +1350,10 @@
 <rect x="1277.5" y="973.5" width="49.0" height="18.0" rx="2" fill="#FFFFFF" stroke="#E8DFD6" stroke-width="0.9" />
 <line x1="954.0" y1="997.0" x2="1328.0" y2="997.0" stroke="#33261F" stroke-width="0.9" />
 <text x="1112.0" y="1013.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >direct / 7</text>
-<text x="1146.0" y="1014.0" font-size="14" font-weight="700" fill="#8D6449" text-anchor="middle" >6</text>
-<text x="1198.0" y="1014.0" font-size="14" font-weight="700" fill="#A33A2E" text-anchor="middle" >1</text>
-<text x="1250.0" y="1014.0" font-size="14" font-weight="700" fill="#A33A2E" text-anchor="middle" >0</text>
-<text x="1302.0" y="1014.0" font-size="14" font-weight="700" fill="#A33A2E" text-anchor="middle" >1</text>
+<text x="1146.0" y="1014.0" font-size="14" font-weight="700" fill="#33261F" text-anchor="middle" >6</text>
+<text x="1198.0" y="1014.0" font-size="14" font-weight="700" fill="#33261F" text-anchor="middle" >1</text>
+<text x="1250.0" y="1014.0" font-size="14" font-weight="700" fill="#33261F" text-anchor="middle" >0</text>
+<text x="1302.0" y="1014.0" font-size="14" font-weight="700" fill="#33261F" text-anchor="middle" >1</text>
 <rect x="958.0" y="1030.0" width="12.0" height="10.0" rx="1.5" fill="url(#cellD)" stroke="none" stroke-width="1.0" />
 <text x="975.0" y="1039.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >direct</text>
 <rect x="1028.0" y="1030.0" width="12.0" height="10.0" rx="1.5" fill="#F8E0DA" stroke="none" stroke-width="1.0" />
@@ -1377,7 +1377,7 @@
 <text x="1443.5" y="954.0" font-size="12" font-weight="700" fill="#33261F" text-anchor="start" >3</text>
 <text x="1388.0" y="970.0" font-size="11" font-weight="400" fill="#33261F" text-anchor="start" >prescribed focal deficit, known motion, independent</text>
 <rect x="1388.0" y="975.0" width="16.5" height="11.0" rx="1.5" fill="#A33A2E" stroke="none" stroke-width="1.0" />
-<text x="1410.5" y="985.0" font-size="12" font-weight="700" fill="#A33A2E" text-anchor="start" >1</text>
+<text x="1410.5" y="985.0" font-size="12" font-weight="700" fill="#33261F" text-anchor="start" >1</text>
 <line x1="1388.0" y1="1003.0" x2="1718.0" y2="1003.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="1388.0" y1="1003.0" x2="1388.0" y2="1007.0" stroke="#33261F" stroke-width="0.9" />
 <text x="1388.0" y="1018.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
