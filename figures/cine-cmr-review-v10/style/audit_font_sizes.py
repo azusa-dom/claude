@@ -12,9 +12,8 @@ import pdfplumber
 
 FLOOR_PT = 6.0
 # Figures knowingly below the floor at 190 mm: reported as WARN, not as a build failure.
-KNOWN_UNDERSIZE = {
-    "Figure_1_two_track_evidence_map": "poster-scale drawing (1800 px canvas); needs a journal-width layout",
-}
+# (The poster variant of Figure 1 lives in out/poster/ and is not audited: it is not a manuscript figure.)
+KNOWN_UNDERSIZE = {}
 OUT = Path(__file__).resolve().parents[1] / "out"
 QA = Path(__file__).resolve().parents[1] / "qa"
 

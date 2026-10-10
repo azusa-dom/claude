@@ -1,8 +1,8 @@
-"""Figure 1: two-track evidence map (author-supplied SVG, agarwood-scifig style), exported at 190 mm.
+"""Figure 1, poster variant: the author-supplied two-track SVG (1800 x 1105 px canvas), exported to out/poster/.
 
-The drawing itself is src/Figure_1_two_track.svg (1800 x 1105 px canvas, poster scale). This script only
-renders it to out/ as PDF (embedded fonts), 600 dpi PNG and a pt-sized SVG, like the other figures.
-At 190 mm its smallest text is ~3 pt, below the journal's 7 pt floor; see README.
+This is the poster / slide version of Figure 1 (agarwood-scifig poster variant). The manuscript uses the
+journal variant drawn by src/fig1_two_track_journal.py. At 190 mm the poster's smallest text is ~3 pt, so it
+is exported here for reference only and is not part of the font audit.
 """
 import re
 import shutil
@@ -11,10 +11,11 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from scifig_common import DPI, OUT, QA, ROOT, WIDTH_MM, _env, _exact_pdf_box  # noqa: E402
+from scifig_common import DPI, OUT, ROOT, WIDTH_MM, _env, _exact_pdf_box  # noqa: E402
 
-SRC = ROOT / "src" / "Figure_1_two_track.svg"
-STEM = "Figure_1_two_track_evidence_map"
+SRC = ROOT / "src" / "Figure_1_two_track_poster.svg"
+STEM = "Figure_1_two_track_evidence_map_poster"
+OUT = OUT / "poster"
 
 
 def main():
@@ -22,7 +23,7 @@ def main():
     svg = SRC.read_text(encoding="utf-8")
     w, h = (float(v) for v in re.search(r'<svg[^>]*\swidth="([\d.]+)"\s+height="([\d.]+)"', svg).groups())
     h_mm = WIDTH_MM * h / w
-    OUT.mkdir(exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
     node = shutil.which("node") or "node"
     subprocess.run([node, str(ROOT / "style" / "render_outputs.cjs"), str(SRC), str(OUT / f"{STEM}.pdf"),
                     str(OUT / f"{STEM}.png"), str(WIDTH_MM), str(round(WIDTH_MM / 25.4 * DPI))], check=True, env=_env())

@@ -9,8 +9,9 @@ for s in fig2_counterexample fig3_timeline fig4_attributes fig5_validation_progr
          figS1_strain_definitions figS2_error_attributes figS3_training_inference graphical_abstract; do
   python3 "src/$s.py"
 done
-# Figure 1: the author-supplied two-track SVG (src/Figure_1_two_track.svg), exported at 190 mm.
-python3 src/fig1_two_track.py
+# Figure 1: journal variant (manuscript) and the poster variant (author SVG, out/poster/, reference only).
+python3 src/fig1_two_track_journal.py
+python3 src/fig1_two_track_poster.py
 # QA: rendered font sizes (Elsevier floor 6 pt for scripts, 7 pt text), then a contact sheet.
 python3 style/audit_font_sizes.py
 python3 style/contact_sheet.py

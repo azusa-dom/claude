@@ -35,6 +35,28 @@ Figure.render_png("fig3.svg", "fig3.png", scale=3)
 
 真实数据图(散点、分布、回归等)用 matplotlib 画,`plt.style.use(".../agarwood.mplstyle")`。图件全套构建流程(按 190 mm 导出、PDF 字号审计、面板对齐审计)沿用 [`figures/cine-cmr-review-v10/style/`](../../../figures/cine-cmr-review-v10/style)。
 
+## 两种版式:海报版与期刊版
+
+同一套颜色、字体和元件,按用途分两种版式。先选版式,再画图。
+
+| | 海报版(poster) | 期刊版(journal) |
+|---|---|---|
+| 用途 | 海报主图、幻灯片、网页概览图;读者可以走近或放大看 | 投稿图、论文正文图、补充图;按实际印刷尺寸读 |
+| 画布 | 1800 px 宽,`print_width_mm` 填实际打印宽度(通常 ≥ 600 mm) | 800 px = 190 mm 双栏(或 380 px = 90 mm 单栏);GA 1300 px = 260 mm |
+| 字号底线 | 画布上 ≥ 10 px 即可,印刷尺寸下自然 ≥ 7 pt | 正文 10.5 px(7.06 pt),上下标 ≥ 8.5 px(6 pt);`fig.save()` 会校验 |
+| 面板数 | 5–8 个面板,一图讲完整个论证 | ≤ 5 个面板、≤ 3 行;讲不完就拆成两张图或放补充材料 |
+| 每个子面板 | 图 + 读数表 + 3 行说明 + 失败点编号 | 图 + 1–2 行说明;读数表只在有空间时放 |
+| 轨道/分组标记 | 20 px 渐变竖向轨道条,白字旋转大写(`track_strip`) | 不用轨道条;分组写进面板标题("Estimation track: …"),列间细线分隔 |
+| 示意图 | 可以用深色 MRI 式影像块、径向渐变、色标 | 只用白底线框示意(素绢白环、箭头、色块填充),不做影像仿真,不做装饰渐变 |
+| 图内标题和脚注 | 顶部 "Figure n \| 结论" 标题行 + 底部来源/缩写脚注 | 不放(图注承担);脚本仍写好两套文字,`SCIFIG_TITLES=1` 可打开 |
+| 色点类别标签 | 大写字母间距 1.2–2.5 | 同上,但只用于站点/类别标签,不用于正文 |
+| 文字换行 | 手动断行 | 用 `wrap()` 按列宽实测换行,所有文本先用 `tw()` 量宽再放 |
+| 示例 | [`figures/poster-hero-two-track/`](../../../figures/poster-hero-two-track);[`figures/cine-cmr-review-v10/src/Figure_1_two_track_poster.svg`](../../../figures/cine-cmr-review-v10/src/Figure_1_two_track_poster.svg) | [`examples/example_journal.py`](examples/example_journal.py);[`figures/cine-cmr-review-v10/src/fig1_two_track_journal.py`](../../../figures/cine-cmr-review-v10/src/fig1_two_track_journal.py)(同一张双轨图的期刊版)|
+
+同一张图从海报版改期刊版的做法(以 Figure 1 双轨图为例):去掉与正文其他图重复的面板(误差属性图在 S2、覆盖矩阵在 Table 3、证据计数在 Fig 3b),保留两条轨道;每个站点只留一个图形和两行说明;每列的标题、✓/✕ 行、图题、说明都按列宽实测换行;数值标签放在标记上方或左侧,避免超出列边界;海报里的 MRI 影像块换成线框环。
+
+**一个期刊版画布放不下时,不要缩小字号**:拆图、减面板或把读数移进图注。
+
 ## 风格规则
 
 ### 1. 画布与尺寸
@@ -44,7 +66,7 @@ Figure.render_png("fig3.svg", "fig3.png", scale=3)
 - 海报主图:画布 **1800 px 宽**,`print_width_mm` 填实际打印宽度。
 - 字号底线:印刷尺寸下正文 ≥ 7 pt,上下标 ≥ 6 pt(Elsevier 标准)。`fig.save()` 每次都会打印最小字号,低于 7 pt 会提示。
 
-### 2. 字体与字号(单位 px,按 1800 px 海报画布;期刊画布同一套数值)
+### 2. 字体与字号(单位 px;海报画布 1800 px 与期刊画布 800 px 用同一套数值,所以期刊版每个字相对更大、内容更少)
 
 | 角色 | 字号 | 字重 | 颜色 |
 |---|---|---|---|

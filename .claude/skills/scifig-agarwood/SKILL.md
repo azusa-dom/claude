@@ -14,7 +14,10 @@ The user's default look for research figures: dense, journal-grade, white canvas
 1. Read `design-templates/house-style/agarwood-scifig/README.md` (rules, tokens, QA checklist).
 2. Look at the flagship `figures/poster-hero-two-track/make_figure.py` + `two_track_figure.png`
    and `design-templates/house-style/agarwood-scifig/examples/` for the target density.
-3. Pick the canvas: journal 190 mm → 800 px wide (`print_width_mm=190`); poster → 1800 px wide.
+3. Pick the variant first (README, "两种版式"): **journal** for any manuscript figure (800 px = 190 mm,
+   smallest text 10.5 px, ≤ 5 panels, no track strips, no image mock-ups, no in-figure title/footer) or
+   **poster** for posters/slides (1800 px, dense, track strips, title and footer). A poster drawing is never
+   shrunk into a manuscript: redraw it in the journal variant (cut panels that other figures already carry).
 
 ## Build
 
@@ -23,7 +26,10 @@ The user's default look for research figures: dense, journal-grade, white canvas
 - Pure data plots: matplotlib with `plt.style.use(".../agarwood.mplstyle")`; for full journal
   sets reuse `figures/cine-cmr-review-v10/style/` (190 mm export, font and alignment audits).
 - Every panel: lowercase bold letter + claim-style title; numbers printed on marks; 2–3 muted
-  caption lines; footer with provenance (schematic vs transcribed, sources, not pooled) and abbreviations.
+  caption lines (journal: 1–2); footer with provenance (schematic vs transcribed, sources, not pooled) and
+  abbreviations (journal: written but hidden unless `SCIFIG_TITLES=1`; the caption carries it).
+- Journal variant: measure every string with `tw()` and wrap with `wrap()` to its column; never let text cross
+  a column rule; values go above or beside marks, inside the column.
 - Text in ink/muted only — never in the series colour. Colours keep their roles (OBS/INF/REF/SUP/ERR).
 - Never invent study numbers. Transcribed values cite their source; placeholders say "illustrative".
 

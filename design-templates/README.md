@@ -10,7 +10,7 @@ Catalog of design templates vendored as git submodules for Claude to pull in whe
 
 ### agarwood-scifig
 
-Dense, journal-grade figures as editable SVG. The canvas is white, rows and columns are separated by thin rules (no cards or shadows), and every panel has a claim-style title. Every mark carries its number, and a footer states what is schematic and what is transcribed data.
+Dense, journal-grade figures as editable SVG. The canvas is white, rows and columns are separated by thin rules (no cards or shadows), and every panel has a claim-style title. Every mark carries its number, and a footer states what is schematic and what is transcribed data. Two variants: **poster** (1800 px canvas, 5–8 panels, gradient track strips, in-figure title and footer) and **journal** (800 px = 190 mm, ≤ 5 panels, text ≥ 7 pt at print size, no strips or image mock-ups); the README's "两种版式" table says when to use which.
 
 - [`README.md`](house-style/agarwood-scifig/README.md) holds the rules: colour roles, type scale, layout, density, honesty and a QA checklist.
 - [`scifig.py`](house-style/agarwood-scifig/scifig.py) provides the tokens, structural pieces (title, panel, track strip, ✓/✕ lines, failure badges, footer) and plot primitives (axes, forest, range rows, bars, heatmap, colour bar). It also includes a print-size font audit.
