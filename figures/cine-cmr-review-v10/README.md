@@ -4,27 +4,56 @@
 
 ## 文件
 
-`out/` 里每张图都有 PDF、SVG 和 600 dpi PNG(GA 为 2600 × 1000 px)。`src/` 是生成脚本:Fig 2、3、4、S1、S2 用 matplotlib,Fig 1、5、S3 和 GA 用 Typst + CeTZ。`style/` 统一定义配色、字体、字号和尺寸,并含两个审计脚本(面板对齐、字号)。`qa/` 是每次构建的审计结果和总览图。`FIGURE_CONTRACT.md` 写明每张图的主张、证据层级和配色语义。`data/table_s3_methods.csv` 是 Fig 3 的数据,每行写了证据类型的判定理由和 `supplement.tex` 行号;`data/mrxcat2_values.csv` 是 Fig 4 的全部数值,每个数都附了 MRXCAT2.0 原文的原句。`captions_and_alt_text.md` 是英文图注和 alt text 草稿。运行 `./build.sh` 可从源码重建全部图件并自动跑审计,依赖版本见 `requirements.txt`。
+`out/` 里每张图都有 PDF、SVG 和 600 dpi PNG(GA 为 2600 × 1000 px)。`src/` 是生成脚本:Fig 1 有两版,期刊版 `fig1_two_track_journal.py`(进稿件)和你提供的海报版 `Figure_1_two_track_poster.svg`(`fig1_two_track_poster.py` 导出到 `out/poster/`);原来的测量链图 `fig1_measurement_chain.typ` 和 `build_typst.py` 留在 `src/` 作历史记录,构建不再调用;其余 8 张(Fig 2–5、S1–S3、GA)都按 agarwood-scifig 风格(`design-templates/house-style/agarwood-scifig`)用 `scifig.py` 画成可编辑 SVG,再用无头 Chromium 出 PDF 和 PNG。`style/scifig_common.py` 是这 8 张共用的画布、导出和字号审计;`style/render_outputs.cjs` 负责 SVG → PDF/PNG;`style/contact_sheet.py` 生成总览图;`figstyle.py`、`audit_panel_alignment.py` 是原 matplotlib 流程留下的工具,现在没有图在用。`qa/` 是每次构建的审计结果和总览图。`FIGURE_CONTRACT.md` 写明每张图的主张、证据层级和配色语义。`data/table_s3_methods.csv` 是 Fig 3 的数据,每行写了证据类型的判定理由和 `supplement.tex` 行号;`data/mrxcat2_values.csv` 是 Fig 4 的全部数值,每个数都附了 MRXCAT2.0 原文的原句。`captions_and_alt_text.md` 是英文图注和 alt text 草稿。运行 `./build.sh` 可从源码重建全部图件并自动跑审计,依赖版本见 `requirements.txt`。
 
 | 图 | 文件名 | 尺寸 |
 |---|---|---|
-| Fig 1 测量链与三道失败点 | `Figure_1_measurement_chain` | 190 × 117 mm |
-| Fig 2 同一轮廓、不同对应(解析反例) | `Figure_2_same_contours_analytic` | 190 × 64 mm |
-| Fig 3 方法年表 1999–2026 | `Figure_3_method_timeline` | 190 × 181 mm |
-| Fig 4 属性特异恢复(MRXCAT2.0) | `Figure_4_attribute_specific_recovery` | 190 × 107 mm |
-| Fig 5 验证目标与三阶段方案 | `Figure_5_validation_targets_programme` | 190 × 141 mm |
+| Fig 1 双轨证据图(期刊版;海报版在 `out/poster/`) | `Figure_1_two_track_evidence_map` | 190 × 172 mm |
+| Fig 2 同一轮廓、不同对应(解析反例) | `Figure_2_same_contours_analytic` | 190 × 67 mm |
+| Fig 3 方法年表 1999–2026 | `Figure_3_method_timeline` | 190 × 199 mm |
+| Fig 4 属性特异恢复(MRXCAT2.0) | `Figure_4_attribute_specific_recovery` | 190 × 110 mm |
+| Fig 5 验证目标与三阶段方案 | `Figure_5_validation_targets_programme` | 190 × 140 mm |
 | Graphical abstract | `Graphical_abstract` | 2600 × 1000 px |
 | S1 应变定义陷阱 | `Figure_S1_strain_definition_traps` | 190 × 124 mm |
-| S2 误差属性与映射有效性 | `Figure_S2_error_attributes_mapping_validity` | 190 × 109 mm |
-| S3 训练期与推理期控制 | `Figure_S3_training_vs_inference_controls` | 190 × 67 mm |
+| S2 误差属性与映射有效性 | `Figure_S2_error_attributes_mapping_validity` | 190 × 114 mm |
+| S3 训练期与推理期控制 | `Figure_S3_training_vs_inference_controls` | 190 × 84 mm |
+
+## agarwood-scifig 重绘(Fig 2–5、S1–S3、GA)
+
+除 Fig 1 外,其余 8 张图都按 agarwood-scifig 风格重画了:白底、细线分隔、不用卡片和圆角框;每个面板是"小写粗体字母 + 一句结论式标题";数据标记旁直接写数值,子面板下有 2 行次要灰说明,示意图里加了可量化的读数小表。颜色角色沿用原来的定义(观测 / 推断 / 参照 / 支持 / 误差),文字一律用墨色或次要灰。科学内容以本仓库的最新源码为准(已含你后来对 Fig 3、Fig 4、Fig 5、S1 的修订),没有用压缩包里较早的版本。
+
+各图新增的信息都来自已有数据或解析计算,没有新的研究数值:
+
+- Fig 2:a 加了一行"信号是否带材料标记"(cine ✕、tagging ✓、DENSE ✓);c 加读数表:映射 2 的 λθ 范围 0.5–1.5,两种映射在 θ 上的平均拉伸都是 1.0。
+- Fig 3:拆成两个面板。a 是年表,每条泳道下写条目数和材料敏感参照数,下方加了"每年条目数"的堆叠柱(共用年份轴);b 是五类证据的图例和总数条(22 / 8 / 14 / 1 / 3,共 48)。
+- Fig 4:a 每组柱下写 Δ = 瘢痕 − 远端(−0.65、+0.01、+0.19);b 加读数表(Dice 0.82、位移误差 1.0 ± 0.9 mm、四例 EF 51/34/41/49%),全部来自 `mrxcat2_values.csv`;c 每个属性配一条参照曲线小图,只说明该属性量的是什么(ΔM、Δθ、w、Δt),没有画估计曲线。
+- Fig 5:a 每个验证目标下加一行说明;b 改成三栏表(阶段 | 变化或固定的内容 | Table 4 资源),与 a 同一种表格样式;c 用读数表列出 6 个节段值、共同均值 −0.18 和节段间极差(0.16 对 0)。
+- S1:a 加 e → E 换算表;b 加"需报告的选择"(层、参考帧、轴、2D 切片);c、d 的读数都由所画曲线算出。
+- S2:a 里四种空间失败、b 里两种时间失败的估计曲线,都调成与参照的 RMSE 相同(a 为 0.17,b 为 0.16),直接演示图注里"单一均方误差掩盖这些失败";c 写出由所画映射算出的 min det J(0.81 和 −1.13)和 det J ≤ 0 的格数(0/121 和 5/121)。这改了原示意曲线的参数(例如位置偏移从 0.18 改为 0.05),请你确认能接受。
+- S3:a 两条平行流程行(训练期 / 推理期控制),箭头上方写斜体动词,汇到右侧"compare";b 共享评估契约的四个条件各占一列。
+- GA:三栏 OBSERVED / INFERRED / VALIDATED BY,顶部一句结论;右栏写出 Table S3 的计数(48 个条目中 14 个用材料敏感参照、1 个做预设局灶缺损测试),与 Fig 3 同源。
+
+全套图都按期刊版规则(`design-templates/house-style/agarwood-scifig/README.md` "两种版式")统一过一遍:没有渐变轨道条、字母间距大写标签、实心编号圆点和流程线;图内只放图表、表格和一两行说明,解释性文字在图注里。Fig 4a 原来写在图里的两段说明移到图下一行;GA 的三栏标题改为普通粗体。
+
+期刊模式(默认)下图内不放 "Figure n | …" 标题行和底部脚注,这些内容在图注里,和之前的约定一致。`SCIFIG_TITLES=1 ./build.sh` 会加上标题行和来源脚注(海报、预览用),每个脚本里两套文字都已写好。
+
+## Figure 1:双轨证据图,海报版与期刊版
+
+你提供的 `two_track_figure.svg`(Figure 1 | Two-track evidence map,五个面板 a–e,1800 px 海报画布)原样保存在 `src/Figure_1_two_track_poster.svg`,由 `src/fig1_two_track_poster.py` 导出到 `out/poster/`,只作海报、幻灯片和参考用,不进稿件、不参加字号审计(按 190 mm 印刷最小字号只有 2.8 pt)。
+
+稿件用的 Figure 1 是同一张图的**期刊版** `src/fig1_two_track_journal.py` → `out/Figure_1_two_track_evidence_map.*`,190 × 172 mm,最小正文 7.06 pt、上下标 6.46 pt。从海报版到期刊版改了这些:
+
+- 只保留两条轨道(a 估计轨道、b 验证轨道)。海报版的 c(误差属性曲线)、d(七项研究覆盖矩阵)、e(Table S3 证据计数)在稿件里已分别由 S2、Table 3、Fig 3b 承担,期刊版不重复。
+- 去掉渐变轨道条、深色 MRI 影像块、图内标题行和底部脚注;分组写进面板标题,影像块换成线框环。
+- a 的四个站点各留一个图形和两行说明;8 项定义选择(01–08)保留,并写出由所画曲线算出的读数(第 11 节段在 ES、收缩峰、收缩后峰的值,以及 min(mean) 与 mean(min))。
+- b 的五列各留一个图:DeepStrain 误差森林图、ICC 区间行、REGAIN 的 95% LoA、Kihlberg 的 AUC/敏感度柱、Bello/Masutani 的判别点;每列标题、✓/✕ 行、图题和说明都按列宽实测换行。
+- 数值与稿件逐项核对一致(Table 2–3、§4、§6.6)。海报版 b 列"Strain-8 global CV ≤ 20%、segmental often > 20%"在稿件里没有出处,期刊版改为稿件原话"global fair–excellent; segmental more variable"。
 
 ## 规格依据与实际核查
 
-Elsevier 官方 artwork sizing 页面规定单栏 90 mm、1.5 栏 140 mm、双栏 190 mm;普通文字以 7 pt 为准,只有上下标可以低到 6 pt。所有图(GA 除外)都按双栏宽度 190 mm 导出,宽度统一。图是先按稿件版心(主文 160 mm、补充 166 mm)排版的,保证标签不小于 7.2 pt,然后整图等比放大到 190 mm。所以期刊双栏排版时正文字号约 8.2–8.6 pt;稿件用 `width=\textwidth` 插入、缩回版心时,字号回到不小于 7.2 pt(上下标不小于 6 pt)。每张图上下的空白都自动裁掉,只保留 1.2 mm 边距。PNG 写入了 600 dpi 信息(GA 为 254 dpi,对应 2600 × 1000 px),所以插进 Word 或 PPT 时就是实际尺寸。之前 Typst 导出的 PNG 没写 DPI,插进 Word 会被当成 96 dpi,宽度变成约 1 米。
+Elsevier 官方 artwork sizing 页面规定单栏 90 mm、1.5 栏 140 mm、双栏 190 mm;普通文字以 7 pt 为准,只有上下标可以低到 6 pt。所有图(GA 除外)都按双栏宽度 190 mm 导出,宽度统一。重绘的 8 张按这套风格直接在 190 mm 上排版(800 px 画布 = 190 mm),最小正文字号 10.5 px = 7.06 pt,上下标最小 6.2 pt,正好在 Elsevier 下限之上。**注意**:这意味着如果稿件用 `width=\textwidth` 把图缩到 160 mm 版心,最小字号会降到约 5.9 pt;投稿 PDF 里请按 190 mm(或不缩放)插入,或者告诉我改回"按版心排版再放大"的做法。Fig 1 期刊版最小 7.06 pt(公式下标 6.46 pt)。PDF 页面尺寸精确到 190.0 mm(Chromium 按整像素取页,导出后裁掉多出的 0.2 mm 空白)。PNG 写入了 600 dpi 信息(GA 为 254 dpi,对应 2600 × 1000 px),插进 Word 或 PPT 时就是实际尺寸。
 
-图内底部的说明句(数据来源、"概念示意,无研究数据"等)已全部删除,这些内容都在图注里。Fig 3 只保留了方法名旁 * † ‡ § 标记的符号说明。
-
-已实际核查的内容如下。每个 PDF 的页面尺寸都与上表一致。字体全部嵌入:标签为 Liberation Sans,数学为 Liberation Serif;这两款开源字体与 Arial、Times New Roman 字宽完全一致,环境里没有微软字体。matplotlib 导出的 SVG 保留可编辑文字,字体声明为 `'Arial', 'Liberation Sans'`,在装有 Arial 的电脑上会直接显示 Arial。Typst 导出的 SVG 把文字转成了轮廓,所以 Fig 1、5、S3 和 GA 要改字时请用 PDF 或 `.typ` 源码。每张图都在实际尺寸下渲染后逐张目检,重叠、裁切、溢出已全部修正。
+已实际核查的内容如下。每个 PDF 的页面尺寸都与上表一致。字体全部嵌入:标签为 Liberation Sans(与 Arial 字宽一致);Fig 2 的 "↦" 在 Liberation Sans 里没有字形,由 DejaVu Sans 补字,也已嵌入。重绘图的 SVG 保留可编辑的 `<text>`,字体声明为 `Helvetica, Arial, 'Liberation Sans'`,在装有 Arial 的电脑上会直接显示 Arial;Fig 1 期刊版和海报版的 SVG 都保留可编辑文字。每张图都在实际尺寸下渲染后逐张目检、裁剪放大检查,重叠、裁切、溢出已全部修正。
 
 Fig 4 的数值已用 PubMed Central 全文(PMC10116689,[doi:10.1186/s12968-023-00934-z](https://doi.org/10.1186/s12968-023-00934-z))逐个核对:EF 51/34/41/49%;梗死例远端/瘢痕的径向、纵向、周向应变为 0.95/0.30、−0.18/−0.17、−0.18/0.01;Dice 0.82;位移误差 1.0 ± 0.9 mm;周向误差 0.02 ± 0.04;径向误差 −0.24 ± 0.21,梗死例 −0.20 ± 0.21。以上均与稿件 §4.1 一致。
 
@@ -57,6 +86,8 @@ Fig 4 的科学表述已按你的意见修正,并同步到图源、图内文字�
 
 ## 版式重设计(文字密集的框图)
 
+(本节和下一节记录的是 agarwood-scifig 重绘之前的版本,Fig 1 现已换成双轨证据图;其余图的现行版式见上文"agarwood-scifig 重绘"一节。)
+
 Fig 1、Fig 5、S3 原来把每条信息装进带边框、带底色的卡片,长句直接压在彩色底上,读起来像一面表格墙。现在改成"颜色只做点缀、文字一律放在白底上"的轻量版式,用字号、粗细和灰度区分层级,不再靠框线分隔。科学内容一项未删,精简掉的说明句都在图注里。
 
 - Fig 1:五个步骤改成一条带编号站点的流程线,站点颜色区分观测、推断和参照;三个失败点放在对应站点正下方,用同色编号圈对应,不再画穿过文字的连线;原来的归因长段改成三行"现象 → 归因"小表;结论用一条绿色色条引出。
@@ -74,12 +105,12 @@ Codex 报告中留下的问题已修:Fig 2 和 S1 的数学上下标只有 5.04 
 
 ## QA(每次 `./build.sh` 自动执行,结果在 `qa/`)
 
-- 面板对齐(Codex 引入的审计,严格模式):Fig 2、3、4、S1、S2 全部通过。
-- 字号(`style/audit_font_sizes.py`,从 PDF 逐字读取,旋转文字按包围盒校正):9 张全部通过。按 190 mm 实际尺寸计,正文最小 8.2 pt,上下标最小 6.9 pt;缩回稿件版心后,正文不小于 7.2 pt,上下标不小于 6.0 pt。
-- 尺寸:9 张图的 PDF、SVG、PNG 三种格式尺寸一致(误差 0.1 mm 以内),除 GA 外宽度均为 190 mm。
-- 渲染质量(scientific-figure-skills 的 `audit_render_quality.py`,三种格式齐全、分辨率、非空白、matplotlib 图的 SVG 必须保留可编辑文字):9 张全部通过。Fig 1、5、S3 和 GA 各有一条警告,是 Typst 导出的 SVG 文字为轮廓,这几张图的可编辑文字在 PDF 里。
-- 配色(dataviz skill 的 `validate_palette.js`):结果见上节。
-- 目检:按实际尺寸逐张检查,总览图为 `qa/contact-sheet.png`。
+- 字号:重绘的 8 张在 `fig.save()` 时就按印刷尺寸审计,正文低于 7 pt 或上下标低于 6 pt 会中断构建;之后 `style/audit_font_sizes.py` 再从 PDF 逐字读取复核(旋转文字按包围盒校正):9 张通过。按 190 mm 实际尺寸计,正文最小 7.06 pt,上下标最小 6.19 pt(Fig 2 的 λθ 下标);GA 在 260 mm 上最小 7.93 pt。Fig 1 期刊版正文最小 7.06 pt、公式下标 6.46 pt;海报版在 `out/poster/`,不审计。
+- 尺寸:9 张图的 PDF 页面与上表一致(190.0 mm 宽;GA 260 × 100 mm),SVG 以 pt 写明同样尺寸,PNG 为 4488 px 宽 / 600 dpi(GA 2600 × 1000 px / 254 dpi)。
+- 面板对齐:原来的 matplotlib 对齐审计只适用于 matplotlib 坐标轴,重绘图不再使用;重绘图的所有坐标都在脚本里显式写出,面板起点按列统一。
+- 渲染质量:scientific-figure-skills 的 `audit_render_quality.py` 本轮没有重跑(该子模块在本环境未检出),旧的报告已删除。
+- 配色:沿用上节的颜色角色和校验结果,没有新增颜色。
+- 目检:按实际尺寸逐张渲染、裁剪放大检查,总览图为 `qa/contact-sheet.png`(`style/contact_sheet.py` 生成)。
 
 ## 尚未完成
 

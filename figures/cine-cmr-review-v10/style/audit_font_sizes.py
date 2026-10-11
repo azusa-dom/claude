@@ -11,6 +11,9 @@ from pathlib import Path
 import pdfplumber
 
 FLOOR_PT = 6.0
+# Figures knowingly below the floor at 190 mm: reported as WARN, not as a build failure.
+# (The poster variant of Figure 1 lives in out/poster/ and is not audited: it is not a manuscript figure.)
+KNOWN_UNDERSIZE = {}
 OUT = Path(__file__).resolve().parents[1] / "out"
 QA = Path(__file__).resolve().parents[1] / "qa"
 
@@ -39,9 +42,11 @@ def main():
     for pdf in sorted(OUT.glob("*.pdf")):
         r = audit(pdf)
         report[pdf.stem] = r
-        status = "FAIL" if r["below_floor"] else "pass"
-        failed |= bool(r["below_floor"])
-        print(f"{status}  {pdf.stem:46s} min {r['min_pt']} pt")
+        known = KNOWN_UNDERSIZE.get(pdf.stem)
+        status = ("WARN" if known else "FAIL") if r["below_floor"] else "pass"
+        failed |= bool(r["below_floor"]) and not known
+        note = f"  ({known})" if known and r["below_floor"] else ""
+        print(f"{status}  {pdf.stem:46s} min {r['min_pt']} pt{note}")
     (QA / "font-size-audit.json").write_text(json.dumps(report, indent=2, ensure_ascii=False))
     sys.exit(1 if failed else 0)
 

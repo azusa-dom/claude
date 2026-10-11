@@ -1,139 +1,141 @@
-"""Figure 2: identical contours, different material correspondence (analytic counterexample)."""
+"""Figure 2: identical contours, different material correspondence (analytic counterexample).
+
+agarwood-scifig house style, 190 mm. All values are analytic (a = 0.5); no study data.
+"""
+import math
 import sys
 from pathlib import Path
 
-import numpy as np
-from matplotlib.patches import Circle, FancyArrowPatch, PathPatch, Wedge
-from matplotlib.path import Path as MPath
-
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from figstyle import (FS_BODY, FS_SMALL, FS_TITLE, OBS, OBS_T, INK, MAIN_W, MUTED, REF,  # noqa: E402
-                      INF, canvas, panel_label, save, sub_axes)
+from scifig_common import C, T, export, start  # noqa: E402
+from scifig import Rng, annulus_path, polyline  # noqa: E402
 
-W, H = MAIN_W, 58.0
 A = 0.5
+H = 282
+
+fig = start(H, "Figure 2 | Identical contours do not fix material correspondence",
+            legend=[("observed", C.OBS), ("inferred", C.INF), ("reference", C.REF)],
+            footer=["Analytic counterexample (a = 0.5); no study data. λθ is a stretch ratio, not Green–Lagrange strain.",
+                    "Dice, Dice similarity coefficient; HD, Hausdorff distance; DENSE, displacement encoding with stimulated echoes."])
 
 
-def annulus(ax, cx, cy, r_in, r_out, face=OBS_T, edge=OBS, lw=0.8, z=1):
-    ax.add_patch(Wedge((cx, cy), r_out, 0, 360, width=r_out - r_in, facecolor=face, edgecolor="none", zorder=z))
-    for r in (r_in, r_out):
-        ax.add_patch(Circle((cx, cy), r, facecolor="none", edgecolor=edge, lw=lw, zorder=z + 1))
-    return Wedge((cx, cy), r_out, 0, 360, width=r_out - r_in, transform=ax.transData)
+def annulus(cx, cy, R, r, fill=C.SILK, edge=C.OBS):
+    fig.path(annulus_path(cx, cy, R, r), fill=fill, extra='fill-rule="evenodd"')
+    fig.circle(cx, cy, R, stroke=edge, w=1.1)
+    fig.circle(cx, cy, r, stroke=edge, w=1.1)
 
 
-def clip_to(artist, ax, cx, cy, r_in, r_out):
-    clip = Wedge((cx, cy), r_out, 0, 360, width=r_out - r_in, transform=ax.transData)
-    artist.set_clip_path(clip)
+def clip(cx, cy, R, r):
+    cid = fig.uid("clip")
+    fig.defs(f'<clipPath id="{cid}"><path d="{annulus_path(cx, cy, R, r)}" fill-rule="evenodd"/></clipPath>')
+    return f'clip-path="url(#{cid})"'
 
 
-def panel_a(ax):
-    panel_label(ax, 0.5, H - 0.5, "a")
-    ax.text(5.0, H - 1.4, "What each acquisition supplies", fontsize=FS_TITLE, fontweight="bold", va="top")
-    r_in, r_out, cy = 4.3, 7.6, 37.5
-    rng = np.random.default_rng(7)
-    specs = [(10.0, "Routine cine", "boundaries +\nweak texture"),
-             (29.0, "Tagging", "prepared grid\n(material pattern)"),
-             (48.0, "DENSE", "phase-encoded\ndisplacement")]
-    for cx, title, note in specs:
-        annulus(ax, cx, cy, r_in, r_out)
-        ax.text(cx, cy + r_out + 2.0, title, ha="center", va="bottom", fontsize=FS_BODY, fontweight="bold")
-        ax.text(cx, cy - r_out - 1.8, note, ha="center", va="top", fontsize=FS_SMALL, linespacing=1.15)
-    cx = specs[0][0]
-    pts = rng.uniform(-r_out, r_out, size=(260, 2))
-    rr = np.hypot(*pts.T)
-    pts = pts[(rr > r_in + 0.25) & (rr < r_out - 0.25)]
-    ax.scatter(cx + pts[:, 0], cy + pts[:, 1], s=0.6, color=OBS, alpha=0.45, lw=0, zorder=3)
-    cx = specs[1][0]
-    for k in np.arange(-r_out, r_out + 0.01, 1.9):
-        for xs, ys in (([cx + k, cx + k], [cy - r_out, cy + r_out]), ([cx - r_out, cx + r_out], [cy + k, cy + k])):
-            (ln,) = ax.plot(xs, ys, color=REF, lw=0.7, zorder=3)
-            clip_to(ln, ax, cx, cy, r_in, r_out)
-    cx = specs[2][0]
-    for r in (5.75, 7.15):
-        for th in np.linspace(0, 2 * np.pi, 10 if r < 6 else 14, endpoint=False) + (0.3 if r < 6 else 0):
-            x, y = cx + r * np.cos(th), cy + r * np.sin(th)
-            dr, dt = -0.95, 0.4
-            dx = dr * np.cos(th) - dt * np.sin(th)
-            dy = dr * np.sin(th) + dt * np.cos(th)
-            ax.add_patch(FancyArrowPatch((x, y), (x + dx, y + dy), arrowstyle="-|>,head_length=0.7,head_width=0.45",
-                                         mutation_scale=1, color=REF, lw=0.7, zorder=3,
-                                         shrinkA=0, shrinkB=0))
-    ax.text(29.0, 18.0, "Only tagging and DENSE carry a material label;\ncine supplies boundaries and weak texture.",
-            ha="center", va="top", fontsize=FS_SMALL, color=MUTED, linespacing=1.2)
+# ---- a: what each acquisition supplies ------------------------------------------------------
+fig.panel(20, 26, "a", "Cine lacks a material label")
+R, r, cy = 31, 17.5, 112
+cols = [(58, "Routine cine", ["boundaries +", "weak texture"], False),
+        (145, "Tagging", ["prepared grid", "(material pattern)"], True),
+        (232, "DENSE", ["phase-encoded", "displacement"], True)]
+rng = Rng(7)
+for cx, name, cap, labelled in cols:
+    fig.text(cx, 64, name, T.SUB - 1, 700, anchor="middle")
+    annulus(cx, cy, R, r)
+    for i, s in enumerate(cap):
+        fig.text(cx, cy + R + 17 + i * 13, s, T.SMALL, fill=C.MUTED, anchor="middle")
+    (fig.tick if labelled else fig.xmark)(cx, 196, C.SUP if labelled else C.INF)
 
+cx = cols[0][0]
+for _ in range(240):
+    x, y = (rng() * 2 - 1) * R, (rng() * 2 - 1) * R
+    rr = math.hypot(x, y)
+    if r + 1.5 < rr < R - 1.5:
+        fig.circle(cx + x, cy + y, 0.7, C.OBS, extra='opacity="0.75"')
+cx = cols[1][0]
+cl = clip(cx, cy, R, r)
+fig.raw(f"<g {cl}>")
+k = -R
+while k <= R:
+    fig.line(cx + k, cy - R, cx + k, cy + R, C.REF, 0.9)
+    fig.line(cx - R, cy + k, cx + R, cy + k, C.REF, 0.9)
+    k += 6.5
+fig.raw("</g>")
+cx = cols[2][0]
+for rad, n, off in ((21.5, 10, 0.3), (27.5, 14, 0.0)):
+    for i in range(n):
+        th = 2 * math.pi * i / n + off
+        x0, y0 = cx + rad * math.cos(th), cy + rad * math.sin(th)
+        dx = -3.6 * math.cos(th) - 1.6 * math.sin(th)
+        dy = -3.6 * math.sin(th) + 1.6 * math.cos(th)
+        fig.arrow(x0, y0, x0 + dx, y0 + dy, C.REF, 0.9, 2.4)
+fig.line(24, 183, 268, 183, C.GRID, 0.8)
+fig.text(145, 216, "material label carried by the signal", T.SMALL, fill=C.MUTED, anchor="middle")
+fig.lines(24, 242, ["Cine supplies boundaries and weak texture only;",
+                    "correspondence inside the wall must be inferred."], T.SMALL)
 
-def spokes(ax, cx, cy, r_in, r_out, thetas, color, lw=1.0, ls="-", z=4, dots=True):
-    for th in thetas:
-        ax.plot([cx + r_in * np.cos(th), cx + r_out * np.cos(th)],
-                [cy + r_in * np.sin(th), cy + r_out * np.sin(th)], color=color, lw=lw, ls=ls, zorder=z,
-                solid_capstyle="butt")
-        if dots:
-            rm = (r_in + r_out) / 2
-            ax.add_patch(Circle((cx + rm * np.cos(th), cy + rm * np.sin(th)), 0.55, facecolor=color,
-                                edgecolor="white", lw=0.4, zorder=z + 1))
+# ---- b: two mappings, identical contours ----------------------------------------------------
+fig.col_rule(286, 6, H - 4)
+fig.panel(298, 26, "b", "Same masks, two material maps")
+R2, r2, cy2 = 43, 24, 128
+th8 = [2 * math.pi * i / 8 for i in range(8)]
+maps = [(362, "Mapping 1", "θ ↦ θ", th8, C.OBS),
+        (502, "Mapping 2", "θ ↦ θ + a sin θ", [t + A * math.sin(t) for t in th8], C.INF)]
+for cx, name, eq, mapped, col in maps:
+    fig.text(cx, 62, name, T.SUB - 1, 700, anchor="middle")
+    fig.text(cx, 77, eq, T.BODY - 0.5, anchor="middle", italic=True)
+    annulus(cx, cy2, R2, r2)
+    if col == C.INF:
+        for t in th8:
+            fig.line(cx + r2 * math.cos(t), cy2 + r2 * math.sin(t), cx + R2 * math.cos(t), cy2 + R2 * math.sin(t),
+                     C.RULE, 0.9, 'stroke-dasharray="2 1.6"')
+        for t0, t1 in zip(th8, mapped):
+            if abs(t1 - t0) > 0.08:
+                ts = [t0 + (t1 - t0) * i / 20 for i in range(21)]
+                pts = [(cx + (R2 + 6) * math.cos(t), cy2 + (R2 + 6) * math.sin(t)) for t in ts]
+                fig.path(polyline(pts), C.INF, 1.0)
+                a = ts[-1]
+                tip = pts[-1]
+                d = 1 if t1 > t0 else -1
+                tx, ty = -math.sin(a) * d, math.cos(a) * d
+                nx, ny = math.cos(a), math.sin(a)
+                fig.path(f"M{tip[0] - 4.5 * tx + 2.4 * nx:.1f} {tip[1] - 4.5 * ty + 2.4 * ny:.1f} L{tip[0]:.1f} {tip[1]:.1f} "
+                         f"L{tip[0] - 4.5 * tx - 2.4 * nx:.1f} {tip[1] - 4.5 * ty - 2.4 * ny:.1f}", C.INF, 1.0,
+                         extra='stroke-linecap="round" stroke-linejoin="round"')
+    for t in mapped:
+        fig.line(cx + r2 * math.cos(t), cy2 + r2 * math.sin(t), cx + R2 * math.cos(t), cy2 + R2 * math.sin(t), col, 1.8)
+        rm = (r2 + R2) / 2
+        fig.circle(cx + rm * math.cos(t), cy2 + rm * math.sin(t), 3.2, col, C.WHITE, 0.8)
+fig.text(432, cy2 - 3, "identical", T.SMALL, fill=C.MUTED, anchor="middle")
+fig.text(432, cy2 + 10, "masks", T.SMALL, fill=C.MUTED, anchor="middle")
+fig.line(302, 192, 566, 192, C.GRID, 0.8)
+fig.rich(432, 212, [("Dice = 1 · HD = 0 · ", 700, C.INK, False), ("r", 400, C.INK, True), (" ↦ ", 400, C.INK, False),
+                    ("r", 400, C.INK, True), (" · ", 400, C.INK, False), ("a", 400, C.INK, True),
+                    (" = 0.5", 400, C.INK, False)], T.SMALL + 0.5, anchor="middle")
+fig.legend_items(330, 238, [("reference position", "line", C.RULE), ("mapped point", "dot", C.INF)], gap=22)
+fig.text(432, 262, "Same eight material points in both annuli.", T.SMALL, fill=C.MUTED, anchor="middle")
 
+# ---- c: resulting stretch ---------------------------------------------------------------------
+fig.col_rule(580, 6, H - 4)
+fig.panel(592, 26, "c", "Stretch differs by ±50%")
+TWO_PI = 2 * math.pi
+ax = fig.axes(640, 50, 136, 108, (0, TWO_PI), (0.3, 1.7), [0, math.pi, TWO_PI], [0.5, 1, 1.5],
+              xfmt=lambda v: {0: "0", 1: "π", 2: "2π"}[round(v / math.pi)], yfmt=lambda v: f"{v:.1f}")
+fig.raw(f'<text transform="translate({640 - 34:.1f},{104:.1f}) rotate(-90)" font-size="{T.LABEL + 0.5}" '
+        f'text-anchor="middle" fill="{C.INK}"><tspan font-style="italic">λ</tspan><tspan font-style="italic" '
+        f'baseline-shift="sub" font-size="{(T.LABEL + 0.5) * 0.8:.1f}">θ</tspan></text>')
+fig.text(640 + 68, 50 + 108 + 29, "θ", T.LABEL + 0.5, anchor="middle", italic=True)
+xs = [TWO_PI * i / 200 for i in range(201)]
+ax.line(xs, [1.0] * len(xs), C.OBS, 1.8)
+ax.line(xs, [1 + A * math.cos(t) for t in xs], C.INF, 1.8)
+for xv, yv, lab, dy in ((0, 1.5, "1.5", -7), (math.pi, 0.5, "0.5", 4), (TWO_PI, 1.5, "1.5", -7)):
+    fig.circle(ax.fx(xv), ax.fy(yv), 3.2, C.INF, C.WHITE, 0.8)
+    fig.text(ax.fx(xv) + (6 if xv < TWO_PI else -6), ax.fy(yv) + dy, lab, T.SMALL, 700,
+             anchor="end" if xv == TWO_PI else "start")
+fig.text(ax.fx(math.pi), ax.fy(1.0) - 6, "map 1 · 1.0", T.SMALL, anchor="middle", fill=C.MUTED)
+fig.text(ax.fx(math.pi) - 8, ax.fy(0.5) + 4, "map 2", T.SMALL, anchor="end", fill=C.MUTED)
+fig.rich(596, 216, [("λ", 400, C.INK, True), ("θ", 400, C.INK, True, "sub"), (" = 1 + ", 400, C.INK, False),
+                    ("a", 400, C.INK, True), (" cos θ", 400, C.INK, True)], T.BODY)
+fig.kv_table(596, 240, [("range, map 2", "0.5–1.5"), ("mean over θ, both maps", "1.0"),
+                        ("orientation preserved for", "|a| < 1")], w=184, row_h=16)
 
-def arc_arrow(ax, cx, cy, r, th0, th1, color):
-    ts = np.linspace(th0, th1, 30)
-    verts = np.column_stack([cx + r * np.cos(ts), cy + r * np.sin(ts)])
-    ax.add_patch(FancyArrowPatch(path=MPath(verts), arrowstyle="-|>,head_length=1.1,head_width=0.7",
-                                 mutation_scale=1, color=color, lw=0.6, zorder=6))
-
-
-def panel_b(ax):
-    panel_label(ax, 61.0, H - 0.5, "b")
-    ax.text(65.5, H - 1.4, "Two mappings, identical contours", fontsize=FS_TITLE, fontweight="bold", va="top")
-    r_in, r_out, cy = 5.4, 9.4, 37.5
-    th = np.linspace(0, 2 * np.pi, 8, endpoint=False)
-    for cx, title, mapped in ((73.0, r"Mapping 1:  $\theta \mapsto \theta$", th),
-                              (104.0, r"Mapping 2:  $\theta \mapsto \theta + a\,\sin\theta$", th + A * np.sin(th))):
-        annulus(ax, cx, cy, r_in, r_out)
-        ax.text(cx, cy + r_out + 2.0, title, ha="center", va="bottom", fontsize=FS_BODY)
-        if mapped is not th:
-            spokes(ax, cx, cy, r_in, r_out, th, "#C9BFB7", lw=0.7, ls=(0, (1.6, 1.2)), z=3, dots=False)
-            for t0, t1 in zip(th, mapped):
-                if abs(t1 - t0) > 0.08:
-                    arc_arrow(ax, cx, cy, r_out + 1.2, t0, t1, INF)
-        spokes(ax, cx, cy, r_in, r_out, mapped, INF)
-    ax.text(88.5, cy, "identical\nmasks", ha="center", va="center", fontsize=FS_SMALL, color=OBS, linespacing=1.15)
-    ax.text(88.5, cy - r_out - 2.0, r"Dice = 1,  Hausdorff = 0;   $r \mapsto r$,  $a = 0.5$",
-            ha="center", va="top", fontsize=FS_SMALL, color=INK)
-    ax.text(88.5, 19.0, "Dashed: reference positions.  Solid: mapped material\npoints (same eight points in both panels).",
-            ha="center", va="top", fontsize=FS_SMALL, color=MUTED, linespacing=1.2)
-
-
-def panel_c(fig, ax):
-    panel_label(ax, 121.5, H - 0.5, "c")
-    ax.text(126.0, H - 1.4, "Resulting stretch", fontsize=FS_TITLE, fontweight="bold", va="top")
-    pc = sub_axes(fig, W, H, 131.0, 25.0, 27.5, 24.5)
-    t = np.linspace(0, 2 * np.pi, 400)
-    pc.plot(t, np.ones_like(t), color=INF, lw=1.0, ls=(0, (3, 2)))
-    pc.plot(t, 1 + A * np.cos(t), color=INF, lw=1.3)
-    pc.set_xlim(0, 2 * np.pi)
-    pc.set_ylim(0.25, 1.7)
-    pc.set_xticks([0, np.pi, 2 * np.pi], ["0", r"$\pi$", r"$2\pi$"])
-    pc.set_yticks([0.5, 1.0, 1.5], ["0.5", "1.0", "1.5"])
-    pc.set_xlabel(r"$\theta$", labelpad=1)
-    pc.set_ylabel(r"$\lambda_\theta$", labelpad=1, fontsize=8.6)
-    pc.text(np.pi, 1.06, "mapping 1", ha="center", va="bottom", fontsize=FS_SMALL, color=INK)
-    pc.text(np.pi, 0.45, "mapping 2", ha="center", va="top", fontsize=FS_SMALL, color=INK)
-    ax.text(124.0, 15.6, r"$\lambda_\theta = 1 + a\,\cos\theta$", ha="left", va="top", fontsize=8.6)
-    ax.text(124.0, 11.0, "range 0.5–1.5; orientation\n" r"preserved for $|a| < 1$", ha="left", va="top",
-            fontsize=FS_SMALL, linespacing=1.3)
-    return pc
-
-
-def main():
-    fig, ax = canvas(W, H)
-    panel_a(ax)
-    panel_b(ax)
-    pc = panel_c(fig, ax)
-    save(fig, "Figure_2_same_contours_analytic", {
-        "axes": [pc],
-        "panel_ids": ["c"],
-    })
-    print(f"Figure 2: {W:.0f} x {H:.0f} mm")
-
-
-if __name__ == "__main__":
-    main()
+export(fig, "Figure_2_same_contours_analytic")

@@ -1,25 +1,24 @@
-"""Figure 3: cine-CMR motion estimators by year, coloured by strongest reported validation evidence."""
+"""Figure 3: cine-CMR motion estimators by year, by the strongest validation evidence each source reports.
+
+agarwood-scifig house style, 190 mm. Data: data/table_s3_methods.csv (one row per plotted entry,
+with the Table S3 line and the classification rationale).
+"""
 import csv
 import sys
 from collections import Counter
 from pathlib import Path
 
-from matplotlib.font_manager import FontProperties
-from matplotlib.lines import Line2D
-from matplotlib.textpath import TextPath
-
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from figstyle import (CORAL, MASK, FS_BODY, FS_SMALL, OBS, OBS_T, INK, MAIN_W, MUTED, REF,  # noqa: E402
-                      ERR, RULE, canvas, save)
+from scifig_common import C, T, export, start, tw  # noqa: E402
 
 DATA = Path(__file__).resolve().parents[1] / "data" / "table_s3_methods.csv"
 
 LANES = [
-    ("conventional", "Conventional &\ncomparators"),
-    ("unsupervised", "Unsupervised\nregistration"),
-    ("cardiac", "Cardiac-specific"),
-    ("physics", "Physics &\nbiomechanics"),
-    ("supervised", "Reference-supervised\n& end-to-end"),
+    ("conventional", ["Conventional &", "comparators"]),
+    ("unsupervised", ["Unsupervised", "registration"]),
+    ("cardiac", ["Cardiac-specific"]),
+    ("physics", ["Physics &", "biomechanics"]),
+    ("supervised", ["Reference-supervised", "& end-to-end"]),
 ]
 EVIDENCE = [
     ("mask", "Mask, landmark, registration or inter-method agreement"),
@@ -28,45 +27,21 @@ EVIDENCE = [
     ("focal", "Prescribed focal deficit with known motion (independent evaluation)"),
     ("nr", "Validation data not reported"),
 ]
+FILL = {"mask": C.MASK, "label": C.CORAL, "material": C.REF, "focal": C.REF, "nr": C.WHITE}
 
-X0, X1 = 31.0, 157.0
-EARLY = (1998.5, 2000.5)
-LATE = (2008.5, 2026.5)
-EARLY_MM_PER_YR = 2.0
-GAP = 5.0
-LATE_MM_PER_YR = (X1 - X0 - (EARLY[1] - EARLY[0]) * EARLY_MM_PER_YR - GAP) / (LATE[1] - LATE[0])
-
-ROW = 3.55
-LANE_PAD = 1.4
-DOT_R = 0.95
-LABEL_DX = 1.7
-RIGHT_LIMIT = 159.0
-FONT = FontProperties(family="Liberation Sans", size=FS_SMALL)
+X0, X1 = 176.0, 776.0
+EARLY, LATE = (1998.5, 2000.5), (2008.5, 2026.5)
+EARLY_PX, GAP = 15.0, 24.0
+LATE_PX = (X1 - X0 - (EARLY[1] - EARLY[0]) * EARLY_PX - GAP) / (LATE[1] - LATE[0])
+ROW, PAD, DOT_R, DX = 15.0, 5.0, 4.0, 7.0
+FS = T.SMALL + 0.5
+RIGHT_LIMIT = 786.0
 
 
-def year_x(year):
-    if year <= EARLY[1]:
-        return X0 + (year - EARLY[0]) * EARLY_MM_PER_YR
-    return X0 + (EARLY[1] - EARLY[0]) * EARLY_MM_PER_YR + GAP + (year - LATE[0]) * LATE_MM_PER_YR
-
-
-def text_mm(s):
-    ext = TextPath((0, 0), s, prop=FONT).get_extents()
-    return ext.width / 72 * 25.4
-
-
-def marker_style(evidence):
-    base = dict(markersize=DOT_R * 2 / 25.4 * 72, markeredgewidth=0.6, linestyle="none")
-    if evidence == "mask":
-        return dict(base, marker="o", markerfacecolor=MASK, markeredgecolor=MASK)
-    if evidence == "label":
-        return dict(base, marker="o", markerfacecolor=CORAL, markeredgecolor=CORAL)
-    if evidence == "material":
-        return dict(base, marker="o", markerfacecolor=REF, markeredgecolor=REF)
-    if evidence == "focal":
-        return dict(base, marker="D", markersize=base["markersize"] * 0.95, markerfacecolor=REF,
-                    markeredgecolor=INK, markeredgewidth=1.1)
-    return dict(base, marker="o", markerfacecolor="white", markeredgecolor=INK)
+def year_x(y):
+    if y <= EARLY[1]:
+        return X0 + (y - EARLY[0]) * EARLY_PX
+    return X0 + (EARLY[1] - EARLY[0]) * EARLY_PX + GAP + (y - LATE[0]) * LATE_PX
 
 
 def load():
@@ -76,19 +51,19 @@ def load():
         r["year"] = int(r["year"])
         r["text"] = r["label"] + r["flag"]
         r["x"] = year_x(r["year"])
-        r["w"] = text_mm(r["text"])
+        r["w"] = tw(r["text"], FS)
     return rows
 
 
 def pack(items):
-    """Greedy row assignment so dot-plus-label intervals never overlap within a lane."""
+    """Greedy rows so that dot-plus-label intervals never overlap within a lane."""
     rights = []
     for it in sorted(items, key=lambda r: (r["x"], r["label"])):
-        it["flip"] = it["x"] + LABEL_DX + it["w"] > RIGHT_LIMIT
+        it["flip"] = it["x"] + DX + it["w"] > RIGHT_LIMIT
         if it["flip"]:
-            left, right = it["x"] - LABEL_DX - it["w"] - 0.9, it["x"] + DOT_R + 0.4
+            left, right = it["x"] - DX - it["w"] - 5, it["x"] + DOT_R + 3
         else:
-            left, right = it["x"] - DOT_R - 0.4, it["x"] + LABEL_DX + it["w"] + 0.9
+            left, right = it["x"] - DOT_R - 3, it["x"] + DX + it["w"] + 5
         for i, edge in enumerate(rights):
             if edge < left:
                 it["row"], rights[i] = i, right
@@ -99,95 +74,135 @@ def pack(items):
     return max(len(rights), 1)
 
 
-def main():
-    rows = load()
-    lane_rows = {key: pack([r for r in rows if r["lane"] == key]) for key, _ in LANES}
-    lane_h = {k: n * ROW + 2 * LANE_PAD for k, n in lane_rows.items()}
-
-    legend_h = 5 * 3.4 + 3.5
-    foot_h = 10.0
-    axis_h = 7.0
-    timeline_h = sum(lane_h.values())
-    H = 2.0 + timeline_h + axis_h + legend_h + foot_h
-
-    fig, ax = canvas(MAIN_W, H)
-    top = H - 2.0
-    bottom = top - timeline_h
-
-    ticks = [1999, 2000] + list(range(2009, 2027))
-    gx0 = year_x(EARLY[1])
-    # Full-height year grid lines ran through dense method labels. Position is
-    # already encoded by the shared x-axis and dots, so whitespace is clearer.
-    ax.text(gx0 + GAP / 2, bottom + timeline_h / 2, "2001–2008: no entries", rotation=90,
-            rotation_mode="anchor", ha="center", va="center", fontsize=FS_SMALL, color=MUTED)
-
-    y_cursor = top
-    for key, title in LANES:
-        h = lane_h[key]
-        y_top = y_cursor
-        # Leave the broken-axis gap open so the vertical gap label is not
-        # crossed by lane rules.
-        ax.plot([1.0, gx0 + 0.5], [y_top, y_top], color=RULE, lw=0.5, zorder=1)
-        ax.plot([gx0 + GAP - 0.5, X1 + 1.5], [y_top, y_top], color=RULE, lw=0.5, zorder=1)
-        ax.text(X0 - 3.0, y_top - h / 2, title, ha="right", va="center", fontsize=FS_BODY,
-                color=INK, linespacing=1.15)
-        items = [r for r in rows if r["lane"] == key]
-        for it in items:
-            it["y"] = y_top - LANE_PAD - ROW / 2 - it["row"] * ROW
-        for it in items:
-            ax.plot([it["x"]], [it["y"]], zorder=3, **marker_style(it["evidence"]))
-            tx, ha = (it["x"] - LABEL_DX, "right") if it["flip"] else (it["x"] + LABEL_DX, "left")
-            ax.text(tx, it["y"], it["text"], ha=ha, va="center", fontsize=FS_SMALL, color=INK, zorder=4)
-        y_cursor -= h
-    ax.plot([1.0, gx0 + 0.5], [bottom, bottom], color=RULE, lw=0.5)
-    ax.plot([gx0 + GAP - 0.5, X1 + 1.5], [bottom, bottom], color=RULE, lw=0.5)
-
-    ax_y = bottom - 1.2
-    ax.plot([X0 - 1.0, gx0 + 1.2], [ax_y, ax_y], color=INK, lw=0.6)
-    ax.plot([gx0 + GAP - 1.2, X1 + 1.0], [ax_y, ax_y], color=INK, lw=0.6)
-    for dx in (1.2, GAP - 1.2):
-        bx = gx0 + dx
-        ax.plot([bx - 0.5, bx + 0.5], [ax_y - 0.9, ax_y + 0.9], color=INK, lw=0.6)
-    for y in ticks:
-        x = year_x(y)
-        ax.plot([x, x], [ax_y, ax_y - 0.4], color=INK, lw=0.6)
-        label = str(y) if y in (1999,) or y >= 2009 else ""
-        if y == 2000:
-            label = "2000"
-        label_x = x - 0.65 if y == 1999 else x + 0.65 if y == 2000 else x
-        label_y = ax_y - 3.5 if y in (1999, 2000) else ax_y - 1.6
-        ax.text(label_x, label_y, label, ha="center", va="top", fontsize=FS_SMALL, color=INK,
-                rotation=90 if y in (1999, 2000) else 0, rotation_mode="anchor")
-    ax.text(X0 - 3.0, ax_y - 1.6, "Year of\npublication", ha="right", va="top", fontsize=FS_SMALL,
-            color=MUTED, linespacing=1.1)
-
-    counts = Counter(r["evidence"] for r in rows)
-    ly = ax_y - axis_h - 2.5
-    bar_x0, bar_scale = 136.0, 0.62
-    ax.text(bar_x0, ly + 2.6, "entries", ha="left", va="bottom", fontsize=FS_SMALL, color=MUTED)
-    for key, text in EVIDENCE:
-        ax.plot([X0 + 0.5], [ly], **marker_style(key))
-        ax.text(X0 + 2.6, ly, text, ha="left", va="center", fontsize=FS_SMALL, color=INK)
-        n = counts.get(key, 0)
-        st = marker_style(key)
-        face = st["markerfacecolor"]
-        edge = st["markeredgecolor"]
-        ax.add_patch(__import__("matplotlib").patches.Rectangle(
-            (bar_x0, ly - 1.0), n * bar_scale, 2.0, facecolor=face, edgecolor=edge,
-            lw=st["markeredgewidth"]))
-        ax.text(bar_x0 + n * bar_scale + 1.0, ly, str(n), ha="left", va="center", fontsize=FS_SMALL, color=INK)
-        ly -= 3.4
-
-    foot = ("* tagging-side comparator   † preprint (MSc thesis)   ‡ workshop paper or no abstract retrieved   "
-            "§ rat model")
-    ax.text(1.0, ly + 0.6, foot, ha="left", va="top", fontsize=FS_SMALL, color=MUTED, linespacing=1.25)
-
-    save(fig, "Figure_3_method_timeline", {
-        "axes": [ax],
-        "panel_ids": ["timeline-canvas"],
-    })
-    print(f"Figure 3: {MAIN_W:.0f} x {H:.1f} mm; counts {dict(counts)}; total {len(rows)}")
+def marker(fig, x, y, ev, r=DOT_R):
+    if ev == "focal":
+        s = r * 1.45
+        fig.path(f"M{x:.1f} {y - s:.1f} L{x + s:.1f} {y:.1f} L{x:.1f} {y + s:.1f} L{x - s:.1f} {y:.1f} Z",
+                 C.INK, 1.4, fill=C.REF)
+    elif ev == "nr":
+        fig.circle(x, y, r - 0.4, C.WHITE, C.INK, 1.1)
+    else:
+        fig.circle(x, y, r, FILL[ev])
 
 
-if __name__ == "__main__":
-    main()
+rows = load()
+n_rows = {k: pack([r for r in rows if r["lane"] == k]) for k, _ in LANES}
+lane_h = {k: n * ROW + 2 * PAD for k, n in n_rows.items()}
+counts = Counter(r["evidence"] for r in rows)
+years = sorted({r["year"] for r in rows})
+per_year = {y: Counter(r["evidence"] for r in rows if r["year"] == y) for y in years}
+n_material = counts["material"]
+n_total = len(rows)
+
+TOP = 44.0
+lanes_h = sum(lane_h.values())
+HIST_TOP = TOP + lanes_h + 24
+UNIT = 5.5
+HIST_H = max(sum(c.values()) for c in per_year.values()) * UNIT + 4
+AXIS_Y = HIST_TOP + HIST_H
+B_TOP = AXIS_Y + 58
+H = B_TOP + 30 + len(EVIDENCE) * 19 + 34
+
+fig = start(H, f"Figure 3 | Material-sensitive references in {n_material} of {n_total} estimators",
+            footer=["Classes assigned from Supplementary Table S3 cells (abstract- or metadata-level readings); one marker per entry.",
+                    "LGE, late gadolinium enhancement; DENSE, displacement encoding with stimulated echoes."])
+
+# ---- a: timeline -----------------------------------------------------------------------------
+fig.panel(20, 24, "a", f"Material-sensitive validation in {n_material} of {n_total} entries; "
+                       f"a prescribed focal deficit in {counts['focal']}")
+gx0 = year_x(EARLY[1])
+gx1 = gx0 + GAP
+
+
+def hrule(y, color=C.GRID, w=0.8, x_from=20):
+    fig.line(x_from, y, gx0 + 2, y, color, w)
+    fig.line(gx1 - 2, y, X1 + 6, y, color, w)
+
+
+hrule(TOP, C.INK, 1.2)
+y = TOP
+for key, title in LANES:
+    h = lane_h[key]
+    items = [r for r in rows if r["lane"] == key]
+    for i, s in enumerate(title):
+        fig.text(20, y + PAD + 12 + i * 15, s, T.BODY, 700)
+    n_mat = sum(r["evidence"] in ("material", "focal") for r in items)
+    fig.text(20, y + PAD + 12 + len(title) * 15 + 1, f"{len(items)} entries · {n_mat} material-sensitive", T.SMALL,
+             fill=C.MUTED)
+    for it in items:
+        cy = y + PAD + ROW / 2 + it["row"] * ROW
+        marker(fig, it["x"], cy, it["evidence"])
+        if it["flip"]:
+            fig.text(it["x"] - DX, cy + 4, it["text"], FS, anchor="end")
+        else:
+            fig.text(it["x"] + DX, cy + 4, it["text"], FS)
+    y += h
+    hrule(y, C.INK if key == LANES[-1][0] else C.GRID, 1.2 if key == LANES[-1][0] else 0.8)
+fig.raw(f'<text transform="translate({(gx0 + gx1) / 2 + 4:.1f},{TOP + lanes_h / 2:.1f}) rotate(-90)" '
+        f'font-size="{T.SMALL}" fill="{C.MUTED}" text-anchor="middle">2001–2008: no entries</text>')
+
+# entries per year, stacked by evidence class, on the shared year axis
+fig.text(20, HIST_TOP + 14, "Entries per year", T.BODY, 700)
+fig.text(20, HIST_TOP + 28, "stacked by evidence class", T.SMALL, fill=C.MUTED)
+for yv in (0, 5):
+    yy = AXIS_Y - 2 - yv * UNIT
+    fig.line(X0 - 6, yy, X0 - 2, yy, C.INK, 0.9)
+    fig.text(X0 - 9, yy + 4, str(yv), T.SMALL, fill=C.MUTED, anchor="end")
+fig.line(X0 - 2, AXIS_Y - 2, X0 - 2, AXIS_Y - 2 - 9 * UNIT, C.INK, 0.9)
+order = ["focal", "material", "label", "mask", "nr"]
+for yr in years:
+    x = year_x(yr)
+    base = AXIS_Y - 2
+    bw = 9.0 if yr > 2000 else 8.0
+    for ev in order:
+        n = per_year[yr][ev]
+        if not n:
+            continue
+        hgt = n * UNIT
+        if ev == "nr":
+            fig.rect(x - bw / 2 + 0.5, base - hgt + 0.5, bw - 1, hgt - 1, C.WHITE, C.INK, 0.9)
+        else:
+            fig.rect(x - bw / 2, base - hgt, bw, hgt, FILL[ev], C.INK if ev == "focal" else C.WHITE,
+                     1.2 if ev == "focal" else 0.6)
+        base -= hgt
+    tot = sum(per_year[yr].values())
+    if tot >= 3:
+        fig.text(x, base - 4, str(tot), T.SMALL, 700, anchor="middle")
+
+# broken year axis
+fig.line(X0 - 4, AXIS_Y, gx0 + 3, AXIS_Y, C.INK, 0.9)
+fig.line(gx1 - 3, AXIS_Y, X1 + 4, AXIS_Y, C.INK, 0.9)
+for bx in (gx0 + 3, gx1 - 3):
+    fig.line(bx - 2.5, AXIS_Y + 4, bx + 2.5, AXIS_Y - 4, C.INK, 0.9)
+for yr in [1999, 2000] + list(range(2009, 2027)):
+    x = year_x(yr)
+    fig.line(x, AXIS_Y, x, AXIS_Y + 4, C.INK, 0.9)
+    if yr <= 2000:
+        fig.raw(f'<text transform="translate({x + 3.8:.1f},{AXIS_Y + 7:.1f}) rotate(-90)" font-size="{T.SMALL}" '
+                f'fill="{C.MUTED}" text-anchor="end">{yr}</text>')
+    else:
+        fig.text(x, AXIS_Y + 16, str(yr), T.SMALL, fill=C.MUTED, anchor="middle")
+fig.text(X0 + (X1 - X0) / 2, AXIS_Y + 33, "year of publication", T.LABEL + 0.5, anchor="middle")
+
+# ---- b: evidence classes and totals ------------------------------------------------------------
+fig.row_rule(B_TOP - 14)
+fig.panel(20, B_TOP + 10, "b", "Mask or landmark agreement dominates; focal recovery tested once")
+BX, SCALE = 560.0, 8.0
+fig.text(BX, B_TOP + 32, f"entries (n = {n_total})", T.SMALL, fill=C.MUTED)
+for i, (key, text) in enumerate(EVIDENCE):
+    yy = B_TOP + 48 + i * 19
+    marker(fig, 28, yy - 4, key)
+    fig.text(42, yy, text, T.BODY - 1)
+    n = counts.get(key, 0)
+    if key == "nr":
+        fig.rect(BX, yy - 10, n * SCALE, 11, C.WHITE, C.INK, 0.9)
+    else:
+        fig.rect(BX, yy - 10, n * SCALE, 11, FILL[key], C.INK if key == "focal" else "none", 1.2)
+    fig.text(BX + n * SCALE + 6, yy, str(n), T.SMALL + 0.5, 700)
+fig.line(BX, B_TOP + 36, BX, B_TOP + 48 + 4 * 19 + 4, C.INK, 0.9)
+fy = B_TOP + 48 + len(EVIDENCE) * 19 + 6
+fig.text(20, fy, "\u00a0\u00a0\u00a0".join(["* tagging-side comparator", "† preprint (MSc thesis)",
+                                  "‡ workshop paper or no abstract retrieved", "§ rat model"]), T.SMALL, fill=C.MUTED)
+
+export(fig, "Figure_3_method_timeline")
+print(f"counts {dict(counts)}; total {n_total}")
