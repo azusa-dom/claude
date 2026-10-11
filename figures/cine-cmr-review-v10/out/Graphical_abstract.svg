@@ -8,8 +8,8 @@
 <text x="30.0" y="42.0" font-size="25" font-weight="700" fill="#33261F" text-anchor="start" >Routine cine supports bounded regional strain claims;</text>
 <text x="30.0" y="72.0" font-size="25" font-weight="700" fill="#6F625A" text-anchor="start" >whether a focal deficit is recovered must be tested attribute by attribute</text>
 <line x1="30.0" y1="90.0" x2="1270.0" y2="90.0" stroke="#33261F" stroke-width="1.4" />
-<circle cx="36.0" cy="122.0" r="6.0" fill="#8E857D" stroke="none" stroke-width="1.0" />
-<text x="48.0" y="128.0" font-size="15" font-weight="700" fill="#8E857D" text-anchor="start" letter-spacing="1.6">OBSERVED</text>
+<circle cx="35.0" cy="123.0" r="5.0" fill="#8E857D" stroke="none" stroke-width="1.0" />
+<text x="46.0" y="128.0" font-size="19" font-weight="700" fill="#33261F" text-anchor="start" >Observed</text>
 <path d="M236 262 A86 86 0 1 0 64 262 A86 86 0 1 0 236 262 Z M198 262 A48 48 0 1 1 102 262 A48 48 0 1 1 198 262 Z" stroke="none" stroke-width="1.0" fill="#F8F3E7" fill-rule="evenodd"/>
 <circle cx="150.0" cy="262.0" r="86.0" fill="none" stroke="#8E857D" stroke-width="2" />
 <circle cx="150.0" cy="262.0" r="48.0" fill="none" stroke="#8E857D" stroke-width="2" />
@@ -209,8 +209,8 @@
 <line x1="256.0" y1="262.0" x2="312.0" y2="262.0" stroke="#33261F" stroke-width="2" />
 <path d="M303.0 266.3 L312.0 262.0 L303.0 257.7" stroke="#33261F" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="300.0" y1="106.0" x2="300.0" y2="470.0" stroke="#E8DFD6" stroke-width="0.8" />
-<circle cx="336.0" cy="122.0" r="6.0" fill="#C0584A" stroke="none" stroke-width="1.0" />
-<text x="348.0" y="128.0" font-size="15" font-weight="700" fill="#C0584A" text-anchor="start" letter-spacing="1.6">INFERRED</text>
+<circle cx="335.0" cy="123.0" r="5.0" fill="#C0584A" stroke="none" stroke-width="1.0" />
+<text x="346.0" y="128.0" font-size="19" font-weight="700" fill="#33261F" text-anchor="start" >Inferred</text>
 <circle cx="425.0" cy="166.0" r="9.0" fill="#C0584A" stroke="none" stroke-width="1.0" />
 <text x="425.0" y="200.0" font-size="19" font-weight="700" fill="#33261F" text-anchor="middle" >Estimator + prior</text>
 <text x="425.0" y="222.0" font-size="15" font-weight="400" fill="#6F625A" text-anchor="middle" >registration, flow, learned</text>
@@ -253,8 +253,8 @@
 <text x="524.0" y="410.0" font-size="15" font-weight="400" fill="#6F625A" text-anchor="start" >estimate (schematic)</text>
 <text x="360.0" y="440.0" font-size="17" font-weight="400" fill="#33261F" text-anchor="start" >tested per attribute, per estimator, per acquisition</text>
 <line x1="892.0" y1="106.0" x2="892.0" y2="470.0" stroke="#E8DFD6" stroke-width="0.8" />
-<circle cx="926.0" cy="122.0" r="6.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="938.0" y="128.0" font-size="15" font-weight="700" fill="#7A4720" text-anchor="start" letter-spacing="1.6">VALIDATED BY</text>
+<circle cx="925.0" cy="123.0" r="5.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="936.0" y="128.0" font-size="19" font-weight="700" fill="#33261F" text-anchor="start" >Validated against</text>
 <circle cx="926.0" cy="162.0" r="6.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
 <text x="942.0" y="168.0" font-size="17" font-weight="700" fill="#33261F" text-anchor="start" >Known motion</text>
 <text x="1270.0" y="168.0" font-size="15" font-weight="400" fill="#6F625A" text-anchor="end" >phantom, simulation</text>

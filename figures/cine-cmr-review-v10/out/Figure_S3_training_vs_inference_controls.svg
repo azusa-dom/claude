@@ -1,82 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="538.583pt" height="236.976pt" viewBox="0 0 800 352" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="538.583pt" height="216.780pt" viewBox="0 0 800 322" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif">
 <defs>
 <linearGradient id="cellDirect" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8D6449"/><stop offset="1" stop-color="#5B3E2E"/></linearGradient>
 <pattern id="hatchInf" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#F8E0DA"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C0584A" stroke-width="2"/></pattern>
-<linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C0584A" stop-opacity="1.0"/><stop offset="1" stop-color="#E7A49A" stop-opacity="1.0"/></linearGradient>
-<linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8E857D" stop-opacity="1.0"/><stop offset="1" stop-color="#B2AAA2" stop-opacity="1.0"/></linearGradient>
 </defs>
-<rect x="0.0" y="0.0" width="800.0" height="352.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
+<rect x="0.0" y="0.0" width="800.0" height="322.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
 <g transform="translate(0,0)">
-<rect x="20.0" y="6.0" width="20.0" height="106.0" rx="3" fill="url(#lg1)" stroke="none" stroke-width="1.0" />
-<text transform="translate(34.4,59.0) rotate(-90)" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2.5">TRAINING</text>
-<text x="52.0" y="48.0" font-size="13.5" font-weight="700" fill="#33261F" text-anchor="start" >Training-time control</text>
-<text x="52.0" y="65.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >the setting lives in the</text>
-<text x="52.0" y="79.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >training objective</text>
-<circle cx="232.0" cy="44.0" r="5.5" fill="#33261F" stroke="none" stroke-width="1.0" />
-<text x="244.0" y="48.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Loss weight λ</text>
-<text x="244.0" y="65.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >changed in the objective</text>
-<line x1="372.0" y1="44.0" x2="406.0" y2="44.0" stroke="#6F625A" stroke-width="1.2" />
-<path d="M400.6 46.6 L406.0 44.0 L400.6 41.4" stroke="#6F625A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="389.0" y="37.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" font-style="italic" >retrain</text>
-<circle cx="418.0" cy="44.0" r="5.5" fill="#C0584A" stroke="none" stroke-width="1.0" />
-<text x="430.0" y="48.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Matched retraining</text>
-<text x="430.0" y="65.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >same data, splits and</text>
-<text x="430.0" y="79.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >schedule</text>
-<line x1="558.0" y1="44.0" x2="592.0" y2="44.0" stroke="#6F625A" stroke-width="1.2" />
-<path d="M586.6 46.6 L592.0 44.0 L586.6 41.4" stroke="#6F625A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="575.0" y="37.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" font-style="italic" >train</text>
-<circle cx="604.0" cy="44.0" r="5.5" fill="#C0584A" stroke="none" stroke-width="1.0" />
-<text x="616.0" y="48.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Models A, B</text>
-<text x="616.0" y="65.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >one trained model per</text>
-<text x="616.0" y="79.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >setting</text>
-<line x1="744.0" y1="44.0" x2="772.0" y2="44.0" stroke="#6F625A" stroke-width="1.2" />
-<rect x="20.0" y="120.0" width="20.0" height="106.0" rx="3" fill="url(#lg2)" stroke="none" stroke-width="1.0" />
-<text transform="translate(34.4,173.0) rotate(-90)" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="2.5">INFERENCE</text>
-<text x="52.0" y="162.0" font-size="13.5" font-weight="700" fill="#33261F" text-anchor="start" >Inference-time control</text>
-<text x="52.0" y="179.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >the setting is exposed at test</text>
-<text x="52.0" y="193.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >time</text>
-<circle cx="232.0" cy="158.0" r="5.5" fill="#33261F" stroke="none" stroke-width="1.0" />
-<text x="244.0" y="162.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Exposed parameter</text>
-<text x="244.0" y="179.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >post-processing or a</text>
-<text x="244.0" y="193.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >biomechanical solve</text>
-<line x1="372.0" y1="158.0" x2="406.0" y2="158.0" stroke="#6F625A" stroke-width="1.2" />
-<path d="M400.6 160.6 L406.0 158.0 L400.6 155.4" stroke="#6F625A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="389.0" y="151.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" font-style="italic" >apply</text>
-<circle cx="418.0" cy="158.0" r="5.5" fill="#C0584A" stroke="none" stroke-width="1.0" />
-<text x="430.0" y="162.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Same trained model</text>
-<text x="430.0" y="179.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >no retraining</text>
-<line x1="558.0" y1="158.0" x2="592.0" y2="158.0" stroke="#6F625A" stroke-width="1.2" />
-<path d="M586.6 160.6 L592.0 158.0 L586.6 155.4" stroke="#6F625A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="575.0" y="151.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" font-style="italic" >run</text>
-<circle cx="604.0" cy="158.0" r="5.5" fill="#C0584A" stroke="none" stroke-width="1.0" />
-<text x="616.0" y="162.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Outputs A, B</text>
-<text x="616.0" y="179.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >one output per setting</text>
-<line x1="744.0" y1="158.0" x2="772.0" y2="158.0" stroke="#6F625A" stroke-width="1.2" />
-<line x1="772.0" y1="44.0" x2="772.0" y2="158.0" stroke="#6F625A" stroke-width="1.2" />
-<line x1="772.0" y1="158.0" x2="772.0" y2="242.0" stroke="#6F625A" stroke-width="1.2" />
-<path d="M769.4 236.6 L772.0 242.0 L774.6 236.6" stroke="#6F625A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="766.0" y="206.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="end" font-style="italic" >compare</text>
-<line x1="206.0" y1="10.0" x2="206.0" y2="226.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="20.0" y1="248.0" x2="780.0" y2="248.0" stroke="#7A4720" stroke-width="1.6" />
-<text x="20.0" y="270.0" font-size="13.5" font-weight="700" fill="#33261F" text-anchor="start" >Shared held-out evaluation</text>
-<path d="M231.8 266.0 L234.7 268.9 L240.2 262.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="246.0" y="270.0" font-size="12.5" font-weight="400" fill="#33261F" text-anchor="start" >held-out cases</text>
-<path d="M366.4 266.0 L369.3 268.9 L374.8 262.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="380.6" y="270.0" font-size="12.5" font-weight="400" fill="#33261F" text-anchor="start" >same estimand</text>
-<path d="M494.1 266.0 L497.0 268.9 L502.5 262.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="508.3" y="270.0" font-size="12.5" font-weight="400" fill="#33261F" text-anchor="start" >same reference</text>
-<path d="M628.7 266.0 L631.6 268.9 L637.1 262.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="642.9" y="270.0" font-size="12.5" font-weight="400" fill="#33261F" text-anchor="start" >attribute-specific losses</text>
-<text x="232.0" y="288.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >losses: magnitude, location, extent, timing, field validity;</text>
-<text x="232.0" y="301.6" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >final test cases are kept out of model, hyperparameter and rule selection</text>
-<circle cx="25.0" cy="324.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
-<path d="M22.6 321.6 l4.8 4.8 M27.4 321.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-<text x="35.0" y="328.0" font-size="11.5" font-weight="400" fill="#6F625A" text-anchor="start" >Varying λ only at test time has no effect unless the trained model exposes it.</text>
-<circle cx="24.0" cy="346.0" r="4.0" fill="#33261F" stroke="#33261F" stroke-width="1.4" />
-<text x="32.0" y="350.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >control setting</text>
-<circle cx="153.5" cy="346.0" r="4.0" fill="#C0584A" stroke="#C0584A" stroke-width="1.4" />
-<text x="161.5" y="350.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >estimator state</text>
-<line x1="279.0" y1="346.0" x2="297.0" y2="346.0" stroke="#7A4720" stroke-width="1.8" />
-<text x="303.0" y="350.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >evaluation against a reference</text>
+<text x="20.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
+<text x="44.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Two ways to vary one setting; only one of them retrains the estimator</text>
+<text x="20.0" y="74.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Training-time control</text>
+<text x="20.0" y="90.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >the setting lives in the training</text>
+<text x="20.0" y="103.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >objective</text>
+<circle cx="236.0" cy="70.0" r="5.0" fill="#33261F" stroke="none" stroke-width="1.0" />
+<text x="247.0" y="74.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Loss weight λ</text>
+<text x="247.0" y="90.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >changed in the objective</text>
+<line x1="389.0" y1="70.0" x2="416.0" y2="70.0" stroke="#6F625A" stroke-width="1.1" />
+<path d="M411.5 72.2 L416.0 70.0 L411.5 67.8" stroke="#6F625A" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="402.5" y="64.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" font-style="italic" >retrain</text>
+<circle cx="426.0" cy="70.0" r="5.0" fill="#C0584A" stroke="none" stroke-width="1.0" />
+<text x="437.0" y="74.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Matched retraining</text>
+<text x="437.0" y="90.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >same data, splits and schedule</text>
+<line x1="579.0" y1="70.0" x2="606.0" y2="70.0" stroke="#6F625A" stroke-width="1.1" />
+<path d="M601.5 72.2 L606.0 70.0 L601.5 67.8" stroke="#6F625A" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="592.5" y="64.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" font-style="italic" >train</text>
+<circle cx="616.0" cy="70.0" r="5.0" fill="#C0584A" stroke="none" stroke-width="1.0" />
+<text x="627.0" y="74.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Models A, B</text>
+<text x="627.0" y="90.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one trained model per setting</text>
+<line x1="766.0" y1="70.0" x2="768.0" y2="70.0" stroke="#6F625A" stroke-width="1.1" />
+<text x="20.0" y="150.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Inference-time control</text>
+<text x="20.0" y="166.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >the setting is exposed at test time</text>
+<circle cx="236.0" cy="146.0" r="5.0" fill="#33261F" stroke="none" stroke-width="1.0" />
+<text x="247.0" y="150.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Exposed parameter</text>
+<text x="247.0" y="166.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >post-processing or a</text>
+<text x="247.0" y="179.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >biomechanical solve</text>
+<line x1="389.0" y1="146.0" x2="416.0" y2="146.0" stroke="#6F625A" stroke-width="1.1" />
+<path d="M411.5 148.2 L416.0 146.0 L411.5 143.8" stroke="#6F625A" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="402.5" y="140.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" font-style="italic" >apply</text>
+<circle cx="426.0" cy="146.0" r="5.0" fill="#C0584A" stroke="none" stroke-width="1.0" />
+<text x="437.0" y="150.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Same trained model</text>
+<text x="437.0" y="166.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >no retraining</text>
+<line x1="579.0" y1="146.0" x2="606.0" y2="146.0" stroke="#6F625A" stroke-width="1.1" />
+<path d="M601.5 148.2 L606.0 146.0 L601.5 143.8" stroke="#6F625A" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="592.5" y="140.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" font-style="italic" >run</text>
+<circle cx="616.0" cy="146.0" r="5.0" fill="#C0584A" stroke="none" stroke-width="1.0" />
+<text x="627.0" y="150.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Outputs A, B</text>
+<text x="627.0" y="166.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one output per setting</text>
+<line x1="766.0" y1="146.0" x2="768.0" y2="146.0" stroke="#6F625A" stroke-width="1.1" />
+<line x1="768.0" y1="70.0" x2="768.0" y2="146.0" stroke="#6F625A" stroke-width="1.1" />
+<line x1="768.0" y1="146.0" x2="768.0" y2="192.0" stroke="#6F625A" stroke-width="1.1" />
+<path d="M765.8 187.5 L768.0 192.0 L770.2 187.5" stroke="#6F625A" stroke-width="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="762.0" y="184.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="end" font-style="italic" >compare</text>
+<line x1="20.0" y1="110.0" x2="740.0" y2="110.0" stroke="#E8DFD6" stroke-width="0.8" />
+<circle cx="25.0" cy="192.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
+<path d="M22.6 189.6 l4.8 4.8 M27.4 189.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+<text x="35.0" y="196.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Varying λ only at test time has no effect unless the trained model exposes it.</text>
+<line x1="20.0" y1="214.0" x2="780.0" y2="214.0" stroke="#33261F" stroke-width="1.2" />
+<text x="20.0" y="240.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
+<text x="44.0" y="238.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Both routes are compared under one held-out evaluation contract</text>
+<path d="M19.8 258.0 L22.7 260.9 L28.2 254.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="34.0" y="262.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >held-out cases</text>
+<text x="34.0" y="277.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >final test cases kept out of model,</text>
+<text x="34.0" y="290.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >hyperparameter and rule selection</text>
+<path d="M209.8 258.0 L212.7 260.9 L218.2 254.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="224.0" y="262.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >same estimand</text>
+<text x="224.0" y="277.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one definition of the reported strain</text>
+<path d="M399.8 258.0 L402.7 260.9 L408.2 254.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="414.0" y="262.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >same reference</text>
+<text x="414.0" y="277.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one material-sensitive or</text>
+<text x="414.0" y="290.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >known-motion reference</text>
+<path d="M589.8 258.0 L592.7 260.9 L598.2 254.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="604.0" y="262.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >attribute-specific losses</text>
+<text x="604.0" y="277.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >magnitude, location, extent, timing,</text>
+<text x="604.0" y="290.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >field validity</text>
+<circle cx="24.0" cy="314.0" r="4.0" fill="#33261F" stroke="#33261F" stroke-width="1.4" />
+<text x="32.0" y="318.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >control setting</text>
+<circle cx="153.5" cy="314.0" r="4.0" fill="#C0584A" stroke="#C0584A" stroke-width="1.4" />
+<text x="161.5" y="318.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >estimator state</text>
 </g>
 </svg>

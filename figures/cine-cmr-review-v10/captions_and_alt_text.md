@@ -30,9 +30,9 @@ Alt text: Grouped bar chart of ground-truth strain in remote versus scar tissue 
 
 **Figure 5 — `Figure_5_validation_targets_programme`** (190 × 140 mm)
 
-What each validation target can establish, and a staged programme for regional or focal claims. (a) Five targets, the strongest claim each supports, and what each does not establish on its own. (b) Pre-specification followed by three stages, with the resources reviewed in Table 4 placed at the stage they can serve; counts denote resource units, not independent test participants. (c) Two fields with an equal global strain of −0.18 but different regional content (segment values −0.22, −0.22, −0.06, −0.18, −0.20 and −0.20 versus a uniform −0.18; range 0.16 versus 0): recovering the mean is not evidence of regional recovery. Conceptual synthesis; no study data. [tool statement]
+What each validation target can establish, and a staged programme for regional or focal claims. (a) Five targets, the strongest claim each supports, and what each does not establish on its own. (b) Pre-specification followed by three stages, tabulated with what each stage varies or fixes and the resources reviewed in Table 4 that can serve it; counts denote resource units, not independent test participants. (c) Two fields with an equal global strain of −0.18 but different regional content (segment values −0.22, −0.22, −0.06, −0.18, −0.20 and −0.20 versus a uniform −0.18; range 0.16 versus 0): recovering the mean is not evidence of regional recovery. Conceptual synthesis; no study data. [tool statement]
 
-Alt text: Top, a five-row table pairing validation targets with the claims they support and do not support; bottom left, a numbered three-stage programme with the Table 4 resources listed beside each stage; bottom right, a small plot of a uniform and a focal segmental strain profile sharing the same mean, with a table of the segment values.
+Alt text: Top, a five-row table pairing validation targets with the claims they support and do not support; bottom left, a four-row table (pre-specification and three stages) with what each stage varies and its Table 4 resources; bottom right, a small plot of a uniform and a focal segmental strain profile sharing the same mean, with a table of the segment values.
 
 **Graphical abstract — `Graphical_abstract`** (2600 × 1000 px, 13:5)
 
@@ -50,4 +50,4 @@ Regional error attributes and mapping validity. (a) Reference and estimate profi
 
 **Supplementary Figure S3 — `Figure_S3_training_vs_inference_controls`** (190 × 84 mm)
 
-Training-time versus inference-time controls. A training-loss weight requires matched retraining; a test-time parameter can be varied only when the implementation exposes it. Candidate models or outputs are compared on the same held-out cases under the same estimand, reference and attribute-specific losses. Conceptual schematic. [tool statement]
+Training-time versus inference-time controls. (a) A training-loss weight requires matched retraining, giving one trained model per setting; a test-time parameter can be varied on the same trained model only when the implementation exposes it. Varying a training-loss weight only at test time has no effect. (b) Candidate models or outputs are compared under one held-out evaluation contract: the same held-out cases, kept out of model, hyperparameter and rule selection; the same estimand; the same reference; and attribute-specific losses (magnitude, location, extent, timing, field validity). Conceptual schematic. [tool statement]

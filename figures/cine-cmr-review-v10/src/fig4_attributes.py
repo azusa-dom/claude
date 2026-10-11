@@ -59,10 +59,8 @@ for i, (c, name) in enumerate(comps):
     fig.text(xc, ax.fy(-0.32) + 28, f"Δ {'+' if scar - rem > 0 else ''}{f2(scar - rem)}", T.SMALL, fill=C.MUTED,
              anchor="middle")
 ef = int(v[("ejection_fraction_pct", "", "infarct")][0])
-fig.lines(196, 70, [f"Infarct case EF {ef}%:", "remote tissue compensates"],
-          T.SMALL, fill=C.INK, leading=13.5)
-fig.lines(196, 112, ["circumferential near zero in scar;", "longitudinal almost unchanged"], T.SMALL, leading=13.5)
 fig.legend_items(66, 268, [("remote myocardium", "box", C.REF), ("scar", "hatch", C.INF)], gap=26)
+fig.text(66, 286, f"Infarct case EF {ef}%: remote tissue compensates for the scar.", T.SMALL, fill=C.MUTED)
 
 # ---- b: DeepStrain error -----------------------------------------------------------------------
 fig.col_rule(398, 6, 288)

@@ -29,12 +29,12 @@ fig.line(30, 90, 1270, 90, C.INK, 1.4)
 
 
 def tag(x, y, label, color):
-    fig.circle(x + 6, y - 6, 6, color)
-    fig.text(x + 18, y, label, 15, 700, color, extra='letter-spacing="1.6"')
+    fig.circle(x + 5, y - 5, 5, color)
+    fig.text(x + 16, y, label, HEAD, 700)
 
 
 # ---- observed --------------------------------------------------------------------------------
-tag(30, 128, "OBSERVED", C.OBS)
+tag(30, 128, "Observed", C.OBS)
 cx, cy, R, r = 150, 262, 86, 48
 fig.path(annulus_path(cx, cy, R, r), fill=C.SILK, extra='fill-rule="evenodd"')
 fig.circle(cx, cy, R, stroke=C.OBS, w=2)
@@ -51,7 +51,7 @@ fig.arrow(256, 262, 312, 262, C.INK, 2, 10)
 fig.col_rule(300, 106, 470)
 
 # ---- inferred chain -----------------------------------------------------------------------------
-tag(330, 128, "INFERRED", C.INF)
+tag(330, 128, "Inferred", C.INF)
 st = [(425, "Estimator + prior"), (615, "Material"), (800, "Regional strain")]
 subs = ["registration, flow, learned", "correspondence u(X, t)", "Ecc, Err, Ell per segment"]
 for i, ((x, name), sub) in enumerate(zip(st, subs)):
@@ -86,7 +86,7 @@ fig.text(360, 440, "tested per attribute, per estimator, per acquisition", BODY,
 fig.col_rule(892, 106, 470)
 
 # ---- validation ---------------------------------------------------------------------------------
-tag(920, 128, "VALIDATED BY", C.REF)
+tag(920, 128, "Validated against", C.REF)
 tiers = [("Known motion", "phantom, simulation"), ("Paired DENSE / tagging", "same session"),
          ("Tissue & outcome", "LGE, events")]
 for i, (t, sub) in enumerate(tiers):

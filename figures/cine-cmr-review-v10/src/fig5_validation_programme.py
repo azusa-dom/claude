@@ -9,7 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
 from scifig_common import C, T, export, start, wrap  # noqa: E402
 
-H = 588
+H = 566
 fig = start(H, "Figure 5 | Validation targets and a staged programme for regional claims",
             legend=[("supports", C.SUP), ("does not establish alone", C.INF)],
             footer=["Conceptual synthesis; no study data. c is an analytic example (segment values chosen to share the "
@@ -56,32 +56,38 @@ fig.col_rule(c2 - 8, top + 27, y)
 # ---- b: staged programme ------------------------------------------------------------------------
 by = y + 34
 fig.panel(20, by, "b", "Pre-specify, then escalate the reference stage by stage")
-lx, tx, rx, rw = 34, 58, 300, 236
-fig.text(rx, by + 26, "Resources (Table 4)", T.SMALL, 700, fill=C.MUTED)
+c0, c1, c2, c_end = 20, 152, 334, 530       # stage | design | resources (Table 4)
+ty = by + 20
+fig.line(c0, ty, c_end, ty, C.INK, 1.2)
+fig.text(c0, ty + 17, "Stage", T.BODY, 700)
+fig.text(c1, ty + 17, "What is varied or fixed", T.BODY, 700)
+fig.text(c2, ty + 17, "Resources (Table 4)", T.BODY, 700)
+fig.line(c0, ty + 26, c_end, ty + 26, C.INK, 0.9)
 steps = [
-    ("✓", "Pre-specify the measurement contract", "estimand · reference · tolerance · data splits", []),
-    ("1", "Stage 1 · Known motion", "vary width, extent, amplitude, timing, resolution and noise",
+    ("Pre-specify", "measurement contract", "estimand, reference, tolerance and data splits fixed in advance", []),
+    ("Stage 1", "Known motion", "vary width, extent, amplitude, timing, resolution and noise",
      [("STRAUS", "3 templates × 6 states"), ("MRXCAT2.0", "programmable generator"), ("CMAC", "dynamic phantom")]),
-    ("2", "Stage 2 · Paired material reference", "cine with DENSE or tagging in one session; registered; "
-     "reference blinded", [("Stanford", "51/55 · not file-verified"), ("CMAC", "15 volunteers, 12 landmarks")]),
-    ("3", "Stage 3 · Tissue and decisions", "LGE, responsiveness, decision impact",
-     [("Clinical cohorts", "LGE or outcomes")]),
+    ("Stage 2", "Paired material reference", "cine with DENSE or tagging in one session; registered; reference blinded",
+     [("Stanford", "51/55 · not file-verified"), ("CMAC", "15 volunteers, 12 landmarks")]),
+    ("Stage 3", "Tissue and decisions", "LGE, responsiveness, decision impact", [("Clinical cohorts", "LGE or outcomes")]),
 ]
-ys = [by + 50, by + 100, by + 168, by + 232]
-fig.line(lx, ys[0], lx, ys[-1], C.RULE, 1.6)
-for i, ((mark, head, desc, res), yy) in enumerate(zip(steps, ys)):
-    if mark == "✓":
-        fig.circle(lx, yy, 9, C.WHITE, C.INK, 1.2)
-        fig.tick(lx, yy, C.INK, 3.8, 1.4)
-    else:
-        fig.circle(lx, yy, 9, C.REF)
-        fig.text(lx, yy + 4.5, mark, 12, 700, C.WHITE, "middle")
-    fig.text(tx, yy + 4, head, T.BODY, 700)
-    for k, s in enumerate(wrap(desc, rx - tx - 16, T.CAPTION)):
-        fig.text(tx, yy + 19 + k * 13.5, s, T.CAPTION, fill=C.MUTED)
-    if res:
-        fig.kv_table(rx, yy + 4, res, w=rw, row_h=18)
-fig.text(tx, ys[-1] + 44, "Counts are resource units, not independent test participants.", T.SMALL, fill=C.MUTED)
+yy = ty + 26
+for i, (stage, head, desc, res) in enumerate(steps):
+    lines = wrap(desc, c2 - c1 - 12, T.CAPTION)
+    rh = max(2, len(lines), len(res)) * 14 + 14
+    fig.text(c0, yy + 15, stage, T.BODY, 700)
+    fig.text(c0, yy + 29, head, T.SMALL, fill=C.MUTED)
+    for k, s_ in enumerate(lines):
+        fig.text(c1, yy + 15 + k * 14, s_, T.CAPTION)
+    for k, (name, val) in enumerate(res):
+        fig.text(c2, yy + 15 + k * 14, name, T.CAPTION)
+        fig.text(c_end, yy + 15 + k * 14, val, T.SMALL, 700, anchor="end")
+    yy += rh
+    last = i == len(steps) - 1
+    fig.line(c0, yy, c_end, yy, C.INK if last else C.GRID, 1.2 if last else 0.8)
+fig.col_rule(c1 - 8, ty + 26, yy)
+fig.col_rule(c2 - 8, ty + 26, yy)
+fig.text(c0, yy + 18, "Counts are resource units, not independent test participants.", T.SMALL, fill=C.MUTED)
 
 # ---- c: equal-mean test --------------------------------------------------------------------------
 fig.col_rule(548, by - 18, H - 4)
