@@ -8,7 +8,7 @@
 
 | 图 | 文件名 | 尺寸 |
 |---|---|---|
-| Fig 1 双轨证据图(期刊版;海报版在 `out/poster/`) | `Figure_1_two_track_evidence_map` | 190 × 172 mm |
+| Fig 1 双轨证据图(期刊版,横放;海报版在 `out/poster/`) | `Figure_1_two_track_evidence_map` | 247 × 128 mm |
 | Fig 2 同一轮廓、不同对应(解析反例) | `Figure_2_same_contours_analytic` | 190 × 67 mm |
 | Fig 3 方法年表 1999–2026 | `Figure_3_method_timeline` | 190 × 199 mm |
 | Fig 4 属性特异恢复(MRXCAT2.0) | `Figure_4_attribute_specific_recovery` | 190 × 110 mm |
@@ -41,12 +41,12 @@
 
 你提供的 `two_track_figure.svg`(Figure 1 | Two-track evidence map,五个面板 a–e,1800 px 海报画布)原样保存在 `src/Figure_1_two_track_poster.svg`,由 `src/fig1_two_track_poster.py` 导出到 `out/poster/`,只作海报、幻灯片和参考用,不进稿件、不参加字号审计(按 190 mm 印刷最小字号只有 2.8 pt)。
 
-稿件用的 Figure 1 是同一张图的**期刊版** `src/fig1_two_track_journal.py` → `out/Figure_1_two_track_evidence_map.*`,190 × 172 mm,最小正文 7.06 pt、上下标 6.46 pt。从海报版到期刊版改了这些:
+稿件用的 Figure 1 是同一张图的**期刊版** `src/fig1_two_track_journal.py` → `out/Figure_1_two_track_evidence_map.*`:按你给的参考版式,宽而扁(1040 px = 247 mm,247 × 128 mm,宽高比约 1.9),稿件里横放一页(`\begin{landscape}`);最小正文 7.06 pt、公式下标 6.46 pt。a 行每个站点小图在左、文字在右;b 行每列是"标签 | 标记 | 数值列",图例并入 b 的标题行。从海报版到期刊版改了这些:
 
 - 只保留两条轨道(a 估计轨道、b 验证轨道)。海报版的 c(误差属性曲线)、d(七项研究覆盖矩阵)、e(Table S3 证据计数)在稿件里已分别由 S2、Table 3、Fig 3b 承担,期刊版不重复。
 - 去掉渐变轨道条、深色 MRI 影像块、图内标题行和底部脚注;分组写进面板标题,影像块换成线框环。
 - a 的四个站点各留一个图形和两行说明;8 项定义选择(01–08)保留,并写出由所画曲线算出的读数(第 11 节段在 ES、收缩峰、收缩后峰的值,以及 min(mean) 与 mean(min))。
-- b 的五列各留一个图:DeepStrain 误差森林图、ICC 区间行、REGAIN 的 95% LoA、Kihlberg 的 AUC/敏感度柱、Bello/Masutani 的判别点;每列标题、✓/✕ 行、图题和说明都按列宽实测换行。
+- b 的五列各留一个图:DeepStrain 误差行、ICC 区间行、REGAIN 的 95% LoA、Kihlberg 的 AUC/敏感度柱、Bello/Masutani 的判别点;每列标题、✓/✕ 行、图题和说明都按列宽实测换行。与其他图重复的内容删掉:Cao 的 DENSE vs tagging ICC 0.778 只在说明行里写一次;Known motion 列只留三行误差,其余在 Fig 4。
 - 数值与稿件逐项核对一致(Table 2–3、§4、§6.6)。海报版 b 列"Strain-8 global CV ≤ 20%、segmental often > 20%"在稿件里没有出处,期刊版改为稿件原话"global fair–excellent; segmental more variable"。
 
 ## 规格依据与实际核查
