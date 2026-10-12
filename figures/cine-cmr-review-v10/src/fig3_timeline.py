@@ -1,6 +1,6 @@
 """Figure 3: cine-CMR motion estimators by year, by the documented evaluation endpoint each source reports.
 
-agarwood-scifig house style, 190 mm. Data: data/table_s3_methods.csv (one row per plotted entry,
+agarwood-scifig house style on the wide canvas: 1040 px = 247 mm (landscape page), so the lanes stay short. Data: data/table_s3_methods.csv (one row per plotted entry,
 with the Table S3 line and the classification rationale).
 """
 import csv
@@ -30,13 +30,14 @@ EVIDENCE = [
 ]
 FILL = {"mask": C.MASK, "label": C.CORAL, "material": C.REF, "focal": C.REF, "nr": C.WHITE, "other": C.SUP_T}
 
-X0, X1 = 176.0, 776.0
+W = 1040
+X0, X1 = 176.0, 1016.0
 EARLY, LATE = (1998.5, 2000.5), (2008.5, 2026.5)
 EARLY_PX, GAP = 15.0, 24.0
 LATE_PX = (X1 - X0 - (EARLY[1] - EARLY[0]) * EARLY_PX - GAP) / (LATE[1] - LATE[0])
-ROW, PAD, DOT_R, DX = 15.0, 5.0, 4.0, 7.0
+ROW, PAD, DOT_R, DX = 13.0, 5.0, 4.0, 7.0
 FS = T.SMALL + 0.5
-RIGHT_LIMIT = 786.0
+RIGHT_LIMIT = 1026.0
 
 
 def year_x(y):
@@ -88,7 +89,8 @@ def marker(fig, x, y, ev, r=DOT_R):
 
 rows = load()
 n_rows = {k: pack([r for r in rows if r["lane"] == k]) for k, _ in LANES}
-lane_h = {k: n * ROW + 2 * PAD for k, n in n_rows.items()}
+title_lines = dict(LANES)
+lane_h = {k: max(n * ROW, len(title_lines[k]) * 15 + 14) + 2 * PAD for k, n in n_rows.items()}
 counts = Counter(r["evidence"] for r in rows)
 years = sorted({r["year"] for r in rows})
 per_year = {y: Counter(r["evidence"] for r in rows if r["year"] == y) for y in years}
@@ -101,10 +103,9 @@ HIST_TOP = TOP + lanes_h + 24
 UNIT = 5.5
 HIST_H = max(sum(c.values()) for c in per_year.values()) * UNIT + 4
 AXIS_Y = HIST_TOP + HIST_H
-B_TOP = AXIS_Y + 58
-H = B_TOP + 30 + len(EVIDENCE) * 19 + 34
+H = AXIS_Y + 62
 
-fig = start(H, f"Figure 3 | Selected method and evaluation entries (n = {n_total})",
+fig = start(H, f"Figure 3 | Selected method and evaluation entries (n = {n_total})", width=W, width_mm=247,
             footer=["Endpoint classes use source-specific reading depth; include related methods and separate evaluations.",
                     "LGE, late gadolinium enhancement; DENSE, displacement encoding with stimulated echoes."])
 
@@ -121,8 +122,10 @@ def hrule(y, color=C.GRID, w=0.8, x_from=20):
 
 hrule(TOP, C.INK, 1.2)
 y = TOP
+lane_top = {}
 for key, title in LANES:
     h = lane_h[key]
+    lane_top[key] = y
     items = [r for r in rows if r["lane"] == key]
     for i, s in enumerate(title):
         fig.text(20, y + PAD + 12 + i * 15, s, T.BODY, 700)
@@ -184,24 +187,25 @@ for yr in [1999, 2000] + list(range(2009, 2027)):
         fig.text(x, AXIS_Y + 16, str(yr), T.SMALL, fill=C.MUTED, anchor="middle")
 fig.text(X0 + (X1 - X0) / 2, AXIS_Y + 33, "year of publication", T.LABEL + 0.5, anchor="middle")
 
-# ---- b: evidence classes and totals ------------------------------------------------------------
-fig.row_rule(B_TOP - 14)
-fig.panel(20, B_TOP + 10, "b", "Documented endpoints in selected entries; no field-wide denominator")
-BX, SCALE = 625.0, 5.5
-fig.text(BX, B_TOP + 32, f"entries (n = {n_total})", T.SMALL, fill=C.MUTED)
+# ---- b: evidence classes and totals, as an inset in the empty 2009-2017 region of the lower lanes ----
+BX = gx1 + 12
+by = lane_top["cardiac"] + 10
+fig.panel(BX, by + 10, "b", "Documented endpoints; no field-wide denominator")
+fig.text(BX, by + 30, f"one selected endpoint per entry (n = {n_total})", T.SMALL, fill=C.MUTED)
+SCALE = 3.0
 for i, (key, text) in enumerate(EVIDENCE):
-    yy = B_TOP + 48 + i * 19
-    marker(fig, 28, yy - 4, key)
-    fig.text(42, yy, text, T.BODY - 1)
+    yy = by + 50 + i * 17
+    marker(fig, BX + 8, yy - 4, key)
     n = counts.get(key, 0)
+    bx = BX + 22
     if key == "nr":
-        fig.rect(BX, yy - 10, n * SCALE, 11, C.WHITE, C.INK, 0.9)
+        fig.rect(bx, yy - 9, n * SCALE, 10, C.WHITE, C.INK, 0.9)
     else:
-        fig.rect(BX, yy - 10, n * SCALE, 11, FILL[key], C.INK if key == "focal" else "none", 1.2)
-    fig.text(BX + n * SCALE + 6, yy, str(n), T.SMALL + 0.5, 700)
-fig.line(BX, B_TOP + 36, BX, B_TOP + 48 + 5 * 19 + 4, C.INK, 0.9)
-fy = B_TOP + 48 + len(EVIDENCE) * 19 + 6
-fig.text(20, fy, "\u00a0\u00a0\u00a0".join(["* tagging-side comparator",
+        fig.rect(bx, yy - 9, n * SCALE, 10, FILL[key], C.INK if key == "focal" else "none", 1.2)
+    fig.text(bx + 66 + 18, yy, str(n), T.SMALL + 0.5, 700, anchor="end")
+    fig.text(bx + 66 + 26, yy, text, T.SMALL)
+fig.line(BX + 22, by + 36, BX + 22, by + 50 + (len(EVIDENCE) - 1) * 17 + 4, C.INK, 0.9)
+fig.text(20, AXIS_Y + 50, "\u00a0\u00a0\u00a0".join(["* tagging-side comparator",
                                   "‡ workshop paper or no abstract retrieved", "§ rat model"]), T.SMALL, fill=C.MUTED)
 
 export(fig, "Figure_3_method_timeline")
