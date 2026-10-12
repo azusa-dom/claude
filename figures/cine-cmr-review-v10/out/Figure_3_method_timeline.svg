@@ -1,248 +1,261 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700.157pt" height="387.780pt" viewBox="0 0 1040 576.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="700.157pt" height="391.819pt" viewBox="0 0 1040 582.0" font-family="Helvetica, Arial, 'Liberation Sans', sans-serif">
 <defs>
 <linearGradient id="cellDirect" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8D6449"/><stop offset="1" stop-color="#5B3E2E"/></linearGradient>
 <pattern id="hatchInf" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#F8E0DA"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C0584A" stroke-width="2"/></pattern>
 </defs>
-<rect x="0.0" y="0.0" width="1040.0" height="576.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
+<rect x="0.0" y="0.0" width="1040.0" height="582.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
 <g transform="translate(0,0)">
-<text x="20.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Selected records by year; one marker per entry (n = 47)</text>
+<text x="20.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
+<text x="44.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Selected records by year; one marker per entry (n = 47)</text>
 <line x1="20.0" y1="44.0" x2="208.0" y2="44.0" stroke="#33261F" stroke-width="1.2" />
-<line x1="228.0" y1="44.0" x2="1022.0" y2="44.0" stroke="#33261F" stroke-width="1.2" />
-<text x="20.0" y="61.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Conventional &amp;</text>
-<text x="20.0" y="76.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >comparators</text>
-<text x="20.0" y="92.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >13 selected entries</text>
-<circle cx="183.5" cy="55.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="190.5" y="59.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >FFD</text>
-<circle cx="198.5" cy="68.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="205.5" y="72.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >HARP*</text>
-<circle cx="339.2" cy="55.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="346.2" y="59.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >nD+t B-spline</text>
-<circle cx="644.8" cy="55.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="651.8" y="59.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Puyol-Antón</text>
-<circle cx="601.2" cy="81.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<text x="608.2" y="85.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Vigneault</text>
-<circle cx="732.2" cy="55.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="739.2" y="59.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Anatomy-Aware</text>
-<circle cx="906.8" cy="55.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="913.8" y="59.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Groupwise LLR</text>
-<circle cx="251.8" cy="55.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<text x="258.8" y="59.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Maret</text>
-<circle cx="295.5" cy="68.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="302.5" y="72.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Hor</text>
-<circle cx="426.5" cy="55.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="433.5" y="59.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Augustine</text>
-<circle cx="513.8" cy="55.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="520.8" y="59.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Laplace mapping</text>
-<circle cx="557.5" cy="68.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="564.5" y="72.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Data assimilation</text>
-<circle cx="688.5" cy="68.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="695.5" y="72.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Optical flow</text>
-<line x1="20.0" y1="98.0" x2="208.0" y2="98.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="228.0" y1="98.0" x2="1022.0" y2="98.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="20.0" y="115.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Unsupervised</text>
-<text x="20.0" y="130.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >registration</text>
-<text x="20.0" y="146.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >4 selected entries</text>
-<circle cx="688.5" cy="109.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="695.5" y="113.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >VoxelMorph</text>
-<circle cx="819.5" cy="109.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="826.5" y="113.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >TransMorph</text>
-<circle cx="863.2" cy="122.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="870.2" y="126.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Fourier-Net</text>
-<circle cx="994.2" cy="109.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="987.2" y="113.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >Fourier-Net+</text>
-<line x1="20.0" y1="152.0" x2="208.0" y2="152.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="228.0" y1="152.0" x2="1022.0" y2="152.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="20.0" y="169.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Cardiac-specific</text>
-<text x="20.0" y="185.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >15 selected entries</text>
-<circle cx="644.8" cy="163.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="651.8" y="167.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Joint motion+seg</text>
-<circle cx="688.5" cy="176.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<text x="695.5" y="180.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Apparent flow</text>
-<circle cx="732.2" cy="202.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="739.2" y="206.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >MPN</text>
-<circle cx="732.2" cy="189.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="739.2" y="193.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >FOAL</text>
-<circle cx="819.5" cy="163.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="826.5" y="167.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >MulViMotion</text>
-<circle cx="906.8" cy="163.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="913.8" y="167.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >DeepMesh</text>
-<circle cx="950.5" cy="202.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="957.5" y="206.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >MCM‡</text>
-<circle cx="950.5" cy="189.5" r="4.0" fill="#E3ECEA" stroke="none" stroke-width="1.0" />
-<text x="957.5" y="193.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >CMR FMs</text>
-<circle cx="950.5" cy="228.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="943.5" y="232.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >Semi-sup. flow</text>
-<circle cx="994.2" cy="241.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="987.2" y="245.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >CardioMorphNet</text>
-<circle cx="994.2" cy="267.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="987.2" y="271.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >Latent ODE</text>
-<circle cx="994.2" cy="280.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<text x="987.2" y="284.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >STCMT</text>
-<circle cx="863.2" cy="176.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="870.2" y="180.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Bidirectional reg.</text>
-<circle cx="950.5" cy="215.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="957.5" y="219.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >SegMorph</text>
-<circle cx="994.2" cy="254.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="987.2" y="258.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >IG-BiReg</text>
-<line x1="20.0" y1="292.0" x2="208.0" y2="292.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="228.0" y1="292.0" x2="1022.0" y2="292.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="20.0" y="309.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Physics &amp;</text>
-<text x="20.0" y="324.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >biomechanics</text>
-<text x="20.0" y="340.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >4 selected entries</text>
-<circle cx="863.2" cy="303.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="870.2" y="307.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Biomech prior</text>
-<circle cx="863.2" cy="316.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="870.2" y="320.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >WarpPINN</text>
-<circle cx="994.2" cy="342.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="987.2" y="346.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >WarpPINN-fibers</text>
-<circle cx="994.2" cy="329.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="987.2" y="333.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >Space-time FE</text>
+<line x1="228.0" y1="44.0" x2="776.0" y2="44.0" stroke="#33261F" stroke-width="1.2" />
+<text x="20.0" y="60.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Conventional &amp;</text>
+<text x="20.0" y="75.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >comparators</text>
+<text x="20.0" y="91.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >13 selected entries</text>
+<circle cx="183.5" cy="54.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="190.5" y="58.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >FFD</text>
+<circle cx="198.5" cy="67.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="205.5" y="71.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >HARP*</text>
+<circle cx="305.0" cy="54.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="312.0" y="58.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >nD+t B-spline</text>
+<circle cx="515.0" cy="93.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="522.0" y="97.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Puyol-Antón</text>
+<circle cx="485.0" cy="80.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<text x="492.0" y="84.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Vigneault</text>
+<circle cx="575.0" cy="67.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="582.0" y="71.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Anatomy-Aware</text>
+<circle cx="695.0" cy="54.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="702.0" y="58.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Groupwise LLR</text>
+<circle cx="245.0" cy="54.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<text x="252.0" y="58.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Maret</text>
+<circle cx="275.0" cy="67.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="282.0" y="71.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Hor</text>
+<circle cx="365.0" cy="67.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="372.0" y="71.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Augustine</text>
+<circle cx="425.0" cy="54.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="432.0" y="58.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Laplace mapping</text>
+<circle cx="455.0" cy="67.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="462.0" y="71.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Data assimilation</text>
+<circle cx="545.0" cy="54.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="552.0" y="58.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Optical flow</text>
+<line x1="20.0" y1="104.0" x2="208.0" y2="104.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="228.0" y1="104.0" x2="776.0" y2="104.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="20.0" y="120.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Unsupervised</text>
+<text x="20.0" y="135.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >registration</text>
+<text x="20.0" y="151.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >4 selected entries</text>
+<circle cx="545.0" cy="114.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="552.0" y="118.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >VoxelMorph</text>
+<circle cx="635.0" cy="114.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="642.0" y="118.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >TransMorph</text>
+<circle cx="665.0" cy="127.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="672.0" y="131.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Fourier-Net</text>
+<circle cx="755.0" cy="140.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="748.0" y="144.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >Fourier-Net+</text>
+<line x1="20.0" y1="156.0" x2="208.0" y2="156.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="228.0" y1="156.0" x2="776.0" y2="156.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="20.0" y="172.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Cardiac-specific</text>
+<text x="20.0" y="188.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >15 selected entries</text>
+<circle cx="515.0" cy="166.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="522.0" y="170.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Joint motion+seg</text>
+<circle cx="545.0" cy="179.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<text x="552.0" y="183.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Apparent flow</text>
+<circle cx="575.0" cy="205.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="582.0" y="209.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >MPN</text>
+<circle cx="575.0" cy="192.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="582.0" y="196.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >FOAL</text>
+<circle cx="635.0" cy="166.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="642.0" y="170.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >MulViMotion</text>
+<circle cx="695.0" cy="192.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="702.0" y="196.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >DeepMesh</text>
+<circle cx="725.0" cy="205.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="732.0" y="209.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >MCM‡</text>
+<circle cx="725.0" cy="166.5" r="4.0" fill="#E3ECEA" stroke="none" stroke-width="1.0" />
+<text x="732.0" y="170.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >CMR FMs</text>
+<circle cx="725.0" cy="231.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="718.0" y="235.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >Semi-sup. flow</text>
+<circle cx="755.0" cy="244.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="748.0" y="248.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >CardioMorphNet</text>
+<circle cx="755.0" cy="270.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="748.0" y="274.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >Latent ODE</text>
+<circle cx="755.0" cy="283.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<text x="748.0" y="287.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >STCMT</text>
+<circle cx="665.0" cy="179.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="672.0" y="183.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Bidirectional reg.</text>
+<circle cx="725.0" cy="218.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="718.0" y="222.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >SegMorph</text>
+<circle cx="755.0" cy="257.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="748.0" y="261.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >IG-BiReg</text>
+<line x1="20.0" y1="294.0" x2="208.0" y2="294.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="228.0" y1="294.0" x2="776.0" y2="294.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="20.0" y="310.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Physics &amp;</text>
+<text x="20.0" y="325.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >biomechanics</text>
+<text x="20.0" y="341.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >4 selected entries</text>
+<circle cx="665.0" cy="304.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="672.0" y="308.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Biomech prior</text>
+<circle cx="665.0" cy="317.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="672.0" y="321.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >WarpPINN</text>
+<circle cx="755.0" cy="343.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="748.0" y="347.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >WarpPINN-fibers</text>
+<circle cx="755.0" cy="330.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="748.0" y="334.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >Space-time FE</text>
 <line x1="20.0" y1="354.0" x2="208.0" y2="354.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="228.0" y1="354.0" x2="1022.0" y2="354.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="20.0" y="371.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Reference-supervised</text>
-<text x="20.0" y="386.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >&amp; end-to-end</text>
-<text x="20.0" y="402.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >11 selected entries</text>
-<circle cx="644.8" cy="365.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<text x="651.8" y="369.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Cine-only MI</text>
-<circle cx="688.5" cy="378.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<text x="695.5" y="382.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Survival-sup.</text>
-<circle cx="775.8" cy="378.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="782.8" y="382.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >DeepTag*</text>
-<circle cx="775.8" cy="365.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<text x="782.8" y="369.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >DeepStrain</text>
-<path d="M863.2 372.7 L869.0 378.5 L863.2 384.3 L857.4 378.5 Z" stroke="#33261F" stroke-width="1.4" fill="#7A4720" />
-<text x="870.2" y="382.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >MRXCAT2.0 test of DeepStrain</text>
-<circle cx="863.2" cy="391.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="870.2" y="395.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >StrainNet</text>
-<circle cx="863.2" cy="365.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<text x="870.2" y="369.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >DL synthetic strain</text>
-<circle cx="950.5" cy="404.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="943.5" y="408.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >3D tagging nets*</text>
-<circle cx="950.5" cy="417.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="943.5" y="421.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >DENSE-rotation</text>
-<circle cx="950.5" cy="430.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<text x="943.5" y="434.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >DL aligned strain</text>
-<circle cx="994.2" cy="391.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<text x="987.2" y="395.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >MyoNet§</text>
-<line x1="20.0" y1="442.0" x2="208.0" y2="442.0" stroke="#33261F" stroke-width="1.2" />
-<line x1="228.0" y1="442.0" x2="1022.0" y2="442.0" stroke="#33261F" stroke-width="1.2" />
-<text transform="translate(222.0,243.0) rotate(-90)" font-size="10.5" fill="#6F625A" text-anchor="middle">2001–2008: no entries</text>
-<text x="20.0" y="480.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Entries per year</text>
-<text x="20.0" y="494.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >stacked by evidence class</text>
-<line x1="170.0" y1="512.0" x2="174.0" y2="512.0" stroke="#33261F" stroke-width="0.9" />
-<text x="167.0" y="516.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="end" >0</text>
-<line x1="170.0" y1="484.5" x2="174.0" y2="484.5" stroke="#33261F" stroke-width="0.9" />
-<text x="167.0" y="488.5" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="end" >5</text>
-<line x1="174.0" y1="512.0" x2="174.0" y2="462.5" stroke="#33261F" stroke-width="0.9" />
-<rect x="179.5" y="506.5" width="8.0" height="5.5" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="194.5" y="506.5" width="8.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="247.3" y="506.5" width="9.0" height="5.5" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="291.0" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="334.7" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="422.0" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="509.3" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="553.0" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="596.7" y="506.5" width="9.0" height="5.5" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="640.3" y="506.5" width="9.0" height="5.5" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="640.3" y="495.5" width="9.0" height="11.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<text x="644.8" y="491.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >3</text>
-<rect x="684.0" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="684.0" y="495.5" width="9.0" height="11.0" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="684.0" y="490.0" width="9.0" height="5.5" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<text x="688.5" y="486.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >4</text>
-<rect x="727.7" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="727.7" y="495.5" width="9.0" height="11.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<text x="732.2" y="491.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >3</text>
-<rect x="771.3" y="501.0" width="9.0" height="11.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="815.0" y="501.0" width="9.0" height="11.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="858.7" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#33261F" stroke-width="1.2" />
-<rect x="858.7" y="495.5" width="9.0" height="11.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="858.7" y="490.0" width="9.0" height="5.5" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="858.7" y="473.5" width="9.0" height="16.5" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<text x="863.2" y="469.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >7</text>
-<rect x="902.3" y="506.5" width="9.0" height="5.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="902.3" y="501.0" width="9.0" height="5.5" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="946.0" y="501.0" width="9.0" height="11.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="946.0" y="495.5" width="9.0" height="5.5" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="946.0" y="479.0" width="9.0" height="16.5" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="946.0" y="473.5" width="9.0" height="5.5" rx="0" fill="#E3ECEA" stroke="#FFFFFF" stroke-width="0.6" />
-<text x="950.5" y="469.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >7</text>
-<rect x="989.7" y="495.5" width="9.0" height="16.5" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="989.7" y="490.0" width="9.0" height="5.5" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
-<rect x="989.7" y="468.0" width="9.0" height="22.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
-<text x="994.2" y="464.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >8</text>
-<line x1="172.0" y1="514.0" x2="209.0" y2="514.0" stroke="#33261F" stroke-width="0.9" />
-<line x1="227.0" y1="514.0" x2="1020.0" y2="514.0" stroke="#33261F" stroke-width="0.9" />
-<line x1="206.5" y1="518.0" x2="211.5" y2="510.0" stroke="#33261F" stroke-width="0.9" />
-<line x1="224.5" y1="518.0" x2="229.5" y2="510.0" stroke="#33261F" stroke-width="0.9" />
-<line x1="183.5" y1="514.0" x2="183.5" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text transform="translate(187.3,521.0) rotate(-90)" font-size="10.5" fill="#6F625A" text-anchor="end">1999</text>
-<line x1="198.5" y1="514.0" x2="198.5" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text transform="translate(202.3,521.0) rotate(-90)" font-size="10.5" fill="#6F625A" text-anchor="end">2000</text>
-<line x1="251.8" y1="514.0" x2="251.8" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="251.8" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2009</text>
-<line x1="295.5" y1="514.0" x2="295.5" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="295.5" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2010</text>
-<line x1="339.2" y1="514.0" x2="339.2" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="339.2" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2011</text>
-<line x1="382.8" y1="514.0" x2="382.8" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="382.8" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2012</text>
-<line x1="426.5" y1="514.0" x2="426.5" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="426.5" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2013</text>
-<line x1="470.2" y1="514.0" x2="470.2" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="470.2" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2014</text>
-<line x1="513.8" y1="514.0" x2="513.8" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="513.8" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2015</text>
-<line x1="557.5" y1="514.0" x2="557.5" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="557.5" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2016</text>
-<line x1="601.2" y1="514.0" x2="601.2" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="601.2" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2017</text>
-<line x1="644.8" y1="514.0" x2="644.8" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="644.8" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2018</text>
-<line x1="688.5" y1="514.0" x2="688.5" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="688.5" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2019</text>
-<line x1="732.2" y1="514.0" x2="732.2" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="732.2" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2020</text>
-<line x1="775.8" y1="514.0" x2="775.8" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="775.8" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2021</text>
-<line x1="819.5" y1="514.0" x2="819.5" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="819.5" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2022</text>
-<line x1="863.2" y1="514.0" x2="863.2" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="863.2" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2023</text>
-<line x1="906.8" y1="514.0" x2="906.8" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="906.8" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2024</text>
-<line x1="950.5" y1="514.0" x2="950.5" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="950.5" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2025</text>
-<line x1="994.2" y1="514.0" x2="994.2" y2="518.0" stroke="#33261F" stroke-width="0.9" />
-<text x="994.2" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2026</text>
-<text x="596.0" y="547.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >year of publication</text>
-<text x="242.0" y="176.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Marker colour: documented endpoint per entry (n = 47)</text>
-<text x="242.0" y="192.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one selected endpoint per entry; no field-wide denominator</text>
-<circle cx="250.0" cy="208.0" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
-<rect x="264.0" y="203.0" width="63.0" height="10.0" rx="0" fill="#B2AAA2" stroke="none" stroke-width="1.2" />
-<text x="348.0" y="212.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="end" >21</text>
-<text x="356.0" y="212.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Mask, landmark, registration or inter-method agreement</text>
-<circle cx="250.0" cy="225.0" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
-<rect x="264.0" y="220.0" width="24.0" height="10.0" rx="0" fill="#CC5F4F" stroke="none" stroke-width="1.2" />
-<text x="348.0" y="229.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="end" >8</text>
-<text x="356.0" y="229.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Downstream label: class, LGE, outcome or expert reading</text>
-<circle cx="250.0" cy="242.0" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<rect x="264.0" y="237.0" width="48.0" height="10.0" rx="0" fill="#7A4720" stroke="none" stroke-width="1.2" />
-<text x="348.0" y="246.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="end" >16</text>
-<text x="356.0" y="246.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Known-field tests or strain comparisons with DENSE / tagging</text>
-<path d="M250.0 253.2 L255.8 259.0 L250.0 264.8 L244.2 259.0 Z" stroke="#33261F" stroke-width="1.4" fill="#7A4720" />
-<rect x="264.0" y="254.0" width="3.0" height="10.0" rx="0" fill="#7A4720" stroke="#33261F" stroke-width="1.2" />
-<text x="348.0" y="263.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="end" >1</text>
-<text x="356.0" y="263.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Prescribed scar; known motion; whole-slice errors</text>
-<circle cx="250.0" cy="276.0" r="3.6" fill="#FFFFFF" stroke="#33261F" stroke-width="1.1" />
-<rect x="264.0" y="271.0" width="0.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#33261F" stroke-width="0.9" />
-<text x="348.0" y="280.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="end" >0</text>
-<text x="356.0" y="280.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Endpoint not verified at available reading depth</text>
-<circle cx="250.0" cy="293.0" r="4.0" fill="#E3ECEA" stroke="none" stroke-width="1.0" />
-<rect x="264.0" y="288.0" width="3.0" height="10.0" rx="0" fill="#E3ECEA" stroke="none" stroke-width="1.2" />
-<text x="348.0" y="297.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="end" >1</text>
-<text x="356.0" y="297.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Related representation: other-task validation</text>
-<line x1="264.0" y1="198.0" x2="264.0" y2="301.0" stroke="#33261F" stroke-width="0.9" />
-<text x="20.0" y="564.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >* tagging-side comparator   ‡ workshop paper or no abstract retrieved   § rat model</text>
+<line x1="228.0" y1="354.0" x2="776.0" y2="354.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="20.0" y="370.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Reference-supervised</text>
+<text x="20.0" y="385.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >&amp; end-to-end</text>
+<text x="20.0" y="401.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >11 selected entries</text>
+<circle cx="515.0" cy="364.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<text x="522.0" y="368.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Cine-only MI</text>
+<circle cx="545.0" cy="377.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<text x="552.0" y="381.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >Survival-sup.</text>
+<circle cx="605.0" cy="390.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="612.0" y="394.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >DeepTag*</text>
+<circle cx="605.0" cy="364.5" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<text x="612.0" y="368.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >DeepStrain</text>
+<path d="M665.0 397.7 L670.8 403.5 L665.0 409.3 L659.2 403.5 Z" stroke="#33261F" stroke-width="1.4" fill="#7A4720" />
+<text x="658.0" y="407.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >MRXCAT2.0 test of DeepStrain</text>
+<circle cx="665.0" cy="416.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="672.0" y="420.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >StrainNet</text>
+<circle cx="665.0" cy="377.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<text x="672.0" y="381.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="start" >DL synthetic strain</text>
+<circle cx="725.0" cy="429.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="718.0" y="433.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >3D tagging nets*</text>
+<circle cx="725.0" cy="442.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="718.0" y="446.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >DENSE-rotation</text>
+<circle cx="725.0" cy="455.5" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<text x="718.0" y="459.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >DL aligned strain</text>
+<circle cx="755.0" cy="364.5" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<text x="748.0" y="368.5" font-size="11.0" font-weight="400" fill="#33261F" text-anchor="end" >MyoNet§</text>
+<line x1="20.0" y1="466.0" x2="208.0" y2="466.0" stroke="#33261F" stroke-width="1.2" />
+<line x1="228.0" y1="466.0" x2="776.0" y2="466.0" stroke="#33261F" stroke-width="1.2" />
+<text transform="translate(222.0,255.0) rotate(-90)" font-size="10.5" fill="#6F625A" text-anchor="middle">2001–2008: no entries</text>
+<text x="20.0" y="496.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Entries per year</text>
+<text x="20.0" y="510.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >stacked by evidence class</text>
+<line x1="170.0" y1="524.0" x2="174.0" y2="524.0" stroke="#33261F" stroke-width="0.9" />
+<text x="167.0" y="528.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="end" >0</text>
+<line x1="170.0" y1="499.0" x2="174.0" y2="499.0" stroke="#33261F" stroke-width="0.9" />
+<text x="167.0" y="503.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="end" >5</text>
+<line x1="174.0" y1="524.0" x2="174.0" y2="479.0" stroke="#33261F" stroke-width="0.9" />
+<rect x="179.5" y="519.0" width="8.0" height="5.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="194.5" y="519.0" width="8.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="240.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="270.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="300.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="360.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="420.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="450.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="480.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="510.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="510.5" y="509.0" width="9.0" height="10.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<text x="515.0" y="505.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >3</text>
+<rect x="540.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="540.5" y="509.0" width="9.0" height="10.0" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="540.5" y="504.0" width="9.0" height="5.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<text x="545.0" y="500.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >4</text>
+<rect x="570.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="570.5" y="509.0" width="9.0" height="10.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<text x="575.0" y="505.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >3</text>
+<rect x="600.5" y="514.0" width="9.0" height="10.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="630.5" y="514.0" width="9.0" height="10.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="660.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#33261F" stroke-width="1.2" />
+<rect x="660.5" y="509.0" width="9.0" height="10.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="660.5" y="504.0" width="9.0" height="5.0" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="660.5" y="489.0" width="9.0" height="15.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<text x="665.0" y="485.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >7</text>
+<rect x="690.5" y="519.0" width="9.0" height="5.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="690.5" y="514.0" width="9.0" height="5.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="720.5" y="514.0" width="9.0" height="10.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="720.5" y="509.0" width="9.0" height="5.0" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="720.5" y="494.0" width="9.0" height="15.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="720.5" y="489.0" width="9.0" height="5.0" rx="0" fill="#E3ECEA" stroke="#FFFFFF" stroke-width="0.6" />
+<text x="725.0" y="485.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >7</text>
+<rect x="750.5" y="509.0" width="9.0" height="15.0" rx="0" fill="#7A4720" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="750.5" y="504.0" width="9.0" height="5.0" rx="0" fill="#CC5F4F" stroke="#FFFFFF" stroke-width="0.6" />
+<rect x="750.5" y="484.0" width="9.0" height="20.0" rx="0" fill="#B2AAA2" stroke="#FFFFFF" stroke-width="0.6" />
+<text x="755.0" y="480.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >8</text>
+<line x1="172.0" y1="526.0" x2="209.0" y2="526.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="227.0" y1="526.0" x2="774.0" y2="526.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="206.5" y1="530.0" x2="211.5" y2="522.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="224.5" y1="530.0" x2="229.5" y2="522.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="183.5" y1="526.0" x2="183.5" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text transform="translate(187.3,533.0) rotate(-90)" font-size="10.5" fill="#6F625A" text-anchor="end">1999</text>
+<line x1="198.5" y1="526.0" x2="198.5" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text transform="translate(202.3,533.0) rotate(-90)" font-size="10.5" fill="#6F625A" text-anchor="end">2000</text>
+<line x1="245.0" y1="526.0" x2="245.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="245.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2009</text>
+<line x1="275.0" y1="526.0" x2="275.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="275.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2010</text>
+<line x1="305.0" y1="526.0" x2="305.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="305.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2011</text>
+<line x1="335.0" y1="526.0" x2="335.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="335.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2012</text>
+<line x1="365.0" y1="526.0" x2="365.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="365.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2013</text>
+<line x1="395.0" y1="526.0" x2="395.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="395.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2014</text>
+<line x1="425.0" y1="526.0" x2="425.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="425.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2015</text>
+<line x1="455.0" y1="526.0" x2="455.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="455.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2016</text>
+<line x1="485.0" y1="526.0" x2="485.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="485.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2017</text>
+<line x1="515.0" y1="526.0" x2="515.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="515.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2018</text>
+<line x1="545.0" y1="526.0" x2="545.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="545.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2019</text>
+<line x1="575.0" y1="526.0" x2="575.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="575.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2020</text>
+<line x1="605.0" y1="526.0" x2="605.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="605.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2021</text>
+<line x1="635.0" y1="526.0" x2="635.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="635.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2022</text>
+<line x1="665.0" y1="526.0" x2="665.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="665.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2023</text>
+<line x1="695.0" y1="526.0" x2="695.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="695.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2024</text>
+<line x1="725.0" y1="526.0" x2="725.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="725.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2025</text>
+<line x1="755.0" y1="526.0" x2="755.0" y2="530.0" stroke="#33261F" stroke-width="0.9" />
+<text x="755.0" y="542.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2026</text>
+<text x="473.0" y="559.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >year of publication</text>
+<line x1="786.0" y1="6.0" x2="786.0" y2="578.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="800.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
+<text x="824.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Documented endpoints</text>
+<text x="800.0" y="44.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one selected endpoint per entry (n = 47); no</text>
+<text x="800.0" y="57.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >field-wide denominator</text>
+<circle cx="808.0" cy="80.0" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
+<rect x="822.0" y="75.0" width="84.0" height="10.0" rx="0" fill="#B2AAA2" stroke="none" stroke-width="1.2" />
+<line x1="822.0" y1="74.0" x2="822.0" y2="85.0" stroke="#33261F" stroke-width="0.9" />
+<text x="912.0" y="84.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >21</text>
+<text x="800.0" y="99.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Mask, landmark, registration or inter-method</text>
+<text x="800.0" y="112.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >agreement</text>
+<circle cx="808.0" cy="136.0" r="4.0" fill="#CC5F4F" stroke="none" stroke-width="1.0" />
+<rect x="822.0" y="131.0" width="32.0" height="10.0" rx="0" fill="#CC5F4F" stroke="none" stroke-width="1.2" />
+<line x1="822.0" y1="130.0" x2="822.0" y2="141.0" stroke="#33261F" stroke-width="0.9" />
+<text x="860.0" y="140.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >8</text>
+<text x="800.0" y="155.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Downstream label: class, LGE, outcome or</text>
+<text x="800.0" y="168.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >expert reading</text>
+<circle cx="808.0" cy="192.0" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<rect x="822.0" y="187.0" width="64.0" height="10.0" rx="0" fill="#7A4720" stroke="none" stroke-width="1.2" />
+<line x1="822.0" y1="186.0" x2="822.0" y2="197.0" stroke="#33261F" stroke-width="0.9" />
+<text x="892.0" y="196.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >16</text>
+<text x="800.0" y="211.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Known-field tests or strain comparisons with</text>
+<text x="800.0" y="224.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >DENSE / tagging</text>
+<path d="M808.0 242.2 L813.8 248.0 L808.0 253.8 L802.2 248.0 Z" stroke="#33261F" stroke-width="1.4" fill="#7A4720" />
+<rect x="822.0" y="243.0" width="4.0" height="10.0" rx="0" fill="#7A4720" stroke="#33261F" stroke-width="1.2" />
+<line x1="822.0" y1="242.0" x2="822.0" y2="253.0" stroke="#33261F" stroke-width="0.9" />
+<text x="832.0" y="252.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >1</text>
+<text x="800.0" y="267.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Prescribed scar; known motion; whole-slice</text>
+<text x="800.0" y="280.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >errors</text>
+<circle cx="808.0" cy="304.0" r="3.6" fill="#FFFFFF" stroke="#33261F" stroke-width="1.1" />
+<rect x="822.0" y="299.0" width="0.0" height="10.0" rx="0" fill="#FFFFFF" stroke="#33261F" stroke-width="0.9" />
+<line x1="822.0" y1="298.0" x2="822.0" y2="309.0" stroke="#33261F" stroke-width="0.9" />
+<text x="828.0" y="308.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >0</text>
+<text x="800.0" y="323.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Endpoint not verified at available reading depth</text>
+<circle cx="808.0" cy="347.0" r="4.0" fill="#E3ECEA" stroke="none" stroke-width="1.0" />
+<rect x="822.0" y="342.0" width="4.0" height="10.0" rx="0" fill="#E3ECEA" stroke="none" stroke-width="1.2" />
+<line x1="822.0" y1="341.0" x2="822.0" y2="352.0" stroke="#33261F" stroke-width="0.9" />
+<text x="832.0" y="351.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" >1</text>
+<text x="800.0" y="366.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >Related representation: other-task validation</text>
+<text x="20.0" y="572.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >* tagging-side comparator   ‡ workshop paper or no abstract retrieved   § rat model</text>
 </g>
 </svg>

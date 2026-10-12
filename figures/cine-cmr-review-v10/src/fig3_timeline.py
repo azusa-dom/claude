@@ -9,7 +9,7 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
-from scifig_common import C, T, export, start, tw  # noqa: E402
+from scifig_common import C, T, export, start, tw, wrap  # noqa: E402
 
 DATA = Path(__file__).resolve().parents[1] / "data" / "table_s3_methods.csv"
 
@@ -31,13 +31,14 @@ EVIDENCE = [
 FILL = {"mask": C.MASK, "label": C.CORAL, "material": C.REF, "focal": C.REF, "nr": C.WHITE, "other": C.SUP_T}
 
 W = 1040
-X0, X1 = 176.0, 1016.0
+X0, X1 = 176.0, 770.0          # panel a timeline; panel b sits to the right
+BX0 = 800.0                      # panel b left edge
 EARLY, LATE = (1998.5, 2000.5), (2008.5, 2026.5)
 EARLY_PX, GAP = 15.0, 24.0
 LATE_PX = (X1 - X0 - (EARLY[1] - EARLY[0]) * EARLY_PX - GAP) / (LATE[1] - LATE[0])
-ROW, PAD, DOT_R, DX = 13.0, 5.0, 4.0, 7.0
+ROW, PAD, DOT_R, DX = 13.0, 4.0, 4.0, 7.0
 FS = T.SMALL + 0.5
-RIGHT_LIMIT = 1026.0
+RIGHT_LIMIT = 782.0
 
 
 def year_x(y):
@@ -99,18 +100,18 @@ n_total = len(rows)
 
 TOP = 44.0
 lanes_h = sum(lane_h.values())
-HIST_TOP = TOP + lanes_h + 24
-UNIT = 5.5
+HIST_TOP = TOP + lanes_h + 16
+UNIT = 5.0
 HIST_H = max(sum(c.values()) for c in per_year.values()) * UNIT + 4
 AXIS_Y = HIST_TOP + HIST_H
-H = AXIS_Y + 62
+H = AXIS_Y + 56
 
 fig = start(H, f"Figure 3 | Selected method and evaluation entries (n = {n_total})", width=W, width_mm=247,
             footer=["Endpoint classes use source-specific reading depth; include related methods and separate evaluations.",
                     "LGE, late gadolinium enhancement; DENSE, displacement encoding with stimulated echoes."])
 
 # ---- timeline -----------------------------------------------------------------------------
-fig.text(20, 22, f"Selected records by year; one marker per entry (n = {n_total})", T.PANEL_TITLE, 700)
+fig.panel(20, 24, "a", f"Selected records by year; one marker per entry (n = {n_total})")
 gx0 = year_x(EARLY[1])
 gx1 = gx0 + GAP
 
@@ -187,25 +188,28 @@ for yr in [1999, 2000] + list(range(2009, 2027)):
         fig.text(x, AXIS_Y + 16, str(yr), T.SMALL, fill=C.MUTED, anchor="middle")
 fig.text(X0 + (X1 - X0) / 2, AXIS_Y + 33, "year of publication", T.LABEL + 0.5, anchor="middle")
 
-# ---- key: evidence classes and totals, as a legend in the empty 2009-2017 region of the lower lanes ----
-BX = gx1 + 12
-by = lane_top["cardiac"] + 10
-fig.text(BX, by + 14, f"Marker colour: documented endpoint per entry (n = {n_total})", T.BODY, 700)
-fig.text(BX, by + 30, "one selected endpoint per entry; no field-wide denominator", T.SMALL, fill=C.MUTED)
-SCALE = 3.0
-for i, (key, text) in enumerate(EVIDENCE):
-    yy = by + 50 + i * 17
-    marker(fig, BX + 8, yy - 4, key)
+# ---- b: evidence classes and totals, right of the timeline ---------------------------------------
+fig.col_rule(BX0 - 14, 6, H - 4)
+fig.panel(BX0, 24, "b", "Documented endpoints")
+for k, line in enumerate(wrap(f"one selected endpoint per entry (n = {n_total}); no field-wide denominator", 1020 - BX0, T.SMALL)):
+    fig.text(BX0, 44 + k * 13, line, T.SMALL, fill=C.MUTED)
+SCALE = 4.0
+yy = 84
+for key, text in EVIDENCE:
     n = counts.get(key, 0)
-    bx = BX + 22
+    marker(fig, BX0 + 8, yy - 4, key)
+    bx = BX0 + 22
     if key == "nr":
         fig.rect(bx, yy - 9, n * SCALE, 10, C.WHITE, C.INK, 0.9)
     else:
         fig.rect(bx, yy - 9, n * SCALE, 10, FILL[key], C.INK if key == "focal" else "none", 1.2)
-    fig.text(bx + 66 + 18, yy, str(n), T.SMALL + 0.5, 700, anchor="end")
-    fig.text(bx + 66 + 26, yy, text, T.SMALL)
-fig.line(BX + 22, by + 36, BX + 22, by + 50 + (len(EVIDENCE) - 1) * 17 + 4, C.INK, 0.9)
-fig.text(20, AXIS_Y + 50, "\u00a0\u00a0\u00a0".join(["* tagging-side comparator",
+    fig.line(bx, yy - 10, bx, yy + 1, C.INK, 0.9)
+    fig.text(bx + n * SCALE + 6, yy, str(n), T.SMALL + 0.5, 700)
+    lines = wrap(text, 1020 - BX0, T.SMALL)
+    for k, line in enumerate(lines):
+        fig.text(BX0, yy + 15 + k * 13, line, T.SMALL)
+    yy += 30 + len(lines) * 13
+fig.text(20, AXIS_Y + 46, "\u00a0\u00a0\u00a0".join(["* tagging-side comparator",
                                   "‡ workshop paper or no abstract retrieved", "§ rat model"]), T.SMALL, fill=C.MUTED)
 
 export(fig, "Figure_3_method_timeline")
