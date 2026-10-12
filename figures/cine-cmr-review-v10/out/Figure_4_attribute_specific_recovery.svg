@@ -5,8 +5,8 @@
 </defs>
 <rect x="0.0" y="0.0" width="800.0" height="462.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
 <g transform="translate(0,0)">
-<text x="20.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
-<text x="44.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Prescribed scar: radial strain 0.95 → 0.30</text>
+<text x="20.0" y="24.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
+<text x="38.0" y="23.0" font-size="13" font-weight="700" fill="#33261F" text-anchor="start" >Prescribed scar: radial strain 0.95 → 0.30</text>
 <line x1="66.0" y1="50.0" x2="66.0" y2="218.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="62.0" y1="203.6" x2="66.0" y2="203.6" stroke="#33261F" stroke-width="0.9" />
 <text x="59.0" y="207.6" font-size="11" font-weight="400" fill="#6F625A" text-anchor="end" >−0.2</text>
@@ -48,8 +48,8 @@
 <text x="229.7" y="268.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >scar</text>
 <text x="66.0" y="286.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Infarct case EF 49%: remote tissue compensates for the scar.</text>
 <line x1="398.0" y1="6.0" x2="398.0" y2="288.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="410.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
-<text x="434.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Slice-mean error: Ecc small, Err biased low</text>
+<text x="410.0" y="24.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
+<text x="428.0" y="23.0" font-size="13" font-weight="700" fill="#33261F" text-anchor="start" >Slice-mean error: Ecc small, Err biased low</text>
 <line x1="562.0" y1="52.0" x2="562.0" y2="152.0" stroke="#E8DFD6" stroke-width="0.8" />
 <line x1="614.0" y1="52.0" x2="614.0" y2="152.0" stroke="#E8DFD6" stroke-width="0.8" />
 <line x1="666.0" y1="52.0" x2="666.0" y2="152.0" stroke="#E8DFD6" stroke-width="0.8" />
@@ -87,8 +87,8 @@
 <text x="410.0" y="270.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Means over three mid-ventricular slices; scar-level error not reported.</text>
 <text x="410.0" y="283.5" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >SD overlap does not establish equivalence; no uniform case ranking is inferred.</text>
 <line x1="20.0" y1="298.0" x2="780.0" y2="298.0" stroke="#33261F" stroke-width="1.2" />
-<text x="20.0" y="324.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
-<text x="44.0" y="322.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Scar-level recovery is not quantified in the inspected results</text>
+<text x="20.0" y="324.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
+<text x="38.0" y="323.0" font-size="13" font-weight="700" fill="#33261F" text-anchor="start" >Scar-level recovery is not quantified in the inspected results</text>
 <text x="20.0" y="352.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Magnitude</text>
 <circle cx="180.0" cy="348.0" r="6.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" />
 <line x1="22.0" y1="396.0" x2="132.0" y2="396.0" stroke="#CDBFB2" stroke-width="0.8" />

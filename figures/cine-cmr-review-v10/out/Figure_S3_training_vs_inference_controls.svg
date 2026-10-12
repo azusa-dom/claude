@@ -5,8 +5,8 @@
 </defs>
 <rect x="0.0" y="0.0" width="800.0" height="322.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
 <g transform="translate(0,0)">
-<text x="20.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
-<text x="44.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Two ways to vary one setting; only one of them retrains the estimator</text>
+<text x="20.0" y="24.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
+<text x="38.0" y="23.0" font-size="13" font-weight="700" fill="#33261F" text-anchor="start" >Two ways to vary one setting; only one of them retrains the estimator</text>
 <text x="20.0" y="74.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Training-time control</text>
 <text x="20.0" y="90.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >the setting lives in the training</text>
 <text x="20.0" y="103.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >objective</text>
@@ -54,8 +54,8 @@
 <path d="M22.6 189.6 l4.8 4.8 M27.4 189.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
 <text x="35.0" y="196.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Varying λ only at test time has no effect unless the trained model exposes it.</text>
 <line x1="20.0" y1="214.0" x2="780.0" y2="214.0" stroke="#33261F" stroke-width="1.2" />
-<text x="20.0" y="240.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
-<text x="44.0" y="238.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Both routes are compared under one held-out evaluation contract</text>
+<text x="20.0" y="240.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
+<text x="38.0" y="239.0" font-size="13" font-weight="700" fill="#33261F" text-anchor="start" >Both routes are compared under one held-out evaluation contract</text>
 <path d="M19.8 258.0 L22.7 260.9 L28.2 254.6" stroke="#4E7470" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="34.0" y="262.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >held-out cases</text>
 <text x="34.0" y="277.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >final test cases kept out of model,</text>

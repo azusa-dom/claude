@@ -70,8 +70,8 @@ CMAP_STRAIN = [(-0.25, "#4E3122"), (-0.18, C.AGAR), (-0.10, C.SANDAL), (-0.03, "
 class T:
     """Type scale in px on the design canvas (see README for print-size rules)."""
     TITLE = 18        # figure title, bold
-    PANEL = 24        # panel letter, bold lowercase
-    PANEL_TITLE = 15  # panel title, bold
+    PANEL = 15        # panel letter, bold lowercase: 10 pt at 190 mm (journal convention 8-10 pt)
+    PANEL_TITLE = 13  # panel title, bold: 8.8 pt at 190 mm
     SUB = 13.5        # sub-panel title, bold
     BODY = 12.5
     CAPTION = 11.5    # muted explanatory lines under a sub-panel
@@ -299,7 +299,7 @@ class Figure:
     def panel(self, x, y, letter, title):
         """Bold lowercase panel letter + a title that states the panel's claim."""
         self.text(x, y, letter, T.PANEL, 700)
-        self.text(x + 24, y - 2, title, T.PANEL_TITLE, 700)
+        self.text(x + 18, y - 1, title, T.PANEL_TITLE, 700)
 
     def subtitle(self, x, y, s, refs=""):
         if refs:

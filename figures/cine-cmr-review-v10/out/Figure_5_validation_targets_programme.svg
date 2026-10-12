@@ -5,8 +5,8 @@
 </defs>
 <rect x="0.0" y="0.0" width="800.0" height="590.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
 <g transform="translate(0,0)">
-<text x="20.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
-<text x="44.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Validation targets support different claims</text>
+<text x="20.0" y="24.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
+<text x="38.0" y="23.0" font-size="13" font-weight="700" fill="#33261F" text-anchor="start" >Validation targets support different claims</text>
 <line x1="20.0" y1="42.0" x2="780.0" y2="42.0" stroke="#33261F" stroke-width="1.2" />
 <circle cx="25.0" cy="56.0" r="4.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
 <text x="35.0" y="60.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Validation target</text>
@@ -46,8 +46,8 @@
 <line x1="20.0" y1="239.0" x2="780.0" y2="239.0" stroke="#33261F" stroke-width="1.2" />
 <line x1="214.0" y1="69.0" x2="214.0" y2="239.0" stroke="#E8DFD6" stroke-width="0.8" />
 <line x1="512.0" y1="69.0" x2="512.0" y2="239.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="20.0" y="273.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
-<text x="44.0" y="271.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Proposed programme: combine complementary tests</text>
+<text x="20.0" y="273.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
+<text x="38.0" y="272.0" font-size="13" font-weight="700" fill="#33261F" text-anchor="start" >Proposed programme: combine complementary tests</text>
 <line x1="20.0" y1="293.0" x2="530.0" y2="293.0" stroke="#33261F" stroke-width="1.2" />
 <text x="20.0" y="310.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Stage</text>
 <text x="152.0" y="310.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >What is varied or fixed</text>
@@ -90,8 +90,8 @@
 <line x1="326.0" y1="319.0" x2="326.0" y2="515.0" stroke="#E8DFD6" stroke-width="0.8" />
 <text x="20.0" y="533.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Counts are resource units, not independent test participants.</text>
 <line x1="548.0" y1="255.0" x2="548.0" y2="586.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="560.0" y="273.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
-<text x="584.0" y="271.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Same mean, focal deficit</text>
+<text x="560.0" y="273.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
+<text x="578.0" y="272.0" font-size="13" font-weight="700" fill="#33261F" text-anchor="start" >Same mean, focal deficit</text>
 <line x1="606.0" y1="431.0" x2="776.0" y2="431.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="620.2" y1="431.0" x2="620.2" y2="435.0" stroke="#33261F" stroke-width="0.9" />
 <text x="620.2" y="446.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >1</text>

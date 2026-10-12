@@ -18,9 +18,9 @@ def audit(svg_path):
     s = svg_path.read_text(encoding="utf-8")
     vb = re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', s)
     W, H = float(vb.group(1)), float(vb.group(2))
-    texts = re.findall(r'<text x="([\d.]+)" y="([\d.]+)" font-size="([\d.]+)"[^>]*>', s)
-    letters = [(float(x), float(y)) for x, y, fs in texts if float(fs) == 24]
-    ys = [float(y) for _, y, _ in texts] + [float(y) for y in re.findall(r'translate\([\d.]+,([\d.]+)\) rotate', s)]
+    texts = re.findall(r'<text x="([\d.]+)" y="([\d.]+)" font-size="([\d.]+)"[^>]*>([^<]*)</text>', s)
+    letters = [(float(x), float(y)) for x, y, fs, t in texts if float(fs) == 15 and len(t.strip()) == 1 and t.strip().islower()]
+    ys = [float(y) for _, y, _, _ in texts] + [float(y) for y in re.findall(r'translate\([\d.]+,([\d.]+)\) rotate', s)]
     lines = re.findall(r'<line x1="([\d.]+)" y1="([\d.]+)" x2="([\d.]+)" y2="([\d.]+)" stroke="(#[0-9A-F]{6})" stroke-width="([\d.]+)"', s)
     col_rules = sorted({float(x1) for x1, y1, x2, y2, st, w in lines if x1 == x2 and st == GRID and float(w) == 0.8
                         and abs(float(y2) - float(y1)) > 40})
