@@ -91,9 +91,10 @@ for rad, n, off in ((18.5, 8, 0.2), (23.5, 12, 0.0)):
         fig.arrow(x0, y0, x0 + dx, y0 + dy, C.INF, 0.8, 2.2)
 badge_letter(x + SW[1] - 26, TAG_Y - 4, "E")
 badge_letter(x + SW[1] - 8, TAG_Y - 4, "R")
-muted_lines(x + 60, GY + 12, ["prior αR:", "tracking, registration,", "biomechanics, learned"])
-muted_lines(x + 168, GY + 12, ["D alone does not", "identify φ; identical", "masks admit", "different material",
-                               "maps; αR selects", "among them (Fig. 2)"])
+muted_lines(x + 60, GY + 12, ["prior αR:", "tracking,", "registration,", "biomechanics,", "learned"])
+muted_lines(x + 158, GY + 12, ["registration example:", "weak cues can leave", "the map ambiguous;"])
+fig.text(x + 158, GY + 51, "priors, supervision", SM)
+fig.text(x + 158, GY + 64, "differ by method (Fig. 2)", SM)
 fig.rich(x, GY + 84, [("φ̂", 400, C.INK, True), (" = arg min ", 400, C.INK, False), ("D", 400, C.INK, True),
                       ("(", 400, C.INK, False), ("I", 400, C.INK, True), ("0", 400, C.INK, False, "sub"),
                       (", ", 400, C.INK, False), ("I", 400, C.INK, True), ("t", 400, C.INK, True, "sub"),
@@ -105,7 +106,7 @@ fig.rich(x, GY + 84, [("φ̂", 400, C.INK, True), (" = arg min ", 400, C.INK, Fa
 station(2, "4 · DEFINED", C.REF, "Green–Lagrange Ecc, pixelwise")
 x = SX[2]
 cx, cy = x + 34, GY + 32
-segs = [-0.18, -0.19, -0.17, -0.08, -0.20, -0.18]        # mid-ventricular segments 7–12; segment 11 reduced
+segs = [-0.18, -0.19, -0.17, -0.20, -0.08, -0.18]        # mid-ventricular segments 7–12; segment 11 reduced
 for i, v in enumerate(segs):
     a0 = -math.pi / 2 + i * math.pi / 3
     fig.path(wedge_path(cx, cy, 13, 25, a0, a0 + math.pi / 3), C.WHITE, 1.0, fill=cmap(CMAP_STRAIN, v))
@@ -160,10 +161,10 @@ muted_lines(x + 100, GY + 12 + 6 * 13 + 8, ["06–08 select one value", "from on
 # ---- failure points -------------------------------------------------------------------------------
 fy = 198
 fig.line(X0, fy - 12, X1, fy - 12, C.GRID, 0.8)
-fig.text(X0, fy + 4, "Independently testable failure points:", SM, 700)
-items = [("I", "input sufficiency", "re-image the motion more finely"), ("E", "estimation", "vary α with images fixed"),
-         ("R", "representation", "project the known field onto the basis")]
-xx = X0 + 230
+fig.text(X0, fy + 4, "Error sources can coexist; controlled diagnostic tests:", SM, 700)
+items = [("I", "input sufficiency", "re-image the motion finely"), ("E", "estimation", "vary α; retrain if required"),
+         ("R", "representation", "fit known field; check strain too")]
+xx = X0 + tw("Error sources can coexist; controlled diagnostic tests:", SM, True) + 18
 for let, name, test in items:
     badge_letter(xx, fy, let)
     fig.rich(xx + 10, fy + 4, [(name, 700, C.INK, False), (" · " + test, 400, C.MUTED, False)], SM)
@@ -173,16 +174,16 @@ if xx - 20 > X1:
 
 # =============================================================== b: validation track
 fig.row_rule(216)
-fig.panel(X0, 240, "b", "Validation: one claim per reference")
+fig.panel(X0, 240, "b", "Validation: complementary endpoints; values as reported")
 leg = [("DENSE", "dot", C.DEEP), ("tagging", "dot", C.AGAR), ("cine FT", "dot", C.OBS), ("cine DL", "dot", C.SUP),
        ("comparator", "open", C.OBS)]
 leg_w = sum(12 + len(lab) * 6.1 + 14 for lab, _, _ in leg)      # legend_items' own advance rule
-lw = leg_w + 15 + tw("supported", SM) + 14 + 15 + tw("not established by this evidence alone", SM)
+lw = leg_w + 15 + tw("supported", SM) + 14 + 15 + tw("not established alone", SM)
 lx = X1 - lw
 fig.legend_items(lx, 240, leg, gap=14)
 lx2 = lx + leg_w
 fig.check(lx2, 240, "supported", SM)
-fig.cross(lx2 + 15 + tw("supported", SM) + 14, 240, "not established by this evidence alone", SM)
+fig.cross(lx2 + 15 + tw("supported", SM) + 14, 240, "not established alone", SM)
 
 CW, GAP = 190, 12
 TY, RY, OK_Y, CT_Y, CH_Y = 270, 283, 300, 336, 344        # title, refs, ✓ (✕ follows), chart title, chart top
@@ -248,7 +249,7 @@ def bar_rows(x, y, rows, w=70, label_w=62, row_h=16, ticks=(), xlabel=""):
 
 
 # ---- 1 known motion --------------------------------------------------------------------------------
-x = column(0, "Known motion", "MRXCAT2.0 test of DeepStrain", "capacity, technical error", "in-vivo accuracy",
+x = column(0, "Known motion", "MRXCAT2.0 test of DeepStrain", "technical error", "in-vivo accuracy",
            "estimator error (mean ± SD)",
            "○ infarct case, EF 49%. Dice 0.82; displacement 1.0 ± 0.9 mm. Slice means only (Fig. 4).")
 ax0, w = x + 66, 66
@@ -267,17 +268,17 @@ fig.axes(ax0, CH_Y + 4 + 3 * 18, w, 0, (-0.5, 0.12), (0, 1), [-0.4, -0.2, 0], ()
 
 # ---- 2 paired DENSE / tagging -------------------------------------------------------------------------
 x = column(1, "Paired DENSE / tagging", "Militaru 2021; Cao 2018; Wang 2023", "material-sensitive agreement",
-           "reference error", "ICC; range = 3 vendors",
-           "Militaru: n = 61, 3 T. Cao: DENSE vs tagging Ecc 0.778. StrainNet (DL): 59 cine tests, DENSE reference.")
-fig.text(x, CH_Y + 8, "cine FT vs tagging, global", SM, fill=C.MUTED)
+           "reference error", "ICC vs tagging",
+           "Militaru: n = 61, 3 T, RS range vs tagging by product. Cao: DENSE vs tagging Ecc 0.778. StrainNet (DL): 59 cine tests, DENSE reference.")
+fig.text(x, CH_Y + 8, "LS / CS / RS: FT–tagging", SM, fill=C.MUTED)
 y = value_rows(x, CH_Y + 12, [("LS", 0.92, 0.94, C.OBS, None, "0.92–0.94"), ("CS", 0.88, 0.91, C.OBS, None, "0.88–0.91"),
-                               ("RS", 0.10, 0.81, C.OBS, None, "0.10–0.81")], (0, 1))
+                               ("RS", 0.10, 0.63, C.OBS, None, "0.10–0.63")], (0, 1))
 fig.text(x, y + 14, "StrainNet (●) vs FT (○), Ecc", SM, fill=C.MUTED)
 y = value_rows(x, y + 18, [("global", 0.87, 0.87, C.SUP, 0.72, "0.87 vs 0.72"), ("segment", 0.75, 0.75, C.SUP, 0.48, "0.75 vs 0.48")],
                (0, 1), [0, 0.5, 1])
 
 # ---- 3 precision -----------------------------------------------------------------------------------------
-x = column(2, "Precision", "Yoon 2023; Bell 2025", "precision at tested scale", "accuracy (bias)", "REGAIN vs GRAPPA",
+x = column(2, "Agreement / repeatability", "Yoon 2023; Bell 2025", "distinct measurement properties", "accuracy (bias)", "REGAIN vs GRAPPA",
            "REGAIN: 49 participants; mean global differences near zero. Strain-8: same day, 8 protocols.")
 fig.text(x, CH_Y + 8, "95% LoA, global FT strain", SM, fill=C.MUTED)
 fig.line(x + 62 + 35, CH_Y + 12, x + 62 + 35, CH_Y + 12 + 3 * 16, C.INK, 1, 'stroke-dasharray="3 2"')
@@ -290,7 +291,7 @@ fig.kv_table(x, y + 54, [("global", "fair–excellent"), ("segmental", "more var
 # ---- 4 tissue (LGE) ---------------------------------------------------------------------------------------
 x = column(3, "Tissue (LGE)", "Kihlberg 2020", "scar-associated dysfunction", "motion error", "segments with LGE > 50%",
            "116 suspected CAD, 34 with qualifying scar. Ranks scar sensitivity, not motion accuracy.")
-fig.text(x, CH_Y + 8, "AUC", SM, fill=C.MUTED)
+fig.text(x, CH_Y + 8, "AUC: end-systolic Ecc", SM, fill=C.MUTED)
 y = bar_rows(x, CH_Y + 12, [("DENSE", 0.87, C.DEEP, "0.87"), ("tagging", 0.83, C.AGAR, "0.83"), ("cine FT", 0.66, C.OBS, "0.66")])
 fig.text(x, y + 14, "sensitivity at 80% specificity", SM, fill=C.MUTED)
 y = bar_rows(x, y + 18, [("DENSE", 0.82, C.DEEP, "82%"), ("tagging", 0.71, C.AGAR, "71%"), ("cine FT", 0.35, C.OBS, "35%")],
@@ -298,14 +299,15 @@ y = bar_rows(x, y + 18, [("DENSE", 0.82, C.DEEP, "82%"), ("tagging", 0.71, C.AGA
 
 # ---- 5 outcome & readers ------------------------------------------------------------------------------------
 x = column(4, "Outcome & readers", "Bello 2019; Masutani 2023", "prognostic / diagnostic link", "clinical utility",
-           "discrimination, chance 0.5",
-           "Masutani: 53 patients, 846 segments, 30% peak Err cut-off. C-index and AUC are not comparable.")
-fig.text(x, CH_Y + 8, "Bello · cine DL motion, survival", SM, fill=C.MUTED)
-fig.text(x, CH_Y + 21, "C-index, n = 302 (○ human)", SM, fill=C.MUTED)
+           "C-index and AUC differ",
+           "DLSS: 53 patients, 846 segments. AUC spans thresholds; 30% Err is one operating point.")
+fig.text(x, CH_Y + 8, "Bello · RV motion in CTEPH,", SM, fill=C.MUTED)
+fig.text(x, CH_Y + 21, "corrected C-index; n = 302", SM, fill=C.MUTED)
 y = value_rows(x, CH_Y + 25, [("DL", 0.75, 0.75, C.SUP, 0.59, "0.75 vs 0.59")], (0.4, 1))
-fig.text(x, y + 14, "Masutani · DL strain, WMA vs", SM, fill=C.MUTED)
-fig.text(x, y + 27, "4-reader consensus, AUC", SM, fill=C.MUTED)
-y = value_rows(x, y + 31, [("DL", 0.90, 0.90, C.SUP, None, "0.90")], (0.4, 1), [0.5, 0.75, 1], xlabel="C-index · AUC",
+fig.text(x, y + 10, "○ manual-variable model", SM, fill=C.MUTED)
+fig.text(x, y + 25, "Masutani · DL strain, WMA vs", SM, fill=C.MUTED)
+fig.text(x, y + 38, "4-reader consensus, AUC", SM, fill=C.MUTED)
+y = value_rows(x, y + 42, [("DL", 0.90, 0.90, C.SUP, None, "0.90")], (0.4, 1), [0.5, 0.75, 1], xlabel="C-index · AUC",
                fmt=lambda v: f"{v:g}")
 
 export(fig, "Figure_1_two_track_evidence_map")

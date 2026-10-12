@@ -206,14 +206,15 @@
 <circle cx="510.0" cy="42.0" r="6.5" fill="#33261F" stroke="none" stroke-width="1.0" />
 <text x="510.0" y="45.6" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" >R</text>
 <text x="308.0" y="80.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >prior αR:</text>
-<text x="308.0" y="93.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >tracking, registration,</text>
-<text x="308.0" y="106.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >biomechanics, learned</text>
-<text x="416.0" y="80.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >D alone does not</text>
-<text x="416.0" y="93.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >identify φ; identical</text>
-<text x="416.0" y="106.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >masks admit</text>
-<text x="416.0" y="119.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >different material</text>
-<text x="416.0" y="132.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >maps; αR selects</text>
-<text x="416.0" y="145.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >among them (Fig. 2)</text>
+<text x="308.0" y="93.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >tracking,</text>
+<text x="308.0" y="106.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >registration,</text>
+<text x="308.0" y="119.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >biomechanics,</text>
+<text x="308.0" y="132.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >learned</text>
+<text x="406.0" y="80.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >registration example:</text>
+<text x="406.0" y="93.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >weak cues can leave</text>
+<text x="406.0" y="106.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >the map ambiguous;</text>
+<text x="406.0" y="119.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >priors, supervision</text>
+<text x="406.0" y="132.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >differ by method (Fig. 2)</text>
 <text x="248.0" y="152.0" font-size="12.0" text-anchor="start" fill="#33261F"><tspan font-weight="400" fill="#33261F" font-style="italic">φ̂</tspan><tspan font-weight="400" fill="#33261F"> = arg min </tspan><tspan font-weight="400" fill="#33261F" font-style="italic">D</tspan><tspan font-weight="400" fill="#33261F">(</tspan><tspan font-weight="400" fill="#33261F" font-style="italic">I</tspan><tspan font-weight="400" fill="#33261F" baseline-shift="sub" font-size="9.6">0</tspan><tspan font-weight="400" fill="#33261F">, </tspan><tspan font-weight="400" fill="#33261F" font-style="italic">I</tspan><tspan font-weight="400" fill="#33261F" font-style="italic" baseline-shift="sub" font-size="9.6">t</tspan><tspan font-weight="400" fill="#33261F"> ∘ </tspan><tspan font-weight="400" fill="#33261F" font-style="italic">φ</tspan><tspan font-weight="400" fill="#33261F">) + </tspan><tspan font-weight="700" fill="#C0584A" font-style="italic">α</tspan><tspan font-weight="700" fill="#C0584A" font-style="italic">R</tspan><tspan font-weight="400" fill="#33261F">(</tspan><tspan font-weight="400" fill="#33261F" font-style="italic">φ</tspan><tspan font-weight="400" fill="#33261F">)</tspan></text>
 <circle cx="530.0" cy="42.0" r="4.0" fill="#7A4720" stroke="none" stroke-width="1.0" />
 <text x="538.0" y="46.0" font-size="11" font-weight="700" fill="#7A4720" text-anchor="start" letter-spacing="1.2">4 · DEFINED</text>
@@ -225,9 +226,9 @@
 <text x="592.0" y="103.5" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >8</text>
 <path d="M581.65 112.50 A25 25 0 0 1 560.00 125.00 L560.00 113.00 A13 13 0 0 0 571.26 106.50 Z" stroke="#FFFFFF" stroke-width="1.0" fill="#936b50" />
 <text x="576.0" y="131.2" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >9</text>
-<path d="M560.00 125.00 A25 25 0 0 1 538.35 112.50 L548.74 106.50 A13 13 0 0 0 560.00 113.00 Z" stroke="#FFFFFF" stroke-width="1.0" fill="#ceae98" />
+<path d="M560.00 125.00 A25 25 0 0 1 538.35 112.50 L548.74 106.50 A13 13 0 0 0 560.00 113.00 Z" stroke="#FFFFFF" stroke-width="1.0" fill="#7b553e" />
 <text x="544.0" y="131.2" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >10</text>
-<path d="M538.35 112.50 A25 25 0 0 1 538.35 87.50 L548.74 93.50 A13 13 0 0 0 548.74 106.50 Z" stroke="#FFFFFF" stroke-width="1.0" fill="#7b553e" />
+<path d="M538.35 112.50 A25 25 0 0 1 538.35 87.50 L548.74 93.50 A13 13 0 0 0 548.74 106.50 Z" stroke="#FFFFFF" stroke-width="1.0" fill="#ceae98" />
 <text x="528.0" y="103.5" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >11</text>
 <path d="M538.35 87.50 A25 25 0 0 1 560.00 75.00 L560.00 87.00 A13 13 0 0 0 548.74 93.50 Z" stroke="#FFFFFF" stroke-width="1.0" fill="#8d6449" />
 <text x="544.0" y="75.8" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >12</text>
@@ -298,40 +299,40 @@
 <text x="884.0" y="166.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >06–08 select one value</text>
 <text x="884.0" y="179.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >from one curve (○, seg. 11)</text>
 <line x1="20.0" y1="186.0" x2="1020.0" y2="186.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="20.0" y="202.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >Independently testable failure points:</text>
-<circle cx="250.0" cy="198.0" r="6.5" fill="#33261F" stroke="none" stroke-width="1.0" />
-<text x="250.0" y="201.6" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
-<text x="260.0" y="202.0" font-size="10.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">input sufficiency</tspan><tspan font-weight="400" fill="#6F625A"> · re-image the motion more finely</tspan></text>
-<circle cx="520.4" cy="198.0" r="6.5" fill="#33261F" stroke="none" stroke-width="1.0" />
-<text x="520.4" y="201.6" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" >E</text>
-<text x="530.4" y="202.0" font-size="10.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">estimation</tspan><tspan font-weight="400" fill="#6F625A"> · vary α with images fixed</tspan></text>
-<circle cx="724.5" cy="198.0" r="6.5" fill="#33261F" stroke="none" stroke-width="1.0" />
-<text x="724.5" y="201.6" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" >R</text>
-<text x="734.5" y="202.0" font-size="10.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">representation</tspan><tspan font-weight="400" fill="#6F625A"> · project the known field onto the basis</tspan></text>
+<text x="20.0" y="202.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >Error sources can coexist; controlled diagnostic tests:</text>
+<circle cx="310.5" cy="198.0" r="6.5" fill="#33261F" stroke="none" stroke-width="1.0" />
+<text x="310.5" y="201.6" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" >I</text>
+<text x="320.5" y="202.0" font-size="10.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">input sufficiency</tspan><tspan font-weight="400" fill="#6F625A"> · re-image the motion finely</tspan></text>
+<circle cx="554.1" cy="198.0" r="6.5" fill="#33261F" stroke="none" stroke-width="1.0" />
+<text x="554.1" y="201.6" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" >E</text>
+<text x="564.1" y="202.0" font-size="10.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">estimation</tspan><tspan font-weight="400" fill="#6F625A"> · vary α; retrain if required</tspan></text>
+<circle cx="759.9" cy="198.0" r="6.5" fill="#33261F" stroke="none" stroke-width="1.0" />
+<text x="759.9" y="201.6" font-size="10.5" font-weight="700" fill="#FFFFFF" text-anchor="middle" >R</text>
+<text x="769.9" y="202.0" font-size="10.5" text-anchor="start" fill="#33261F"><tspan font-weight="700" fill="#33261F">representation</tspan><tspan font-weight="400" fill="#6F625A"> · fit known field; check strain too</tspan></text>
 <line x1="20.0" y1="216.0" x2="1020.0" y2="216.0" stroke="#33261F" stroke-width="1.2" />
 <text x="20.0" y="240.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
-<text x="44.0" y="238.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Validation: one claim per reference</text>
-<circle cx="406.2" cy="236.0" r="4.0" fill="#5B3E2E" stroke="#5B3E2E" stroke-width="1.4" />
-<text x="414.2" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >DENSE</text>
-<circle cx="462.7" cy="236.0" r="4.0" fill="#8D6449" stroke="#8D6449" stroke-width="1.4" />
-<text x="470.7" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >tagging</text>
-<circle cx="531.4" cy="236.0" r="4.0" fill="#8E857D" stroke="#8E857D" stroke-width="1.4" />
-<text x="539.4" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >cine FT</text>
-<circle cx="600.1" cy="236.0" r="4.0" fill="#4E7470" stroke="#4E7470" stroke-width="1.4" />
-<text x="608.1" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >cine DL</text>
-<circle cx="668.8" cy="236.0" r="4.0" fill="#FFFFFF" stroke="#8E857D" stroke-width="1.4" />
-<text x="676.8" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >comparator</text>
-<circle cx="756.8" cy="236.0" r="5.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<path d="M754.03828125 236 l2 2.2 l3.6 -4.2" stroke="#FFFFFF" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="766.8" y="240.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >supported</text>
-<circle cx="832.5" cy="236.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
-<path d="M830.1414062499999 233.6 l4.8 4.8 M834.9414062499999 233.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-<text x="842.5" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >not established by this evidence alone</text>
+<text x="44.0" y="238.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Validation: complementary endpoints; values as reported</text>
+<circle cx="484.5" cy="236.0" r="4.0" fill="#5B3E2E" stroke="#5B3E2E" stroke-width="1.4" />
+<text x="492.5" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >DENSE</text>
+<circle cx="541.0" cy="236.0" r="4.0" fill="#8D6449" stroke="#8D6449" stroke-width="1.4" />
+<text x="549.0" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >tagging</text>
+<circle cx="609.7" cy="236.0" r="4.0" fill="#8E857D" stroke="#8E857D" stroke-width="1.4" />
+<text x="617.7" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >cine FT</text>
+<circle cx="678.4" cy="236.0" r="4.0" fill="#4E7470" stroke="#4E7470" stroke-width="1.4" />
+<text x="686.4" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >cine DL</text>
+<circle cx="747.1" cy="236.0" r="4.0" fill="#FFFFFF" stroke="#8E857D" stroke-width="1.4" />
+<text x="755.1" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >comparator</text>
+<circle cx="835.1" cy="236.0" r="5.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<path d="M832.2515625000001 236 l2 2.2 l3.6 -4.2" stroke="#FFFFFF" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="845.1" y="240.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >supported</text>
+<circle cx="910.8" cy="236.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
+<path d="M908.3546875000001 233.6 l4.8 4.8 M913.1546875 233.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+<text x="920.8" y="240.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >not established alone</text>
 <text x="20.0" y="270.0" font-size="12.0" font-weight="700" fill="#33261F" text-anchor="start" >Known motion</text>
 <text x="20.0" y="283.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >MRXCAT2.0 test of DeepStrain</text>
 <circle cx="25.0" cy="296.0" r="5.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
 <path d="M22.2 296 l2 2.2 l3.6 -4.2" stroke="#FFFFFF" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="35.0" y="300.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >capacity, technical error</text>
+<text x="35.0" y="300.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >technical error</text>
 <circle cx="25.0" cy="310.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M22.6 307.6 l4.8 4.8 M27.4 307.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
 <text x="35.0" y="314.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >in-vivo accuracy</text>
@@ -369,11 +370,12 @@
 <circle cx="227.0" cy="310.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M224.6 307.6 l4.8 4.8 M229.4 307.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
 <text x="237.0" y="314.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >reference error</text>
-<text x="222.0" y="336.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >ICC; range = 3 vendors</text>
-<text x="222.0" y="494.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Militaru: n = 61, 3 T. Cao: DENSE vs</text>
-<text x="222.0" y="507.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >tagging Ecc 0.778. StrainNet (DL): 59</text>
-<text x="222.0" y="520.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >cine tests, DENSE reference.</text>
-<text x="222.0" y="352.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >cine FT vs tagging, global</text>
+<text x="222.0" y="336.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >ICC vs tagging</text>
+<text x="222.0" y="494.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Militaru: n = 61, 3 T, RS range vs</text>
+<text x="222.0" y="507.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >tagging by product. Cao: DENSE vs</text>
+<text x="222.0" y="520.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >tagging Ecc 0.778. StrainNet (DL): 59</text>
+<text x="222.0" y="533.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >cine tests, DENSE reference.</text>
+<text x="222.0" y="352.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >LS / CS / RS: FT–tagging</text>
 <text x="222.0" y="367.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >LS</text>
 <line x1="348.4" y1="364.0" x2="349.8" y2="364.0" stroke="#8E857D" stroke-width="4" stroke-linecap="round"/>
 <text x="412.0" y="367.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.92–0.94</text>
@@ -381,8 +383,8 @@
 <line x1="345.6" y1="380.0" x2="347.7" y2="380.0" stroke="#8E857D" stroke-width="4" stroke-linecap="round"/>
 <text x="412.0" y="383.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.88–0.91</text>
 <text x="222.0" y="399.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >RS</text>
-<line x1="291.0" y1="396.0" x2="340.7" y2="396.0" stroke="#8E857D" stroke-width="4" stroke-linecap="round"/>
-<text x="412.0" y="399.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.10–0.81</text>
+<line x1="291.0" y1="396.0" x2="328.1" y2="396.0" stroke="#8E857D" stroke-width="4" stroke-linecap="round"/>
+<text x="412.0" y="399.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.10–0.63</text>
 <text x="222.0" y="418.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >StrainNet (●) vs FT (○), Ecc</text>
 <line x1="284.0" y1="422.0" x2="284.0" y2="454.0" stroke="#E8DFD6" stroke-width="0.8" />
 <line x1="319.0" y1="422.0" x2="319.0" y2="454.0" stroke="#E8DFD6" stroke-width="0.8" />
@@ -405,11 +407,11 @@
 <line x1="354.0" y1="454.0" x2="354.0" y2="458.0" stroke="#33261F" stroke-width="0.9" />
 <text x="354.0" y="469.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >1</text>
 <line x1="418.0" y1="258.0" x2="418.0" y2="534.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="424.0" y="270.0" font-size="12.0" font-weight="700" fill="#33261F" text-anchor="start" >Precision</text>
+<text x="424.0" y="270.0" font-size="12.0" font-weight="700" fill="#33261F" text-anchor="start" >Agreement / repeatability</text>
 <text x="424.0" y="283.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Yoon 2023; Bell 2025</text>
 <circle cx="429.0" cy="296.0" r="5.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
 <path d="M426.2 296 l2 2.2 l3.6 -4.2" stroke="#FFFFFF" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="439.0" y="300.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >precision at tested scale</text>
+<text x="439.0" y="300.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >distinct measurement properties</text>
 <circle cx="429.0" cy="310.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M426.6 307.6 l4.8 4.8 M431.4 307.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
 <text x="439.0" y="314.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >accuracy (bias)</text>
@@ -458,7 +460,7 @@
 <text x="626.0" y="494.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >116 suspected CAD, 34 with qualifying</text>
 <text x="626.0" y="507.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >scar. Ranks scar sensitivity, not motion</text>
 <text x="626.0" y="520.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >accuracy.</text>
-<text x="626.0" y="352.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >AUC</text>
+<text x="626.0" y="352.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >AUC: end-systolic Ecc</text>
 <text x="626.0" y="367.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >DENSE</text>
 <rect x="688.0" y="359.5" width="60.9" height="9.0" rx="1" fill="#5B3E2E" stroke="none" stroke-width="1.0" />
 <text x="816.0" y="367.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.87</text>
@@ -494,32 +496,33 @@
 <circle cx="833.0" cy="310.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
 <path d="M830.6 307.6 l4.8 4.8 M835.4 307.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
 <text x="843.0" y="314.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >clinical utility</text>
-<text x="828.0" y="336.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >discrimination, chance 0.5</text>
-<text x="828.0" y="494.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Masutani: 53 patients, 846 segments,</text>
-<text x="828.0" y="507.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >30% peak Err cut-off. C-index and AUC</text>
-<text x="828.0" y="520.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >are not comparable.</text>
-<text x="828.0" y="352.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Bello · cine DL motion, survival</text>
-<text x="828.0" y="365.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >C-index, n = 302 (○ human)</text>
+<text x="828.0" y="336.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >C-index and AUC differ</text>
+<text x="828.0" y="494.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >DLSS: 53 patients, 846 segments. AUC</text>
+<text x="828.0" y="507.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >spans thresholds; 30% Err is one</text>
+<text x="828.0" y="520.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >operating point.</text>
+<text x="828.0" y="352.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Bello · RV motion in CTEPH,</text>
+<text x="828.0" y="365.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >corrected C-index; n = 302</text>
 <text x="828.0" y="380.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >DL</text>
 <line x1="915.2" y1="377.0" x2="927.8" y2="377.0" stroke="#E8DFD6" stroke-width="1" />
 <circle cx="912.2" cy="377.0" r="3.0" fill="#FFFFFF" stroke="#4E7470" stroke-width="1.2" />
 <circle cx="930.8" cy="377.0" r="3.0" fill="#4E7470" stroke="none" stroke-width="1.0" />
 <text x="1018.0" y="380.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.75 vs 0.59</text>
-<text x="828.0" y="399.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Masutani · DL strain, WMA vs</text>
-<text x="828.0" y="412.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >4-reader consensus, AUC</text>
-<line x1="901.7" y1="416.0" x2="901.7" y2="432.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="930.8" y1="416.0" x2="930.8" y2="432.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="960.0" y1="416.0" x2="960.0" y2="432.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="828.0" y="427.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >DL</text>
-<circle cx="948.3" cy="424.0" r="3.0" fill="#4E7470" stroke="none" stroke-width="1.0" />
-<text x="1018.0" y="427.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.90</text>
-<line x1="890.0" y1="432.0" x2="960.0" y2="432.0" stroke="#33261F" stroke-width="0.9" />
-<line x1="901.7" y1="432.0" x2="901.7" y2="436.0" stroke="#33261F" stroke-width="0.9" />
-<text x="901.7" y="447.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.5</text>
-<line x1="930.8" y1="432.0" x2="930.8" y2="436.0" stroke="#33261F" stroke-width="0.9" />
-<text x="930.8" y="447.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.75</text>
-<line x1="960.0" y1="432.0" x2="960.0" y2="436.0" stroke="#33261F" stroke-width="0.9" />
-<text x="960.0" y="447.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >1</text>
-<text x="925.0" y="461.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >C-index · AUC</text>
+<text x="828.0" y="395.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >○ manual-variable model</text>
+<text x="828.0" y="410.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Masutani · DL strain, WMA vs</text>
+<text x="828.0" y="423.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >4-reader consensus, AUC</text>
+<line x1="901.7" y1="427.0" x2="901.7" y2="443.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="930.8" y1="427.0" x2="930.8" y2="443.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="960.0" y1="427.0" x2="960.0" y2="443.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="828.0" y="438.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="start" >DL</text>
+<circle cx="948.3" cy="435.0" r="3.0" fill="#4E7470" stroke="none" stroke-width="1.0" />
+<text x="1018.0" y="438.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.90</text>
+<line x1="890.0" y1="443.0" x2="960.0" y2="443.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="901.7" y1="443.0" x2="901.7" y2="447.0" stroke="#33261F" stroke-width="0.9" />
+<text x="901.7" y="458.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.5</text>
+<line x1="930.8" y1="443.0" x2="930.8" y2="447.0" stroke="#33261F" stroke-width="0.9" />
+<text x="930.8" y="458.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.75</text>
+<line x1="960.0" y1="443.0" x2="960.0" y2="447.0" stroke="#33261F" stroke-width="0.9" />
+<text x="960.0" y="458.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >1</text>
+<text x="925.0" y="472.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >C-index · AUC</text>
 </g>
 </svg>

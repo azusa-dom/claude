@@ -1,6 +1,6 @@
 """Graphical abstract, agarwood-scifig house style: 1300 × 500 canvas → 2600 × 1000 px (260 × 100 mm at 254 dpi).
 
-Counts (14 and 1 of 48 entries) come from data/table_s3_methods.csv, as in Figure 3; the attribute glyphs are schematic.
+Conceptual synthesis; endpoint prevalence is not inferred from the selected map. Attribute glyphs are schematic.
 """
 import csv
 import math
@@ -95,18 +95,13 @@ for i, (t, sub) in enumerate(tiers):
     fig.text(942, y, t, BODY, 700)
     fig.text(1270, y, sub, SMALL, fill=C.MUTED, anchor="end")
 fig.line(920, 252, 1270, 252, C.GRID, 1)
-mat = cnt["material"]
-foc = cnt["focal"]
-fig.text(920, 274, f"Reviewed estimator entries (Table S3, n = {N})", SMALL, fill=C.MUTED)
-for i, (n, lab) in enumerate(((mat, "material-sensitive reference"), (foc, "prescribed focal deficit"))):
-    y = 306 + i * 26
-    fig.text(970, y, f"{n}", 24, 700, anchor="end")
-    fig.text(980, y - 1, lab, BODY)
-fig.line(920, 346, 1270, 346, C.GRID, 1)
-fig.check(920, 374, "Supported: whole-slice, global and", BODY)
-fig.text(935, 396, "segmental Ecc under matched definitions", BODY)
-fig.cross(920, 428, "Weaker: radial strain; focal boundary,", BODY)
-fig.text(935, 450, "extent and timing, rarely tested", BODY, fill=C.MUTED)
-fig.text(1270, 486, "Entry counts from Supplementary Table S3; glyphs schematic.", 14, fill=C.MUTED, anchor="end")
+fig.text(920, 278, "Selected evidence; task-specific conclusions", SMALL, 700)
+fig.check(920, 310, "Whole-slice, global and segmental Ecc", BODY)
+fig.text(935, 334, "agreement under matched definitions", BODY)
+fig.line(920, 354, 1270, 354, C.GRID, 1)
+fig.text(920, 382, "Still requires direct assessment:", BODY, 700)
+fig.text(935, 410, "focal magnitude, location, extent and timing", SMALL)
+fig.text(935, 436, "in the intended population and acquisition", SMALL)
+fig.text(1270, 486, "Conceptual synthesis; no field-wide prevalence claim. Glyphs schematic.", 14, fill=C.MUTED, anchor="end")
 
 export(fig, "Graphical_abstract", dpi=254)

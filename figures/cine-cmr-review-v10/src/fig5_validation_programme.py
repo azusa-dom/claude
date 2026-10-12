@@ -9,7 +9,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "style"))
 from scifig_common import C, T, export, start, wrap  # noqa: E402
 
-H = 566
+H = 590
 fig = start(H, "Figure 5 | Validation targets and a staged programme for regional claims",
             legend=[("supports", C.SUP), ("does not establish alone", C.INF)],
             footer=["Conceptual synthesis; no study data. c is an analytic example (segment values chosen to share the "
@@ -17,7 +17,7 @@ fig = start(H, "Figure 5 | Validation targets and a staged programme for regiona
                     "STRAUS, MRXCAT2.0, CMAC: simulation / phantom / benchmark resources; LGE, late gadolinium enhancement."])
 
 # ---- a: three-rule table -------------------------------------------------------------------------
-fig.panel(20, 24, "a", "Each validation target supports one claim, not the next")
+fig.panel(20, 24, "a", "Validation targets support different claims")
 c0, c1, c2, x_end = 20, 222, 520, 780
 top = 42
 fig.line(c0, top, x_end, top, C.INK, 1.2)
@@ -25,13 +25,13 @@ hy = top + 18
 fig.circle(c0 + 5, hy - 4, 4.5, C.REF)
 fig.text(c0 + 15, hy, "Validation target", T.BODY, 700)
 fig.tick(c1 + 6, hy - 4, C.SUP)
-fig.text(c1 + 16, hy, "Strongest claim it supports", T.BODY, 700)
+fig.text(c1 + 16, hy, "Direct claim it supports", T.BODY, 700)
 fig.xmark(c2 + 6, hy - 4, C.INF, 3.4)
 fig.text(c2 + 16, hy, "Does not establish on its own", T.BODY, 700)
 fig.line(c0, top + 27, x_end, top + 27, C.INK, 0.9)
 rows = [
     ("Known motion", "phantom, STRAUS, MRXCAT2.0",
-     "representation capacity and technical error in the simulated regime", "in-vivo accuracy"),
+     "technical error in the simulated regime; capacity needs direct field fitting", "in-vivo accuracy"),
     ("Paired DENSE or tagging", "same session, registered",
      "material-sensitive agreement under matched definitions", "focal location or extent, unless measured"),
     ("Scan–rescan", "same subject, re-imaged", "precision; accuracy needs a reference", "bias"),
@@ -55,7 +55,7 @@ fig.col_rule(c2 - 8, top + 27, y)
 
 # ---- b: staged programme ------------------------------------------------------------------------
 by = y + 34
-fig.panel(20, by, "b", "Pre-specify, then escalate the reference stage by stage")
+fig.panel(20, by, "b", "Proposed programme: combine complementary tests")
 c0, c1, c2, c_end = 20, 152, 334, 530       # stage | design | resources (Table 4)
 ty = by + 20
 fig.line(c0, ty, c_end, ty, C.INK, 1.2)
@@ -68,7 +68,7 @@ steps = [
     ("Stage 1", "Known motion", "vary width, extent, amplitude, timing, resolution and noise",
      [("STRAUS", "3 templates × 6 states"), ("MRXCAT2.0", "programmable generator"), ("CMAC", "dynamic phantom")]),
     ("Stage 2", "Paired material reference", "cine with DENSE or tagging in one session; registered; reference blinded",
-     [("Stanford", "51/55 · not file-verified"), ("CMAC", "15 volunteers, 12 landmarks")]),
+     [("Stanford", "55; pairs unverified"), ("CMAC", "15 volunteers, 12 landmarks")]),
     ("Stage 3", "Tissue and decisions", "LGE, responsiveness, decision impact", [("Clinical cohorts", "LGE or outcomes")]),
 ]
 yy = ty + 26
@@ -105,6 +105,6 @@ fig.text(ax.fx(3) - 8, ax.fy(-0.06) + 4, "−0.06", T.SMALL, 700, anchor="end")
 fig.text(ax.fx(3) + 8, ax.fy(-0.06) + 4, "focal deficit", T.SMALL, fill=C.MUTED)
 fig.kv_table(560, by + 214, [("segments 1–3, focal", "−0.22 · −0.22 · −0.06"), ("segments 4–6, focal", "−0.18 · −0.20 · −0.20"),
                              ("global mean, both fields", "−0.18"), ("range, focal / uniform", "0.16 / 0")], w=220, row_h=17)
-fig.lines(560, by + 292, ["Recovering the mean proves", "nothing about the deficit."], T.SMALL)
+fig.lines(560, by + 292, ["Recovering the mean does not", "establish deficit recovery."], T.SMALL)
 
 export(fig, "Figure_5_validation_targets_programme")

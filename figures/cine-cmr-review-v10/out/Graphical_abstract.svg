@@ -265,20 +265,15 @@
 <text x="942.0" y="228.0" font-size="17" font-weight="700" fill="#33261F" text-anchor="start" >Tissue &amp; outcome</text>
 <text x="1270.0" y="228.0" font-size="15" font-weight="400" fill="#6F625A" text-anchor="end" >LGE, events</text>
 <line x1="920.0" y1="252.0" x2="1270.0" y2="252.0" stroke="#E8DFD6" stroke-width="1" />
-<text x="920.0" y="274.0" font-size="15" font-weight="400" fill="#6F625A" text-anchor="start" >Reviewed estimator entries (Table S3, n = 48)</text>
-<text x="970.0" y="306.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="end" >14</text>
-<text x="980.0" y="305.0" font-size="17" font-weight="400" fill="#33261F" text-anchor="start" >material-sensitive reference</text>
-<text x="970.0" y="332.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="end" >1</text>
-<text x="980.0" y="331.0" font-size="17" font-weight="400" fill="#33261F" text-anchor="start" >prescribed focal deficit</text>
-<line x1="920.0" y1="346.0" x2="1270.0" y2="346.0" stroke="#E8DFD6" stroke-width="1" />
-<circle cx="925.0" cy="370.0" r="5.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
-<path d="M922.2 370 l2 2.2 l3.6 -4.2" stroke="#FFFFFF" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-<text x="935.0" y="374.0" font-size="17" font-weight="400" fill="#33261F" text-anchor="start" >Supported: whole-slice, global and</text>
-<text x="935.0" y="396.0" font-size="17" font-weight="400" fill="#33261F" text-anchor="start" >segmental Ecc under matched definitions</text>
-<circle cx="925.0" cy="424.0" r="5.5" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.1" />
-<path d="M922.6 421.6 l4.8 4.8 M927.4 421.6 l-4.8 4.8" stroke="#C0584A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-<text x="935.0" y="428.0" font-size="17" font-weight="400" fill="#6F625A" text-anchor="start" >Weaker: radial strain; focal boundary,</text>
-<text x="935.0" y="450.0" font-size="17" font-weight="400" fill="#6F625A" text-anchor="start" >extent and timing, rarely tested</text>
-<text x="1270.0" y="486.0" font-size="14" font-weight="400" fill="#6F625A" text-anchor="end" >Entry counts from Supplementary Table S3; glyphs schematic.</text>
+<text x="920.0" y="278.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Selected evidence; task-specific conclusions</text>
+<circle cx="925.0" cy="306.0" r="5.5" fill="#7A4720" stroke="none" stroke-width="1.0" />
+<path d="M922.2 306 l2 2.2 l3.6 -4.2" stroke="#FFFFFF" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="935.0" y="310.0" font-size="17" font-weight="400" fill="#33261F" text-anchor="start" >Whole-slice, global and segmental Ecc</text>
+<text x="935.0" y="334.0" font-size="17" font-weight="400" fill="#33261F" text-anchor="start" >agreement under matched definitions</text>
+<line x1="920.0" y1="354.0" x2="1270.0" y2="354.0" stroke="#E8DFD6" stroke-width="1" />
+<text x="920.0" y="382.0" font-size="17" font-weight="700" fill="#33261F" text-anchor="start" >Still requires direct assessment:</text>
+<text x="935.0" y="410.0" font-size="15" font-weight="400" fill="#33261F" text-anchor="start" >focal magnitude, location, extent and timing</text>
+<text x="935.0" y="436.0" font-size="15" font-weight="400" fill="#33261F" text-anchor="start" >in the intended population and acquisition</text>
+<text x="1270.0" y="486.0" font-size="14" font-weight="400" fill="#6F625A" text-anchor="end" >Conceptual synthesis; no field-wide prevalence claim. Glyphs schematic.</text>
 </g>
 </svg>

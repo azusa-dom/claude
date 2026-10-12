@@ -80,17 +80,17 @@ dice = v[("deepstrain_dice", "", "all_phases")][0]
 fig.kv_table(410, 212, [("myocardial Dice, all phases", num(dice)),
                         ("displacement error", f"{d:.1f} ± {dsd:.1f} mm"),
                         ("EF, NOR / DCM / HCM / infarct", "51 / 34 / 41 / 49%")], w=368, row_h=17)
-fig.lines(410, 270, ["Case-level means over whole slices; errors inside the scar were not reported.",
-                     "No between-case test was reported, so no case ordering is implied."], T.SMALL, leading=13.5)
+fig.lines(410, 270, ["Means over three mid-ventricular slices; scar-level error not reported.",
+                     "SD overlap does not establish equivalence; no uniform case ranking is inferred."], T.SMALL, leading=13.5)
 
 # ---- c: attribute status -------------------------------------------------------------------------
 fig.row_rule(298)
-fig.panel(20, 324, "c", "No abnormality attribute was reported at the scar's own level")
+fig.panel(20, 324, "c", "Scar-level recovery is not quantified in the inspected results")
 items = [
     ("Magnitude", "nr", "ΔM", ["scar-level error not reported;", "slice means: Ecc error small,", "Err under-estimated"]),
     ("Location", "nr", "Δθ", ["myocardial Dice only;", "no lesion-centroid error"]),
     ("Extent", "nr", "w", ["one fixed scar geometry;", "extent recovery not measured"]),
-    ("Timing", "ni", "Δt", ["peak-time error not", "in the record read"]),
+    ("Timing", "nr", "Δt", ["scar-level peak-time error", "not reported"]),
 ]
 cw = 190
 for k, (name, status, sym, note) in enumerate(items):
@@ -120,8 +120,6 @@ for k, (name, status, sym, note) in enumerate(items):
     fig.lines(x, 414, note, T.SMALL, leading=13)
 fig.ring(26, H - 8, 5)
 fig.text(38, H - 4, "not reported at the attribute's own (scar) level", T.SMALL, fill=C.MUTED)
-fig.ring(330, H - 8, 5, dashed=True)
-fig.text(342, H - 4, "not inspected in the record read", T.SMALL, fill=C.MUTED)
 fig.line(560, H - 8, 578, H - 8, C.REF, 1.6)
 fig.text(584, H - 4, "reference profile (schematic)", T.SMALL, fill=C.MUTED)
 

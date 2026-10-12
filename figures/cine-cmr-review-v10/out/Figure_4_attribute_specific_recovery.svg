@@ -84,11 +84,11 @@
 <line x1="410.0" y1="233.0" x2="778.0" y2="233.0" stroke="#E8DFD6" stroke-width="0.8" />
 <text x="410.0" y="246.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >EF, NOR / DCM / HCM / infarct</text>
 <text x="778.0" y="246.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >51 / 34 / 41 / 49%</text>
-<text x="410.0" y="270.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Case-level means over whole slices; errors inside the scar were not reported.</text>
-<text x="410.0" y="283.5" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >No between-case test was reported, so no case ordering is implied.</text>
+<text x="410.0" y="270.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Means over three mid-ventricular slices; scar-level error not reported.</text>
+<text x="410.0" y="283.5" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >SD overlap does not establish equivalence; no uniform case ranking is inferred.</text>
 <line x1="20.0" y1="298.0" x2="780.0" y2="298.0" stroke="#33261F" stroke-width="1.2" />
 <text x="20.0" y="324.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
-<text x="44.0" y="322.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >No abnormality attribute was reported at the scar's own level</text>
+<text x="44.0" y="322.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Scar-level recovery is not quantified in the inspected results</text>
 <text x="20.0" y="352.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Magnitude</text>
 <circle cx="180.0" cy="348.0" r="6.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" />
 <line x1="22.0" y1="396.0" x2="132.0" y2="396.0" stroke="#CDBFB2" stroke-width="0.8" />
@@ -119,17 +119,15 @@
 <text x="400.0" y="427.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >extent recovery not measured</text>
 <line x1="582.0" y1="338.0" x2="582.0" y2="444.0" stroke="#E8DFD6" stroke-width="0.8" />
 <text x="590.0" y="352.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Timing</text>
-<circle cx="750.0" cy="348.0" r="6.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" stroke-dasharray="2 1.6"/>
+<circle cx="750.0" cy="348.0" r="6.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" />
 <line x1="592.0" y1="396.0" x2="702.0" y2="396.0" stroke="#CDBFB2" stroke-width="0.8" />
 <path d="M592.0 394.7 L593.8 394.5 L595.7 394.3 L597.5 394.1 L599.3 393.8 L601.2 393.3 L603.0 392.8 L604.8 392.1 L606.7 391.3 L608.5 390.3 L610.3 389.2 L612.2 387.8 L614.0 386.3 L615.8 384.6 L617.7 382.7 L619.5 380.6 L621.3 378.5 L623.2 376.4 L625.0 374.2 L626.8 372.2 L628.7 370.2 L630.5 368.5 L632.3 367.1 L634.2 366.0 L636.0 365.3 L637.8 365.0 L639.7 365.1 L641.5 365.7 L643.3 366.6 L645.2 367.9 L647.0 369.5 L648.8 371.4 L650.7 373.4 L652.5 375.5 L654.3 377.7 L656.2 379.8 L658.0 381.9 L659.8 383.8 L661.7 385.6 L663.5 387.2 L665.3 388.6 L667.2 389.9 L669.0 390.9 L670.8 391.8 L672.7 392.5 L674.5 393.1 L676.3 393.6 L678.2 394.0 L680.0 394.2 L681.8 394.5 L683.7 394.6 L685.5 394.7 L687.3 394.8 L689.2 394.9 L691.0 394.9 L692.8 394.9 L694.7 395.0 L696.5 395.0 L698.3 395.0 L700.2 395.0 L702.0 395.0" stroke="#7A4720" stroke-width="1.6" fill="none" />
 <line x1="638.2" y1="400.0" x2="638.2" y2="361.0" stroke="#33261F" stroke-width="0.9" stroke-dasharray="3 2"/>
 <text x="710.0" y="383.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="start" font-style="italic" >Δt</text>
-<text x="590.0" y="414.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >peak-time error not</text>
-<text x="590.0" y="427.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >in the record read</text>
+<text x="590.0" y="414.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >scar-level peak-time error</text>
+<text x="590.0" y="427.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >not reported</text>
 <circle cx="26.0" cy="454.0" r="5.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" />
 <text x="38.0" y="458.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >not reported at the attribute's own (scar) level</text>
-<circle cx="330.0" cy="454.0" r="5.0" fill="#FFFFFF" stroke="#6F625A" stroke-width="1.2" stroke-dasharray="2 1.6"/>
-<text x="342.0" y="458.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >not inspected in the record read</text>
 <line x1="560.0" y1="454.0" x2="578.0" y2="454.0" stroke="#7A4720" stroke-width="1.6" />
 <text x="584.0" y="458.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >reference profile (schematic)</text>
 </g>

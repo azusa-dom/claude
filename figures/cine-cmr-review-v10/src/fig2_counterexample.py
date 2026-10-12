@@ -32,7 +32,7 @@ def clip(cx, cy, R, r):
 
 
 # ---- a: what each acquisition supplies ------------------------------------------------------
-fig.panel(20, 26, "a", "Cine lacks a material label")
+fig.panel(20, 24, "a", "Cine lacks a material label")
 R, r, cy = 31, 17.5, 112
 cols = [(58, "Routine cine", ["boundaries +", "weak texture"], False),
         (145, "Tagging", ["prepared grid", "(material pattern)"], True),
@@ -75,7 +75,7 @@ fig.lines(24, 242, ["Cine supplies boundaries and weak texture only;",
 
 # ---- b: two mappings, identical contours ----------------------------------------------------
 fig.col_rule(286, 6, H - 4)
-fig.panel(298, 26, "b", "Same masks, two material maps")
+fig.panel(298, 24, "b", "Same masks, two material maps")
 R2, r2, cy2 = 43, 24, 128
 th8 = [2 * math.pi * i / 8 for i in range(8)]
 maps = [(362, "Mapping 1", "θ ↦ θ", th8, C.OBS),
@@ -116,7 +116,7 @@ fig.text(432, 262, "Same eight material points in both annuli.", T.SMALL, fill=C
 
 # ---- c: resulting stretch ---------------------------------------------------------------------
 fig.col_rule(580, 6, H - 4)
-fig.panel(592, 26, "c", "Stretch differs by ±50%")
+fig.panel(592, 24, "c", "Stretch differs by ±50%")
 TWO_PI = 2 * math.pi
 ax = fig.axes(640, 50, 136, 108, (0, TWO_PI), (0.3, 1.7), [0, math.pi, TWO_PI], [0.5, 1, 1.5],
               xfmt=lambda v: {0: "0", 1: "π", 2: "2π"}[round(v / math.pi)], yfmt=lambda v: f"{v:.1f}")

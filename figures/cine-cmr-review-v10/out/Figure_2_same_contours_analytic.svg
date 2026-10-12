@@ -6,8 +6,8 @@
 </defs>
 <rect x="0.0" y="0.0" width="800.0" height="282.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
 <g transform="translate(0,0)">
-<text x="20.0" y="26.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
-<text x="44.0" y="24.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Cine lacks a material label</text>
+<text x="20.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
+<text x="44.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Cine lacks a material label</text>
 <text x="58.0" y="64.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="middle" >Routine cine</text>
 <path d="M89 112 A31 31 0 1 0 27 112 A31 31 0 1 0 89 112 Z M75.5 112 A17.5 17.5 0 1 1 40.5 112 A17.5 17.5 0 1 1 75.5 112 Z" stroke="none" stroke-width="1.0" fill="#F8F3E7" fill-rule="evenodd"/>
 <circle cx="58.0" cy="112.0" r="31.0" fill="none" stroke="#8E857D" stroke-width="1.1" />
@@ -196,8 +196,8 @@
 <text x="24.0" y="242.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Cine supplies boundaries and weak texture only;</text>
 <text x="24.0" y="255.7" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >correspondence inside the wall must be inferred.</text>
 <line x1="286.0" y1="6.0" x2="286.0" y2="278.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="298.0" y="26.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
-<text x="322.0" y="24.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Same masks, two material maps</text>
+<text x="298.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
+<text x="322.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Same masks, two material maps</text>
 <text x="362.0" y="62.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="middle" >Mapping 1</text>
 <text x="362.0" y="77.0" font-size="12.0" font-weight="400" fill="#33261F" text-anchor="middle" font-style="italic" >θ ↦ θ</text>
 <path d="M405 128 A43 43 0 1 0 319 128 A43 43 0 1 0 405 128 Z M386 128 A24 24 0 1 1 338 128 A24 24 0 1 1 386 128 Z" stroke="none" stroke-width="1.0" fill="#F8F3E7" fill-rule="evenodd"/>
@@ -270,8 +270,8 @@
 <text x="497.8" y="238.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >mapped point</text>
 <text x="432.0" y="262.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >Same eight material points in both annuli.</text>
 <line x1="580.0" y1="6.0" x2="580.0" y2="278.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="592.0" y="26.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
-<text x="616.0" y="24.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Stretch differs by ±50%</text>
+<text x="592.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >c</text>
+<text x="616.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Stretch differs by ±50%</text>
 <line x1="640.0" y1="158.0" x2="776.0" y2="158.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="640.0" y1="158.0" x2="640.0" y2="162.0" stroke="#33261F" stroke-width="0.9" />
 <text x="640.0" y="173.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
