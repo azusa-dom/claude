@@ -4,7 +4,7 @@ Captions follow the v10 figure plan, revised where the source check below requir
 
 ## Main text
 
-**Figure 1 — `Figure_1_two_track_evidence_map`** (247 × 128 mm, landscape page; journal variant of the two-track figure, poster variant in `out/poster/`)
+**Figure 1 — `Figure_1_two_track_evidence_map`** (190 × 174 mm; journal variant of the two-track figure; wide 247 mm variant in `out/wide/`, poster variant in `out/poster/`)
 
 Two-track evidence map for regional strain from routine cine CMR. (a) Estimation track: cine provides image cues without a material label; an estimator infers material correspondence (the registration objective shown is one example; weak cues can leave the map ambiguous, and priors and supervision differ by method); strain is then fixed by convention through specifications 01–08. Readouts beside the segmental curves are computed from the drawn curves for the reduced segment 11. Circled letters mark input (I), estimation (E) and representation (R) error sources, which can coexist; each has a controlled diagnostic test. (b) Validation track: complementary endpoints, each supporting a different claim; values are as reported in the cited studies and in Tables 2–3 (known motion: Figure 4) and are not pooled. Militaru's global RS ICC range versus tagging is 0.10–0.63 by product; Yoon (REGAIN) and Bell (Strain-8) measure agreement and repeatability, which are distinct measurement properties; Bello's corrected C-index concerns RV survival prediction in CTEPH; the DLSS AUC spans thresholds. Panel a is a conceptual schematic without study data. [tool statement]
 
@@ -16,7 +16,7 @@ Identical contours do not determine the same material correspondence. (a) Schema
 
 Alt text: Three schematic annuli showing cine, tagging and DENSE information with a row of marks for whether each carries a material label; two annuli with identical outlines but differently distributed material points; a plot of circumferential stretch versus angle contrasting a flat line at 1.0 with a cosine between 0.5 and 1.5, beside a small table of the stretch range and mean.
 
-**Figure 3 — `Figure_3_method_timeline`** (247 × 138 mm, landscape page; panel a, timeline and entries per year, on the left; panel b, endpoint classes with counts, on the right)
+**Figure 3 — `Figure_3_method_timeline`** (190 × 181 mm)
 
 Cine-CMR motion estimators by year and by the strongest validation evidence each cited source reports (Supplementary Table S3). (a) Lanes group methods by family, with the number of entries and of material-sensitive entries under each lane name; marker fill encodes evidence type. Most cardiac-specific designs from 2018 to 2026 report mask or landmark agreement; material-sensitive references (known motion, DENSE or tagging) appear in 14 of 48 entries, in healthy or mixed cohorts or in simulation; a prescribed focal deficit appears in one independent synthetic evaluation (MRXCAT2.0 test of DeepStrain). The stacked columns on the shared year axis count entries per year by evidence class. (b) Evidence classes and their totals (22, 8, 14, 1 and 3 entries). Evidence classes were assigned from the Table S3 cells, which are abstract- or metadata-level readings; the 48 plotted entries comprise every Table S3 row except boundary feature tracking (a method family without a single year), with the early clinical feature-tracking row shown as its three studies and the MRXCAT2.0 test of DeepStrain shown separately from the DeepStrain row. Years 2001–2008 contain no entries and are compressed. [tool statement]
 

@@ -155,12 +155,14 @@ def _exact_pdf_box(path: Path, w_mm: float, h_mm: float):
         writer.write(fh)
 
 
-def export(fig: Sheet, stem: str, dpi: int = DPI):
-    """Write out/<stem>.svg (pt-sized, editable text), .pdf (embedded fonts) and .png (dpi stamped)."""
+def export(fig: Sheet, stem: str, dpi: int = DPI, subdir: str = ""):
+    """Write out/<stem>.svg (pt-sized, editable text), .pdf (embedded fonts) and .png (dpi stamped).
+    subdir: write under out/<subdir>/ instead (reference variants that the manuscript does not use)."""
     from PIL import Image
 
+    OUT = globals()["OUT"] / subdir if subdir else globals()["OUT"]
     fig.close()
-    OUT.mkdir(exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
     work = QA / "_px"
     work.mkdir(parents=True, exist_ok=True)
     px_svg = fig.save(work / f"{stem}.svg")
