@@ -5,8 +5,7 @@
 </defs>
 <rect x="0.0" y="0.0" width="1040.0" height="576.0" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.0" />
 <g transform="translate(0,0)">
-<text x="20.0" y="24.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >a</text>
-<text x="44.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Selected records by year; one marker per entry (n = 47)</text>
+<text x="20.0" y="22.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Selected records by year; one marker per entry (n = 47)</text>
 <line x1="20.0" y1="44.0" x2="208.0" y2="44.0" stroke="#33261F" stroke-width="1.2" />
 <line x1="228.0" y1="44.0" x2="1022.0" y2="44.0" stroke="#33261F" stroke-width="1.2" />
 <text x="20.0" y="61.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Conventional &amp;</text>
@@ -217,9 +216,8 @@
 <line x1="994.2" y1="514.0" x2="994.2" y2="518.0" stroke="#33261F" stroke-width="0.9" />
 <text x="994.2" y="530.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="middle" >2026</text>
 <text x="596.0" y="547.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >year of publication</text>
-<text x="242.0" y="172.0" font-size="24" font-weight="700" fill="#33261F" text-anchor="start" >b</text>
-<text x="266.0" y="170.0" font-size="15" font-weight="700" fill="#33261F" text-anchor="start" >Documented endpoints; no field-wide denominator</text>
-<text x="242.0" y="192.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one selected endpoint per entry (n = 47)</text>
+<text x="242.0" y="176.0" font-size="12.5" font-weight="700" fill="#33261F" text-anchor="start" >Marker colour: documented endpoint per entry (n = 47)</text>
+<text x="242.0" y="192.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >one selected endpoint per entry; no field-wide denominator</text>
 <circle cx="250.0" cy="208.0" r="4.0" fill="#B2AAA2" stroke="none" stroke-width="1.0" />
 <rect x="264.0" y="203.0" width="63.0" height="10.0" rx="0" fill="#B2AAA2" stroke="none" stroke-width="1.2" />
 <text x="348.0" y="212.0" font-size="11.0" font-weight="700" fill="#33261F" text-anchor="end" >21</text>

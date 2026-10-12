@@ -109,8 +109,8 @@ fig = start(H, f"Figure 3 | Selected method and evaluation entries (n = {n_total
             footer=["Endpoint classes use source-specific reading depth; include related methods and separate evaluations.",
                     "LGE, late gadolinium enhancement; DENSE, displacement encoding with stimulated echoes."])
 
-# ---- a: timeline -----------------------------------------------------------------------------
-fig.panel(20, 24, "a", f"Selected records by year; one marker per entry (n = {n_total})")
+# ---- timeline -----------------------------------------------------------------------------
+fig.text(20, 22, f"Selected records by year; one marker per entry (n = {n_total})", T.PANEL_TITLE, 700)
 gx0 = year_x(EARLY[1])
 gx1 = gx0 + GAP
 
@@ -187,11 +187,11 @@ for yr in [1999, 2000] + list(range(2009, 2027)):
         fig.text(x, AXIS_Y + 16, str(yr), T.SMALL, fill=C.MUTED, anchor="middle")
 fig.text(X0 + (X1 - X0) / 2, AXIS_Y + 33, "year of publication", T.LABEL + 0.5, anchor="middle")
 
-# ---- b: evidence classes and totals, as an inset in the empty 2009-2017 region of the lower lanes ----
+# ---- key: evidence classes and totals, as a legend in the empty 2009-2017 region of the lower lanes ----
 BX = gx1 + 12
 by = lane_top["cardiac"] + 10
-fig.panel(BX, by + 10, "b", "Documented endpoints; no field-wide denominator")
-fig.text(BX, by + 30, f"one selected endpoint per entry (n = {n_total})", T.SMALL, fill=C.MUTED)
+fig.text(BX, by + 14, f"Marker colour: documented endpoint per entry (n = {n_total})", T.BODY, 700)
+fig.text(BX, by + 30, "one selected endpoint per entry; no field-wide denominator", T.SMALL, fill=C.MUTED)
 SCALE = 3.0
 for i, (key, text) in enumerate(EVIDENCE):
     yy = by + 50 + i * 17
