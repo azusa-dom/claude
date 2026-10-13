@@ -369,33 +369,33 @@
 <text x="20.0" y="680.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Also Dice 0.82; displacement</text>
 <text x="20.0" y="693.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >1.0 ± 0.9 mm. Slice means</text>
 <text x="20.0" y="706.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >only: no scar-region error.</text>
-<line x1="92.6" y1="476.0" x2="92.6" y2="578.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="117.7" y1="476.0" x2="117.7" y2="578.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="142.9" y1="476.0" x2="142.9" y2="578.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="142.9" y1="476.0" x2="142.9" y2="578.0" stroke="#33261F" stroke-width="1" stroke-dasharray="3 2"/>
-<text x="74.0" y="499.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >Ecc, 4 cases</text>
-<line x1="140.4" y1="496.0" x2="150.5" y2="496.0" stroke="#8E857D" stroke-width="1.6" />
-<circle cx="145.4" cy="496.0" r="3.4" fill="#8E857D" stroke="#8E857D" stroke-width="1.3" />
-<text x="135.4" y="499.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.02 ± 0.04</text>
-<text x="74.0" y="533.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >Err, 4 cases</text>
-<line x1="86.3" y1="530.0" x2="139.1" y2="530.0" stroke="#C0584A" stroke-width="1.6" />
-<circle cx="112.7" cy="530.0" r="3.4" fill="#C0584A" stroke="#C0584A" stroke-width="1.3" />
-<text x="112.7" y="523.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >−0.24 ± 0.21</text>
-<text x="74.0" y="567.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >Err, infarct</text>
-<line x1="91.3" y1="564.0" x2="144.2" y2="564.0" stroke="#C0584A" stroke-width="1.6" />
-<circle cx="117.7" cy="564.0" r="3.4" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.3" />
-<text x="117.7" y="557.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >−0.20 ± 0.21</text>
-<line x1="80.0" y1="578.0" x2="158.0" y2="578.0" stroke="#33261F" stroke-width="0.9" />
-<line x1="92.6" y1="578.0" x2="92.6" y2="582.0" stroke="#33261F" stroke-width="0.9" />
-<text x="92.6" y="593.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−0.4</text>
-<line x1="117.7" y1="578.0" x2="117.7" y2="582.0" stroke="#33261F" stroke-width="0.9" />
-<text x="117.7" y="593.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−0.2</text>
-<line x1="142.9" y1="578.0" x2="142.9" y2="582.0" stroke="#33261F" stroke-width="0.9" />
-<text x="142.9" y="593.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
-<text x="119.0" y="607.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >strain error</text>
-<text x="20.0" y="628.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >○ infarct case, EF 49%;</text>
-<text x="20.0" y="641.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >prescribed scar Err</text>
-<text x="20.0" y="654.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >0.95 → 0.30 (Fig. 4)</text>
+<line x1="92.6" y1="484.0" x2="92.6" y2="568.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="117.7" y1="484.0" x2="117.7" y2="568.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="142.9" y1="484.0" x2="142.9" y2="568.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="142.9" y1="484.0" x2="142.9" y2="568.0" stroke="#33261F" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="74.0" y="496.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >Ecc, 4 cases</text>
+<line x1="140.4" y1="493.0" x2="150.5" y2="493.0" stroke="#8E857D" stroke-width="1.6" />
+<circle cx="145.4" cy="493.0" r="3.4" fill="#8E857D" stroke="#8E857D" stroke-width="1.3" />
+<text x="105.5" y="505.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round">0.02 ± 0.04</text>
+<text x="74.0" y="524.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >Err, 4 cases</text>
+<line x1="86.3" y1="521.0" x2="139.1" y2="521.0" stroke="#C0584A" stroke-width="1.6" />
+<circle cx="112.7" cy="521.0" r="3.4" fill="#C0584A" stroke="#C0584A" stroke-width="1.3" />
+<text x="83.3" y="533.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round">−0.24 ± 0.21</text>
+<text x="74.0" y="552.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >Err, infarct</text>
+<line x1="91.3" y1="549.0" x2="144.2" y2="549.0" stroke="#C0584A" stroke-width="1.6" />
+<circle cx="117.7" cy="549.0" r="3.4" fill="#FFFFFF" stroke="#C0584A" stroke-width="1.3" />
+<text x="88.3" y="561.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" paint-order="stroke" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round">−0.20 ± 0.21</text>
+<line x1="80.0" y1="568.0" x2="158.0" y2="568.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="92.6" y1="568.0" x2="92.6" y2="572.0" stroke="#33261F" stroke-width="0.9" />
+<text x="92.6" y="583.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−0.4</text>
+<line x1="117.7" y1="568.0" x2="117.7" y2="572.0" stroke="#33261F" stroke-width="0.9" />
+<text x="117.7" y="583.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−0.2</text>
+<line x1="142.9" y1="568.0" x2="142.9" y2="572.0" stroke="#33261F" stroke-width="0.9" />
+<text x="142.9" y="583.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
+<text x="119.0" y="597.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >strain error</text>
+<text x="20.0" y="616.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >○ infarct case, EF 49%;</text>
+<text x="20.0" y="629.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >prescribed scar Err</text>
+<text x="20.0" y="642.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >0.95 → 0.30 (Fig. 4)</text>
 <line x1="169.0" y1="352.0" x2="169.0" y2="729.0" stroke="#E8DFD6" stroke-width="0.8" />
 <text x="174.0" y="366.0" font-size="12.0" font-weight="700" fill="#33261F" text-anchor="start" >Paired DENSE / tagging</text>
 <text x="174.0" y="379.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Militaru 2021; Cao 2018;</text>
@@ -413,43 +413,42 @@
 <text x="174.0" y="706.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >(DL), 59 cine tests, DENSE</text>
 <text x="174.0" y="719.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >reference.</text>
 <text x="174.0" y="484.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >LS / CS / RS: FT–tagging</text>
-<text x="214.0" y="504.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >LS</text>
-<line x1="304.6" y1="500.5" x2="306.5" y2="500.5" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
-<text x="312.0" y="494.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.92–0.94</text>
-<text x="214.0" y="523.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >CS</text>
-<line x1="301.0" y1="519.5" x2="303.7" y2="519.5" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
-<text x="312.0" y="513.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.88–0.91</text>
-<text x="214.0" y="542.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >RS</text>
-<line x1="229.2" y1="538.5" x2="278.0" y2="538.5" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
-<text x="253.6" y="532.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >0.10–0.63</text>
-<line x1="220.0" y1="545.0" x2="312.0" y2="545.0" stroke="#33261F" stroke-width="0.9" />
-<text x="174.0" y="557.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Cao: mid-slice peak Ecc</text>
-<text x="214.0" y="577.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >Cao</text>
-<circle cx="291.6" cy="573.5" r="3.4" fill="#5B3E2E" stroke="none" stroke-width="1.0" />
-<text x="312.0" y="567.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.778</text>
-<line x1="220.0" y1="580.0" x2="312.0" y2="580.0" stroke="#33261F" stroke-width="0.9" />
-<text x="174.0" y="592.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >StrainNet (●) vs FT (○), Ecc</text>
-<line x1="220.0" y1="596.0" x2="220.0" y2="634.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="266.0" y1="596.0" x2="266.0" y2="634.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="312.0" y1="596.0" x2="312.0" y2="634.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="214.0" y="612.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >global</text>
-<line x1="289.7" y1="608.5" x2="296.5" y2="608.5" stroke="#E8DFD6" stroke-width="1" />
-<circle cx="286.2" cy="608.5" r="3.4" fill="#FFFFFF" stroke="#4E7470" stroke-width="1.3" />
-<circle cx="300.0" cy="608.5" r="3.4" fill="#4E7470" stroke="none" stroke-width="1.0" />
-<text x="312.0" y="602.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.87 vs 0.72</text>
-<text x="214.0" y="631.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >segment</text>
-<line x1="267.7" y1="627.5" x2="285.5" y2="627.5" stroke="#E8DFD6" stroke-width="1" />
-<circle cx="264.2" cy="627.5" r="3.4" fill="#FFFFFF" stroke="#4E7470" stroke-width="1.3" />
-<circle cx="289.0" cy="627.5" r="3.4" fill="#4E7470" stroke="none" stroke-width="1.0" />
-<text x="289.0" y="621.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >0.75 vs 0.48</text>
-<line x1="220.0" y1="634.0" x2="312.0" y2="634.0" stroke="#33261F" stroke-width="0.9" />
-<line x1="220.0" y1="634.0" x2="220.0" y2="638.0" stroke="#33261F" stroke-width="0.9" />
-<text x="220.0" y="649.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
-<line x1="266.0" y1="634.0" x2="266.0" y2="638.0" stroke="#33261F" stroke-width="0.9" />
-<text x="266.0" y="649.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.5</text>
-<line x1="312.0" y1="634.0" x2="312.0" y2="638.0" stroke="#33261F" stroke-width="0.9" />
-<text x="312.0" y="649.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >1</text>
-<text x="266.0" y="663.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >ICC</text>
+<text x="214.0" y="500.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >LS</text>
+<line x1="304.6" y1="497.0" x2="306.5" y2="497.0" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
+<text x="265.3" y="509.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.92–0.94</text>
+<text x="214.0" y="522.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >CS</text>
+<line x1="301.0" y1="519.0" x2="303.7" y2="519.0" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
+<text x="265.3" y="531.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.88–0.91</text>
+<text x="214.0" y="544.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >RS</text>
+<line x1="229.2" y1="541.0" x2="278.0" y2="541.0" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
+<text x="226.2" y="553.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.10–0.63</text>
+<line x1="220.0" y1="554.0" x2="312.0" y2="554.0" stroke="#33261F" stroke-width="0.9" />
+<text x="174.0" y="566.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Cao: mid-slice peak Ecc</text>
+<text x="214.0" y="582.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >Cao</text>
+<circle cx="291.6" cy="579.0" r="3.4" fill="#5B3E2E" stroke="none" stroke-width="1.0" />
+<text x="285.7" y="591.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.778</text>
+<line x1="220.0" y1="592.0" x2="312.0" y2="592.0" stroke="#33261F" stroke-width="0.9" />
+<text x="174.0" y="604.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >StrainNet (●) vs FT (○), Ecc</text>
+<line x1="220.0" y1="608.0" x2="220.0" y2="652.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="266.0" y1="608.0" x2="266.0" y2="652.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="312.0" y1="608.0" x2="312.0" y2="652.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="214.0" y="620.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >global</text>
+<line x1="289.7" y1="617.0" x2="296.5" y2="617.0" stroke="#E8DFD6" stroke-width="1" />
+<circle cx="286.2" cy="617.0" r="3.4" fill="#FFFFFF" stroke="#4E7470" stroke-width="1.3" />
+<circle cx="300.0" cy="617.0" r="3.4" fill="#4E7470" stroke="none" stroke-width="1.0" />
+<text x="253.6" y="629.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.87 vs 0.72</text>
+<text x="214.0" y="642.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >segment</text>
+<line x1="267.7" y1="639.0" x2="285.5" y2="639.0" stroke="#E8DFD6" stroke-width="1" />
+<circle cx="264.2" cy="639.0" r="3.4" fill="#FFFFFF" stroke="#4E7470" stroke-width="1.3" />
+<circle cx="289.0" cy="639.0" r="3.4" fill="#4E7470" stroke="none" stroke-width="1.0" />
+<text x="253.6" y="651.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.75 vs 0.48</text>
+<line x1="220.0" y1="652.0" x2="312.0" y2="652.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="220.0" y1="652.0" x2="220.0" y2="656.0" stroke="#33261F" stroke-width="0.9" />
+<text x="220.0" y="667.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
+<line x1="266.0" y1="652.0" x2="266.0" y2="656.0" stroke="#33261F" stroke-width="0.9" />
+<text x="266.0" y="667.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.5</text>
+<line x1="312.0" y1="652.0" x2="312.0" y2="656.0" stroke="#33261F" stroke-width="0.9" />
+<text x="312.0" y="667.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >1</text>
 <line x1="323.0" y1="352.0" x2="323.0" y2="729.0" stroke="#E8DFD6" stroke-width="0.8" />
 <text x="328.0" y="366.0" font-size="12.0" font-weight="700" fill="#33261F" text-anchor="start" >Agreement / repeatability</text>
 <text x="328.0" y="379.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Yoon 2023; Bell 2025</text>
@@ -465,36 +464,36 @@
 <text x="328.0" y="693.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >zero; radial limits widest (49</text>
 <text x="328.0" y="706.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >participants).</text>
 <text x="328.0" y="484.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >95% LoA, global FT strain</text>
-<line x1="420.0" y1="488.0" x2="420.0" y2="551.0" stroke="#33261F" stroke-width="1" stroke-dasharray="3 2"/>
-<line x1="374.0" y1="488.0" x2="374.0" y2="551.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="420.0" y1="488.0" x2="420.0" y2="551.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="466.0" y1="488.0" x2="466.0" y2="551.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="368.0" y="505.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >radial</text>
-<line x1="379.8" y1="501.5" x2="454.5" y2="501.5" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
-<text x="417.1" y="495.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >−7 to 6</text>
-<text x="368.0" y="526.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >circ.</text>
-<line x1="408.5" y1="522.5" x2="437.2" y2="522.5" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
-<text x="422.9" y="516.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >−2 to 3</text>
-<text x="368.0" y="547.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >long.</text>
-<line x1="402.8" y1="543.5" x2="437.2" y2="543.5" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
-<text x="420.0" y="537.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >−3 to 3</text>
-<line x1="374.0" y1="551.0" x2="466.0" y2="551.0" stroke="#33261F" stroke-width="0.9" />
-<line x1="374.0" y1="551.0" x2="374.0" y2="555.0" stroke="#33261F" stroke-width="0.9" />
-<text x="374.0" y="566.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−8</text>
-<line x1="420.0" y1="551.0" x2="420.0" y2="555.0" stroke="#33261F" stroke-width="0.9" />
-<text x="420.0" y="566.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
-<line x1="466.0" y1="551.0" x2="466.0" y2="555.0" stroke="#33261F" stroke-width="0.9" />
-<text x="466.0" y="566.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >8</text>
-<text x="420.0" y="580.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >% points</text>
-<text x="328.0" y="603.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >Strain-8 scan–rescan</text>
-<text x="328.0" y="616.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >same day, 20 volunteers</text>
-<text x="328.0" y="629.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >8 protocols</text>
-<line x1="328.0" y1="634.0" x2="466.0" y2="634.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="328.0" y="647.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >global</text>
-<text x="466.0" y="647.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >fair–excellent</text>
-<line x1="328.0" y1="649.0" x2="466.0" y2="649.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="328.0" y="662.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >segmental</text>
-<text x="466.0" y="662.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >more variable</text>
+<line x1="420.0" y1="488.0" x2="420.0" y2="554.0" stroke="#33261F" stroke-width="1" stroke-dasharray="3 2"/>
+<line x1="374.0" y1="488.0" x2="374.0" y2="554.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="420.0" y1="488.0" x2="420.0" y2="554.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="466.0" y1="488.0" x2="466.0" y2="554.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="368.0" y="500.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >radial</text>
+<line x1="379.8" y1="497.0" x2="454.5" y2="497.0" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
+<text x="376.8" y="509.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >−7 to 6</text>
+<text x="368.0" y="522.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >circ.</text>
+<line x1="408.5" y1="519.0" x2="437.2" y2="519.0" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
+<text x="405.5" y="531.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >−2 to 3</text>
+<text x="368.0" y="544.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >long.</text>
+<line x1="402.8" y1="541.0" x2="437.2" y2="541.0" stroke="#8E857D" stroke-width="4.5" stroke-linecap="round"/>
+<text x="399.8" y="553.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >−3 to 3</text>
+<line x1="374.0" y1="554.0" x2="466.0" y2="554.0" stroke="#33261F" stroke-width="0.9" />
+<line x1="374.0" y1="554.0" x2="374.0" y2="558.0" stroke="#33261F" stroke-width="0.9" />
+<text x="374.0" y="569.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >−8</text>
+<line x1="420.0" y1="554.0" x2="420.0" y2="558.0" stroke="#33261F" stroke-width="0.9" />
+<text x="420.0" y="569.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0</text>
+<line x1="466.0" y1="554.0" x2="466.0" y2="558.0" stroke="#33261F" stroke-width="0.9" />
+<text x="466.0" y="569.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >8</text>
+<text x="420.0" y="583.0" font-size="11.5" font-weight="400" fill="#33261F" text-anchor="middle" >% points</text>
+<text x="328.0" y="600.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >Strain-8 scan–rescan</text>
+<text x="328.0" y="613.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >same day, 20 volunteers</text>
+<text x="328.0" y="626.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >8 protocols</text>
+<line x1="328.0" y1="629.0" x2="466.0" y2="629.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="328.0" y="642.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >global</text>
+<text x="466.0" y="642.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >fair–excellent</text>
+<line x1="328.0" y1="644.0" x2="466.0" y2="644.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="328.0" y="657.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >segmental</text>
+<text x="466.0" y="657.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="end" >more variable</text>
 <line x1="477.0" y1="352.0" x2="477.0" y2="729.0" stroke="#E8DFD6" stroke-width="0.8" />
 <text x="482.0" y="366.0" font-size="12.0" font-weight="700" fill="#33261F" text-anchor="start" >Tissue (LGE)</text>
 <text x="482.0" y="379.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Kihlberg 2020</text>
@@ -558,21 +557,21 @@
 <text x="636.0" y="719.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >operating point.</text>
 <text x="636.0" y="484.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Bello · RV motion in CTEPH,</text>
 <text x="636.0" y="497.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >corrected C-index; n = 302</text>
-<text x="676.0" y="519.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >DL</text>
-<line x1="714.6" y1="515.5" x2="732.2" y2="515.5" stroke="#E8DFD6" stroke-width="1" />
-<circle cx="711.1" cy="515.5" r="3.4" fill="#FFFFFF" stroke="#4E7470" stroke-width="1.3" />
-<circle cx="735.7" cy="515.5" r="3.4" fill="#4E7470" stroke="none" stroke-width="1.0" />
-<text x="735.7" y="509.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="middle" >0.75 vs 0.59</text>
-<line x1="682.0" y1="524.0" x2="774.0" y2="524.0" stroke="#33261F" stroke-width="0.9" />
-<text x="682.0" y="538.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >○ manual-variable model</text>
-<text x="636.0" y="560.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Masutani · DL strain, WMA</text>
-<text x="636.0" y="573.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >vs 4-reader consensus, AUC</text>
-<line x1="697.3" y1="577.0" x2="697.3" y2="600.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="735.7" y1="577.0" x2="735.7" y2="600.0" stroke="#E8DFD6" stroke-width="0.8" />
-<line x1="774.0" y1="577.0" x2="774.0" y2="600.0" stroke="#E8DFD6" stroke-width="0.8" />
-<text x="676.0" y="595.0" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >DL</text>
-<circle cx="758.7" cy="591.5" r="3.4" fill="#4E7470" stroke="none" stroke-width="1.0" />
-<text x="774.0" y="585.5" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >0.90</text>
+<text x="676.0" y="513.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >DL</text>
+<line x1="714.6" y1="510.0" x2="732.2" y2="510.0" stroke="#E8DFD6" stroke-width="1" />
+<circle cx="711.1" cy="510.0" r="3.4" fill="#FFFFFF" stroke="#4E7470" stroke-width="1.3" />
+<circle cx="735.7" cy="510.0" r="3.4" fill="#4E7470" stroke="none" stroke-width="1.0" />
+<text x="708.1" y="522.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.75 vs 0.59</text>
+<line x1="682.0" y1="525.0" x2="774.0" y2="525.0" stroke="#33261F" stroke-width="0.9" />
+<text x="636.0" y="539.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >○ manual-variable model</text>
+<text x="636.0" y="559.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Masutani · DL strain, WMA</text>
+<text x="636.0" y="572.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >vs 4-reader consensus, AUC</text>
+<line x1="697.3" y1="576.0" x2="697.3" y2="600.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="735.7" y1="576.0" x2="735.7" y2="600.0" stroke="#E8DFD6" stroke-width="0.8" />
+<line x1="774.0" y1="576.0" x2="774.0" y2="600.0" stroke="#E8DFD6" stroke-width="0.8" />
+<text x="676.0" y="588.5" font-size="10.5" font-weight="400" fill="#33261F" text-anchor="end" >DL</text>
+<circle cx="758.7" cy="585.0" r="3.4" fill="#4E7470" stroke="none" stroke-width="1.0" />
+<text x="753.6" y="597.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="start" >0.90</text>
 <line x1="682.0" y1="600.0" x2="774.0" y2="600.0" stroke="#33261F" stroke-width="0.9" />
 <line x1="697.3" y1="600.0" x2="697.3" y2="604.0" stroke="#33261F" stroke-width="0.9" />
 <text x="697.3" y="615.0" font-size="11" font-weight="400" fill="#6F625A" text-anchor="middle" >0.5</text>
