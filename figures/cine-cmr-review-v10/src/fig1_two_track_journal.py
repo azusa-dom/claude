@@ -122,7 +122,8 @@ for k, (a, b) in enumerate(specs):
     yy = GY + 12 + k * 15
     fig.text(x + 92, yy, a, SM, fill=C.MUTED)
     fig.text(x + 108, yy, b, SM)
-fig.text(x + 42, cy + 50, "fill = Ecc; seg 11 reduced", SM, fill=C.MUTED, anchor="middle")
+fig.text(x, cy + 50, "fill = Ecc;", SM, fill=C.MUTED)
+fig.text(x, cy + 63, "seg. 11 reduced", SM, fill=C.MUTED)
 
 # ---- 5 regional report -------------------------------------------------------------------------
 station(3, "5 · REPORTED", C.REF, "Segmental Ecc(t), mid ventricle",
@@ -210,30 +211,29 @@ def column(i, title, refs, ok, no, chart_title, caption):
     return x
 
 
-def dot_rows(x, y, rows, xlim, ticks, w=92, label_w=46, row_h=20, xlabel="", fmt=None):
-    """Compact rows: muted label left, range bar or dot, comparator ○, bold value printed under the mark."""
+def dot_rows(x, y, rows, xlim, ticks, w=None, label_w=None, row_h=24, xlabel="", fmt=None):
+    """Table-style rows: label left and bold value right on one baseline; the range bar, dot or
+    dot + comparator sits on its own line beneath, spanning the column, so nothing can collide."""
     fmt = fmt or (lambda v: f"{v:g}")
-    ax0 = x + label_w
+    ax0, w = x + 2, CW - 4
     n = len(rows)
-    for t in ticks:
-        px = ax0 + (t - xlim[0]) / (xlim[1] - xlim[0]) * w
-        fig.line(px, y, px, y + n * row_h, C.GRID, 0.8)
+    fx = lambda v: ax0 + (v - xlim[0]) / (xlim[1] - xlim[0]) * w
     for i, (lab, lo, hi, col, comp, vt) in enumerate(rows):
-        yy = y + 9 + i * row_h
-        fx = lambda v: ax0 + (v - xlim[0]) / (xlim[1] - xlim[0]) * w
-        fig.text(ax0 - 6, yy + 3.5, lab, SM, anchor="end")
-        if comp is not None:
-            fig.line(fx(comp) + 3.5, yy, fx(lo) - 3.5, yy, C.GRID, 1)
-            fig.circle(fx(comp), yy, 3.4, C.WHITE, col, 1.3)
-        if hi > lo:
-            fig.line(fx(lo), yy, fx(hi), yy, col, 4.5, 'stroke-linecap="round"')
-        else:
-            fig.circle(fx(lo), yy, 3.4, col)
+        yt = y + 10 + i * row_h            # text baseline
+        ym = y + 17 + i * row_h            # mark line
+        fig.text(x, yt, lab, SM)
         label = vt if vt is not None else (f"{fmt(lo)}–{fmt(hi)}" if hi > lo else fmt(lo))
-        x_left = fx(comp) if comp is not None else fx(lo)
-        xv = min(max(x_left - 3, ax0), ax0 + w - tw(label, SM, True))
-        fig.text(xv, yy + 12, label, SM, 700)
-    fig.axes(ax0, y + n * row_h, w, 0, xlim, (0, 1), ticks, (), xlabel, xfmt=fmt, yaxis=False)
+        fig.text(x + CW, yt, label, SM, 700, anchor="end")
+        fig.line(ax0, ym, ax0 + w, ym, C.GRID, 0.8)
+        if comp is not None:
+            fig.line(fx(comp) + 3.5, ym, fx(lo) - 3.5, ym, C.MUTED, 1)
+            fig.circle(fx(comp), ym, 3.4, C.WHITE, col, 1.3)
+        if hi > lo:
+            fig.line(fx(lo), ym, fx(hi), ym, col, 4.5, 'stroke-linecap="round"')
+        else:
+            fig.circle(fx(lo), ym, 3.4, col)
+    if ticks:
+        fig.axes(ax0, y + n * row_h, w, 0, xlim, (0, 1), ticks, (), xlabel, xfmt=fmt, yaxis=False)
     return y + n * row_h
 
 
@@ -258,25 +258,22 @@ x = column(0, "Known motion", "MRXCAT2.0 test of DeepStrain", "technical error",
            "estimator error (mean ± SD)", "Also Dice 0.82; displacement 1.0 ± 0.9 mm. Slice means only: no scar-region error.")
 rows = [("Ecc, 4 cases", 0.02, 0.04, C.OBS, False), ("Err, 4 cases", -0.24, 0.21, C.INF, False),
         ("Err, infarct", -0.20, 0.21, C.INF, True)]
-ax0, w = x + 60, 78
+RH0 = 26
+ax0, w = x + 2, CW - 4
 fx = lambda v: ax0 + (v + 0.5) / 0.62 * w
-RH0 = 28
-for t in (-0.4, -0.2, 0):
-    fig.line(fx(t), CH_Y + 8, fx(t), CH_Y + 8 + 3 * RH0, C.GRID, 0.8)
-fig.line(fx(0), CH_Y + 8, fx(0), CH_Y + 8 + 3 * RH0, C.INK, 1, 'stroke-dasharray="3 2"')
 for i, (lab, m, sd, col, op) in enumerate(rows):
-    yy = CH_Y + 8 + 9 + i * RH0
-    fig.text(ax0 - 6, yy + 3.5, lab, SM, anchor="end")
-    fig.line(fx(m - sd), yy, fx(m + sd), yy, col, 1.6)
-    fig.circle(fx(m), yy, 3.4, C.WHITE if op else col, col, 1.3)
-    label = f"{f2(m)} ± {f2(sd)}"
-    xv = min(max(fx(m - sd) - 3, ax0), ax0 + w - tw(label, SM, True))
-    fig.text(xv, yy + 12, label, SM, 700, extra='paint-order="stroke" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"')
-fig.axes(ax0, CH_Y + 8 + 3 * RH0, w, 0, (-0.5, 0.12), (0, 1), [-0.4, -0.2, 0], (), "strain error",
+    yt = CH_Y + 12 + 10 + i * RH0
+    ym = CH_Y + 12 + 17 + i * RH0
+    fig.line(fx(0), ym - 6, fx(0), ym + 6, C.INK, 1, 'stroke-dasharray="2 1.5"')
+    fig.text(x, yt, lab + (" ○" if op else ""), SM)
+    fig.text(x + CW, yt, f"{f2(m)} ± {f2(sd)}", SM, 700, anchor="end")
+    fig.line(fx(m - sd), ym, fx(m + sd), ym, col, 1.6)
+    fig.circle(fx(m), ym, 3.4, C.WHITE if op else col, col, 1.3)
+fig.axes(ax0, CH_Y + 12 + 3 * RH0, w, 0, (-0.5, 0.12), (0, 1), [-0.4, -0.2, 0], (), "strain error",
          xfmt=lambda v: f"{v:.1f}".replace("-", "−") if v else "0", yaxis=False)
-fig.text(x, CH_Y + 8 + 3 * RH0 + 48, "○ infarct case, EF 49%;", SM, fill=C.MUTED)
-fig.text(x, CH_Y + 8 + 3 * RH0 + 61, "prescribed scar Err", SM, fill=C.MUTED)
-fig.text(x, CH_Y + 8 + 3 * RH0 + 74, "0.95 → 0.30 (Fig. 4)", SM, fill=C.MUTED)
+fig.text(x, CH_Y + 12 + 3 * RH0 + 46, "○ infarct case, EF 49%;", SM, fill=C.MUTED)
+fig.text(x, CH_Y + 12 + 3 * RH0 + 59, "prescribed scar Err", SM, fill=C.MUTED)
+fig.text(x, CH_Y + 12 + 3 * RH0 + 72, "0.95 → 0.30 (Fig. 4)", SM, fill=C.MUTED)
 
 # ---- 2 paired DENSE / tagging -----------------------------------------------------------------------
 x = column(1, "Paired DENSE / tagging", "Militaru 2021; Cao 2018; Wang 2023", "material-sensitive agreement",
@@ -284,25 +281,26 @@ x = column(1, "Paired DENSE / tagging", "Militaru 2021; Cao 2018; Wang 2023", "m
            "Militaru n = 61, 3 T; Cao, DENSE vs tagging; StrainNet (DL), 59 cine tests, DENSE reference.")
 fig.text(x, CH_Y + 8, "LS / CS / RS: FT–tagging", SM, fill=C.MUTED)
 y = dot_rows(x, CH_Y + 12, [("LS", 0.92, 0.94, C.OBS, None, "0.92–0.94"), ("CS", 0.88, 0.91, C.OBS, None, "0.88–0.91"),
-                             ("RS", 0.10, 0.63, C.OBS, None, "0.10–0.63")], (0, 1), [], w=92, label_w=46, row_h=22)
-fig.text(x, y + 12, "Cao: mid-slice peak Ecc", SM, fill=C.MUTED)
-y = dot_rows(x, y + 16, [("Cao", 0.778, 0.778, C.DEEP, None, "0.778")], (0, 1), [], w=92, label_w=46, row_h=22)
-fig.text(x, y + 12, "StrainNet (●) vs FT (○), Ecc", SM, fill=C.MUTED)
-y = dot_rows(x, y + 16, [("global", 0.87, 0.87, C.SUP, 0.72, "0.87 vs 0.72"), ("segment", 0.75, 0.75, C.SUP, 0.48, "0.75 vs 0.48")],
-             (0, 1), [0, 0.5, 1], w=92, label_w=46, row_h=22)
+                             ("RS", 0.10, 0.63, C.OBS, None, "0.10–0.63")], (0, 1), [])
+fig.text(x, y + 14, "Cao: DENSE vs tagging", SM, fill=C.MUTED)
+fig.text(x + CW, y + 14, "0.778", SM, 700, anchor="end")
+fig.text(x, y + 30, "StrainNet (●) vs FT (○), Ecc", SM, fill=C.MUTED)
+y = dot_rows(x, y + 34, [("global", 0.87, 0.87, C.SUP, 0.72, "0.87 vs 0.72"), ("segment", 0.75, 0.75, C.SUP, 0.48, "0.75 vs 0.48")],
+             (0, 1), [0, 0.5, 1])
 
 # ---- 3 precision & reconstruction -----------------------------------------------------------------------
 x = column(2, "Agreement / repeatability", "Yoon 2023; Bell 2025", "distinct measurement properties", "not alone: accuracy (bias)",
-           "REGAIN vs GRAPPA", "Mean global differences near zero; radial limits widest (49 participants).")
+           "REGAIN vs GRAPPA", "n = 49; mean differences near zero; radial limits widest. Strain-8: same day, 20 volunteers, 8 protocols.")
 fig.text(x, CH_Y + 8, "95% LoA, global FT strain", SM, fill=C.MUTED)
-fig.line(x + 46 + 46, CH_Y + 12, x + 46 + 46, CH_Y + 12 + 66, C.INK, 1, 'stroke-dasharray="3 2"')
-y = dot_rows(x, CH_Y + 12, [("radial", -7, 6, C.OBS, None, "−7 to 6"), ("circ.", -2, 3, C.OBS, None, "−2 to 3"),
-                             ("long.", -3, 3, C.OBS, None, "−3 to 3")], (-8, 8), [-8, 0, 8], w=92, label_w=46, row_h=22,
-             xlabel="% points", fmt=lambda v: f"{v:g}".replace("-", "−"))
-fig.text(x, y + 46, "Strain-8 scan–rescan", SM, 700)
-fig.text(x, y + 59, "same day, 20 volunteers", SM, fill=C.MUTED)
-fig.text(x, y + 72, "8 protocols", SM, fill=C.MUTED)
-fig.kv_table(x, y + 88, [("global", "fair–excellent"), ("segmental", "more variable")], w=CW - 6, row_h=15)
+fig.text(x, CH_Y + 21, "percentage points", SM, fill=C.MUTED)
+for k in range(3):
+    zx = x + 2 + (CW - 4) / 2
+    fig.line(zx, CH_Y + 25 + 17 + k * 24 - 6, zx, CH_Y + 25 + 17 + k * 24 + 6, C.INK, 1, 'stroke-dasharray="2 1.5"')
+y = dot_rows(x, CH_Y + 25, [("radial", -7, 6, C.OBS, None, "−7 to 6"), ("circ.", -2, 3, C.OBS, None, "−2 to 3"),
+                             ("long.", -3, 3, C.OBS, None, "−3 to 3")], (-9, 9), [-8, 0, 8],
+             fmt=lambda v: f"{v:g}".replace("-", "−"))
+fig.text(x, y + 36, "Strain-8 scan–rescan", SM, 700)
+fig.kv_table(x, y + 58, [("global", "fair–excellent"), ("segmental", "more variable")], w=CW - 6, row_h=15)
 
 # ---- 4 tissue (LGE) ----------------------------------------------------------------------------------
 x = column(3, "Tissue (LGE)", "Kihlberg 2020", "scar-associated dysfunction", "not alone: motion error",
@@ -319,11 +317,11 @@ x = column(4, "Outcome & readers", "Bello 2019; Masutani 2023", "prognostic / di
            "C-index and AUC differ", "DLSS: 53 patients, 846 segments. AUC spans thresholds; 30% Err is one operating point.")
 fig.text(x, CH_Y + 8, "Bello · RV motion in CTEPH,", SM, fill=C.MUTED)
 fig.text(x, CH_Y + 21, "corrected C-index; n = 302", SM, fill=C.MUTED)
-y = dot_rows(x, CH_Y + 25, [("DL", 0.75, 0.75, C.SUP, 0.59, "0.75 vs 0.59")], (0.4, 1), [], w=92, label_w=46, row_h=24)
+y = dot_rows(x, CH_Y + 25, [("DL", 0.75, 0.75, C.SUP, 0.59, "0.75 vs 0.59")], (0.4, 1), [])
 fig.text(x, y + 14, "○ manual-variable model", SM, fill=C.MUTED)
 fig.text(x, y + 34, "Masutani · DL strain, WMA", SM, fill=C.MUTED)
 fig.text(x, y + 47, "vs 4-reader consensus, AUC", SM, fill=C.MUTED)
-y = dot_rows(x, y + 51, [("DL", 0.90, 0.90, C.SUP, None, "0.90")], (0.4, 1), [0.5, 0.75, 1], w=92, label_w=46, row_h=24,
+y = dot_rows(x, y + 51, [("DL", 0.90, 0.90, C.SUP, None, "0.90")], (0.4, 1), [0.5, 0.75, 1],
              xlabel="C-index · AUC", fmt=lambda v: f"{v:g}")
 
 export(fig, "Figure_1_two_track_evidence_map")
