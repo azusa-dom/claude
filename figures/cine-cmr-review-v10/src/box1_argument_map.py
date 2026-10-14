@@ -34,7 +34,7 @@ S = {
     7: ("Paired studies support a threefold qualification",
         "Circumferential strain, global or whole-slice mid-ventricular scale, matched definitions; agreement varies with component, scale and software, radial least.", "§4 · Tables 2–3"),
     8: ("Focal attributes are rarely measured directly",
-        "Magnitude, location, extent and timing; the MRXCAT2.0 test reports whole-slice errors without scar-level recovery; equal means can hide a focal deficit.", "Fig. 4 · Table 3 · Fig. 5c"),
+        "Ranked by what already measures them: location and extent compete with LGE, magnitude has no direct competitor, timing has none and the least evidence.", "Fig. 4 · Table 3 · Fig. 5c"),
     9: ("A measurement contract makes the claim falsifiable",
         "Acquisition, estimator, population, spatial unit, strain definition and reference state, time point, comparator, prespecified tolerance.", "§6"),
     10: ("No single agreement index validates all of it",

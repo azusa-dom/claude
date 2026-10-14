@@ -85,10 +85,10 @@
 <text x="548.0" y="60.0" font-size="11" font-weight="700" fill="#33261F" text-anchor="middle" >8</text>
 <text x="562.0" y="60.0" font-size="12.0" font-weight="700" fill="#33261F" text-anchor="start" >Focal attributes are rarely measured</text>
 <text x="562.0" y="74.0" font-size="12.0" font-weight="700" fill="#33261F" text-anchor="start" >directly</text>
-<text x="562.0" y="86.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Magnitude, location, extent and timing; the</text>
-<text x="562.0" y="99.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >MRXCAT2.0 test reports whole-slice errors</text>
-<text x="562.0" y="112.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >without scar-level recovery; equal means can</text>
-<text x="562.0" y="125.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >hide a focal deficit.</text>
+<text x="562.0" y="86.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >Ranked by what already measures them:</text>
+<text x="562.0" y="99.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >location and extent compete with LGE,</text>
+<text x="562.0" y="112.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >magnitude has no direct competitor, timing</text>
+<text x="562.0" y="125.0" font-size="10.5" font-weight="400" fill="#6F625A" text-anchor="start" >has none and the least evidence.</text>
 <text x="778.0" y="139.0" font-size="10.5" font-weight="700" fill="#33261F" text-anchor="end" >Fig. 4 · Table 3 · Fig. 5c</text>
 <text x="540.0" y="173.0" font-size="10.5" font-weight="700" fill="#4E7470" text-anchor="start" >D · Engineering the claim</text>
 <line x1="540.0" y1="179.0" x2="778.0" y2="179.0" stroke="#4E7470" stroke-width="1.2" />
