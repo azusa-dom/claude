@@ -1,5 +1,8 @@
 """Trim empty top/bottom margins and stamp PNG resolution so every export inserts at its true size.
 
+Pass figure stems to limit the run (build.sh passes the Typst-built Figure 1 only; the agarwood-scifig
+figures are exported at their exact size by style/scifig_common.py and need no trimming).
+
 Width is never changed (all figures stay at the 190 mm double-column width). The content
 extent is measured on the 600 dpi PNG and the same crop is applied to the PDF and SVG.
 """
@@ -53,9 +56,11 @@ def crop_svg(path, top_frac, bottom_frac):
     path.write_text(text[:start] + head + text[end:])
 
 
-def main():
+def main(stems=None):
     for png_path in sorted(OUT.glob("*.png")):
         stem = png_path.stem
+        if stems and stem not in stems:
+            continue
         png = Image.open(png_path)
         png.load()
         if stem == GA:
@@ -76,4 +81,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    main(sys.argv[1:])

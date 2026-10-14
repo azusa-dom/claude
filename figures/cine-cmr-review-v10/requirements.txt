@@ -1,6 +1,10 @@
-matplotlib==3.11.2
 numpy==2.5.3
-typst==0.15.0
-# Fonts: Liberation Sans / Liberation Serif (metric-compatible with Arial / Times New Roman),
-# e.g. Debian/Ubuntu package fonts-liberation. Typst packages @preview/cetz:0.4.2 are fetched on first build.
+pillow
+pypdf
 pdfplumber==0.11.10
+# Figures 2-5, S1-S3 and GA: design-templates/house-style/agarwood-scifig/scifig.py (no extra Python deps),
+# rendered by style/render_outputs.cjs with Node + Playwright and its Chromium (PLAYWRIGHT_BROWSERS_PATH).
+# Figure 1 only: typst==0.15.0 (Typst packages @preview/cetz:0.4.2 are fetched on first build).
+# matplotlib==3.11.2 is needed only for the legacy style/figstyle.py helpers, which no figure uses now.
+# Fonts: Liberation Sans / Liberation Serif (metric-compatible with Arial / Times New Roman),
+# e.g. Debian/Ubuntu package fonts-liberation.

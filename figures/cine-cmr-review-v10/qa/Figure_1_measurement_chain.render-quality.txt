@@ -1,3 +1,0 @@
-[RENDER-QUALITY] PASS_WITH_WARNINGS
-[WARN] SVG text/title elements not detected: /home/user/claude/figures/cine-cmr-review-v10/out/Figure_1_measurement_chain.svg
-[PASS] validation passed

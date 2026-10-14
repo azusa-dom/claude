@@ -1,6 +1,23 @@
 # Design templates
 
-Catalog of design templates vendored as git submodules for Claude to pull in when doing design work.
+Catalog of design templates vendored as git submodules for Claude to pull in when doing design work, plus the owner's own house styles (plain directories, not submodules).
+
+## House styles (own)
+
+| Template | Type | Use for |
+|---|---|---|
+| [`house-style/agarwood-scifig`](house-style/agarwood-scifig) | Python SVG figure library + matplotlib style + style guide | **Default for every scientific figure**: dense, journal-grade multi-panel figures, graphical abstracts and poster hero figures in the 沈香墨 / 檀木棕 / 棠梨绯 palette |
+
+### agarwood-scifig
+
+Dense, journal-grade figures as editable SVG. The canvas is white, rows and columns are separated by thin rules (no cards or shadows), and every panel has a claim-style title. Every mark carries its number, and a footer states what is schematic and what is transcribed data. Two variants: **poster** (1800 px canvas, 5–8 panels, gradient track strips, in-figure title and footer) and **journal** (800 px = 190 mm, ≤ 5 panels, text ≥ 7 pt at print size, no strips or image mock-ups); the README's "两种版式" table says when to use which.
+
+- [`README.md`](house-style/agarwood-scifig/README.md) holds the rules: colour roles, type scale, layout, density, honesty and a QA checklist.
+- [`scifig.py`](house-style/agarwood-scifig/scifig.py) provides the tokens, structural pieces (title, panel, track strip, ✓/✕ lines, failure badges, footer) and plot primitives (axes, forest, range rows, bars, heatmap, colour bar). It also includes a print-size font audit.
+- [`agarwood.mplstyle`](house-style/agarwood-scifig/agarwood.mplstyle) applies the same look to matplotlib data plots.
+- The flagship example is [`figures/poster-hero-two-track`](../figures/poster-hero-two-track). The project skill `.claude/skills/scifig-agarwood` makes Claude use this style by default in this repo.
+
+Quick start: `python3 design-templates/house-style/agarwood-scifig/examples/example_journal.py`.
 
 ## Presentations
 

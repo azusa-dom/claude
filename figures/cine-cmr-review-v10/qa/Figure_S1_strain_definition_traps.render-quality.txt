@@ -1,2 +1,0 @@
-[RENDER-QUALITY] PASS
-[PASS] validation passed

@@ -1,0 +1,57 @@
+# agarwood-scifig — matplotlib style matching scifig.py (README.md has the rules)
+# Use:  plt.style.use("design-templates/house-style/agarwood-scifig/agarwood.mplstyle")
+# Sizes assume the figure is drawn at its final print width (e.g. 190 mm double column).
+
+font.family        : sans-serif
+font.sans-serif    : Arial, Helvetica, Liberation Sans, DejaVu Sans
+font.size          : 7.5
+mathtext.fontset   : custom
+mathtext.rm        : Liberation Serif
+mathtext.it        : Liberation Serif:italic
+mathtext.bf        : Liberation Serif:bold
+
+text.color         : 33261F
+axes.edgecolor     : 33261F
+axes.labelcolor    : 33261F
+axes.labelsize     : 7.5
+axes.titlesize     : 8.5
+axes.titleweight   : bold
+axes.titlelocation : left
+axes.linewidth     : 0.6
+axes.spines.top    : False
+axes.spines.right  : False
+axes.grid          : False
+axes.facecolor     : FFFFFF
+# data roles: reference, inferred, observed, supported, secondary, weakest
+axes.prop_cycle    : cycler('color', ['7A4720', 'C0584A', '8E857D', '4E7470', 'CC5F4F', 'B2AAA2'])
+
+grid.color         : E8DFD6
+grid.linewidth     : 0.5
+
+xtick.color        : 33261F
+ytick.color        : 33261F
+xtick.labelcolor   : 6F625A
+ytick.labelcolor   : 6F625A
+xtick.labelsize    : 7.2
+ytick.labelsize    : 7.2
+xtick.major.width  : 0.6
+ytick.major.width  : 0.6
+xtick.major.size   : 2.5
+ytick.major.size   : 2.5
+
+lines.linewidth    : 1.0
+lines.markersize   : 3.5
+patch.linewidth    : 0
+hatch.color        : C0584A
+hatch.linewidth    : 0.6
+
+legend.frameon     : False
+legend.fontsize    : 7.2
+legend.labelcolor  : 6F625A
+
+figure.facecolor   : FFFFFF
+savefig.facecolor  : FFFFFF
+savefig.bbox       : tight
+savefig.pad_inches : 0.05
+svg.fonttype       : none
+pdf.fonttype       : 42
